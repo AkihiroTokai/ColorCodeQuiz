@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\OWNER\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-a44b55de12be6f67495aeb342da2884496bb2fb9.jar" />
+    </item>
+    <item
+        jar="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\classes-d63463dd0ac63119cafbe86b318f71e2d66da305.jar" />
+    </item>
+    <item
+        jar="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-c78f8b1126b82c109dcccd2f14d5d96fd0bb4d4a.jar" />
+    </item>
+    <item
+        jar="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\classes-ec4475dce94cbc5462e0bafbd371d02b22e6a121.jar" />
+    </item>
+    <item
+        jar="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\exploded-aar\com.jpardogo.materialtabstrip\library\1.0.9\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ed2ab55be78d5d54ac9060d70d65a4573ae3d2ec">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\classes-fe1415e99343e68585f4323d14166afba3248446.jar" />
+    </item>
+    <item
+        jar="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\exploded-aar\com.beardedhen\androidbootstrap\1.2.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="11cd8b9af3b27673eceda7335192cd01b423ef26">
+        <dex dex="C:\Users\OWNER\AndroidStudioProjects\ColorCodeQuiz\app\build\intermediates\pre-dexed\debug\classes-aed8594500c2aa692cbaccd44fac2edcdc014b15.jar" />
+    </item>
+
+</items>

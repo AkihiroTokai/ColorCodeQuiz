@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.owner.colorcodequiz.MenuActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number of question(Locked):"
+            android:id="@+id/Numberofquestion"
+            android:layout_alignBottom="@+id/setnum"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:ems="10"
+            android:id="@+id/setnum"
+            android:text="10"
+            android:gravity="center"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Level1"
+            android:id="@+id/Level1"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/ColortoCode"
+            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodetoColor"
+            android:id="@+id/CodetoColor1"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:nestedScrollingEnabled="false"
+            android:layout_toEndOf="@+id/ColortoCode"
+            android:layout_marginLeft="10dp"
+            android:clickable = "false"
+            android:onClick="CodetoColor1" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColortoCode"
+            android:id="@+id/ColortoCode1"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:onClick="ColortoCode1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Level2"
+            android:id="@+id/Level7"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/Random"
+            android:layout_alignTop="@+id/ColortoCode"
+            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodetoColor"
+            android:id="@+id/CodetoColor2"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/Randommode"
+            android:layout_toEndOf="@+id/ColortoCode"
+            android:layout_marginLeft="10dp"
+            android:onClick="CodetoColor2" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColortoCode"
+            android:id="@+id/ColortoCode2"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:onClick="ColortoCode2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Level3"
+            android:id="@+id/Level3"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ColortoCode"
+            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_marginLeft="10dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodetoColor"
+            android:id="@+id/CodetoColor3"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/Randommode"
+            android:layout_toEndOf="@+id/ColortoCode"
+            android:layout_marginLeft="10dp"
+            android:onClick="CodetoColor3" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColortoCode"
+            android:id="@+id/ColortoCode3"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:onClick="ColortoCode3" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Level4"
+            android:id="@+id/Level4"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ColortoCode"
+            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodetoColor"
+            android:id="@+id/CodetoColor4"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:nestedScrollingEnabled="false"
+            android:layout_toEndOf="@+id/ColortoCode"
+            android:layout_marginLeft="10dp"
+            android:onClick="CodetoColor4" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColortoCode"
+            android:id="@+id/ColortoCode4"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:onClick="ColortoCode4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Level5"
+            android:id="@+id/Level5"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/Random"
+            android:layout_alignTop="@+id/ColortoCode"
+            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CodetoColor"
+            android:id="@+id/CodetoColor5"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/Randommode"
+            android:layout_toEndOf="@+id/ColortoCode"
+            android:layout_marginLeft="10dp"
+            android:onClick="CodetoColor5" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColortoCode"
+            android:id="@+id/ColortoCode5"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-key"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:onClick="ColortoCode5" />
+    </LinearLayout>
+
+
+</LinearLayout>

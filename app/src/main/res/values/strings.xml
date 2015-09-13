@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ColorcodeQuiz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_colorto_code_practice">ColortoCode_practiceActivity</string>
+    <string name="title_activity_codetocolor">codetocolorActivity</string>
+    <string name="title_activity_colorto_code">ColortoCodeActivity</string>
+    <string name="title_activity_codeto_color">CodetoColorActivity</string>
+    <string name="title_activity_menu">menuActivity</string>
+    <string name="title_activity_menu2">menu2Activity</string>
+    <string name="title_activity_menu3">menu3Activity</string>
+
+</resources>

@@ -14,9 +14,21 @@ import android.widget.EditText;
 public class menu3Activity extends AppCompatActivity {
     private int ull_CodetoColor;
     private int ull_ColortoCode;
+    private int nocomp_ColortoCode6;
+    private int nocomp_ColortoCode7;
+    private int nocomp_ColortoCode8;
+    private int nocomp_ColortoCode9;
+    private int nocomp_ColortoCode10;
+    private int nocomp_CodetoColor6;
+    private int nocomp_CodetoColor7;
+    private int nocomp_CodetoColor8;
+    private int nocomp_CodetoColor9;
+    private int nocomp_CodetoColor10;
+    private int nocomp;
     private int maxlimit;
     private int minlimit;
     private int number;
+    private int level;
     private EditText setnum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +37,19 @@ public class menu3Activity extends AppCompatActivity {
         setnum = (EditText)findViewById(R.id.setnum);
         setnum.setKeyListener(null);
         number = 10;
-        //ulltest
+        //testdata (Intentでメニュー１から飛ばす予定）（メニュー１ではSharedPreference→Parse）
         ull_CodetoColor = 5;
         ull_ColortoCode = 1;
+        nocomp_ColortoCode6 = 1;
+        nocomp_ColortoCode7 = 0;
+        nocomp_ColortoCode8 = 0;
+        nocomp_ColortoCode9 = 0;
+        nocomp_ColortoCode10 = 0;
+        nocomp_CodetoColor6 = 3;
+        nocomp_CodetoColor7 = 4;
+        nocomp_CodetoColor8 = 5;
+        nocomp_CodetoColor9 = 3;
+        nocomp_CodetoColor10 = 4;
         //IconChange
         if(ull_CodetoColor >= 6){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor6);
@@ -74,7 +96,9 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_ColortoCode >=6){
             maxlimit = 255;
             minlimit = 225;
-            intent_ColortoCode();
+            level = 6;
+            nocomp = nocomp_ColortoCode6;
+                        intent_ColortoCode();
         }else{
             lockedmessage();
         }
@@ -84,6 +108,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_ColortoCode >=7){
             maxlimit = 255;
             minlimit = 225;
+            level =7;
+            nocomp = nocomp_ColortoCode7;
             intent_ColortoCode();
         }else{
             lockedmessage();
@@ -94,6 +120,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_ColortoCode >=8){
             maxlimit = 255;
             minlimit = 225;
+            level = 8;
+            nocomp = nocomp_ColortoCode8;
             intent_ColortoCode();
         }else{
             lockedmessage();
@@ -104,6 +132,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_ColortoCode >=9){
             maxlimit = 255;
             minlimit = 225;
+            level = 9;
+            nocomp = nocomp_ColortoCode9;
             intent_ColortoCode();
         }else{
             lockedmessage();
@@ -114,6 +144,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_ColortoCode >=10){
             maxlimit = 255;
             minlimit = 225;
+            level = 10;
+            nocomp = nocomp_ColortoCode10;
             intent_ColortoCode();
         }else{
             lockedmessage();
@@ -124,6 +156,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_CodetoColor >=6){
             maxlimit = 255;
             minlimit = 225;
+            level = 6;
+            nocomp = nocomp_CodetoColor6;
             intent_CodetoColor();
         }else{
             lockedmessage();
@@ -134,6 +168,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_CodetoColor >=7){
             maxlimit = 255;
             minlimit = 225;
+            level = 7;
+            nocomp = nocomp_CodetoColor7;
             intent_CodetoColor();
         }else{
             lockedmessage();
@@ -144,6 +180,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_CodetoColor >=8){
             maxlimit = 255;
             minlimit = 225;
+            level = 8;
+            nocomp = nocomp_CodetoColor8;
             intent_CodetoColor();
         }else{
             lockedmessage();
@@ -154,6 +192,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_CodetoColor >=9){
             maxlimit = 255;
             minlimit = 225;
+            level = 9;
+            nocomp = nocomp_CodetoColor9;
             intent_CodetoColor();
         }else{
             lockedmessage();
@@ -164,6 +204,8 @@ public class menu3Activity extends AppCompatActivity {
         if(ull_CodetoColor >=10){
             maxlimit = 255;
             minlimit = 225;
+            level = 10;
+            nocomp = nocomp_CodetoColor10;
             intent_CodetoColor();
         }else{
             lockedmessage();
@@ -197,6 +239,9 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getnumber", number);
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
+                            intent.putExtra("getull",ull_ColortoCode);
+                            intent.putExtra("getnocomp",nocomp);
+                            intent.putExtra("getlevel",level);
                             startActivity(intent);
                         }
                     })
@@ -230,6 +275,9 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getnumber", number);
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
+                            intent.putExtra("getull",ull_ColortoCode);
+                            intent.putExtra("getnocomp",nocomp);
+                            intent.putExtra("getlevel",level);
                             startActivity(intent);
                         }
                     })

@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
+import java.util.concurrent.CompletionService;
 
 public class ColortoCodeActivity extends AppCompatActivity {
 
@@ -37,67 +38,70 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int noca;
     private int maxlimit;
     private int minlimit;
-
+    private int ull_ColortoCode;
+    private int getScore;
+    private int nowScore;
+    private int level;
+    private int nocomp;
     private boolean nextquestion;
+
+    private String gameResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colorto_code);
         gameCount = 1;
-        noca = 0 ;
+        noca = 0;
 
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
         answer3 = (TextView) findViewById(R.id.answer3);
         answer4 = (TextView) findViewById(R.id.answer4);
 
-        progress =(TextView)findViewById(R.id.progress);
+        progress = (TextView) findViewById(R.id.progress);
 
-        check_select1 = (ImageView)findViewById(R.id.check_select1);
-        check_select2 = (ImageView)findViewById(R.id.check_select2);
-        check_select3 = (ImageView)findViewById(R.id.check_select3);
-        check_select4 = (ImageView)findViewById(R.id.check_select4);
-        question = (ImageView)findViewById(R.id.questioncode);
+        check_select1 = (ImageView) findViewById(R.id.check_select1);
+        check_select2 = (ImageView) findViewById(R.id.check_select2);
+        check_select3 = (ImageView) findViewById(R.id.check_select3);
+        check_select4 = (ImageView) findViewById(R.id.check_select4);
+        question = (ImageView) findViewById(R.id.questioncode);
 
         Intent intent = getIntent();
-        noq  = intent.getIntExtra("getnumber",0);
+        noq = intent.getIntExtra("getnumber", 0);
         //Prepare:addLevel
-        maxlimit = intent.getIntExtra("getnumber",255);
-        minlimit = intent.getIntExtra("getnumber",30);
+        maxlimit = intent.getIntExtra("getnumber", 255);
+        minlimit = intent.getIntExtra("getnumber", 30);
+        ull_ColortoCode = intent.getIntExtra("getull",1);
+        level = intent.getIntExtra("getlevel", level);
+        nocomp = intent.getIntExtra("getnocomp",0);
 
         setanswer();
     }
+
     public void select1(View view) {
-        if (!nextquestion)   {
+        if (!nextquestion) {
             if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
             } else {
                 check_select1.setImageResource(R.drawable.batu);
-                noca = noca+1;
+                noca = noca + 1;
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ noq);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if(gameCount >= noq){
-                new AlertDialog.Builder(ColortoCodeActivity.this)
-                        .setTitle("Menuに戻ります。")
-                        .setMessage(noq+"問中"+noca+"問正解しました。")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                // OK button pressed
-                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                                startActivity(intent);
-                            }
-                        }).show();
             }
-        }else {
-            setanswer();
-            nextquestion = false;
+            if (gameCount >= noq) {
+                gameFinish();
+            } else {
+                setanswer();
+                nextquestion = false;
+            }
         }
     }
+
+
 
     public void select2(View view) {
         if (!nextquestion)   {
@@ -112,17 +116,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }  if (gameCount >= noq ){
-                new AlertDialog.Builder(ColortoCodeActivity.this)
-                        .setTitle("Menuに戻ります。")
-                        .setMessage(noq+"問中"+noca+"問正解しました。")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                // OK button pressed
-                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                                startActivity(intent);
-                            }
-                        }).show();
+               gameFinish();
             }
         }else {
             setanswer();
@@ -143,17 +137,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 progress.setText("Progress:" + gameCount + "/"+ noq);
                 nextquestion = true;
             }if (gameCount >= noq){
-                new AlertDialog.Builder(ColortoCodeActivity.this)
-                        .setTitle("Menuに戻ります。")
-                        .setMessage(noq+"問中"+noca+"問正解しました。")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                // OK button pressed
-                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                                startActivity(intent);
-                            }
-                        }).show();
+                gameFinish();
             }
         }else {
             setanswer();
@@ -173,17 +157,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 progress.setText("Progress:" + gameCount + "/"+ noq);
                 nextquestion = true;
             }if(gameCount >= noq){
-                new AlertDialog.Builder(ColortoCodeActivity.this)
-                        .setTitle("Menuに戻ります。")
-                        .setMessage(noq+"問中"+noca+"問正解しました。")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                // OK button pressed
-                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                                startActivity(intent);
-                            }
-                        }).show();
+              gameFinish();
             }
             nextquestion = true;
         }else {
@@ -191,6 +165,122 @@ public class ColortoCodeActivity extends AppCompatActivity {
             nextquestion = false;
         }
 
+    }
+
+
+
+
+    public void gameFinish(){
+        if (level <= 3) {
+            if (noca <= 7) {
+                getScore = 1;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 8 || noca == 9) {
+                getScore = 10;
+                gameResult = "クリアしました。";
+            } else if (noca == 10) {
+                getScore = 11;
+                gameResult = "クリアしました。";
+            }
+        }
+
+        if (level >= 4 && level <= 8) {
+        //Add:Score
+            if (noca <= 6) {
+                getScore = 2;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 7 || noca == 8) {
+                getScore = 12;
+                gameResult = "クリアしました。";
+            } else if (noca == 9) {
+                getScore = 13;
+                gameResult = "クリアしました。";
+            } else if(noca == 10){
+                getScore = 14;
+                gameResult = "クリアしました。";
+            }
+        }
+        else if (level>=9&&level<=10){
+            if (noca <= 7) {
+                getScore = 3;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 8) {
+                getScore = 14;
+                gameResult = "クリアしました。";
+            } else if (noca == 9) {
+                getScore = 15;
+                gameResult = "クリアしました。";
+            } else if (noca == 10) {
+                getScore = 16;
+                gameResult = "クリアしました。";
+            }
+        }
+        nowScore = nowScore + getScore;
+        //checkLevelup
+        if (ull_ColortoCode  == 1 && nowScore >= 60 &&  nocomp == 3){
+            ull_ColortoCode  = 2;
+            unlockmessage();
+        }else if(ull_ColortoCode == 2 && nowScore >= 90 && nocomp == 3){
+            ull_ColortoCode = 3;
+            unlockmessage();
+        }else if(ull_ColortoCode == 3 && nowScore >= 125 && nocomp == 3){
+            ull_ColortoCode = 4;
+            unlockmessage();
+        }else if(ull_ColortoCode == 4 && nowScore >= 180 && nocomp == 4){
+            ull_ColortoCode = 5;
+            unlockmessage();
+        }else if(ull_ColortoCode == 5 && nowScore >= 240 && nocomp == 4) {
+            ull_ColortoCode = 6;
+            unlockmessage();
+        }else if(ull_ColortoCode == 6 && nowScore >= 320 && nocomp == 5){
+            ull_ColortoCode = 7;
+            unlockmessage();
+        }else if(ull_ColortoCode == 7 && nowScore >= 425 && nocomp == 6){
+            ull_ColortoCode = 8;
+            unlockmessage();
+        }else if(ull_ColortoCode == 8 && nowScore >= 560 && nocomp == 7){
+            ull_ColortoCode = 9;
+            unlockmessage();
+        }else if(ull_ColortoCode == 9 && nowScore >= 750 && nocomp == 8){
+            ull_ColortoCode = 10;
+            unlockmessage();
+        }else if(ull_ColortoCode == 10 && nowScore >= 1000 && nocomp == 10){
+            ull_ColortoCode = 11;
+            unlockmessage();
+        }
+        //gameFinish
+        new AlertDialog.Builder(ColortoCodeActivity.this)
+                .setTitle(getScore + "Point獲得しました。")
+                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
+                        intent.putExtra("nowScore",nowScore);
+                        intent.putExtra("getScore",getScore);
+                        intent.putExtra("ull_ColortoCode ",ull_ColortoCode );
+                        startActivity(intent);
+                    }
+                }).show();
+    }
+
+    public  void unlockmessage(){
+        int level_old = ull_ColortoCode -1;
+        new AlertDialog.Builder(ColortoCodeActivity.this)
+                .setTitle("Level" + level_old + "をMasterしました！")
+                        .setMessage("Level"+ull_ColortoCode+"がUnLockされました。")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // OK button pressed
+                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
+                                intent.putExtra("nowScore", nowScore);
+                                intent.putExtra("getScore", getScore);
+                                intent.putExtra("ull_ColortoCode ", ull_ColortoCode);
+                                startActivity(intent);
+                            }
+                }).show();
     }
      public void setanswer() {
          //createColorCode

@@ -281,6 +281,7 @@
             android:layout_alignEnd="@+id/textView"
             android:layout_marginLeft="8dp"
             android:onClick="ColortoCode10"/>
+
     </LinearLayout>
 
 

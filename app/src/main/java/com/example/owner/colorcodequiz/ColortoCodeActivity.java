@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
-import java.util.concurrent.CompletionService;
 
 public class ColortoCodeActivity extends AppCompatActivity {
 
@@ -32,6 +31,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private TextView answer3;
     private TextView answer4;
 
+    private String unlockmode;
     private int gameCount;
     private int check_answer;
     private int noq;
@@ -39,10 +39,34 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int maxlimit;
     private int minlimit;
     private int ull_ColortoCode;
+    private int ull_CodetoColor;
     private int getScore;
     private int nowScore;
     private int level;
-    private int nocomp;
+    private int ull_old;
+
+    private int nocomp_CodetoColor1;
+    private int nocomp_CodetoColor2;
+    private int nocomp_CodetoColor3;
+    private int nocomp_CodetoColor4;
+    private int nocomp_CodetoColor5;
+    private int nocomp_CodetoColor6;
+    private int nocomp_CodetoColor7;
+    private int nocomp_CodetoColor8;
+    private int nocomp_CodetoColor9;
+    private int nocomp_CodetoColor10;
+
+    private int nocomp_ColortoCode1;
+    private int nocomp_ColortoCode2;
+    private int nocomp_ColortoCode3;
+    private int nocomp_ColortoCode4;
+    private int nocomp_ColortoCode5;
+    private int nocomp_ColortoCode6;
+    private int nocomp_ColortoCode7;
+    private int nocomp_ColortoCode8;
+    private int nocomp_ColortoCode9;
+    private int nocomp_ColortoCode10;
+
     private boolean nextquestion;
 
     private String gameResult;
@@ -72,9 +96,10 @@ public class ColortoCodeActivity extends AppCompatActivity {
         //Prepare:addLevel
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 30);
-        ull_ColortoCode = intent.getIntExtra("getull",1);
+        ull_ColortoCode = intent.getIntExtra("getull_ColorttoCode",1);
+        ull_CodetoColor = intent.getIntExtra("getull_CodetoCOlor",0);
         level = intent.getIntExtra("getlevel", level);
-        nocomp = intent.getIntExtra("getnocomp",0);
+        nocomp_ColortoCode1 = intent.getIntExtra("getnocomp",0);
 
         setanswer();
     }
@@ -171,6 +196,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
 
     public void gameFinish(){
+        //Add:Score
         if (level <= 3) {
             if (noca <= 7) {
                 getScore = 1;
@@ -183,10 +209,8 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameResult = "クリアしました。";
             }
         }
-
-        if (level >= 4 && level <= 8) {
-        //Add:Score
-            if (noca <= 6) {
+        else if (level >= 4 && level <= 8) {
+            if(noca <= 6) {
                 getScore = 2;
                 gameResult = "クリアできませんでした。";
             } else if (noca == 7 || noca == 8) {
@@ -215,38 +239,150 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameResult = "クリアしました。";
             }
         }
+
         nowScore = nowScore + getScore;
-        //checkLevelup
-        if (ull_ColortoCode  == 1 && nowScore >= 60 &&  nocomp == 3){
+
+        //Check:Levelup(ColortoCode)
+        if (ull_ColortoCode  == 1 && nowScore >= 60 &&  nocomp_ColortoCode1 >= 3 ){
+            unlockmode = "ColortoCode";
             ull_ColortoCode  = 2;
-            unlockmessage();
-        }else if(ull_ColortoCode == 2 && nowScore >= 90 && nocomp == 3){
+            ulm_ColortoCode();
+            ull_old = ull_ColortoCode-1;
+        }
+
+        else if(ull_ColortoCode == 2 && nowScore >= 90 && nocomp_ColortoCode2>= 3 ){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 3;
-            unlockmessage();
-        }else if(ull_ColortoCode == 3 && nowScore >= 125 && nocomp == 3){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 3 && nowScore >= 125 && nocomp_ColortoCode3 >= 3){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 4;
-            unlockmessage();
-        }else if(ull_ColortoCode == 4 && nowScore >= 180 && nocomp == 4){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 4 && nowScore >= 180 && nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 5;
-            unlockmessage();
-        }else if(ull_ColortoCode == 5 && nowScore >= 240 && nocomp == 4) {
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 5 && nowScore >= 240 && nocomp_ColortoCode5 >= 4) {
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 6;
-            unlockmessage();
-        }else if(ull_ColortoCode == 6 && nowScore >= 320 && nocomp == 5){
+            ull_old = ull_ColortoCode-1;
+           ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 6 && nowScore >= 320 && nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 7;
-            unlockmessage();
-        }else if(ull_ColortoCode == 7 && nowScore >= 425 && nocomp == 6){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 7 && nowScore >= 425 && nocomp_ColortoCode7 >= 6){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 8;
-            unlockmessage();
-        }else if(ull_ColortoCode == 8 && nowScore >= 560 && nocomp == 7){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 8 && nowScore >= 560 && nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 9;
-            unlockmessage();
-        }else if(ull_ColortoCode == 9 && nowScore >= 750 && nocomp == 8){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(ull_ColortoCode == 9 && nowScore >= 750 && nocomp_ColortoCode9 >= 8){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 10;
-            unlockmessage();
-        }else if(ull_ColortoCode == 10 && nowScore >= 1000 && nocomp == 10){
+            ull_old = ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+         else if(ull_ColortoCode == 10 && nowScore >= 1000 && nocomp_ColortoCode10 >= 10){
+            unlockmode = "ColortoCode";
             ull_ColortoCode = 11;
-            unlockmessage();
+            ull_old = ull_ColortoCode-1;
+            compm();
+         }
+
+
+        //Check:Levelup(CodetoColor)
+        if (ull_CodetoColor  == 1 && nowScore >= 60 && nocomp_CodetoColor1 >= 3 ){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor  = 2;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 2 && nowScore >= 90 && nocomp_CodetoColor2 >= 3 ){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 3;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 3 && nowScore >= 125 && nocomp_CodetoColor3 >= 3){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 4;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 4 && nowScore >= 180 && nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 5;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 5 && nowScore >= 240 && nocomp_CodetoColor5 >= 4) {
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 6;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 6 && nowScore >= 320 && nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 7;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 7 && nowScore >= 425 && nocomp_CodetoColor7 >= 6){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 8;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 8 && nowScore >= 560 && nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 9;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 9 && nowScore >= 750 && nocomp_CodetoColor9 >= 8){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor= 10;
+            ull_old = ull_CodetoColor-1;
+            ulm_CodetoColor();
+        }
+
+        else if(ull_CodetoColor == 10 && nowScore >= 1000 && nocomp_CodetoColor10 >= 10){
+            unlockmode = "CodetoColor";
+            ull_CodetoColor = 11;
+            ull_old = ull_CodetoColor-1;
+            compm();
         }
         //gameFinish
         new AlertDialog.Builder(ColortoCodeActivity.this)
@@ -265,24 +401,31 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }).show();
     }
 
-    public  void unlockmessage(){
-        int level_old = ull_ColortoCode -1;
+    public  void ulm_ColortoCode(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle("Level" + level_old + "をMasterしました！")
-                        .setMessage("Level"+ull_ColortoCode+"がUnLockされました。")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                // OK button pressed
-                                Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                                intent.putExtra("nowScore", nowScore);
-                                intent.putExtra("getScore", getScore);
-                                intent.putExtra("ull_ColortoCode ", ull_ColortoCode);
-                                startActivity(intent);
-                            }
-                }).show();
+                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
+                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。")
+                .setPositiveButton("OK",null)
+                .show();
     }
-     public void setanswer() {
+
+    public  void ulm_CodetoColor(){
+        new AlertDialog.Builder(ColortoCodeActivity.this)
+                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
+                .setMessage(unlockmode+"Level"+ull_CodetoColor+"がUnLockされました。")
+                .setPositiveButton("OK", null)
+                .show();
+    }
+
+    public void compm(){
+        new AlertDialog.Builder(ColortoCodeActivity.this)
+                .setTitle(unlockmode+"をMasterしました！")
+                .setMessage("おめでとうございます。")
+                .setPositiveButton("OK", null)
+                .show();
+    }
+
+    public void setanswer() {
          //createColorCode
          Random rnd1 = new Random();
          int r = rnd1.nextInt(256);
@@ -294,7 +437,6 @@ public class ColortoCodeActivity extends AppCompatActivity {
          int r_a1,r_a2,r_a3,g_a1,g_a2,g_a3,b_a1,b_a2,b_a3;
 
          //createChoicesColorcode
-
          while (true) {
 
              Random rnd5 = new Random();

@@ -1,6 +1,7 @@
 package com.example.owner.colorcodequiz;
 
 import android.app.AlertDialog;
+import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,93 +13,53 @@ import android.widget.EditText;
 
 
 public class MenuActivity extends AppCompatActivity {
-     private EditText setnum;
-     private int number;
+
+    private  int ull_CodetoColor;
+    private  int ull_ColortoCode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        setnum = (EditText)findViewById(R.id.setnum) ;
+
+        //testdata
+        ull_CodetoColor =1;
+        ull_ColortoCode =1;
+
+        if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1 ){
+            com.beardedhen.androidbootstrap.BootstrapButton tomenu2 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu2);
+            tomenu2.setLeftIcon("fa-unlock");
+        }
+        if(ull_CodetoColor >= 6 || ull_ColortoCode >= 6){
+            com.beardedhen.androidbootstrap.BootstrapButton tomenu3 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu3);
+            tomenu3.setLeftIcon("fa-unlock");
+        }
     }
 
 
-    public void CodetoColor(View v) {
-        setnum.selectAll();
-        String num = setnum.getText().toString();
-       if( num.equals("") ){
-         number = 0;
-       }else {
-           number = Integer.parseInt(num);
-       } if (number > 0){
+    public void tomenu2(View v) {
+        if (ull_CodetoColor>=1||ull_CodetoColor>=1) {
+            Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
+            startActivity(intent);
+        } else{
             new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("CodetoColorをStartしますか？")
-                .setMessage("問題は"+number+"問です。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // OK button pressed
-                        Intent intent = new Intent(MenuActivity.this, CodetoColorActivity.class);
-                        intent.putExtra("getnumber", number);
-                        startActivity(intent);
-                    }
-                })
-                .setNegativeButton("Cancel",null)
-                .show();
-        }else {
-            new AlertDialog.Builder(MenuActivity.this)
-                    .setTitle("CodetoColorをStartできません。")
-                    .setMessage("入力した内容を確認してください。")
+                    .setTitle("Lockされています。")
+                    .setMessage("Practiceをそれぞれ3回以上クリアしてください。")
                     .setPositiveButton("OK",null)
                     .show();
         }
     }
 
-
-    public void ColortoCode(View v) {
-        setnum.selectAll();
-        String num = setnum.getText().toString();
-        if( num.equals("") ){
-            number = 0;
-        }else {
-            number = Integer.parseInt(num);
-        }if (number > 0) {
+    public void tomenu3(View v) {
+        if (ull_CodetoColor >= 6||ull_CodetoColor >= 6) {
+            Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
+            startActivity(intent);
+        } else{
             new AlertDialog.Builder(MenuActivity.this)
-                    .setTitle("ColortoCodeをStartしますか？")
-                    .setMessage("問題は" + number + "問です。")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            // OK button pressed
-                            Intent intent = new Intent(MenuActivity.this, ColortoCodeActivity.class);
-                            intent.putExtra("getnumber", number);
-                            startActivity(intent);
-                        }
-                    })
-                    .setNegativeButton("Cancel", null)
-                    .show();
-        }else{
-            new AlertDialog.Builder(MenuActivity.this)
-                    .setTitle("ColortoCodeをStartできません。")
-                    .setMessage("入力した内容を確認してください。")
+                    .setTitle("Lockされています。")
+                    .setMessage("レベル6をUnLockしてください。")
                     .setPositiveButton("OK",null)
                     .show();
         }
-    }
-
-    public void ColortoCode_practice(View v) {
-        new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("ColortoCode_practiceをStartしますか？")
-                .setMessage("問題は10問です。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // OK button pressed
-                        Intent intent = new Intent(MenuActivity.this, ColortoCode_practiceActivity.class);
-                        startActivity(intent);
-                    }
-                })
-                .setNegativeButton("Cancel",null)
-                .show();
     }
 
 

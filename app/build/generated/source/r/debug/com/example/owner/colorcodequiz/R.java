@@ -1933,7 +1933,7 @@ containing a value of this type.
         public static final int CodetoColor7=0x7f0b0088;
         public static final int CodetoColor8=0x7f0b008b;
         public static final int CodetoColor9=0x7f0b008e;
-        public static final int ColortoCode=0x7f0b006e;
+        public static final int menu3 =0x7f0b006e;
         public static final int ColortoCode1=0x7f0b0079;
         public static final int ColortoCode10=0x7f0b0092;
         public static final int ColortoCode2=0x7f0b007b;
@@ -2036,7 +2036,7 @@ containing a value of this type.
         public static final int list_item=0x7f0b002c;
         public static final int media_actions=0x7f0b009d;
         public static final int menu2=0x7f0b0075;
-        public static final int menu3=0x7f0b0076;
+        public static final int tomenu3 =0x7f0b0076;
         public static final int middle=0x7f0b0015;
         public static final int mode=0x7f0b0052;
         public static final int multiply=0x7f0b0020;

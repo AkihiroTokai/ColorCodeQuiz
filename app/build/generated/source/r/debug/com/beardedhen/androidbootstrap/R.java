@@ -77,7 +77,7 @@ public final class R {
 		public static final int bthumbnail_border = 0x7f0a003e;
 		public static final int bthumbnail_font = 0x7f0a003f;
 		public static final int bthumbnail_placeholder = 0x7f0a0040;
-		public static final int white = 0x7f0a0065;
+		public static final int white = 0x7f0a0064;
 	}
 	public static final class dimen {
 		public static final int activity_horizontal_margin = 0x7f06000f;
@@ -115,20 +115,20 @@ public final class R {
 		public static final int edittext_background_rounded_warning = 0x7f020052;
 		public static final int edittext_background_success = 0x7f020053;
 		public static final int edittext_background_warning = 0x7f020054;
-		public static final int thumbnail_circle = 0x7f020058;
-		public static final int thumbnail_circle_container = 0x7f020059;
-		public static final int thumbnail_circle_minimal = 0x7f02005a;
+		public static final int thumbnail_circle = 0x7f020057;
+		public static final int thumbnail_circle_container = 0x7f020058;
+		public static final int thumbnail_circle_minimal = 0x7f020059;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0b00a8;
-		public static final int container = 0x7f0b0097;
-		public static final int dimensionsLabel = 0x7f0b0099;
-		public static final int image = 0x7f0b002a;
-		public static final int layout = 0x7f0b0093;
-		public static final int lblLeft = 0x7f0b0094;
-		public static final int lblMiddle = 0x7f0b0095;
-		public static final int lblRight = 0x7f0b0096;
-		public static final int placeholder = 0x7f0b0098;
+		public static final int action_settings = 0x7f0b00a5;
+		public static final int container = 0x7f0b0095;
+		public static final int dimensionsLabel = 0x7f0b0097;
+		public static final int image = 0x7f0b0028;
+		public static final int layout = 0x7f0b0091;
+		public static final int lblLeft = 0x7f0b0092;
+		public static final int lblMiddle = 0x7f0b0093;
+		public static final int lblRight = 0x7f0b0094;
+		public static final int placeholder = 0x7f0b0096;
 	}
 	public static final class layout {
 		public static final int bootstrap_button = 0x7f030020;

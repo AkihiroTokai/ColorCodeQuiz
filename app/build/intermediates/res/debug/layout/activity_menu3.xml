@@ -18,6 +18,14 @@
         android:weightSum="1"
         android:gravity="center_vertical|center_horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="nowPoint"
+            android:id="@+id/nowPoint"
+            android:layout_marginLeft="250dp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -34,7 +42,7 @@
             android:id="@+id/Numberofquestion"
             android:layout_alignBottom="@+id/setnum"
             android:layout_alignEnd="@+id/textView"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp" />
 
         <EditText
             android:layout_width="70dp"
@@ -61,8 +69,8 @@
             android:text="Level6"
             android:id="@+id/Level6"
             android:gravity="center_vertical"
-            android:layout_alignTop="@+id/ColortoCode"
-            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp" />
 
@@ -109,8 +117,8 @@
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@+id/Random"
-            android:layout_alignTop="@+id/ColortoCode"
-            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:focusableInTouchMode="false" />
@@ -157,8 +165,8 @@
             android:id="@+id/Level8"
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/ColortoCode"
-            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_marginLeft="10dp" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
@@ -202,8 +210,8 @@
             android:id="@+id/Level9"
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/ColortoCode"
-            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:singleLine="true"
@@ -250,8 +258,8 @@
             android:id="@+id/Level10"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@+id/Random"
-            android:layout_alignTop="@+id/ColortoCode"
-            android:layout_alignBottom="@+id/ColortoCode"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical" />
 

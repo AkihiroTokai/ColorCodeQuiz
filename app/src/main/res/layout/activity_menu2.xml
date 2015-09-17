@@ -18,6 +18,13 @@
         android:weightSum="1"
         android:gravity="center_vertical|center_horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="nowPoint"
+            android:id="@+id/nowPoint"
+            android:layout_marginLeft="250dp" />
     </LinearLayout>
 
     <LinearLayout

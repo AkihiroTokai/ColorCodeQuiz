@@ -18,11 +18,11 @@ android {
     }
     productFlavors {
     }
-}
 
-dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.jpardogo.materialtabstrip:library:1.0.9'
-    compile 'com.beardedhen:androidbootstrap:1.2.3'
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile 'com.android.support:appcompat-v7:22.2.0'
+        compile 'com.beardedhen:androidbootstrap:1.2.3'
+        compile 'com.parse.bolts:bolts-android:1.+'
+    }
 }

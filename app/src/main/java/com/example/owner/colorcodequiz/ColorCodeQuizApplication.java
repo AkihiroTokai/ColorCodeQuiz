@@ -1,6 +1,10 @@
 package com.example.owner.colorcodequiz;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.parse.Parse;
 
 /**
  * Created by OWNER on 2015/09/16.
@@ -35,8 +39,13 @@ public class ColorCodeQuizApplication extends Application {
     private int nowPoint;
     @Override
     public void onCreate(){
-        ull_CodetoColor = 1;
-       super.onCreate();
+        super.onCreate();
+
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "bXmubL3ilMV11CRRnyP4JTYjvC4lAhlBqRfqOMpB", "LdziUvHA4Yku0TNx2gZNVzjNrjUJFlKGdDygd9Xn");
+
+        SharedPreferences prefs = getSharedPreferences("getdata", Context.MODE_PRIVATE);
+         ull_CodetoColor = prefs.getInt("LevelSave",1 );
     }
 
     public int  getull_ColortoCode(){

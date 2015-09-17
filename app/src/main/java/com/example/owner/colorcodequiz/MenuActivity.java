@@ -24,7 +24,9 @@ public class MenuActivity extends AppCompatActivity {
         //testdata
         ull_CodetoColor =1;
         ull_ColortoCode =1;
-
+        /*Application App = (Application) this.getApplication();
+        App.getull_CodetoColor();
+        App.getull_ColortoCode();*/
         if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1 ){
             com.beardedhen.androidbootstrap.BootstrapButton tomenu2 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu2);
             tomenu2.setLeftIcon("fa-unlock");

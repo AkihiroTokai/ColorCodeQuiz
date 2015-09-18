@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Mode:Practice"
-        android:id="@+id/mode"
+        android:id="@+id/level"
         android:layout_marginLeft="34dp"
         android:layout_marginStart="53dp"
         android:focusable="true"
@@ -27,7 +27,7 @@
         android:id="@+id/progress"
         android:layout_marginLeft="41dp"
         android:layout_above="@+id/tag"
-        android:layout_toEndOf="@+id/mode"
+        android:layout_toEndOf="@+id/level"
         android:layout_marginStart="36dp" />
 
     <TextView
@@ -37,8 +37,8 @@
         android:text="#"
         android:id="@+id/tag"
         android:layout_marginTop="41dp"
-        android:layout_below="@+id/mode"
-        android:layout_alignEnd="@+id/mode" />
+        android:layout_below="@+id/level"
+        android:layout_alignEnd="@+id/level" />
 
     <TextView
         android:layout_width="wrap_content"

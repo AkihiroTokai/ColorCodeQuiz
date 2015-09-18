@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Mode:ColortoCode"
-        android:id="@+id/mode"
+        android:id="@+id/level"
         android:layout_marginLeft="34dp"
         android:layout_marginStart="53dp"
         android:focusable="true"
@@ -27,8 +27,8 @@
         android:text="Progress:1/10"
         android:id="@+id/progress"
         android:layout_marginLeft="41dp"
-        android:layout_alignTop="@+id/mode"
-        android:layout_toEndOf="@+id/mode" />
+        android:layout_alignTop="@+id/level"
+        android:layout_toEndOf="@+id/level" />
 
 
     <ImageView
@@ -36,7 +36,7 @@
         android:layout_height="100dp"
         android:id="@+id/questioncode"
         android:layout_marginTop="34dp"
-        android:layout_below="@+id/mode"
+        android:layout_below="@+id/level"
         android:layout_centerHorizontal="true" />
 
     <FrameLayout
@@ -45,7 +45,7 @@
         android:layout_below="@+id/questioncode"
         android:layout_alignParentStart="true"
         android:layout_marginTop="86dp"
-        android:layout_alignEnd="@+id/mode"
+        android:layout_alignEnd="@+id/level"
         android:id="@+id/frameLayout2">
 
         <ImageView

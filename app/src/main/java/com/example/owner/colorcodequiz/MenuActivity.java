@@ -11,6 +11,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -24,9 +29,18 @@ public class MenuActivity extends AppCompatActivity {
         //testdata
         ull_CodetoColor =1;
         ull_ColortoCode =1;
-        /*Application App = (Application) this.getApplication();
-        App.getull_CodetoColor();
-        App.getull_ColortoCode();*/
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("gamedata");
+        query.fromLocalDatastore();
+        query.getInBackground("xWMyZ4YEGZ", new GetCallback<ParseObject>() {
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    // object will be your game score
+                } else {
+                    // something went wrong
+                }
+            }
+        });
         if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1 ){
             com.beardedhen.androidbootstrap.BootstrapButton tomenu2 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu2);
             tomenu2.setLeftIcon("fa-unlock");

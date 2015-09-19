@@ -11,10 +11,9 @@ import com.parse.ParseObject;
 @ParseClassName("getData")
 public class getData extends ParseObject{
 
-    private int nowPoint;
         public int  getull_ColortoCode(){
             return getInt("ull_ColortoCode");
-}
+        }
         public void setull_ColortoCode(int ull_ColortoCode){
             put("ull_ColortoCoder",ull_ColortoCode);
         }
@@ -31,6 +30,13 @@ public class getData extends ParseObject{
         }
         public void setnowPoint(int nowPoint){
             put("nowPoint", nowPoint);
+        }
+
+        public int  getgetPoint(){
+            return getInt("nowPoint");
+        }
+        public void setgetPoint(int getPoint){
+            put("getPoint",getPoint);
         }
 
         public int getnocomp_CodetoColor0(){
@@ -163,7 +169,7 @@ public class getData extends ParseObject{
             return getInt("nocomp_ColortoCode7");
         }
         public void setnocomp_ColortoCode7(int nocomp_ColortoCode7){
-            put ("nocomp_ColortoCode7", nocomp_ColortoCode7);
+            put("nocomp_ColortoCode7", nocomp_ColortoCode7);
         }
 
         public int getnocomp_ColortoCode8(){

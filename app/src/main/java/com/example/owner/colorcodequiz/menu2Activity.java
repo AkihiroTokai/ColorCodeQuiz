@@ -15,32 +15,14 @@ import android.widget.TextView;
 public class menu2Activity extends AppCompatActivity {
     private int ull_CodetoColor;
     private int ull_ColortoCode;
-    private int nocomp_CodetoColor1;
-    private int nocomp_CodetoColor2;
-    private int nocomp_CodetoColor3;
-    private int nocomp_CodetoColor4;
-    private int nocomp_CodetoColor5;
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
 
-    private int nocomp_ColortoCode1;
-    private int nocomp_ColortoCode2;
-    private int nocomp_ColortoCode3;
-    private int nocomp_ColortoCode4;
-    private int nocomp_ColortoCode5;
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
-
+    private int nowPoint;
     private int maxlimit;
     private int minlimit;
     private int number;
     private int level;
+
+    private TextView nowPointview;
     private EditText setnum;
 
     @Override
@@ -48,32 +30,16 @@ public class menu2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu2);
         setnum = (EditText)findViewById(R.id.setnum);
+        nowPointview = (TextView)findViewById(R.id.nowPointview);
         setnum.setKeyListener(null);
-        number = 10;
-        //testdata （SharedPreference→Parse）
-        ull_CodetoColor = 5;
-        ull_ColortoCode = 1;
-        nocomp_ColortoCode1 = 1;
-        nocomp_ColortoCode2 = 0;
-        nocomp_ColortoCode3 = 0;
-        nocomp_ColortoCode4 = 0;
-        nocomp_ColortoCode5 = 0;
-        nocomp_ColortoCode6 = 4;
-        nocomp_ColortoCode7 = 0;
-        nocomp_ColortoCode8 = 0;
-        nocomp_ColortoCode9 = 0;
-        nocomp_ColortoCode10 = 0;
 
-        nocomp_CodetoColor1 = 3;
-        nocomp_CodetoColor2 = 4;
-        nocomp_CodetoColor3 = 5;
-        nocomp_CodetoColor4 = 3;
-        nocomp_CodetoColor5 = 4;
-        nocomp_CodetoColor6 = 5;
-        nocomp_CodetoColor7 = 4;
-        nocomp_CodetoColor8 = 5;
-        nocomp_CodetoColor9 = 3;
-        nocomp_CodetoColor10 = 4;
+        //getData
+        getData checkData = new getData();
+        ull_CodetoColor = checkData.getull_CodetoColor();
+        ull_ColortoCode = checkData.getull_CodetoColor();
+        nowPoint = checkData.getnowPoint();
+
+        nowPointview.setText("YourPoint:"+nowPoint);
 
         //IconChange
         if(ull_CodetoColor >= 1){
@@ -255,17 +221,6 @@ public class menu2Activity extends AppCompatActivity {
                                 intent.putExtra("getnumber", number);
                                 intent.putExtra("getmaxlimit",maxlimit);
                                 intent.putExtra("getminlimit",minlimit);
-                                intent.putExtra("getull_ColortoCode",ull_ColortoCode);
-                                intent.putExtra("getull_ColortoCode",ull_CodetoColor);
-                                intent.putExtra("getnocomp_ColortoCode1",nocomp_ColortoCode1);
-                                intent.putExtra("getnocomp_ColortoCode2",nocomp_ColortoCode2);
-                                intent.putExtra("getnocomp_ColortoCode3",nocomp_ColortoCode4);
-                                intent.putExtra("getnocomp_ColortoCode4",nocomp_ColortoCode5);
-                                intent.putExtra("getnocomp_ColortoCode6",nocomp_ColortoCode6);
-                                intent.putExtra("getnocomp_ColortoCode7",nocomp_ColortoCode7);
-                                intent.putExtra("getnocomp_ColortoCode8",nocomp_ColortoCode8);
-                                intent.putExtra("getnocomp_ColortoCode9",nocomp_ColortoCode9);
-                                intent.putExtra("getnocomp_ColortoCode10",nocomp_ColortoCode10);
                                 intent.putExtra("getlevel",level);
                                 startActivity(intent);
                             }
@@ -300,8 +255,6 @@ public class menu2Activity extends AppCompatActivity {
                             intent.putExtra("getnumber", number);
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
-                            intent.putExtra("getull",ull_CodetoColor);
-                            //intent.putExtra("getnocomp",);
                             intent.putExtra("getlevel",level);
                             startActivity(intent);
                         }

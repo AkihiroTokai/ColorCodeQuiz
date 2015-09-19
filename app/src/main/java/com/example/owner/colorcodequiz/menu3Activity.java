@@ -10,49 +10,37 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class menu3Activity extends AppCompatActivity {
     private int ull_CodetoColor;
     private int ull_ColortoCode;
-    private int nocomp_ColortoCode5;
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
-    private int nocomp_CodetoColor5;
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
     private int maxlimit;
     private int minlimit;
     private int number;
     private int level;
+    private int nowPoint;
+
     private EditText setnum;
+
+    private TextView nowPointview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu3);
         setnum = (EditText)findViewById(R.id.setnum);
         setnum.setKeyListener(null);
-        number = 10;
-        //testdata (ullはMenu１からIntent）(SharedPreference→Parse）
-        ull_CodetoColor = 5;
-        ull_ColortoCode = 1;
-        nocomp_ColortoCode5 = 2;
-        nocomp_ColortoCode6 = 1;
-        nocomp_ColortoCode7 = 0;
-        nocomp_ColortoCode8 = 0;
-        nocomp_ColortoCode9 = 0;
-        nocomp_ColortoCode10 = 0;
-        nocomp_ColortoCode5 = 2;
-        nocomp_CodetoColor6 = 3;
-        nocomp_CodetoColor7 = 4;
-        nocomp_CodetoColor8 = 5;
-        nocomp_CodetoColor9 = 3;
-        nocomp_CodetoColor10 = 4;
+        nowPointview = (TextView)findViewById(R.id.nowPointview);
+
+        //getData
+        getData checkData = new getData();
+        ull_CodetoColor = checkData.getull_CodetoColor();
+        ull_ColortoCode = checkData.getull_CodetoColor();
+        nowPoint = checkData.getnowPoint();
+
+        nowPointview.setText("YourPoint:"+nowPoint);
+
         //IconChange
         if(ull_CodetoColor >= 6){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor6);
@@ -232,8 +220,6 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getnumber", number);
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
-                            intent.putExtra("getull_ColortoCode",ull_ColortoCode);
-                            intent.putExtra("getull_CodetoColor",ull_CodetoColor);
                             intent.putExtra("getlevel",level);
                             startActivity(intent);
                         }
@@ -268,8 +254,6 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getnumber", number);
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
-                            intent.putExtra("getull",ull_ColortoCode);
-                            intent.putExtra("getnocomp_CodetoColor10",nocomp_CodetoColor10);
                             intent.putExtra("getlevel",level);
                             startActivity(intent);
                         }

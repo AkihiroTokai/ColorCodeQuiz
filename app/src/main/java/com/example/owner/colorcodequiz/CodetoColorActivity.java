@@ -90,7 +90,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        noq = intent.getIntExtra("getnumber", 0);
+        noq = intent.getIntExtra("getnumber", 10);
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
@@ -192,10 +192,10 @@ public class CodetoColorActivity extends AppCompatActivity {
             if (noca <= 7) {
                 getPoint = 1;
                 gameResult = "クリアできませんでした。";
-            } else if (noca == 8 || noca == 9) {
+            } else if (noca == 8 ) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
-            } else if (noca == 10) {
+            } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
             }

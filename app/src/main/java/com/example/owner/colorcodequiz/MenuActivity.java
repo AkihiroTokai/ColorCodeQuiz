@@ -1,7 +1,6 @@
 package com.example.owner.colorcodequiz;
 
 import android.app.AlertDialog;
-import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,39 +8,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
+
 
 
 public class MenuActivity extends AppCompatActivity {
 
-    private  int ull_CodetoColor;
-    private  int ull_ColortoCode;
+    private TextView nowPointview;
+    private int nowPoint;
+    private int ull_CodetoColor;
+    private int ull_ColortoCode;
+    private int nocomp_CodetoColor0;
+    private int nocomp_ColorttoCode0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        //testdata
-        ull_CodetoColor =1;
-        ull_ColortoCode =1;
+        nowPointview = (TextView)findViewById(R.id.nowPointview);
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("gamedata");
-        query.fromLocalDatastore();
-        query.getInBackground("xWMyZ4YEGZ", new GetCallback<ParseObject>() {
-            public void done(ParseObject object, ParseException e) {
-                if (e == null) {
-                    // object will be your game score
-                } else {
-                    // something went wrong
-                }
-            }
-        });
-        if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1 ){
+        //getData
+        getData checkData = new getData();
+        ull_CodetoColor = checkData.getull_CodetoColor();
+        ull_ColortoCode = checkData.getull_CodetoColor();
+        nocomp_CodetoColor0 = checkData.getnocomp_CodetoColor0();
+        nocomp_ColorttoCode0 = checkData.getnocomp_ColortoCode0();
+
+        nowPoint = checkData.getnowPoint();
+
+        nowPointview.setText("YourPoint:"+nowPoint);
+
+        //changeIcon
+        if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
             com.beardedhen.androidbootstrap.BootstrapButton tomenu2 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu2);
             tomenu2.setLeftIcon("fa-unlock");
         }
@@ -59,7 +60,7 @@ public class MenuActivity extends AppCompatActivity {
         } else{
             new AlertDialog.Builder(MenuActivity.this)
                     .setTitle("Lockされています。")
-                    .setMessage("Practiceをそれぞれ3回以上クリアしてください。")
+                    .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
                     .setPositiveButton("OK",null)
                     .show();
         }
@@ -82,12 +83,28 @@ public class MenuActivity extends AppCompatActivity {
     public void CodetoColor_practice (View v){
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。")
+                .setMessage("問題は10問です。"+ nocomp_CodetoColor0 +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
+    }
+
+    public void ColortoCode_practice (View v){
+        new AlertDialog.Builder(MenuActivity.this)
+                .setTitle("CodetoColor_praciceをStartしますか？")
+                .setMessage("問題は10問です。"+ nocomp_ColorttoCode0 +"回クリアしています。")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        Intent intent = new Intent(MenuActivity.this, ColortoCode_practiceActivity.class);
                         startActivity(intent);
                     }
                 })

@@ -11,5 +11,7 @@
     <string name="title_activity_menu">menuActivity</string>
     <string name="title_activity_menu2">menu2Activity</string>
     <string name="title_activity_menu3">menu3Activity</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="facebook_app_id">1643052322619255</string>
 
 </resources>

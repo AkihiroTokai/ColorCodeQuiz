@@ -104,7 +104,6 @@ public class ColortoCodeActivity extends AppCompatActivity {
         ull_ColortoCode = checkData.getull_CodetoColor();
         nowPoint = checkData.getnowPoint();
 
-
         nocomp_CodetoColor1 = checkData.getnocomp_CodetoColor1();
         nocomp_CodetoColor2 = checkData.getnocomp_CodetoColor2();
         nocomp_CodetoColor3 = checkData.getnocomp_CodetoColor3();
@@ -267,59 +266,69 @@ public class ColortoCodeActivity extends AppCompatActivity {
         }
 
         nowPoint = nowPoint + getPoint ;
+
         // Count:nocomp
        switch(level) {
            case 1:
                getData checkData1 = new getData();
                nocomp_ColortoCode1++;
-               checkData1.setull_CodetoColor(nocomp_ColortoCode1);
-               break;
+               checkData1.setnocomp_ColortoCode1(nocomp_ColortoCode1);
+           break;
+
            case 2:
                getData checkData2 = new getData();
                nocomp_ColortoCode2++;
-               checkData2.setull_CodetoColor(nocomp_ColortoCode2);
-               break;
+               checkData2.setnocomp_ColortoCode2(nocomp_ColortoCode2);
+           break;
+
            case 3:
                getData checkData3 = new getData();
                nocomp_ColortoCode3++;
-               checkData3.setull_CodetoColor(nocomp_ColortoCode3);
-               break;
+               checkData3.setnocomp_ColortoCode3(nocomp_ColortoCode3);
+           break;
+
            case 4:
                getData checkData4 = new getData();
                nocomp_ColortoCode4++;
-               checkData4.setull_CodetoColor(nocomp_ColortoCode4);
-               break;
+               checkData4.setnocomp_ColortoCode4(nocomp_ColortoCode4);
+
            case 5:
                getData checkData5 = new getData();
                nocomp_ColortoCode5++;
-               checkData5.setull_CodetoColor(nocomp_ColortoCode5);
-               break;
+               checkData5.setnocomp_ColortoCode5(nocomp_ColortoCode5);
+           break;
+
            case 6:
                getData checkData6 = new getData();
                nocomp_ColortoCode6++;
-               checkData6.setull_CodetoColor(nocomp_ColortoCode6);
+               checkData6.setnocomp_ColortoCode6(nocomp_ColortoCode6);
            break;
+
            case 7:
                getData checkData7 = new getData();
                nocomp_ColortoCode7++;
-               checkData7.setull_CodetoColor(nocomp_ColortoCode7);
+               checkData7.setnocomp_ColortoCode7(nocomp_ColortoCode7);
            break;
+
            case 8:
                getData checkData8 = new getData();
                nocomp_ColortoCode8++;
-               checkData8.setull_CodetoColor(nocomp_ColortoCode8);
+               checkData8.setnocomp_ColortoCode8(nocomp_ColortoCode8);
            break;
+
            case 9:
                getData checkData9 = new getData();
                nocomp_ColortoCode9++;
-               checkData9.setull_CodetoColor(nocomp_ColortoCode9);
+               checkData9.setnocomp_ColortoCode9(nocomp_ColortoCode9);
            break;
+
            case 10:
                getData checkData10 = new getData();
                nocomp_ColortoCode10++;
-               checkData10.setull_CodetoColor(nocomp_ColortoCode10);
+               checkData10.setnocomp_ColortoCode10(nocomp_ColortoCode10);
            break;
        }
+
         //Check:Levelup(ColortoCode)
         if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
@@ -384,12 +393,12 @@ public class ColortoCodeActivity extends AppCompatActivity {
             ulm_ColortoCode();
         }
 
-         else if(ull_ColortoCode == 10 && nowPoint >= 1000 && nocomp_ColortoCode10 >= 10){
+        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && nocomp_ColortoCode10 >= 10){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 11;
             ull_old = ull_ColortoCode-1;
             compm();
-         }
+        }
 
 
         //Check:Levelup(CodetoColor)
@@ -466,7 +475,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
         //saveData
         getData checkData = new getData();
         checkData.setull_CodetoColor(ull_CodetoColor);
-        checkData.setull_CodetoColor(ull_ColortoCode);
+        checkData.setull_ColortoCode(ull_ColortoCode);
         checkData.setnowPoint(nowPoint);
         checkData.setgetPoint(getPoint);
 

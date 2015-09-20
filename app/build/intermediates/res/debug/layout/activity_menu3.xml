@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="nowPoint"
-            android:id="@+id/nowPoint"
+            android:id="@+id/nowPointview"
             android:layout_marginLeft="250dp" />
 
     </LinearLayout>

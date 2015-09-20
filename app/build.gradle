@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile 'com.google.android.gms:play-services:4.2.42'
-    compile 'com.android.support:appcompat-v7:22.+'
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
 }
 android {
-    compileSdkVersion 21
+    compileSdkVersion 23
     buildToolsVersion '21.1.2'
     defaultConfig {
         applicationId "com.example.owner.colorcodequiz"
@@ -23,10 +23,18 @@ android {
     productFlavors {
     }
 
+    repositories {
+        mavenCentral()
+    }
+
     dependencies {
         compile fileTree(include: ['*.jar'], dir: 'libs')
         compile 'com.android.support:appcompat-v7:22.2.0'
         compile 'com.beardedhen:androidbootstrap:1.2.3'
         compile 'com.parse.bolts:bolts-android:1.+'
+        compile files('libs/ParseFacebookUtilsV3-1.10.1.jar')
+        compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+        compile files('libs/ParseTwitterUtils-1.10.1.jar')
+
     }
 }

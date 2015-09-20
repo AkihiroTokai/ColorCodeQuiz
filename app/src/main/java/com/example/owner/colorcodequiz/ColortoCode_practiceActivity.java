@@ -387,7 +387,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         //saveData
         getData checkData = new getData();
         checkData.setull_CodetoColor(ull_CodetoColor);
-        checkData.setull_CodetoColor(ull_ColortoCode);
+        checkData.setull_ColortoCode(ull_ColortoCode);
         checkData.setnowPoint(nowPoint);
         checkData.setgetPoint(getPoint);
         nocomp_ColortoCode0++;

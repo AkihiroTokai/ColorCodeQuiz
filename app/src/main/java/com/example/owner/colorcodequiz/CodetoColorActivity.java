@@ -95,6 +95,34 @@ public class CodetoColorActivity extends AppCompatActivity {
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
 
+        //getData
+        getData checkData = new getData();
+        ull_CodetoColor = checkData.getull_CodetoColor();
+        ull_ColortoCode = checkData.getull_CodetoColor();
+        nowPoint = checkData.getnowPoint();
+
+        nocomp_CodetoColor1 = checkData.getnocomp_CodetoColor1();
+        nocomp_CodetoColor2 = checkData.getnocomp_CodetoColor2();
+        nocomp_CodetoColor3 = checkData.getnocomp_CodetoColor3();
+        nocomp_CodetoColor4 = checkData.getnocomp_CodetoColor4();
+        nocomp_CodetoColor5 = checkData.getnocomp_CodetoColor5();
+        nocomp_CodetoColor6 = checkData.getnocomp_CodetoColor6();
+        nocomp_CodetoColor7 = checkData.getnocomp_CodetoColor7();
+        nocomp_CodetoColor8 = checkData.getnocomp_CodetoColor8();
+        nocomp_CodetoColor9 = checkData.getnocomp_CodetoColor9();
+        nocomp_CodetoColor10 = checkData.getnocomp_CodetoColor10();
+
+        nocomp_ColortoCode1 = checkData.getnocomp_ColortoCode1();
+        nocomp_ColortoCode2 = checkData.getnocomp_ColortoCode2();
+        nocomp_ColortoCode3 = checkData.getnocomp_ColortoCode3();
+        nocomp_ColortoCode4 = checkData.getnocomp_ColortoCode4();
+        nocomp_ColortoCode5 = checkData.getnocomp_ColortoCode5();
+        nocomp_ColortoCode6 = checkData.getnocomp_ColortoCode6();
+        nocomp_ColortoCode7 = checkData.getnocomp_ColortoCode7();
+        nocomp_ColortoCode8 = checkData.getnocomp_ColortoCode8();
+        nocomp_ColortoCode9 = checkData.getnocomp_ColortoCode9();
+        nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
+
         setanswer();
     }
 
@@ -231,6 +259,69 @@ public class CodetoColorActivity extends AppCompatActivity {
 
         nowPoint = nowPoint + getPoint;
 
+        //Count:nocomp
+        switch (level){
+            case 1:
+                getData checkData1 = new getData();
+                nocomp_CodetoColor1++;
+                checkData1.setnocomp_CodetoColor1(nocomp_CodetoColor1);
+            break;
+
+            case 2:
+                getData checkData2 = new getData();
+                nocomp_CodetoColor2++;
+                checkData2.setnocomp_CodetoColor2(nocomp_CodetoColor2);
+            break;
+
+            case 3:
+                getData checkData3 = new getData();
+                nocomp_CodetoColor3++;
+                checkData3.setnocomp_CodetoColor3(nocomp_CodetoColor3);
+            break;
+
+            case 4:
+                getData checkData4 = new getData();
+                nocomp_CodetoColor4++;
+                checkData4.setnocomp_CodetoColor4(nocomp_CodetoColor4);
+            break;
+
+            case 5:
+                getData checkData5 = new getData();
+                nocomp_CodetoColor5++;
+                checkData5.setnocomp_CodetoColor5(nocomp_CodetoColor5);
+            break;
+
+            case 6:
+                getData checkData6 = new getData();
+                nocomp_CodetoColor6++;
+                checkData6.setnocomp_CodetoColor6(nocomp_CodetoColor6);
+            break;
+
+            case 7:
+                getData checkData7 = new getData();
+                nocomp_CodetoColor7++;
+                checkData7.setnocomp_CodetoColor7(nocomp_CodetoColor7);
+            break;
+
+            case 8:
+                getData checkData8 = new getData();
+                nocomp_CodetoColor8++;
+                checkData8.setnocomp_CodetoColor8(nocomp_CodetoColor8);
+            break;
+
+            case 9:
+                getData checkData9 = new getData();
+                nocomp_CodetoColor9++;
+                checkData9.setnocomp_CodetoColor9(nocomp_CodetoColor9);
+            break;
+
+            case 10:
+                getData checkData10 = new getData();
+                nocomp_CodetoColor10++;
+                checkData10.setnocomp_CodetoColor10(nocomp_CodetoColor10);
+            break;
+        }
+
         //Check:Levelup(ColortoCode)
         if (ull_ColortoCode == 1 && nowPoint >= 60 && nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
@@ -337,6 +428,14 @@ public class CodetoColorActivity extends AppCompatActivity {
             ull_old = ull_CodetoColor - 1;
             compm();
         }
+
+        //saveData
+        getData checkData = new getData();
+        checkData.setull_CodetoColor(ull_CodetoColor);
+        checkData.setull_CodetoColor(ull_ColortoCode);
+        checkData.setnowPoint(nowPoint);
+        checkData.setgetPoint(getPoint);
+
         //gameFinish
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(getPoint + "Point獲得しました。")

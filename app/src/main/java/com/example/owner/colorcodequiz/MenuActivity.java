@@ -3,14 +3,22 @@ package com.example.owner.colorcodequiz;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.example.owner.colorcodequiz.getData;
 
+import java.security.MessageDigest;
+import java.security.Signature;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -43,13 +51,29 @@ public class MenuActivity extends AppCompatActivity {
 
         //changeIcon
         if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
-            com.beardedhen.androidbootstrap.BootstrapButton tomenu2 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu2);
+            BootstrapButton tomenu2 = (BootstrapButton)findViewById(R.id.tomenu2);
             tomenu2.setLeftIcon("fa-unlock");
         }
         if(ull_CodetoColor >= 6 || ull_ColortoCode >= 6){
-            com.beardedhen.androidbootstrap.BootstrapButton tomenu3 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.tomenu3);
+            BootstrapButton tomenu3 = (BootstrapButton)findViewById(R.id.tomenu3);
             tomenu3.setLeftIcon("fa-unlock");
         }
+
+
+      /*  try {
+            PackageInfo info = getPackageManager().getPackageInfo(
+                    "com.facebook.samples.loginhowto",
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+            }
+        } catch (NameNotFoundException e) {
+
+        } catch (NoSuchAlgorithmException e) {
+
+        }    */
     }
 
 
@@ -61,7 +85,7 @@ public class MenuActivity extends AppCompatActivity {
             new AlertDialog.Builder(MenuActivity.this)
                     .setTitle("Lockされています。")
                     .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
-                    .setPositiveButton("OK",null)
+                    .setPositiveButton("OK", null)
                     .show();
         }
     }

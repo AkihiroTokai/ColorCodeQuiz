@@ -463,6 +463,8 @@
     <string name="decline">Decline</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="facebook_app_id">1643052322619255</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values/values.xml -->
     <eat-comment/>

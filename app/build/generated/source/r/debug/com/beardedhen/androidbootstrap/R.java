@@ -142,7 +142,7 @@ public final class R {
 	public static final class string {
 		public static final int action_settings = 0x7f06004b;
 		public static final int app_name = 0x7f06004c;
-		public static final int hello_world = 0x7f060055;
+		public static final int hello_world = 0x7f060057;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f08007e;

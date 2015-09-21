@@ -270,56 +270,38 @@ public class CodetoColorActivity extends AppCompatActivity {
             case 2:
                 getData checkData2 = new getData();
                 nocomp_CodetoColor2++;
-                checkData2.setnocomp_CodetoColor2(nocomp_CodetoColor2);
+                checkData2.setnocomp_CodetoColor1(nocomp_CodetoColor2);
             break;
 
             case 3:
                 getData checkData3 = new getData();
                 nocomp_CodetoColor3++;
-                checkData3.setnocomp_CodetoColor3(nocomp_CodetoColor3);
+                checkData3.setnocomp_CodetoColor1(nocomp_CodetoColor3);
             break;
 
             case 4:
                 getData checkData4 = new getData();
                 nocomp_CodetoColor4++;
-                checkData4.setnocomp_CodetoColor4(nocomp_CodetoColor4);
+                checkData4.setnocomp_CodetoColor1(nocomp_CodetoColor4);
             break;
 
             case 5:
                 getData checkData5 = new getData();
                 nocomp_CodetoColor5++;
-                checkData5.setnocomp_CodetoColor5(nocomp_CodetoColor5);
+                checkData5.setnocomp_CodetoColor1(nocomp_CodetoColor5);
             break;
 
             case 6:
                 getData checkData6 = new getData();
                 nocomp_CodetoColor6++;
-                checkData6.setnocomp_CodetoColor6(nocomp_CodetoColor6);
+                checkData6.setnocomp_CodetoColor1(nocomp_CodetoColor6);
             break;
 
             case 7:
                 getData checkData7 = new getData();
                 nocomp_CodetoColor7++;
-                checkData7.setnocomp_CodetoColor7(nocomp_CodetoColor7);
-            break;
-
-            case 8:
-                getData checkData8 = new getData();
-                nocomp_CodetoColor8++;
-                checkData8.setnocomp_CodetoColor8(nocomp_CodetoColor8);
-            break;
-
-            case 9:
-                getData checkData9 = new getData();
-                nocomp_CodetoColor9++;
-                checkData9.setnocomp_CodetoColor9(nocomp_CodetoColor9);
-            break;
-
-            case 10:
-                getData checkData10 = new getData();
-                nocomp_CodetoColor10++;
-                checkData10.setnocomp_CodetoColor10(nocomp_CodetoColor10);
-            break;
+                checkData7.setnocomp_CodetoColor1(nocomp_CodetoColor7);
+                break;
         }
 
         //Check:Levelup(ColortoCode)

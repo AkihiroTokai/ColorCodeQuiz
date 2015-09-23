@@ -3,22 +3,14 @@ package com.example.owner.colorcodequiz;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Base64;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
-import com.example.owner.colorcodequiz.getData;
-
-import java.security.MessageDigest;
-import java.security.Signature;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -36,7 +28,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        nowPointview = (TextView)findViewById(R.id.nowPointview);
+        nowPointview = (TextView) findViewById(R.id.nowPointview);
 
         //getData
         getData checkData = new getData();
@@ -47,33 +39,18 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPoint = checkData.getnowPoint();
 
-        nowPointview.setText("YourPoint:"+nowPoint);
+        nowPointview.setText("YourPoint:" + nowPoint);
 
         //changeIcon
-        if(ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
-            BootstrapButton tomenu2 = (BootstrapButton)findViewById(R.id.tomenu2);
+        if (ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
+            BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
             tomenu2.setLeftIcon("fa-unlock");
         }
-        if(ull_CodetoColor >= 6 || ull_ColortoCode >= 6){
-            BootstrapButton tomenu3 = (BootstrapButton)findViewById(R.id.tomenu3);
+        if (ull_CodetoColor >= 6 || ull_ColortoCode >= 6) {
+            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
             tomenu3.setLeftIcon("fa-unlock");
         }
 
-
-      /*  try {
-            PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.facebook.samples.loginhowto",
-                    PackageManager.GET_SIGNATURES);
-            for (Signature signature : info.signatures) {
-                MessageDigest md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-            }
-        } catch (NameNotFoundException e) {
-
-        } catch (NoSuchAlgorithmException e) {
-
-        }    */
     }
 
 

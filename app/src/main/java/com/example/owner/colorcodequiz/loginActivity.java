@@ -26,9 +26,8 @@ public class loginActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         ParseFacebookUtils.onActivityResult(requestCode, resultCode, data);
     }
-
-
-        try {
+      */
+     /*  try {
             PackageInfo info = getPackageManager().getPackageInfo(
                     "com.facebook.samples.loginhowto",
                     PackageManager.GET_SIGNATURES);

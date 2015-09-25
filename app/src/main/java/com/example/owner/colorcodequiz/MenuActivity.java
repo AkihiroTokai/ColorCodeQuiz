@@ -47,11 +47,17 @@ public class MenuActivity extends AppCompatActivity {
             tomenu2.setLeftIcon("fa-unlock");
         }
         if (ull_CodetoColor >= 6 || ull_ColortoCode >= 6) {
-            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
+            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.facebook);
             tomenu3.setLeftIcon("fa-unlock");
         }
 
     }
+
+    public void gotologin(View v) {
+            Intent intent = new Intent(MenuActivity.this, loginActivity.class);
+            startActivity(intent);
+    }
+
 
 
     public void tomenu2(View v) {

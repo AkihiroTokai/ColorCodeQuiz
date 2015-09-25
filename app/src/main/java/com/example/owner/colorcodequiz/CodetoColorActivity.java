@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -301,7 +300,25 @@ public class CodetoColorActivity extends AppCompatActivity {
                 getData checkData7 = new getData();
                 nocomp_CodetoColor7++;
                 checkData7.setnocomp_CodetoColor1(nocomp_CodetoColor7);
-                break;
+            break;
+
+            case 8:
+                getData checkData8 = new getData();
+                nocomp_CodetoColor8++;
+                checkData8.setnocomp_CodetoColor8(nocomp_CodetoColor8);
+            break;
+
+            case 9:
+                getData checkData9 = new getData();
+                nocomp_CodetoColor9++;
+                checkData9.setnocomp_CodetoColor9(nocomp_CodetoColor9);
+            break;
+
+            case 10:
+                getData checkData10 = new getData();
+                nocomp_CodetoColor10++;
+                checkData10.setnocomp_CodetoColor10(nocomp_CodetoColor10);
+            break;
         }
 
         //Check:Levelup(ColortoCode)

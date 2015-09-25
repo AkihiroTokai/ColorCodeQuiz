@@ -2446,7 +2446,7 @@ containing a value of this type.
         public static final int ColortoCode7=0x7f0c00b8;
         public static final int ColortoCode8=0x7f0c00bb;
         public static final int ColortoCode9=0x7f0c00be;
-        public static final int ColortoCode_practice=0x7f0c0098;
+        public static final int twitter =0x7f0c0098;
         public static final int ComingSoon=0x7f0c009f;
         public static final int Level1=0x7f0c00a3;
         public static final int Level10=0x7f0c00bf;
@@ -2653,7 +2653,7 @@ containing a value of this type.
         public static final int title_template=0x7f0c005d;
         public static final int tomenu1=0x7f0c009c;
         public static final int tomenu2=0x7f0c009d;
-        public static final int tomenu3=0x7f0c009e;
+        public static final int facebook =0x7f0c009e;
         public static final int top=0x7f0c0048;
         public static final int topPanel=0x7f0c005c;
         public static final int unknown=0x7f0c0042;

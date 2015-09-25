@@ -15,7 +15,7 @@ import com.parse.ParseTwitterUtils;
 public class ColorCodeQuizApplication extends Application {
 
     @Override
-    public void onCreate(){
+    public void onCreate() {
         super.onCreate();
 
         Parse.enableLocalDatastore(this);
@@ -27,4 +27,3 @@ public class ColorCodeQuizApplication extends Application {
         ParseFacebookUtils.initialize("1643052322619255");
     }
 }
-

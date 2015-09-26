@@ -97,7 +97,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:layout_below="@+id/frameLayout2"
         android:layout_toStartOf="@+id/frameLayout4"
         android:id="@+id/frameLayout5">
@@ -121,15 +121,15 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:layout_below="@+id/frameLayout4"
         android:layout_alignEnd="@+id/progress"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentBottom="false"
         android:layout_alignStart="@+id/frameLayout4">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:id="@+id/check_select4" />
 
         <TextView

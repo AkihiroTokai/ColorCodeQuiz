@@ -139,24 +139,23 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     }
 
     public void select1(View view) {
-        if (!nextquestion) {
-            if (check_answer == 1) {
+        if (!nextquestion)   {
+            if (check_answer == 1 ) {
                 check_select1.setImageResource(R.drawable.maru);
+                noca = noca+1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
-                noca = noca + 1;
             }
-            if (gameCount <=10) {
+            if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10);
+                progress.setText("Progress:" + gameCount + "/" + 10 );
                 nextquestion = true;
-            }
-            if (gameCount >= 10) {
+            }  if (gameCount >= 10 ){
                 gameFinish();
-            } else {
-                setanswer();
-                nextquestion = false;
             }
+        }else {
+            setanswer();
+            nextquestion = false;
         }
     }
 

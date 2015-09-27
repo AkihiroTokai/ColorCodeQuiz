@@ -1,14 +1,15 @@
 package com.example.owner.colorcodequiz;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebChromeClient;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,14 +17,32 @@ public class menu2Activity extends AppCompatActivity {
     private int ull_CodetoColor;
     private int ull_ColortoCode;
 
+    private int nocomp_CodetoColor1;
+    private int nocomp_CodetoColor2;
+    private int nocomp_CodetoColor3;
+    private int nocomp_CodetoColor4;
+    private int nocomp_CodetoColor5;
+
+    private int nocomp_ColortoCode1;
+    private int nocomp_ColortoCode2;
+    private int nocomp_ColortoCode3;
+    private int nocomp_ColortoCode4;
+    private int nocomp_ColortoCode5;
+
+    private int nocomp;
     private int nowPoint;
     private int maxlimit;
     private int minlimit;
     private int number;
     private int level;
+    private int req_nocomp;
+    private int req_Point;
+    private int req_level;
+    private String plus;
 
     private TextView nowPointview;
     private EditText setnum;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +52,27 @@ public class menu2Activity extends AppCompatActivity {
         nowPointview = (TextView)findViewById(R.id.nowPointview);
         setnum.setKeyListener(null);
 
-        //getData
-        getData checkData = new getData();
-        ull_CodetoColor = checkData.getull_CodetoColor();
-        ull_ColortoCode = checkData.getull_CodetoColor();
-        nowPoint = checkData.getnowPoint();
 
-        nowPointview.setText("YourPoint:"+nowPoint);
+        //getData（SharedPreference)
+        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
+        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
+        nowPoint = getData.getInt("nowPoint",0);
+
+
+        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
+        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
+        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
+        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
+        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
+
+        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
+        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
+        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
+        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
+        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
+
+
 
         //IconChange
         if(ull_CodetoColor >= 1){
@@ -85,111 +118,128 @@ public class menu2Activity extends AppCompatActivity {
     }
 
     public void ColortoCode1(View v){
-        if(ull_ColortoCode >=1){
             maxlimit = 255;
             minlimit = 225;
-            level = 1;
             intent_ColortoCode();
-        }else{
-            lockedmessage();
-        }
     }
 
     public void ColortoCode2(View v){
+        level = 2;
         if(ull_ColortoCode >=2){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 2;
+            maxlimit = 225;
+            minlimit = 195;
             intent_ColortoCode();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 60;
             lockedmessage();
         }
     }
 
     public void ColortoCode3(View v){
+        level = 3;
         if(ull_ColortoCode >=3){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 3;
+            maxlimit = 195;
+            minlimit = 165;
             intent_ColortoCode();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 90;
             lockedmessage();
         }
     }
 
     public void ColortoCode4(View v){
+        level = 4;
         if(ull_ColortoCode >=4){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 4;
+            maxlimit = 165;
+            minlimit = 135;
             intent_ColortoCode();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 90;
+            plus = "CodetoColorのLevel3をUnlockしてください。";
             lockedmessage();
         }
     }
 
     public void ColortoCode5(View v){
+        level = 5;
         if(ull_ColortoCode >=5){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 5;
+            maxlimit = 135;
+            minlimit = 105;
             intent_ColortoCode();
         }else{
+            req_level = level -1;
+            req_nocomp = 4;
+            req_Point = 125;
             lockedmessage();
         }
     }
 
     public void CodetoColor1(View v){
-        if(ull_CodetoColor >=1){
             maxlimit = 255;
             minlimit = 225;
             level = 1;
             intent_CodetoColor();
-        }else{
-            lockedmessage();
-        }
     }
 
     public void CodetoColor2(View v){
+        level = 2;
         if(ull_CodetoColor >=2){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 2;
+            maxlimit = 225;
+            minlimit = 195;
             intent_CodetoColor();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 60;
             lockedmessage();
         }
     }
 
     public void CodetoColor3(View v){
+        level = 3;
         if(ull_CodetoColor >=3){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 3;
+            maxlimit = 195;
+            minlimit = 165;
             intent_CodetoColor();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 90;
             lockedmessage();
         }
     }
 
     public void CodetoColor4(View v){
+        level = 4;
         if(ull_CodetoColor >=4){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 4;
+            maxlimit = 165;
+            minlimit = 135;
             intent_CodetoColor();
         }else{
+            req_level = level -1;
+            req_nocomp = 3;
+            req_Point = 125;
+            plus = "ColortoCodeのLevel3をUnlockしてください。";
             lockedmessage();
         }
     }
 
     public void CodetoColor5(View v){
+        level = 5;
         if(ull_CodetoColor >=5){
-            maxlimit = 255;
-            minlimit = 225;
-            level = 5;
+            maxlimit = 135;
+            minlimit = 105;
             intent_CodetoColor();
         }else{
+            req_level = level -1;
+            req_nocomp = 180;
+            req_Point = 4;
             lockedmessage();
         }
     }
@@ -197,8 +247,8 @@ public class menu2Activity extends AppCompatActivity {
     public void lockedmessage(){
         new AlertDialog.Builder(menu2Activity.this)
                 .setTitle("Lockされています。")
-                .setMessage("unLock条件を確認してください。")
-                .setPositiveButton("OK",null)
+                .setMessage("Level"+ req_level+"を"+req_nocomp+"回以上クリアし、"+req_Point+"以上獲得してください。"+plus)
+                .setPositiveButton("OK", null)
                 .show();
     }
 

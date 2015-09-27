@@ -1,23 +1,18 @@
 package com.example.owner.colorcodequiz;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
-import com.parse.FindCallback;
-import com.parse.ParseException;
-import com.parse.ParseQuery;
-
-import java.util.Calendar;
-import java.util.List;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -28,7 +23,7 @@ public class MenuActivity extends AppCompatActivity {
     private int ull_ColortoCode;
     private int nd_getPoint;
     private int nocomp_CodetoColor0;
-    private int nocomp_ColorttoCode0;
+    private int nocomp_ColortoCode0;
 
 
     @Override
@@ -38,39 +33,56 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
 
-        ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
+       /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
         parseQuery.findInBackground(new FindCallback<getData>() {
             @Override
             public void done(List<getData> list, ParseException e) {
                 if (e == null) {
-                    new AlertDialog.Builder(MenuActivity.this)
-                            .setTitle("Lockされています。")
-                            .setMessage("レベル6をUnLockしてください。")
-                            .setPositiveButton("OK",null)
-                            .show();
+
                 } else{
                     e.printStackTrace();
                 }
             }
-        });
-        //getData
-        getData checkData = new getData();
+        });    */
+        //getData (Parse)
+    /*    getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();
+        String stull_CodetoColor = String.valueOf(ull_CodetoColor);
         ull_ColortoCode = checkData.getull_CodetoColor();
+        String stull_ColortoCode = String.valueOf(ull_ColortoCode);
         nocomp_CodetoColor0 = checkData.getnocomp_CodetoColor0();
+        String stnocomp_CodetoColor0 = String.valueOf(nocomp_CodetoColor0);
         nocomp_ColorttoCode0 = checkData.getnocomp_ColortoCode0();
-        Calendar cal = Calendar.getInstance();
+        String stnocomp_ColortoCode =String.valueOf(nocomp_ColorttoCode0);   */
+
+    /*  Calendar cal = Calendar.getInstance();
         int nowyear = cal.get(Calendar.YEAR);
         String stnowyear = String.valueOf(nowyear);
         int nowmoth = cal.get(Calendar.MONTH);
         String stnowmonth = String.valueOf(nowmoth);
         int nowday  = cal.get(Calendar.DAY_OF_MONTH);
         String stnowday = String.valueOf(nowday);
-        String nowdate =  (stnowyear+stnowmonth+stnowday);
 
-        nowPoint = checkData.getnowPoint();
+        String nowdate =  (stnowyear+stnowmonth+stnowday);   */
 
-        nowPointview.setText("YourPoint:" + nowPoint);
+    /*  nowPoint = checkData.getnowPoint();
+        String stnowPoint = String.valueOf(nowPoint);
+        nowPointview.setText("YourPoint:" + nowPoint);       */
+
+    /*  Log.d("nowpoint", stnowPoint);
+        Log.d("ull_ColortoCode", stull_ColortoCode);
+        Log.d("ull_CodetoColor", stull_CodetoColor);    */
+
+
+        //getData（SharedPreference)
+        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
+        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
+        nowPoint = getData.getInt("nowPoint",0);
+        nocomp_CodetoColor0 = getData.getInt("nocomp_CodetoColor",0);
+        nocomp_ColortoCode0 = getData.getInt("nocomp_ColortoCode0",0);
+
+        nowPointview.setText("YourPoint:"+nowPoint);
 
         //changeIcon
         if (ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
@@ -78,13 +90,11 @@ public class MenuActivity extends AppCompatActivity {
             tomenu2.setLeftIcon("fa-unlock");
         }
         if (ull_CodetoColor >= 6 || ull_ColortoCode >= 6) {
-            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.facebook);
+            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
             tomenu3.setLeftIcon("fa-unlock");
         }
 
-        nowPointview.setText("YourPoint:" + nowPoint);
-        String stnowPoint = String.valueOf(nowPoint);
-        Log.d("d",stnowPoint);
+
     }
 
     public void gotologin(View v) {
@@ -140,7 +150,7 @@ public class MenuActivity extends AppCompatActivity {
     public void ColortoCode_practice (View v){
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ nocomp_ColorttoCode0 +"回クリアしています。")
+                .setMessage("問題は10問です。"+ nocomp_ColortoCode0 +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

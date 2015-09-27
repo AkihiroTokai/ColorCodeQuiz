@@ -2,9 +2,12 @@ package com.example.owner.colorcodequiz;
 
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -13,7 +16,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Calendar;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Random;
 
 public class ColortoCodeActivity extends AppCompatActivity {
@@ -99,8 +103,8 @@ public class ColortoCodeActivity extends AppCompatActivity {
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
 
-        //getData
-        getData checkData = new getData();
+        //getData(Parse)
+       /* getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();
         ull_ColortoCode = checkData.getull_CodetoColor();
         nowPoint = checkData.getnowPoint();
@@ -125,9 +129,9 @@ public class ColortoCodeActivity extends AppCompatActivity {
         nocomp_ColortoCode7 = checkData.getnocomp_ColortoCode7();
         nocomp_ColortoCode8 = checkData.getnocomp_ColortoCode8();
         nocomp_ColortoCode9 = checkData.getnocomp_ColortoCode9();
-        nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
+        nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();     */
 
-        Calendar cal = Calendar.getInstance();
+    /*    Calendar cal = Calendar.getInstance();
         int nowyear = cal.get(Calendar.YEAR);
         String stnowyear = String.valueOf(nowyear);
         int nowmoth = cal.get(Calendar.MONTH);
@@ -139,7 +143,36 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
         } else {
             getPoint = checkData.getgetPoint();
-        }
+        }                                        */
+
+        //getData（SharedPreference)
+        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
+        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
+        nowPoint = getData.getInt("nowPoint",0);
+
+        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
+        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
+        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
+        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
+        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
+        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
+        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
+        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
+        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
+        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+
+        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
+        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
+        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
+        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
+        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
+        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
+        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
+        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
+        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
+        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+
         setanswer();
     }
 
@@ -486,13 +519,31 @@ public class ColortoCodeActivity extends AppCompatActivity {
             compm();
         }
 
-        //saveData
-        getData checkData = new getData();
+        //saveData (Parse)
+    /*    getData checkData = new getData();
         checkData.setull_CodetoColor(ull_CodetoColor);
         checkData.setull_ColortoCode(ull_ColortoCode);
         checkData.setnowPoint(nowPoint);
         checkData.setgetPoint(getPoint);
-        checkData.saveEventually();
+        checkData.saveEventually();       */
+
+        //saveData（SharedPreference)
+        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = getData.edit();
+        editor.putInt("ull_CodetoColor", ull_CodetoColor);
+        editor.putInt("ull_ColoretoCode", ull_ColortoCode);
+        editor.putInt("nowPoint", nowPoint);
+        editor.putInt("nocomp_ColortoCode1", nocomp_ColortoCode1);
+        editor.putInt("nocomp_ColortoCode2", nocomp_ColortoCode2);
+        editor.putInt("nocomp_ColortoCode3", nocomp_ColortoCode3);
+        editor.putInt("nocomp_ColortoCode4", nocomp_ColortoCode4);
+        editor.putInt("nocomp_ColortoCode5", nocomp_ColortoCode5);
+        editor.putInt("nocomp_ColortoCode6", nocomp_ColortoCode6);
+        editor.putInt("nocomp_ColortoCode7", nocomp_ColortoCode7);
+        editor.putInt("nocomp_ColortoCode8", nocomp_ColortoCode8);
+        editor.putInt("nocomp_ColortoCode9", nocomp_ColortoCode9);
+        editor.putInt("nocomp_ColortoCode2", nocomp_ColortoCode10);
+        editor.apply();
 
         //gameFinish
         new AlertDialog.Builder(ColortoCodeActivity.this)
@@ -511,28 +562,68 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }).show();
     }
 
-    public  void ulm_ColortoCode(){
+    public  void ulm_CodetoColor(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。")
-                .setPositiveButton("OK",null)
+                .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
+                .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        tweeting();
+                    }
+                })
+                .setNegativeButton("No", null)
                 .show();
     }
 
-    public  void ulm_CodetoColor(){
+    public  void ulm_ColortoCode(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode+"Level"+ull_CodetoColor +"がUnLockされました。")
-                .setPositiveButton("OK", null)
+                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        tweeting();
+                    }
+                })
+                .setNegativeButton("No", null)
                 .show();
     }
 
     public void compm(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(unlockmode+"をMasterしました！")
-                .setMessage("おめでとうございます。")
-                .setPositiveButton("OK", null)
+                .setMessage("おめでとうございます。Twetterに投稿しますか？")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        tweeting();
+                    }
+                })
+                .setNegativeButton("No", null)
                 .show();
+    }
+
+    private void tweeting() {
+        String strTweet = "";
+        String strMessage = "ColorCodeQuizで"+ unlockmode + ull_old + "をMasterしました！";
+        String strHashTag = "#Why don't you be a color code master? ";
+        String strUrl = "https://twitter.com/tr_techrelation";
+        try {
+            strTweet = "http://twitter.com/intent/tweet?text="
+                    + URLEncoder.encode(strMessage, "UTF-8")
+                    + "+"
+                    + URLEncoder.encode(strHashTag, "UTF-8")
+                    + "&url="
+                    + URLEncoder.encode(strUrl, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(strTweet));
+        startActivity(intent);
     }
 
     public void setanswer() {

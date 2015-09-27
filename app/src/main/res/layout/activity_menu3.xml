@@ -69,8 +69,8 @@
             android:text="Level6"
             android:id="@+id/Level6"
             android:gravity="center_vertical"
-            android:layout_alignTop="@+id/facebook"
-            android:layout_alignBottom="@+id/facebook"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp" />
 
@@ -117,8 +117,8 @@
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@+id/Random"
-            android:layout_alignTop="@+id/facebook"
-            android:layout_alignBottom="@+id/facebook"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:focusableInTouchMode="false" />
@@ -165,8 +165,8 @@
             android:id="@+id/Level8"
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/facebook"
-            android:layout_alignBottom="@+id/facebook"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_marginLeft="10dp" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
@@ -210,8 +210,8 @@
             android:id="@+id/Level9"
             android:gravity="center_vertical"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/facebook"
-            android:layout_alignBottom="@+id/facebook"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:singleLine="true"
@@ -258,8 +258,8 @@
             android:id="@+id/Level10"
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@+id/Random"
-            android:layout_alignTop="@+id/facebook"
-            android:layout_alignBottom="@+id/facebook"
+            android:layout_alignTop="@+id/tomenu3"
+            android:layout_alignBottom="@+id/tomenu3"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical" />
 

@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.facebook.FacebookSdk;
 import com.parse.Parse;
-import com.parse.ParseFacebookUtils;
 import com.parse.ParseObject;
 import com.parse.ParseTwitterUtils;
 
@@ -24,6 +23,6 @@ public class ColorCodeQuizApplication extends Application {
 
         Parse.initialize(this, "bXmubL3ilMV11CRRnyP4JTYjvC4lAhlBqRfqOMpB", "LdziUvHA4Yku0TNx2gZNVzjNrjUJFlKGdDygd9Xn");
         ParseTwitterUtils.initialize("NfdDzPee0duxR5blAPdmQbFEO", "PbidbbDG3FY85Pf76dE875zyQy6fTQLFIPEkxwragmQ5pIHP89");
-        ParseFacebookUtils.initialize("1643052322619255");
+       // ParseFacebookUtils.initialize("1643052322619255");
     }
 }

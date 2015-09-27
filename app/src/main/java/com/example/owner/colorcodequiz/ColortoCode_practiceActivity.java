@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     private TextView progress;
@@ -121,6 +123,17 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         nocomp_ColortoCode8 = checkData.getnocomp_ColortoCode8();
         nocomp_ColortoCode9 = checkData.getnocomp_ColortoCode9();
         nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
+
+        Calendar cal = Calendar.getInstance();
+        int nowyear = cal.get(Calendar.YEAR);
+        int nowmoth = cal.get(Calendar.MONTH);
+        int nowday  = cal.get(Calendar.DAY_OF_MONTH);
+        int nowdate = nowyear + nowmoth + nowday;
+        if ("getpoint"+nowdate == null){
+
+        } else {
+            getPoint = checkData.getgetPoint();
+        }
 
         setanswer();
     }
@@ -392,6 +405,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         checkData.setgetPoint(getPoint);
         nocomp_ColortoCode0++;
         checkData.setnocomp_CodetoColor0(nocomp_ColortoCode0);
+        checkData.saveEventually();
 
         //gameFinish
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)

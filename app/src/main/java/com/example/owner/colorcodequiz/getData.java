@@ -3,6 +3,8 @@ package com.example.owner.colorcodequiz;
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
+import java.util.Calendar;
+
 /**
  * Created by OWNER on 2015/09/18.
  */
@@ -11,11 +13,20 @@ import com.parse.ParseObject;
 @ParseClassName("getData")
 public class getData extends ParseObject{
 
+        Calendar cal = Calendar.getInstance();
+        int nowyear = cal.get(Calendar.YEAR);
+        String stnowyear = String.valueOf(nowyear);
+        int nowmoth = cal.get(Calendar.MONTH);
+        String stnowmonth = String.valueOf(nowmoth);
+        int nowday  = cal.get(Calendar.DAY_OF_MONTH);
+        String stnowday = String.valueOf(nowday);
+        String nowdate =  (stnowyear+stnowmonth+stnowday);
+
         public int  getull_ColortoCode(){
             return getInt("ull_ColortoCode");
         }
         public void setull_ColortoCode(int ull_ColortoCode){
-            put("ull_ColortoCoder",ull_ColortoCode);
+            put("ull_ColortoCoder", ull_ColortoCode);
         }
 
         public int  getull_CodetoColor(){
@@ -25,18 +36,18 @@ public class getData extends ParseObject{
             put("ull_CodetoColor",ull_CodetoColor);
         }
 
-        public int getnowPoint(){
-            return  getInt("nowPoint");
+        public int  getnowPoint(){
+             return getInt("nowPoint");
         }
         public void setnowPoint(int nowPoint){
-            put("nowPoint", nowPoint);
+            put("nowPoint",nowPoint);
         }
 
         public int  getgetPoint(){
-            return getInt("nowPoint");
+            return getInt("getPoint"+ nowdate);
         }
-        public void setgetPoint(int getPoint){
-            put("getPoint",getPoint);
+        public void setgetPoint(int getPoint) {
+            put("getPoint"+nowdate,getPoint);
         }
 
         public int getnocomp_CodetoColor0(){

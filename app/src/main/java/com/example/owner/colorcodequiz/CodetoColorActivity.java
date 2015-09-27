@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Calendar;
 import java.util.Random;
 
 public class CodetoColorActivity extends AppCompatActivity {
@@ -122,6 +123,21 @@ public class CodetoColorActivity extends AppCompatActivity {
         nocomp_ColortoCode9 = checkData.getnocomp_ColortoCode9();
         nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
 
+        nowPoint = checkData.getnowPoint();
+
+        Calendar cal = Calendar.getInstance();
+        int nowyear = cal.get(Calendar.YEAR);
+        String stnowyear = String.valueOf(nowyear);
+        int nowmoth = cal.get(Calendar.MONTH);
+        String stnowmonth = String.valueOf(nowmoth);
+        int nowday  = cal.get(Calendar.DAY_OF_MONTH);
+        String stnowday = String.valueOf(nowday);
+        String nowdate =  stnowyear + stnowmonth + stnowday;
+        if ("getpoint"+ nowdate == null){
+
+        } else {
+            getPoint = checkData.getgetPoint();
+        }
         setanswer();
     }
 
@@ -434,6 +450,8 @@ public class CodetoColorActivity extends AppCompatActivity {
         checkData.setull_CodetoColor(ull_ColortoCode);
         checkData.setnowPoint(nowPoint);
         checkData.setgetPoint(getPoint);
+        checkData.saveEventually();
+
 
         //gameFinish
         new AlertDialog.Builder(CodetoColorActivity.this)

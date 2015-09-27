@@ -45,9 +45,6 @@ public class loginActivity extends AppCompatActivity {
        }
 
     }
-
-
-
         public void Twitterlogin(View v) {
             ParseTwitterUtils.logIn(this, new LogInCallback() {
                 @Override
@@ -78,7 +75,7 @@ public class loginActivity extends AppCompatActivity {
             }
         });
     }
-      /*  public void Facebooklogin (View v){
+     /*  public void Facebooklogin (View v){
             ParseFacebookUtils.logIn(permissions, this, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException err) {
@@ -93,7 +90,7 @@ public class loginActivity extends AppCompatActivity {
                 }
             }
         });
-    }      */
+    }   */
       private void MenuActivity() {
           Intent intent = new Intent(this, MenuActivity.class);
           startActivity(intent);

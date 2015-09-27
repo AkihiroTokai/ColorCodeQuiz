@@ -5,12 +5,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+
+import java.util.Calendar;
+import java.util.List;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -19,6 +26,7 @@ public class MenuActivity extends AppCompatActivity {
     private int nowPoint;
     private int ull_CodetoColor;
     private int ull_ColortoCode;
+    private int nd_getPoint;
     private int nocomp_CodetoColor0;
     private int nocomp_ColorttoCode0;
 
@@ -30,12 +38,35 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
 
+        ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
+        parseQuery.findInBackground(new FindCallback<getData>() {
+            @Override
+            public void done(List<getData> list, ParseException e) {
+                if (e == null) {
+                    new AlertDialog.Builder(MenuActivity.this)
+                            .setTitle("Lockされています。")
+                            .setMessage("レベル6をUnLockしてください。")
+                            .setPositiveButton("OK",null)
+                            .show();
+                } else{
+                    e.printStackTrace();
+                }
+            }
+        });
         //getData
         getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();
         ull_ColortoCode = checkData.getull_CodetoColor();
         nocomp_CodetoColor0 = checkData.getnocomp_CodetoColor0();
         nocomp_ColorttoCode0 = checkData.getnocomp_ColortoCode0();
+        Calendar cal = Calendar.getInstance();
+        int nowyear = cal.get(Calendar.YEAR);
+        String stnowyear = String.valueOf(nowyear);
+        int nowmoth = cal.get(Calendar.MONTH);
+        String stnowmonth = String.valueOf(nowmoth);
+        int nowday  = cal.get(Calendar.DAY_OF_MONTH);
+        String stnowday = String.valueOf(nowday);
+        String nowdate =  (stnowyear+stnowmonth+stnowday);
 
         nowPoint = checkData.getnowPoint();
 
@@ -51,6 +82,9 @@ public class MenuActivity extends AppCompatActivity {
             tomenu3.setLeftIcon("fa-unlock");
         }
 
+        nowPointview.setText("YourPoint:" + nowPoint);
+        String stnowPoint = String.valueOf(nowPoint);
+        Log.d("d",stnowPoint);
     }
 
     public void gotologin(View v) {

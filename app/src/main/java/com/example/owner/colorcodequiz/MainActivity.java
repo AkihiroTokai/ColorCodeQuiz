@@ -4,21 +4,15 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-
-
+import java.util.Calendar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -84,15 +78,15 @@ public class MainActivity extends AppCompatActivity {
         answer3 = (TextView) findViewById(R.id.answer3);
         answer4 = (TextView) findViewById(R.id.answer4);
 
-        progress = (TextView)findViewById(R.id.progress);
+        progress = (TextView) findViewById(R.id.progress);
         red = (TextView) findViewById(R.id.red);
         green = (TextView) findViewById(R.id.green);
         blue = (TextView) findViewById(R.id.blue);
 
-        check_select1 = (ImageView)findViewById(R.id.check_select1);
-        check_select2 = (ImageView)findViewById(R.id.check_select2);
-        check_select3 = (ImageView)findViewById(R.id.check_select3);
-        check_select4 = (ImageView)findViewById(R.id.check_select4);
+        check_select1 = (ImageView) findViewById(R.id.check_select1);
+        check_select2 = (ImageView) findViewById(R.id.check_select2);
+        check_select3 = (ImageView) findViewById(R.id.check_select3);
+        check_select4 = (ImageView) findViewById(R.id.check_select4);
 
 
         //getData
@@ -121,35 +115,48 @@ public class MainActivity extends AppCompatActivity {
         nocomp_ColortoCode8 = checkData.getnocomp_ColortoCode8();
         nocomp_ColortoCode9 = checkData.getnocomp_ColortoCode9();
         nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
+        nowPoint = checkData.getnowPoint();
 
-        nextquestion = false;
-        setanswer();
+        Calendar cal = Calendar.getInstance();
+        int nowyear = cal.get(Calendar.YEAR);
+        String stnowyear = String.valueOf(nowyear);
+        int nowmoth = cal.get(Calendar.MONTH);
+        String stnowmonth = String.valueOf(nowmoth);
+        int nowday = cal.get(Calendar.DAY_OF_MONTH);
+        String stnowday = String.valueOf(nowday);
+        String nowdate = (stnowyear + stnowmonth + stnowday);
+        if ("getpoint" + nowdate == null) {
+
+        } else {
+            getPoint = checkData.getgetPoint();
+        }
     }
-
     public void select1(View view) {
         if (!nextquestion) {
             if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
-                noca = noca+1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
+                noca = noca + 1;
             }
-            if (gameCount <= 10) {
+            if (gameCount <=10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ 10);
+                progress.setText("Progress:" + gameCount + "/" + 10);
                 nextquestion = true;
-            }if (gameCount >= 10){
-                gameFinish();
             }
-        }else {
-            setanswer();
-            nextquestion = false;
+            if (gameCount >= 10) {
+                gameFinish();
+            } else {
+                setanswer();
+                nextquestion = false;
+            }
         }
     }
 
 
+
     public void select2(View view) {
-        if (!nextquestion) {
+        if (!nextquestion)   {
             if (check_answer == 2) {
                 check_select2.setImageResource(R.drawable.maru);
                 noca = noca+1;
@@ -158,9 +165,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ 10);
+                progress.setText("Progress:" + gameCount + "/" + 10 );
                 nextquestion = true;
-            }if (gameCount >= 10){
+            }  if (gameCount >= 10 ){
                 gameFinish();
             }
         }else {
@@ -191,24 +198,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void select4(View view) {
-        if (!nextquestion) {
+        if (!nextquestion )   {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
-                noca = noca+1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ 10);
+                progress.setText("Progress:" + gameCount + "/"+10);
                 nextquestion = true;
-            }if (gameCount >= 10){
+            }if(gameCount >= 10){
                 gameFinish();
             }
+            nextquestion = true;
         }else {
             setanswer();
             nextquestion = false;
         }
+
     }
 
     public void gameFinish(){
@@ -435,8 +443,6 @@ public class MainActivity extends AppCompatActivity {
         check_select2.setImageDrawable(null);
         check_select3.setImageDrawable(null);
         check_select4.setImageDrawable(null);
-
-        gameCount = gameCount + 1;
 
          if (gameCount == 1) {
             red.setText("00");

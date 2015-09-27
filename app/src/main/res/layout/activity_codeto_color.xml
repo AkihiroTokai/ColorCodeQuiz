@@ -92,7 +92,7 @@
     </FrameLayout>
     <FrameLayout
         android:id="@+id/frameLayout5"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:layout_width="match_parent"
         android:layout_below="@+id/frameLayout2"
         android:layout_toStartOf="@+id/frameLayout4">
@@ -112,12 +112,12 @@
             android:layout_width="match_parent"/>
     </FrameLayout>
 
-    <FrameLayout android:layout_height="match_parent"
+    <FrameLayout android:layout_height="100dp"
         android:layout_width="match_parent"
         android:layout_below="@+id/frameLayout4"
         android:layout_alignEnd="@+id/progress"
         android:layout_alignStart="@+id/frameLayout4"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="false">
 
         <TextView android:id="@+id/answer4"
             android:layout_height="55dp"

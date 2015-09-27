@@ -49,25 +49,25 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:gravity="center">
+    <!-- <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:gravity="center">
 
-        <com.beardedhen.androidbootstrap.BootstrapButton
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Sign in with Facebook"
-            android:id="@+id/facebook"
-            bootstrap:bb_type="primary"
-            bootstrap:bb_roundedCorners="true"
-            bootstrap:bb_icon_left="fa-facebook-official"
-            android:onClick="Facebooklogin"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
-            android:layout_marginLeft="10dp" />
-    </LinearLayout>
+         <com.beardedhen.androidbootstrap.BootstrapButton
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="Sign in with Facebook"
+             android:id="@+id/facebook"
+             bootstrap:bb_type="primary"
+             bootstrap:bb_roundedCorners="true"
+             bootstrap:bb_icon_left="fa-facebook-official"
+             android:onClick="Facebooklogin"
+             android:layout_above="@+id/textView"
+             android:layout_alignEnd="@+id/textView"
+             android:layout_marginLeft="10dp" />
+    </LinearLayout>  -->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -93,16 +93,18 @@
         android:layout_height="80dp"
         android:gravity="center">
 
+
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Play with  Guest Mode"
-            android:id="@+id/Anonymous"
+            android:text="Sign in with GuestMode"
+            android:id="@+id/Anonymouslogin"
             bootstrap:bb_roundedCorners="true"
-            android:onClick=" &lt;LinearLayout         android:orientation=&quot;horizontal&quot;         android:layout_width=&quot;match_parent&quot;         android:layout_height=&quot;80dp&quot;         android:gravity=&quot;center&quot;>          &lt;com.beardedhen.androidbootstrap.BootstrapButton             android:layout_width=&quot;match_parent&quot;             android:layout_height=&quot;50dp&quot;             android:text=&quot;Sign in with Facebook&quot;             android:id=&quot;@+id/facebook&quot;             bootstrap:bb_type=&quot;primary&quot;             bootstrap:bb_roundedCorners=&quot;true&quot;             bootstrap:bb_icon_left=&quot;fa-key&quot;             android:onClick=&quot;Facebooklogin&quot;             android:layout_above=&quot;@+id/"
+            android:onClick="Anonymouslogin"
             android:layout_above="@+id/textView"
             android:layout_alignEnd="@+id/textView"
             android:layout_marginLeft="10dp" />
+
     </LinearLayout>
 
 </LinearLayout>

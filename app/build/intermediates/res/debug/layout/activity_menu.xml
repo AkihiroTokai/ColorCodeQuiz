@@ -50,7 +50,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Practice"
             android:id="@+id/textView"
-            android:layout_above="@+id/ColortoCode_practice"
+            android:layout_above="@+id/twitter"
             android:layout_toStartOf="@+id/CodertoColor_practice" />
     </LinearLayout>
 
@@ -77,7 +77,7 @@
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:text="ColortoCode"
-            android:id="@+id/ColortoCode_practice"
+            android:id="@+id/twitter"
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-unlock"
@@ -126,7 +126,7 @@
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:text="Level6～10"
-            android:id="@+id/tomenu3"
+            android:id="@+id/facebook"
             bootstrap:bb_type="primary"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"

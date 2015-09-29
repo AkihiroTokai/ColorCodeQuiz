@@ -627,144 +627,147 @@ public class ColortoCodeActivity extends AppCompatActivity {
     }
 
     public void setanswer() {
-         //createColorCode
-         Random rnd1 = new Random();
-         int r = rnd1.nextInt(256);
-         Random rnd2 = new Random();
-         int g = rnd2.nextInt(256);
-         Random rnd3 = new Random();
-         int b = rnd3.nextInt(256);
+        //createColorCode
+        Random rnd1 = new Random();
+        int r = rnd1.nextInt(256);
+        Random rnd2 = new Random();
+        int g = rnd2.nextInt(256);
+        Random rnd3 = new Random();
+        int b = rnd3.nextInt(256);
 
-         int r_a1,r_a2,r_a3,g_a1,g_a2,g_a3,b_a1,b_a2,b_a3;
+        int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
 
-         //createChoicesColorcode
-         while (true) {
+        //createChoicesColorcode
+        while (true) {
 
-             Random rnd5 = new Random();
-             r_a1 = rnd5.nextInt(256);
-             Random rnd6 = new Random();
-             r_a2 = rnd6.nextInt(256);
-             Random rnd7 = new Random();
-             r_a3 = rnd7.nextInt(256);
+            Random rnd5 = new Random();
+            r_a1 = rnd5.nextInt(256);
+            Random rnd6 = new Random();
+            r_a2 = rnd6.nextInt(256);
+            Random rnd7 = new Random();
+            r_a3 = rnd7.nextInt(256);
 
-             Random rnd8 = new Random();
-             g_a1 = rnd8.nextInt(256);
-             Random rnd9 = new Random();
-             g_a2 = rnd9.nextInt(256);
-             Random rnd10 = new Random();
-             g_a3 = rnd10.nextInt(256);
+            Random rnd8 = new Random();
+            g_a1 = rnd8.nextInt(256);
+            Random rnd9 = new Random();
+            g_a2 = rnd9.nextInt(256);
+            Random rnd10 = new Random();
+            g_a3 = rnd10.nextInt(256);
 
-             Random rnd11 = new Random();
-             b_a1 = rnd11.nextInt(256);
-             Random rnd12 = new Random();
-             b_a2 = rnd12.nextInt(256);
-             Random rnd13 = new Random();
-             b_a3 = rnd13.nextInt(256);
+            Random rnd11 = new Random();
+            b_a1 = rnd11.nextInt(256);
+            Random rnd12 = new Random();
+            b_a2 = rnd12.nextInt(256);
+            Random rnd13 = new Random();
+            b_a3 = rnd13.nextInt(256);
 
 
-             int abs_r1_2 = Math.abs(r_a1 - r_a2);
-             int abs_r2_3 = Math.abs(r_a2 - r_a3);
-             int abs_r3_1 = Math.abs(r_a3 - r_a1);
-             int abs_r_1  = Math.abs(r - r_a1);
-             int abs_r_2  = Math.abs(r - r_a2);
-             int abs_r_3  = Math.abs(r - r_a3);
+            int abs_r1_2 = Math.abs(r_a1 - r_a2);
+            int abs_r2_3 = Math.abs(r_a2 - r_a3);
+            int abs_r3_1 = Math.abs(r_a3 - r_a1);
+            int abs_r_1 = Math.abs(r - r_a1);
+            int abs_r_2 = Math.abs(r - r_a2);
+            int abs_r_3 = Math.abs(r - r_a3);
 
-             int abs_g1_2 = Math.abs(g_a1 - g_a2);
-             int abs_g2_3 = Math.abs(g_a2 - g_a3);
-             int abs_g3_1 = Math.abs(g_a3 - g_a1);
-             int abs_g_1  = Math.abs(g - g_a1);
-             int abs_g_2  = Math.abs(g - g_a2);
-             int abs_g_3  = Math.abs(g - g_a3);
+            int abs_g1_2 = Math.abs(g_a1 - g_a2);
+            int abs_g2_3 = Math.abs(g_a2 - g_a3);
+            int abs_g3_1 = Math.abs(g_a3 - g_a1);
+            int abs_g_1 = Math.abs(g - g_a1);
+            int abs_g_2 = Math.abs(g - g_a2);
+            int abs_g_3 = Math.abs(g - g_a3);
 
-             int abs_b1_2 = Math.abs(b_a1 - b_a2);
-             int abs_b2_3 = Math.abs(b_a2 - b_a3);
-             int abs_b3_1 = Math.abs(b_a3 - b_a1);
-             int abs_b_1  = Math.abs(b - b_a1);
-             int abs_b_2  = Math.abs(b - b_a2);
-             int abs_b_3  = Math.abs(b - b_a3);
+            int abs_b1_2 = Math.abs(b_a1 - b_a2);
+            int abs_b2_3 = Math.abs(b_a2 - b_a3);
+            int abs_b3_1 = Math.abs(b_a3 - b_a1);
+            int abs_b_1 = Math.abs(b - b_a1);
+            int abs_b_2 = Math.abs(b - b_a2);
+            int abs_b_3 = Math.abs(b - b_a3);
 
-             //ｒ,g,bのいずれかがほかの選択肢及び正解とminlimitからmaxlimitの範囲で離れていたらbreak
-             if ((maxlimit>=abs_r_1)&&(minlimit<=abs_r_1 )||(maxlimit>=abs_g_1)&&(minlimit<=abs_b_1 )||((maxlimit>=abs_b_1)&&(minlimit<=abs_b_1 ))) {
-                 if ((maxlimit >= abs_r_2) && (minlimit <= abs_r_2) || (maxlimit >= abs_g_2) && (minlimit <= abs_b_2) || ((maxlimit >= abs_b_2) && (minlimit <= abs_b_2))) {
-                     if ((maxlimit >= abs_r_3) && (minlimit <= abs_r_3) || (maxlimit >= abs_g_3) && (minlimit <= abs_b_3) || ((maxlimit >= abs_b_3) && (minlimit <= abs_b_3))) {
-                         if ((maxlimit >= abs_r1_2) && (minlimit <= abs_r1_2) || (maxlimit >= abs_g1_2) && (minlimit <= abs_b1_2) || ((maxlimit >= abs_b1_2) && (minlimit <= abs_b1_2))) {
-                             if ((maxlimit >= abs_r2_3) && (minlimit <= abs_r2_3) || (maxlimit >= abs_g2_3) && (minlimit <= abs_b2_3) || ((maxlimit >= abs_b2_3) && (minlimit <= abs_b2_3))) {
-                                 if ((maxlimit >= abs_r3_1) && (minlimit <= abs_r3_1) || (maxlimit >= abs_g3_1) && (minlimit <= abs_b3_1) || ((maxlimit >= abs_b3_1) && (minlimit <= abs_b3_1))) {
-                                     break;
-                                 }
-                             }
-                         }
-                     }
-                 }
+            //ｒ,g,bのいずれかがほかの選択肢及び正解とminlimitからmaxlimitの範囲で離れていたらbreak
+            if ((maxlimit >= abs_r_1) && (minlimit <= abs_r_1) || (maxlimit >= abs_g_1) && (minlimit <= abs_b_1) || ((maxlimit >= abs_b_1) && (minlimit <= abs_b_1))) {
+                if ((maxlimit >= abs_r_2) && (minlimit <= abs_r_2) || (maxlimit >= abs_g_2) && (minlimit <= abs_b_2) || ((maxlimit >= abs_b_2) && (minlimit <= abs_b_2))) {
+                    if ((maxlimit >= abs_r_3) && (minlimit <= abs_r_3) || (maxlimit >= abs_g_3) && (minlimit <= abs_b_3) || ((maxlimit >= abs_b_3) && (minlimit <= abs_b_3))) {
+                        if ((maxlimit >= abs_r1_2) && (minlimit <= abs_r1_2) || (maxlimit >= abs_g1_2) && (minlimit <= abs_b1_2) || ((maxlimit >= abs_b1_2) && (minlimit <= abs_b1_2))) {
+                            if ((maxlimit >= abs_r2_3) && (minlimit <= abs_r2_3) || (maxlimit >= abs_g2_3) && (minlimit <= abs_b2_3) || ((maxlimit >= abs_b2_3) && (minlimit <= abs_b2_3))) {
+                                if ((maxlimit >= abs_r3_1) && (minlimit <= abs_r3_1) || (maxlimit >= abs_g3_1) && (minlimit <= abs_b3_1) || ((maxlimit >= abs_b3_1) && (minlimit <= abs_b3_1))) {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
 
-             }
-         }
+            }
+        }
 
-         //cleanCheckselect
-         check_select1.setImageDrawable(null);
-         check_select2.setImageDrawable(null);
-         check_select3.setImageDrawable(null);
-         check_select4.setImageDrawable(null);
+        //cleanCheckselect
+        check_select1.setImageDrawable(null);
+        check_select2.setImageDrawable(null);
+        check_select3.setImageDrawable(null);
+        check_select4.setImageDrawable(null);
 
-         // setanswer
-         Random rnd4 = new Random();
-         check_answer = rnd4.nextInt(3) + 1;
-         String r16 = Integer.toHexString(r);
-         if ( r16.length() < 2) r16 = "0" + r16;
-         String g16 = Integer.toHexString(g);
-         if ( g16.length() < 2) g16 = "0" + g16;
-         String b16 = Integer.toHexString(b);
-         if ( b16.length() < 2) b16 = "0" + b16;
+        // setanswer
+        Random rnd4 = new Random();
+        check_answer = rnd4.nextInt(3) + 1;
+        String r16 = Integer.toHexString(r);
+        if (r16.length() < 2) r16 = "0" + r16;
+        String g16 = Integer.toHexString(g);
+        if (g16.length() < 2) g16 = "0" + g16;
+        String b16 = Integer.toHexString(b);
+        if (b16.length() < 2) b16 = "0" + b16;
 
-         String r_a1_16 = Integer.toHexString(r_a1);
-         if ( r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
-         String g_a1_16 = Integer.toHexString(g_a1);
-         if ( g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
-         String b_a1_16 = Integer.toHexString(b_a1);
-         if ( b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
+        String r_a1_16 = Integer.toHexString(r_a1);
+        if (r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
+        String g_a1_16 = Integer.toHexString(g_a1);
+        if (g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
+        String b_a1_16 = Integer.toHexString(b_a1);
+        if (b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
 
-         String r_a2_16 = Integer.toHexString(r_a2);
-         if ( r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
-         String g_a2_16 = Integer.toHexString(g_a2);
-         if ( g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
-         String b_a2_16 = Integer.toHexString(b_a2);
-         if ( b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+        String r_a2_16 = Integer.toHexString(r_a2);
+        if (r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
+        String g_a2_16 = Integer.toHexString(g_a2);
+        if (g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
+        String b_a2_16 = Integer.toHexString(b_a2);
+        if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
 
-         String r_a3_16 = Integer.toHexString(r_a3);
-         if ( r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
-         String g_a3_16 = Integer.toHexString(g_a3);
-         if ( g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
-         String b_a3_16 = Integer.toHexString(b_a3);
-         if ( b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+        String r_a3_16 = Integer.toHexString(r_a3);
+        if (r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
+        String g_a3_16 = Integer.toHexString(g_a3);
+        if (g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
+        String b_a3_16 = Integer.toHexString(b_a3);
+        if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
 
-         switch (check_answer) {
-             case 1:
-                 answer1.setText("#" + r16 + g16 + b16);
-                 answer2.setText("#"+r_a1_16+g_a1_16+b_a1_16);
-                 answer3.setText("#"+r_a2_16+g_a2_16+b_a2_16);
-                 answer4.setText("#"+r_a3_16+g_a3_16+b_a3_16);
-                 break;
-             case 2:
-                 answer1.setText("#"+r_a1_16+g_a1_16 + b_a1_16);
-                 answer2.setText("#" + r16 + g16 + b16);
-                 answer3.setText("#"+r_a2_16+g_a2_16+b_a2_16);
-                 answer4.setText("#"+r_a3_16+g_a3_16+b_a3_16);
-                 break;
-             case 3:
-                 answer1.setText("#"+r_a1_16+g_a1_16 + b_a1_16);
-                 answer2.setText("#"+r_a2_16+g_a2_16+b_a2_16);
-                 answer3.setText("#" + r16 + g16 + b16);
-                 answer4.setText("#"+r_a3_16+g_a3_16+b_a3_16);
-                 break;
-             case 4:
-                 answer1.setText("#"+r_a1_16+g_a1_16 + b_a1_16);
-                 answer2.setText("#"+r_a2_16+g_a2_16+b_a2_16);
-                 answer3.setText("#"+r_a3_16+g_a3_16+b_a3_16);
-                 answer4.setText("#" + r16 + g16 + b16);
-                 break;
-         }
-         question.setBackgroundColor(Color.rgb(r, g, b));
-     }
+        switch (check_answer) {
+            case 1:
+                answer1.setText("#" + r16 + g16 + b16);
+                answer2.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+            break;
+
+            case 2:
+                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                answer2.setText("#" + r16 + g16 + b16);
+                answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+            break;
+
+            case 3:
+                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                answer3.setText("#" + r16 + g16 + b16);
+                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+            break;
+
+            case 4:
+                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                answer3.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                answer4.setText("#" + r16 + g16 + b16);
+            break;
+        }
+        question.setBackgroundColor(Color.rgb(r, g, b));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -72,7 +72,7 @@ public class menu2Activity extends AppCompatActivity {
         nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
         nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
 
-
+        nowPointview.setText("YourPoint:"+nowPoint);
 
         //IconChange
         if(ull_CodetoColor >= 1){

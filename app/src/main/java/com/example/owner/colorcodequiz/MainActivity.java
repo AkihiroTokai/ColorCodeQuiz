@@ -346,7 +346,6 @@ public class MainActivity extends AppCompatActivity {
             compm();
         }
 
-
         //Check:Levelup(CodetoColor)
         if (ull_CodetoColor  == 0&& nowPoint >= 30& nocomp_CodetoColor0 >= 3 ){
             unlockmode = "CodetoColor";
@@ -638,8 +637,6 @@ public class MainActivity extends AppCompatActivity {
             check_answer = 4;
         }
     }
-
-
 
 
 

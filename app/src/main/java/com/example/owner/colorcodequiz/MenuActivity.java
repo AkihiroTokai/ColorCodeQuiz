@@ -44,6 +44,7 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         });    */
+
         //getData (Parse)
     /*    getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();
@@ -129,7 +130,6 @@ public class MenuActivity extends AppCompatActivity {
                     .show();
         }
     }
-
 
     public void CodetoColor_practice (View v){
         new AlertDialog.Builder(MenuActivity.this)

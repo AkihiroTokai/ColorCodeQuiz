@@ -542,7 +542,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
         editor.putInt("nocomp_ColortoCode7", nocomp_ColortoCode7);
         editor.putInt("nocomp_ColortoCode8", nocomp_ColortoCode8);
         editor.putInt("nocomp_ColortoCode9", nocomp_ColortoCode9);
-        editor.putInt("nocomp_ColortoCode2", nocomp_ColortoCode10);
+        editor.putInt("nocomp_ColortoCode10", nocomp_ColortoCode10);
         editor.apply();
 
         //gameFinish

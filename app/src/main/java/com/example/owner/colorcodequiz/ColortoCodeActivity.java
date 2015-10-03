@@ -50,6 +50,9 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int level;
     private int ull_old;
 
+    private int r , g , b;
+    private  int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
+
     private int nocomp_CodetoColor1;
     private int nocomp_CodetoColor2;
     private int nocomp_CodetoColor3;
@@ -185,6 +188,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 noca = noca + 1;
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
@@ -209,6 +213,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
@@ -230,6 +235,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/"+ noq);
                 nextquestion = true;
@@ -250,6 +256,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/"+ noq);
                 nextquestion = true;
@@ -264,7 +271,37 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
     }
 
+    public void showRightanswer(){
+        switch (check_answer) {
+            case 1:
+                answer1.setTextColor(Color.rgb(r,g,b));
+                answer2.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
+            break;
 
+            case 2:
+                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setTextColor(Color.rgb(r, g, b));
+                answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
+            break;
+
+            case 3:
+                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer3.setTextColor(Color.rgb(r, g, b));
+                answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
+            break;
+
+            case 4:
+                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer3.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
+                answer4.setTextColor(Color.rgb(r, g, b));
+            break;
+        }
+    }
 
 
     public void gameFinish(){
@@ -629,13 +666,13 @@ public class ColortoCodeActivity extends AppCompatActivity {
     public void setanswer() {
         //createColorCode
         Random rnd1 = new Random();
-        int r = rnd1.nextInt(256);
+        r = rnd1.nextInt(256);
         Random rnd2 = new Random();
-        int g = rnd2.nextInt(256);
+        g = rnd2.nextInt(256);
         Random rnd3 = new Random();
-        int b = rnd3.nextInt(256);
+        b = rnd3.nextInt(256);
 
-        int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
+
 
         //createChoicesColorcode
         while (true) {

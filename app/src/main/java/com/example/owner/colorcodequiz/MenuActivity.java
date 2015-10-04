@@ -21,7 +21,6 @@ public class MenuActivity extends AppCompatActivity {
     private int nowPoint;
     private int ull_CodetoColor;
     private int ull_ColortoCode;
-    private int nd_getPoint;
     private int nocomp_CodetoColor0;
     private int nocomp_ColortoCode0;
 

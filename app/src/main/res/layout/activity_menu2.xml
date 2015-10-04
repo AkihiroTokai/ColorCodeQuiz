@@ -40,7 +40,7 @@
             android:text="Number of question(Locked):"
             android:id="@+id/Numberofquestion"
             android:layout_alignBottom="@+id/setnum"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_alignEnd="@+id/mode"
             android:layout_margin="10dp"/>
 
         <EditText
@@ -95,8 +95,8 @@
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode1" />
     </LinearLayout>
@@ -143,8 +143,8 @@
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode2" />
     </LinearLayout>
@@ -189,8 +189,8 @@
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode3" />
     </LinearLayout>
@@ -234,8 +234,8 @@
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode4" />
     </LinearLayout>
@@ -282,8 +282,8 @@
             bootstrap:bb_type="success"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode5" />
     </LinearLayout>

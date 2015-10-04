@@ -2645,7 +2645,7 @@ containing a value of this type.
         public static final int text=0x7f0c00ed;
         public static final int text2=0x7f0c00eb;
         public static final int textSpacerNoButtons=0x7f0c0061;
-        public static final int textView=0x7f0c0093;
+        public static final int mode =0x7f0c0093;
         public static final int textView3=0x7f0c008e;
         public static final int textView4=0x7f0c0091;
         public static final int text_wrapper=0x7f0c00dc;

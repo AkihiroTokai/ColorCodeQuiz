@@ -18,6 +18,7 @@ import com.beardedhen.androidbootstrap.BootstrapButton;
 public class MenuActivity extends AppCompatActivity {
 
     private TextView nowPointview;
+    private TextView mode;
     private int nowPoint;
     private int ull_CodetoColor;
     private int ull_ColortoCode;
@@ -31,6 +32,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
+        mode =(TextView)findViewById(R.id.mode);
 
        /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
         parseQuery.findInBackground(new FindCallback<getData>() {

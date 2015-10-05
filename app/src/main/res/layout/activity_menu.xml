@@ -42,13 +42,7 @@
         android:weightSum="1"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Mode"
-            android:id="@+id/mode"
-            android:layout_toStartOf="@+id/CodertoColor_practice" />
+
 
     </LinearLayout>
     <LinearLayout
@@ -60,14 +54,16 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New RadioButton"
-            android:id="@+id/radioButton2" />
+            android:text="RGB"
+            android:id="@+id/radioButton2"
+            android:onClick="selectRGB" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New RadioButton"
-            android:id="@+id/radioButton" />
+            android:text="HSB"
+            android:id="@+id/radioButton"
+            android:onClick="selectHSB" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

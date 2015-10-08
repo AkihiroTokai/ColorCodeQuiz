@@ -19,7 +19,9 @@ public class MenuActivity extends AppCompatActivity {
 
     private TextView nowPointview;
     private TextView mode;
+    private int colormode;
     private int nowPoint;
+    private int HSB_nowPoint;
     private int ull_CodetoColor;
     private int ull_ColortoCode;
     private int nocomp_CodetoColor0;
@@ -104,7 +106,15 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(intent);
     }
 
+    public void selectRGB(View v){
+         colormode = 1;
+         nowPointview.setText(nowPoint);
+    }
 
+    public void selectHSB (View v){
+        colormode = 2;
+        nowPointview.setText(HSB_nowPoint);
+    }
 
     public void tomenu2(View v) {
         if (ull_CodetoColor>=1||ull_CodetoColor>=1) {

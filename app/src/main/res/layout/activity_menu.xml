@@ -92,12 +92,6 @@
         android:layout_height="80dp"
         android:gravity="center">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
-
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="140dp"
             android:layout_height="50dp"

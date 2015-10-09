@@ -277,28 +277,28 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 answer2.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 2:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r, g, b));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 3:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r, g, b));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 4:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
                 answer4.setTextColor(Color.rgb(r, g, b));
-            break;
+                break;
         }
     }
 

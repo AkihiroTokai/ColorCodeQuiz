@@ -48,8 +48,10 @@ public class CodetoColorActivity extends AppCompatActivity {
     private int nowPoint;
     private int level;
     private int ull_old;
-    private int r,g,b;
-    private int r_a1,r_a2,r_a3,g_a1,g_a2,g_a3,b_a1,b_a2,b_a3;
+    private int r, g, b;
+    private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
+    private int textcolor_ca,textcolor_a1,textcolor_a2,textcolor_a3;
+
 
     private int nocomp_CodetoColor1;
     private int nocomp_CodetoColor2;
@@ -149,31 +151,31 @@ public class CodetoColorActivity extends AppCompatActivity {
 
         //getData（SharedPreference)
         SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
+        ull_CodetoColor = getData.getInt("ull_CodetoColor", 0);
+        ull_ColortoCode = getData.getInt("ull_ColortoCode", 0);
+        nowPoint = getData.getInt("nowPoint", 0);
 
-        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
-        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
-        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
-        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
-        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
-        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
-        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
-        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
-        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
-        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1", 0);
+        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2", 0);
+        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3", 0);
+        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4", 0);
+        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5", 0);
+        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6", 0);
+        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7", 0);
+        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8", 0);
+        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9", 0);
+        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10", 0);
 
-        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
-        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
-        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
-        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
-        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
-        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
-        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
-        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
-        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
-        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1", 0);
+        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2", 0);
+        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3", 0);
+        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4", 0);
+        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5", 0);
+        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6", 0);
+        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7", 0);
+        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8", 0);
+        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9", 0);
+        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10", 0);
 
 
     }
@@ -266,44 +268,102 @@ public class CodetoColorActivity extends AppCompatActivity {
         }
     }
 
-    public void showRightanswer(){
+    public void showRightanswer() {
+        answer1.setTextColor(Color.parseColor("#000000"));
+        answer2.setTextColor(Color.parseColor("#000000"));
+        answer3.setTextColor(Color.parseColor("#000000"));
+        answer4.setTextColor(Color.parseColor("#000000"));
         switch (check_answer) {
             case 1:
-                answer1.setTextColor(Color.rgb(r,g,b));
-                answer2.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
-                answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
-                answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
+                answer1.setText("#" + r + g + b);
+                if (textcolor_ca == 1) {
+                    answer1.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer2.setText("#" + r_a1 + g_a1 + b_a1);
+                if (textcolor_a1 == 1) {
+                    answer2.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer3.setText("#" + r_a2 + g_a2 + b_a2);
+                if (textcolor_a2 == 1) {
+                    answer3.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer4.setText("#" + r_a3 + g_a3 + b_a3);
+                if (textcolor_a3 == 1) {
+                    answer4.setTextColor(Color.parseColor("#ffffff"));
+                }
                 break;
 
             case 2:
-                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
-                answer2.setTextColor(Color.rgb(r, g, b));
-                answer3.setText("#"+r_a2+ g_a2+ b_a2);
-                answer4.setText("#"+r_a3+ g_a3+ b_a3);
-            break;
+                answer1.setText("#" + r_a1 + g_a1 + b_a1);
+                if (textcolor_a1 == 1) {
+                    answer1.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer2.setText("#" + r + g + b);
+                if (textcolor_ca == 1) {
+                    answer2.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer3.setText("#" + r_a2 + g_a2 + b_a2);
+                if (textcolor_a2 == 1) {
+                    answer3.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer4.setText("#" + r_a3 + g_a3 + b_a3);
+                if (textcolor_a3 == 1) {
+                    answer4.setTextColor(Color.parseColor("#ffffff"));
+                }
+                break;
 
             case 3:
-                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
-                answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
-                answer3.setTextColor(Color.rgb(r, g, b));
-                answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                answer1.setText("#" + r_a1 + g_a1 + b_a1);
+                if (textcolor_a1 == 1) {
+                    answer1.setTextColor(Color.parseColor("#ffffff"));
+                }
+
+                answer2.setText("#" + r_a2 + g_a2 + b_a2);
+                if (textcolor_a2 == 1) {
+                    answer2.setTextColor(Color.parseColor("#ffffff"));
+                }
+
+                answer3.setText("#" + r + g + b);
+                if (textcolor_ca == 1) {
+                    answer3.setTextColor(Color.parseColor("#ffffff"));
+                }
+                answer4.setText("#" + r_a3 + g_a3 + b_a3);
+                if (textcolor_a3== 1) {
+                    answer4.setTextColor(Color.parseColor("#ffffff"));
+                }
+                break;
 
             case 4:
-                answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
-                answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
-                answer3.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-                answer4.setTextColor(Color.rgb(r, g, b));
-            break;
+                answer1.setText("#" + r_a1 + g_a1 + b_a1);
+                if (textcolor_a1 == 1) {
+                    answer1.setTextColor(Color.parseColor("#ffffff"));
+                }
+
+                answer2.setText("#" + r_a2 + g_a2 + b_a2);
+                if (textcolor_a2 == 1) {
+                    answer2.setTextColor(Color.parseColor("#ffffff"));
+                }
+
+                answer3.setText("#" + r_a3 + g_a3 + b_a3);
+                if (textcolor_a3 == 1) {
+                    answer3.setTextColor(Color.parseColor("#ffffff"));
+                }
+
+                answer4.setText("#" + r + g + b);
+                if (textcolor_ca == 1) {
+                    answer4.setTextColor(Color.parseColor("#ffffff"));
+                }
+                break;
         }
     }
+
     public void gameFinish() {
         //Add:Score
         if (level <= 3) {
             if (noca <= 7) {
                 getPoint = 1;
                 gameResult = "クリアできませんでした。";
-            } else if (noca == 8 ) {
+            } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
             } else if (noca == 9 || noca == 10) {
@@ -343,66 +403,66 @@ public class CodetoColorActivity extends AppCompatActivity {
         nowPoint = nowPoint + getPoint;
 
         //Count:nocomp
-        switch (level){
+        switch (level) {
             case 1:
                 getData checkData1 = new getData();
                 nocomp_CodetoColor1++;
                 checkData1.setnocomp_CodetoColor1(nocomp_CodetoColor1);
-            break;
+                break;
 
             case 2:
                 getData checkData2 = new getData();
                 nocomp_CodetoColor2++;
                 checkData2.setnocomp_CodetoColor1(nocomp_CodetoColor2);
-            break;
+                break;
 
             case 3:
                 getData checkData3 = new getData();
                 nocomp_CodetoColor3++;
                 checkData3.setnocomp_CodetoColor1(nocomp_CodetoColor3);
-            break;
+                break;
 
             case 4:
                 getData checkData4 = new getData();
                 nocomp_CodetoColor4++;
                 checkData4.setnocomp_CodetoColor1(nocomp_CodetoColor4);
-            break;
+                break;
 
             case 5:
                 getData checkData5 = new getData();
                 nocomp_CodetoColor5++;
                 checkData5.setnocomp_CodetoColor1(nocomp_CodetoColor5);
-            break;
+                break;
 
             case 6:
                 getData checkData6 = new getData();
                 nocomp_CodetoColor6++;
                 checkData6.setnocomp_CodetoColor1(nocomp_CodetoColor6);
-            break;
+                break;
 
             case 7:
                 getData checkData7 = new getData();
                 nocomp_CodetoColor7++;
                 checkData7.setnocomp_CodetoColor1(nocomp_CodetoColor7);
-            break;
+                break;
 
             case 8:
                 getData checkData8 = new getData();
                 nocomp_CodetoColor8++;
                 checkData8.setnocomp_CodetoColor8(nocomp_CodetoColor8);
-            break;
+                break;
 
             case 9:
                 getData checkData9 = new getData();
                 nocomp_CodetoColor9++;
                 checkData9.setnocomp_CodetoColor9(nocomp_CodetoColor9);
-            break;
+                break;
 
             case 10:
                 getData checkData10 = new getData();
                 nocomp_CodetoColor10++;
                 checkData10.setnocomp_CodetoColor10(nocomp_CodetoColor10);
-            break;
+                break;
         }
 
         //Check:Levelup(ColortoCode)
@@ -539,8 +599,6 @@ public class CodetoColorActivity extends AppCompatActivity {
         editor.apply();
 
 
-
-
         //gameFinish
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(getPoint + "Point獲得しました。")
@@ -558,7 +616,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 }).show();
     }
 
-    public  void ulm_CodetoColor(){
+    public void ulm_CodetoColor() {
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
@@ -573,9 +631,9 @@ public class CodetoColorActivity extends AppCompatActivity {
                 .show();
     }
 
-    public  void ulm_ColortoCode(){
+    public void ulm_ColortoCode() {
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
+                .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -588,9 +646,9 @@ public class CodetoColorActivity extends AppCompatActivity {
                 .show();
     }
 
-    public void compm(){
+    public void compm() {
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(unlockmode+"をMasterしました！")
+                .setTitle(unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -605,7 +663,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = "ColorCodeQuizで"+ unlockmode + ull_old + "をMasterしました！";
+        String strMessage = "ColorCodeQuizで" + unlockmode + ull_old + "をMasterしました！";
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {
@@ -622,7 +680,7 @@ public class CodetoColorActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-        public void setanswer(){
+    public void setanswer() {
         //createQuesionCode
         Random rnd1 = new Random();
         r = rnd1.nextInt(256);
@@ -636,12 +694,12 @@ public class CodetoColorActivity extends AppCompatActivity {
         Random rnd4 = new Random();
         check_answer = rnd4.nextInt(3) + 1;
         String r16 = Integer.toHexString(r);
-        if ( r16.length() < 2) r16 = "0" + r16;
+        if (r16.length() < 2) r16 = "0" + r16;
         String g16 = Integer.toHexString(g);
-        if ( g16.length() < 2) g16 = "0" + g16;
+        if (g16.length() < 2) g16 = "0" + g16;
         String b16 = Integer.toHexString(b);
-        if ( b16.length() < 2) b16 = "0" + b16;
-        questioncode.setText("#"+r16+g16+b16);
+        if (b16.length() < 2) b16 = "0" + b16;
+        questioncode.setText("#" + r16 + g16 + b16);
 
 
         //createChoicesColorcode
@@ -672,38 +730,92 @@ public class CodetoColorActivity extends AppCompatActivity {
             int abs_r1_2 = Math.abs(r_a1 - r_a2);
             int abs_r2_3 = Math.abs(r_a2 - r_a3);
             int abs_r3_1 = Math.abs(r_a3 - r_a1);
-            int abs_r_1  = Math.abs(r - r_a1);
-            int abs_r_2  = Math.abs(r - r_a2);
-            int abs_r_3  = Math.abs(r - r_a3);
+            int abs_r_1 = Math.abs(r - r_a1);
+            int abs_r_2 = Math.abs(r - r_a2);
+            int abs_r_3 = Math.abs(r - r_a3);
 
             int abs_g1_2 = Math.abs(g_a1 - g_a2);
             int abs_g2_3 = Math.abs(g_a2 - g_a3);
             int abs_g3_1 = Math.abs(g_a3 - g_a1);
-            int abs_g_1  = Math.abs(g - g_a1);
-            int abs_g_2  = Math.abs(g - g_a2);
-            int abs_g_3  = Math.abs(g - g_a3);
+            int abs_g_1 = Math.abs(g - g_a1);
+            int abs_g_2 = Math.abs(g - g_a2);
+            int abs_g_3 = Math.abs(g - g_a3);
 
             int abs_b1_2 = Math.abs(b_a1 - b_a2);
             int abs_b2_3 = Math.abs(b_a2 - b_a3);
             int abs_b3_1 = Math.abs(b_a3 - b_a1);
-            int abs_b_1  = Math.abs(b - b_a1);
-            int abs_b_2  = Math.abs(b - b_a2);
-            int abs_b_3  = Math.abs(b - b_a3);
+            int abs_b_1 = Math.abs(b - b_a1);
+            int abs_b_2 = Math.abs(b - b_a2);
+            int abs_b_3 = Math.abs(b - b_a3);
 
-             //ｒ,g,bのいずれかがほかの選択肢及び正解とminlimitからmaxlimitの範囲で離れていたらbreak
-            if ((maxlimit>=abs_r_1)&&(minlimit<=abs_r_1 )||(maxlimit>=abs_g_1)&&(minlimit<=abs_b_1 )||((maxlimit>=abs_b_1)&&(minlimit<=abs_b_1 ))) {
-                if ((maxlimit >= abs_r_2) && (minlimit <= abs_r_2) || (maxlimit >= abs_g_2) && (minlimit <= abs_b_2) || ((maxlimit >= abs_b_2) && (minlimit <= abs_b_2))) {
-                    if ((maxlimit >= abs_r_3) && (minlimit <= abs_r_3) || (maxlimit >= abs_g_3) && (minlimit <= abs_b_3) || ((maxlimit >= abs_b_3) && (minlimit <= abs_b_3))) {
-                        if ((maxlimit >= abs_r1_2) && (minlimit <= abs_r1_2) || (maxlimit >= abs_g1_2) && (minlimit <= abs_b1_2) || ((maxlimit >= abs_b1_2) && (minlimit <= abs_b1_2))) {
-                            if ((maxlimit >= abs_r2_3) && (minlimit <= abs_r2_3) || (maxlimit >= abs_g2_3) && (minlimit <= abs_b2_3) || ((maxlimit >= abs_b2_3) && (minlimit <= abs_b2_3))) {
-                                if ((maxlimit >= abs_r3_1) && (minlimit <= abs_r3_1) || (maxlimit >= abs_g3_1) && (minlimit <= abs_b3_1) || ((maxlimit >= abs_b3_1) && (minlimit <= abs_b3_1))) {
+            int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
+            int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
+            int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
+            int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
+            int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
+            int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
+
+
+            //CheckBrightness
+            int brightness_ca = r + g + b;
+            int brightness_a1 = r_a1 + g_a1 + b_a1;
+            int brightness_a2 = r_a2 + g_a2 + b_a2;
+            int brightness_a3 = r_a2 + g_a2 + b_a2;
+
+            if( r >= 127 || g > 127 || b >= 127 ||brightness_ca >=384){
+                textcolor_ca = 1;
+            } else{
+                textcolor_ca = 2;
+            }
+
+            if( r_a1 >= 127 || g_a2 > 127 || b_a3 >= 127 ||brightness_a1 >=384){
+                textcolor_a1 = 1;
+            } else{
+                textcolor_a1 = 2;
+            }
+
+            if( r_a2 >= 127 || g_a2 > 127 || b_a2 >= 127 ||brightness_a2 >=384){
+                textcolor_a2 = 1;
+            } else{
+                textcolor_a2 = 2;
+            }
+
+            if( r_a3 >= 127 || g_a3 > 127 || b_a3 >= 127 ||brightness_a3 >=384){
+                textcolor_a3 = 1;
+            } else{
+                textcolor_a3 = 2;
+            }
+
+            boolean check_break = false;
+
+            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
+                if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
+                    if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
+                        if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
+                            if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
+                                if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
+                                    check_break = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 難易度調整
+            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
                                     break;
                                 }
                             }
                         }
                     }
                 }
-
             }
         }
 
@@ -742,6 +854,7 @@ public class CodetoColorActivity extends AppCompatActivity {
         }
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

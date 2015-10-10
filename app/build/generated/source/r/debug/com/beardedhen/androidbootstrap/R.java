@@ -120,15 +120,15 @@ public final class R {
 		public static final int thumbnail_circle_minimal = 0x7f0200ba;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0c00f0;
-		public static final int container = 0x7f0c00c9;
-		public static final int dimensionsLabel = 0x7f0c00cb;
+		public static final int action_settings = 0x7f0c00f2;
+		public static final int container = 0x7f0c00cb;
+		public static final int dimensionsLabel = 0x7f0c00cd;
 		public static final int image = 0x7f0c0056;
-		public static final int layout = 0x7f0c00c5;
-		public static final int lblLeft = 0x7f0c00c6;
-		public static final int lblMiddle = 0x7f0c00c7;
-		public static final int lblRight = 0x7f0c00c8;
-		public static final int placeholder = 0x7f0c00ca;
+		public static final int layout = 0x7f0c00c7;
+		public static final int lblLeft = 0x7f0c00c8;
+		public static final int lblMiddle = 0x7f0c00c9;
+		public static final int lblRight = 0x7f0c00ca;
+		public static final int placeholder = 0x7f0c00cc;
 	}
 	public static final class layout {
 		public static final int bootstrap_button = 0x7f030022;

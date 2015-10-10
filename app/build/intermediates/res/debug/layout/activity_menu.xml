@@ -19,13 +19,6 @@
         android:layout_gravity="left"
         android:gravity="center|end">
 
-      <!--  <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="LoginStatus"
-            android:id="@+id/textView2"
-            android:layout_gravity="center_vertical|right" />   -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,14 +35,55 @@
         android:weightSum="1"
         android:gravity="center">
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ColorMode"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RGBmodel"
+                android:id="@+id/radioButton2"
+                android:onClick="selectRGB" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HSBmodel"
+                android:id="@+id/radioButton"
+                android:onClick="selectHSB" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Practice"
-            android:id="@+id/textView"
+            android:id="@+id/mode"
             android:layout_above="@+id/twitter"
             android:layout_toStartOf="@+id/CodertoColor_practice" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -85,6 +119,7 @@
             android:layout_marginLeft="10dp" />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -129,8 +164,8 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:onClick="tomenu3"
-            android:layout_above="@+id/textView"
-            android:layout_alignEnd="@+id/textView"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp" />
     </LinearLayout>
 

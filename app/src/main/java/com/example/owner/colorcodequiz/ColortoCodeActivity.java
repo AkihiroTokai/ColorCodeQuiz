@@ -51,10 +51,12 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int ull_old;
 
     private int r , g , b;
-    private  int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
+    private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
+    private int bgcolor_ca,bgcolor_a1,bgcolor_a2,bgcolor_a3;
 
     private int nocomp_CodetoColor1;
     private int nocomp_CodetoColor2;
+
     private int nocomp_CodetoColor3;
     private int nocomp_CodetoColor4;
     private int nocomp_CodetoColor5;
@@ -719,22 +721,76 @@ public class ColortoCodeActivity extends AppCompatActivity {
             int abs_b_2 = Math.abs(b - b_a2);
             int abs_b_3 = Math.abs(b - b_a3);
 
-            //ｒ,g,bのいずれかがほかの選択肢及び正解とminlimitからmaxlimitの範囲で離れていたらbreak
-            if ((maxlimit >= abs_r_1) && (minlimit <= abs_r_1) || (maxlimit >= abs_g_1) && (minlimit <= abs_b_1) || ((maxlimit >= abs_b_1) && (minlimit <= abs_b_1))) {
-                if ((maxlimit >= abs_r_2) && (minlimit <= abs_r_2) || (maxlimit >= abs_g_2) && (minlimit <= abs_b_2) || ((maxlimit >= abs_b_2) && (minlimit <= abs_b_2))) {
-                    if ((maxlimit >= abs_r_3) && (minlimit <= abs_r_3) || (maxlimit >= abs_g_3) && (minlimit <= abs_b_3) || ((maxlimit >= abs_b_3) && (minlimit <= abs_b_3))) {
-                        if ((maxlimit >= abs_r1_2) && (minlimit <= abs_r1_2) || (maxlimit >= abs_g1_2) && (minlimit <= abs_b1_2) || ((maxlimit >= abs_b1_2) && (minlimit <= abs_b1_2))) {
-                            if ((maxlimit >= abs_r2_3) && (minlimit <= abs_r2_3) || (maxlimit >= abs_g2_3) && (minlimit <= abs_b2_3) || ((maxlimit >= abs_b2_3) && (minlimit <= abs_b2_3))) {
-                                if ((maxlimit >= abs_r3_1) && (minlimit <= abs_r3_1) || (maxlimit >= abs_g3_1) && (minlimit <= abs_b3_1) || ((maxlimit >= abs_b3_1) && (minlimit <= abs_b3_1))) {
+            int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
+            int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
+            int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
+            int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
+            int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
+            int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
+
+            boolean check_break = false;
+
+            //CheckBrightness
+            int brightness_ca = r + g + b;
+            int brightness_a1 = r_a1 + g_a1 + b_a1;
+            int brightness_a2 = r_a2 + g_a2 + b_a2;
+            int brightness_a3 = r_a2 + g_a2 + b_a2;
+
+            if( r >= 127 || g > 127 || b >= 127 ||brightness_ca >=384){
+                bgcolor_ca = 1;
+            } else{
+                bgcolor_ca = 2;
+            }
+
+            if( r_a1 >= 127 || g_a2 > 127 || b_a3 >= 127 ||brightness_a1 >=384){
+                bgcolor_a1 = 1;
+            } else{
+                bgcolor_a1 = 2;
+            }
+
+            if( r_a2 >= 127 || g_a2 > 127 || b_a2 >= 127 ||brightness_a2 >=384){
+                bgcolor_a2 = 1;
+            } else{
+                bgcolor_a2 = 2;
+            }
+
+            if( r_a3 >= 127 || g_a3 > 127 || b_a3 >= 127 ||brightness_a3 >=384){
+                bgcolor_a3 = 1;
+            } else{
+                bgcolor_a3 = 2;
+            }
+
+            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
+                if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
+                    if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
+                        if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
+                            if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
+                                if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
+                                    check_break = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 難易度調整
+            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
                                     break;
                                 }
                             }
                         }
                     }
                 }
-
             }
         }
+
 
         //cleanCheckselect
         check_select1.setImageDrawable(null);

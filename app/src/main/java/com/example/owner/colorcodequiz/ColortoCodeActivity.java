@@ -66,6 +66,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int nocomp_CodetoColor9;
     private int nocomp_CodetoColor10;
 
+
     private int nocomp_ColortoCode1;
     private int nocomp_ColortoCode2;
     private int nocomp_ColortoCode3;
@@ -275,32 +276,32 @@ public class ColortoCodeActivity extends AppCompatActivity {
     public void showRightanswer(){
         switch (check_answer) {
             case 1:
-                answer1.setTextColor(Color.rgb(r,g,b));
+                answer1.setTextColor(Color.rgb(r, g, b));
                 answer2.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-                break;
+            break;
 
             case 2:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r, g, b));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-                break;
+            break;
 
             case 3:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r, g, b));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-                break;
+            break;
 
             case 4:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
                 answer4.setTextColor(Color.rgb(r, g, b));
-                break;
+            break;
         }
     }
 
@@ -730,35 +731,6 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
             boolean check_break = false;
 
-            //CheckBrightness
-            int brightness_ca = r + g + b;
-            int brightness_a1 = r_a1 + g_a1 + b_a1;
-            int brightness_a2 = r_a2 + g_a2 + b_a2;
-            int brightness_a3 = r_a2 + g_a2 + b_a2;
-
-            if( r >= 127 || g > 127 || b >= 127 ||brightness_ca >=384){
-                bgcolor_ca = 1;
-            } else{
-                bgcolor_ca = 2;
-            }
-
-            if( r_a1 >= 127 || g_a2 > 127 || b_a3 >= 127 ||brightness_a1 >=384){
-                bgcolor_a1 = 1;
-            } else{
-                bgcolor_a1 = 2;
-            }
-
-            if( r_a2 >= 127 || g_a2 > 127 || b_a2 >= 127 ||brightness_a2 >=384){
-                bgcolor_a2 = 1;
-            } else{
-                bgcolor_a2 = 2;
-            }
-
-            if( r_a3 >= 127 || g_a3 > 127 || b_a3 >= 127 ||brightness_a3 >=384){
-                bgcolor_a3 = 1;
-            } else{
-                bgcolor_a3 = 2;
-            }
 
             //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
             if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {

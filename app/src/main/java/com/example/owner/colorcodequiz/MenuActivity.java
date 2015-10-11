@@ -20,12 +20,18 @@ public class MenuActivity extends AppCompatActivity {
     private TextView nowPointview;
     private TextView mode;
     private int colormode;
-    private int nowPoint;
+
+    private int RGB_nowPoint;
+    private int RGB_ull_CodetoColor;
+    private int RGB_ull_ColortoCode;
+    private int RGB_nocomp_CodetoColor0;
+    private int RGB_nocomp_ColortoCode0;
+
     private int HSB_nowPoint;
-    private int ull_CodetoColor;
-    private int ull_ColortoCode;
-    private int nocomp_CodetoColor0;
-    private int nocomp_ColortoCode0;
+    private int HSB_ull_CodetoColor;
+    private int HSB_ull_ColortoCode;
+    private int HSB_nocomp_CodetoColor0;
+    private int HSB_nocomp_ColortoCode0;
 
 
     @Override
@@ -35,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
         mode =(TextView)findViewById(R.id.mode);
-
+        colormode = 1;
        /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
         parseQuery.findInBackground(new FindCallback<getData>() {
             @Override
@@ -80,24 +86,40 @@ public class MenuActivity extends AppCompatActivity {
 
         //getData（SharedPreference)
         SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
-        nocomp_CodetoColor0 = getData.getInt("nocomp_CodetoColor",0);
-        nocomp_ColortoCode0 = getData.getInt("nocomp_ColortoCode0",0);
+        RGB_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor",0 );
+        RGB_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode",0);
+        RGB_nowPoint = getData.getInt("RGB_nowPoint",0);
+        RGB_nocomp_CodetoColor0 = getData.getInt("RGB_nocomp_CodetoColor",0);
+        RGB_nocomp_ColortoCode0 = getData.getInt("RGB_nocomp_ColortoCode0",0);
 
-        nowPointview.setText("YourPoint:"+nowPoint);
+        HSB_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor",0 );
+        HSB_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode",0);
+        HSB_nowPoint = getData.getInt("HSB_nowPoint",0);
+        HSB_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor",0);
+        HSB_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0",0);
+
+        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
 
         //changeIcon
-        if (ull_CodetoColor >= 1 || ull_ColortoCode >= 1) {
-            BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
-            tomenu2.setLeftIcon("fa-unlock");
+        if (colormode == 1) {
+            if (RGB_ull_CodetoColor >= 1 || RGB_ull_ColortoCode >= 1) {
+                BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
+                tomenu2.setLeftIcon("fa-unlock");
+            }
+            if (RGB_ull_CodetoColor >= 6 || RGB_ull_ColortoCode >= 6) {
+                BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
+                tomenu3.setLeftIcon("fa-unlock");
+            }
+        }else if (colormode == 2) {
+            if (HSB_ull_CodetoColor >= 1 || HSB_ull_ColortoCode >= 1) {
+                BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
+                tomenu2.setLeftIcon("fa-unlock");
+            }
+            if (HSB_ull_CodetoColor >= 6 || HSB_ull_ColortoCode >= 6) {
+                BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
+                tomenu3.setLeftIcon("fa-unlock");
+            }
         }
-        if (ull_CodetoColor >= 6 || ull_ColortoCode >= 6) {
-            BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
-            tomenu3.setLeftIcon("fa-unlock");
-        }
-
 
     }
 
@@ -108,49 +130,87 @@ public class MenuActivity extends AppCompatActivity {
 
     public void selectRGB(View v){
          colormode = 1;
-         nowPointview.setText(nowPoint);
+         nowPointview.setText("RGBPoint:"+RGB_nowPoint);
     }
 
     public void selectHSB (View v){
         colormode = 2;
-        nowPointview.setText(HSB_nowPoint);
+        nowPointview.setText("HSBPoint"+HSB_nowPoint);
     }
 
     public void tomenu2(View v) {
-        if (ull_CodetoColor>=1||ull_CodetoColor>=1) {
-            Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
-            startActivity(intent);
-        } else{
-            new AlertDialog.Builder(MenuActivity.this)
-                    .setTitle("Lockされています。")
-                    .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
-                    .setPositiveButton("OK", null)
-                    .show();
+        if (colormode == 1) {
+            if (RGB_ull_CodetoColor >= 1 || RGB_ull_CodetoColor >= 1) {
+                Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
+                intent.putExtra("colormode", colormode);
+                startActivity(intent);
+            } else {
+                new AlertDialog.Builder(MenuActivity.this)
+                        .setTitle("Lockされています。")
+                        .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
+                        .setPositiveButton("OK", null)
+                        .show();
+            }
+        } else if (colormode == 2) {
+            if (HSB_ull_CodetoColor >= 1 || HSB_ull_CodetoColor >= 1) {
+                Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
+                intent.putExtra("colormode", colormode);
+                startActivity(intent);
+            } else {
+                new AlertDialog.Builder(MenuActivity.this)
+                        .setTitle("Lockされています。")
+                        .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
+                        .setPositiveButton("OK", null)
+                        .show();
+            }
         }
     }
 
+
     public void tomenu3(View v) {
-        if (ull_CodetoColor >= 6||ull_CodetoColor >= 6) {
-            Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
-            startActivity(intent);
-        } else{
-            new AlertDialog.Builder(MenuActivity.this)
-                    .setTitle("Lockされています。")
-                    .setMessage("レベル6をUnLockしてください。")
-                    .setPositiveButton("OK",null)
-                    .show();
+        if (colormode == 1) {
+            if (RGB_ull_CodetoColor >= 6 || RGB_ull_CodetoColor >= 6) {
+                Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
+                intent.putExtra("colormode", colormode);
+                startActivity(intent);
+            } else {
+                new AlertDialog.Builder(MenuActivity.this)
+                        .setTitle("Lockされています。")
+                        .setMessage("レベル6をUnLockしてください。")
+                        .setPositiveButton("OK", null)
+                        .show();
+            }
+        }else if (colormode ==2){
+            if (HSB_ull_CodetoColor >= 6 || HSB_ull_CodetoColor >= 6) {
+                Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
+                intent.putExtra("colormode", colormode);
+                startActivity(intent);
+            } else {
+                new AlertDialog.Builder(MenuActivity.this)
+                        .setTitle("Lockされています。")
+                        .setMessage("レベル6をUnLockしてください。")
+                        .setPositiveButton("OK", null)
+                        .show();
+            }
         }
     }
 
     public void CodetoColor_practice (View v){
+        int thisnocomp = 0;
+        if(colormode == 1){
+           thisnocomp = RGB_nocomp_CodetoColor0;
+        } else if (colormode == 2){
+           thisnocomp = HSB_nocomp_CodetoColor0;
+        }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ nocomp_CodetoColor0 +"回クリアしています。")
+                .setMessage("問題は10問です。"+ thisnocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                        intent.putExtra("colormode",colormode);
                         startActivity(intent);
                     }
                 })
@@ -159,14 +219,21 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void ColortoCode_practice (View v){
+        int thisnocomp = 0;
+        if(colormode == 1){
+            thisnocomp = RGB_nocomp_CodetoColor0;
+        } else if (colormode == 2){
+            thisnocomp = HSB_nocomp_CodetoColor0;
+        }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ nocomp_ColortoCode0 +"回クリアしています。")
+                .setMessage("問題は10問です。"+ thisnocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MenuActivity.this, ColortoCode_practiceActivity.class);
+                        intent.putExtra("colormode",colormode);
                         startActivity(intent);
                     }
                 })
@@ -174,15 +241,7 @@ public class MenuActivity extends AppCompatActivity {
                 .show();
     }
 
-     public void menu2 (View v) {
-         Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
-         startActivity(intent);
-     }
 
-    public void menu3 (View v) {
-        Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
-        startActivity(intent);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

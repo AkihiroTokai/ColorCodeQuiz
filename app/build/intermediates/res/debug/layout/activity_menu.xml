@@ -50,20 +50,30 @@
         android:layout_height="50dp"
         android:weightSum="1"
         android:gravity="center">
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RGBmodel"
-                android:id="@+id/radioButton2"
+                android:text="RGBmode"
+                android:id="@+id/rgb"
+                android:checked="true"
                 android:onClick="selectRGB" />
-
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="HSBmodel"
-                android:id="@+id/radioButton"
-                android:onClick="selectHSB" />
+                android:layout_marginLeft="20dp"
+                android:text="HSBmode"
+                android:id="@+id/hsb"
+                android:onClick="selectHSB"
+                android:layout_gravity="right" />
+
+        </RadioGroup>
 
     </LinearLayout>
 

@@ -33,38 +33,40 @@ public class MainActivity extends AppCompatActivity {
     private TextView answer2;
     private TextView answer3;
     private TextView answer4;
+
     private int gameCount;
     private int check_answer;
     private int noca;
-    private int ull_CodetoColor;
-    private int ull_ColortoCode;
     private int ull_old;
-    private int nowPoint;
     private int getPoint;
+    private int colormode;
 
-    private int nocomp_CodetoColor0;
-    private int nocomp_CodetoColor1;
-    private int nocomp_CodetoColor2;
-    private int nocomp_CodetoColor3;
-    private int nocomp_CodetoColor4;
-    private int nocomp_CodetoColor5;
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
+    private int this_ull_CodetoColor;
+    private int this_ull_ColortoCode;
+    private int this_nowPoint;
+    private int this_nocomp_CodetoColor0;
+    private int this_nocomp_CodetoColor1;
+    private int this_nocomp_CodetoColor2;
+    private int this_nocomp_CodetoColor3;
+    private int this_nocomp_CodetoColor4;
+    private int this_nocomp_CodetoColor5;
+    private int this_nocomp_CodetoColor6;
+    private int this_nocomp_CodetoColor7;
+    private int this_nocomp_CodetoColor8;
+    private int this_nocomp_CodetoColor9;
+    private int this_nocomp_CodetoColor10;
 
-    private int nocomp_ColortoCode0;
-    private int nocomp_ColortoCode1;
-    private int nocomp_ColortoCode2;
-    private int nocomp_ColortoCode3;
-    private int nocomp_ColortoCode4;
-    private int nocomp_ColortoCode5;
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
+    private int this_nocomp_ColortoCode0;
+    private int this_nocomp_ColortoCode1;
+    private int this_nocomp_ColortoCode2;
+    private int this_nocomp_ColortoCode3;
+    private int this_nocomp_ColortoCode4;
+    private int this_nocomp_ColortoCode5;
+    private int this_nocomp_ColortoCode6;
+    private int this_nocomp_ColortoCode7;
+    private int this_nocomp_ColortoCode8;
+    private int this_nocomp_ColortoCode9;
+    private int this_nocomp_ColortoCode10;
 
     private boolean nextquestion;
 
@@ -92,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
         check_select3 = (ImageView) findViewById(R.id.check_select3);
         check_select4 = (ImageView) findViewById(R.id.check_select4);
 
-
+        Intent intent = getIntent();
+        colormode = intent.getIntExtra("getcolormode",1);
         //getData(Parse)
       /*  getData checkData = new getData();
 
@@ -134,37 +137,66 @@ public class MainActivity extends AppCompatActivity {
         } else {
             getPoint = checkData.getgetPoint();
         }       */
+         if (colormode == 1) {
+             //getData（SharedPreference)
+             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+             this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+             this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+             this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
-        //getData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
+             this_nocomp_CodetoColor0 = getData.getInt("RGB_nocomp_CodetoColor", 0);
+             this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
+             this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
+             this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
+             this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
+             this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
+             this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+             this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+             this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+             this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+             this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
-        nocomp_CodetoColor0 = getData.getInt("nocomp_CodetoColor",0);
-        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
-        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
-        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
-        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
-        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
-        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
-        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
-        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
-        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
-        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+             this_nocomp_ColortoCode0 = getData.getInt("RGB_nocomp_ColortoCode0", 0);
+             this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
+             this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
+             this_nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
+             this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
+             this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
+             this_nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
+             this_nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
+             this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
+             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
+             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
+         } else if (colormode == 2) {
+             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+             this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+             this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+             this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
-        nocomp_ColortoCode0 = getData.getInt("nocomp_ColortoCode0",0);
-        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
-        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
-        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
-        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
-        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
-        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
-        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
-        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
-        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
-        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+             this_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
+             this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
+             this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
+             this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
+             this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
+             this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
+             this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
+             this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
+             this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
+             this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
+             this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
 
+             this_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
+             this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
+             this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
+             this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
+             this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
+             this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
+             this_nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
+             this_nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
+             this_nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
+             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
+             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
+         }
         gameCount = 1;
     }
     public void select1(View view) {
@@ -267,160 +299,160 @@ public class MainActivity extends AppCompatActivity {
             gameResult = "クリアしました。";
         }
 
-        nowPoint = nowPoint + getPoint ;
+        this_nowPoint = this_nowPoint + getPoint ;
 
         //Check:Levelup(ColortoCode)
-        if (ull_ColortoCode  == 0&& nowPoint >= 30& nocomp_ColortoCode0 >= 3 ){
+        if (this_ull_ColortoCode  == 0&& this_nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
             unlockmode = "ColortoCode";
-            ull_CodetoColor  = 1;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 1;
+            ull_old = this_ull_CodetoColor-1;
             ulm_ColortoCode();
         }
-        if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  nocomp_ColortoCode1 >= 3 ){
+        if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode  = 2;
+            this_ull_ColortoCode  = 2;
             ulm_ColortoCode();
-            ull_old = ull_ColortoCode-1;
-        }
-
-        else if(ull_ColortoCode == 2 && nowPoint >= 90 && nocomp_ColortoCode2>= 3 ){
-            unlockmode = "ColortoCode";
-            ull_ColortoCode = 3;
-            ull_old = ull_ColortoCode-1;
-            ulm_ColortoCode();
+            ull_old = this_ull_ColortoCode-1;
         }
 
-        else if(ull_ColortoCode == 3 && nowPoint >= 125 && nocomp_ColortoCode3 >= 3){
+        else if(this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 4;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 3;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 4 && nowPoint >= 180 && nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
+        else if(this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 5;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 4;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 5 && nowPoint >= 240 && nocomp_ColortoCode5 >= 4) {
+        else if(this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 6;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 5;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 6 && nowPoint >= 320 && nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
+        else if(this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 7;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 6;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 7 && nowPoint >= 425 && nocomp_ColortoCode7 >= 6){
+        else if(this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 8;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 7;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 8 && nowPoint >= 560 && nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
+        else if(this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 9;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 8;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 9 && nowPoint >= 750 && nocomp_ColortoCode9 >= 8){
+        else if(this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 10;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 9;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && nocomp_ColortoCode10 >= 10){
+        else if(this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 11;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 10;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 11;
+            ull_old = this_ull_ColortoCode-1;
             compm();
         }
 
         //Check:Levelup(CodetoColor)
-        if (ull_CodetoColor  == 0&& nowPoint >= 30& nocomp_CodetoColor0 >= 3 ){
+        if (this_ull_CodetoColor  == 0&& this_nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor  = 1;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 1;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor  == 1 && nowPoint >= 60 && nocomp_CodetoColor1 >= 3 ){
+        else if (this_ull_CodetoColor  == 1 && this_nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor  = 2;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 2;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 2 && nowPoint >= 90 && nocomp_CodetoColor2 >= 3 ){
+        else if(this_ull_CodetoColor == 2 && this_nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 3;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 3;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 3 && nowPoint >= 125 && nocomp_CodetoColor3 >= 3){
+        else if(this_ull_CodetoColor == 3 && this_nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 4;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 4;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 4 && nowPoint >= 180 && nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
+        else if (this_ull_CodetoColor == 4 && this_nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode>= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 5;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 5;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 5 && nowPoint >= 240 && nocomp_CodetoColor5 >= 4) {
+        else if(this_ull_CodetoColor == 5 && this_nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 6;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 6;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 6 && nowPoint >= 320 && nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
+        else if (this_ull_CodetoColor == 6 && this_nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode>= 5){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 7;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 7;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 7 && nowPoint >= 425 && nocomp_CodetoColor7 >= 6){
+        else if(this_ull_CodetoColor == 7 && this_nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 8;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 8;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 8 && nowPoint >= 560 && nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
+        else if (this_ull_CodetoColor == 8 && this_nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode>= 7){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 9;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 9;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 9 && nowPoint >= 750 && nocomp_CodetoColor9 >= 8){
+        else if(this_ull_CodetoColor == 9 && this_nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
             unlockmode = "CodetoColor";
-            ull_CodetoColor= 10;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor= 10;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 10 && nowPoint >= 1000 && nocomp_CodetoColor10 >= 10){
+        else if(this_ull_CodetoColor == 10 && this_nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 11;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 11;
+            ull_old = this_ull_CodetoColor-1;
             compm();
         }
 
@@ -433,15 +465,24 @@ public class MainActivity extends AppCompatActivity {
         nocomp_CodetoColor0++;
         checkData.setnocomp_CodetoColor0(nocomp_CodetoColor0);  */
 
-        //saveData(SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = getData.edit();
-        editor.putInt("ull_CodetoColor", ull_CodetoColor);
-        editor.putInt("ull_ColoretoCode", ull_ColortoCode);
-        editor.putInt("nowPoint", nowPoint);
-        editor.putInt("nocomp_CodetoColor0", nocomp_CodetoColor0);
-        editor.apply();
-
+        if (colormode == 1) {
+            //saveData(SharedPreference)
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+            editor.putInt("RGB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("RGB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("RGB_nowPoint", this_nowPoint);
+            editor.putInt("RGB_nocomp_CodetoColor0", this_nocomp_CodetoColor0);
+            editor.apply();
+        }else if (colormode == 2){
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+            editor.putInt("HSB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("HSB_nowPoint", this_nowPoint);
+            editor.putInt("HSB_nocomp_CodetoColor0", this_nocomp_CodetoColor0);
+            editor.apply();
+        }
         //gameFinish
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle(getPoint + "Point獲得しました。")
@@ -459,7 +500,7 @@ public class MainActivity extends AppCompatActivity {
     public  void ulm_CodetoColor(){
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -474,7 +515,7 @@ public class MainActivity extends AppCompatActivity {
     public  void ulm_ColortoCode(){
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -526,115 +567,102 @@ public class MainActivity extends AppCompatActivity {
         check_select2.setImageDrawable(null);
         check_select3.setImageDrawable(null);
         check_select4.setImageDrawable(null);
-
-         if (gameCount == 1) {
-            red.setText("00");
-            green.setText("00");
-            blue.setText("00");
-            answer1.setBackgroundColor(Color.parseColor("#000000"));
-            answer2.setBackgroundColor(Color.parseColor("#ffffff"));
-            answer3.setBackgroundColor(Color.parseColor("#ff0000"));
-            answer4.setBackgroundColor(Color.parseColor("#0000ff"));
-            check_answer = 1;
-        }
-
-        else if (gameCount == 2) {
-            red.setText("ff");
-            green.setText("ff");
-            blue.setText("ff");
-            answer1.setBackgroundColor(Color.parseColor("#00ffff"));
-            answer2.setBackgroundColor(Color.parseColor("#ffffff"));
-            answer3.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
-            check_answer = 2;
-        }
-
-        else if (gameCount == 3) {
-            red.setText("00");
-            green.setText("ff");
-            blue.setText("ff");
-            answer1.setBackgroundColor(Color.parseColor("#00ffff"));
-            answer2.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer3.setBackgroundColor(Color.parseColor("#0088ff"));
-            answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
-            check_answer = 1;
-        }
-
-        else if (gameCount == 4) {
-            red.setText("ff");
-            green.setText("00");
-            blue.setText("ff");
-            answer1.setBackgroundColor(Color.parseColor("#00ffff"));
-            answer2.setBackgroundColor(Color.parseColor("#ff00ff"));
-            answer3.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff88ff"));
-            check_answer = 2;
-        }
-
-        else if (gameCount == 5) {
-            red.setText("ff");
-            green.setText("ff");
-            blue.setText("00");
-            answer1.setBackgroundColor(Color.parseColor("#00ffff"));
-            answer2.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer3.setBackgroundColor(Color.parseColor("#88ff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
-            check_answer = 2;
-        }
-
-        else if (gameCount == 6) {
-            red.setText("ff");
-            green.setText("00");
-            blue.setText("00");
-            answer1.setBackgroundColor(Color.parseColor("#ff0000"));
-            answer2.setBackgroundColor(Color.parseColor("#ffffff"));
-            answer3.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
-            check_answer = 1;
-        }
-
-        else if (gameCount == 7) {
-            red.setText("00");
-            green.setText("ff");
-            blue.setText("00");
-            answer1.setBackgroundColor(Color.parseColor("#00ffff"));
-            answer2.setBackgroundColor(Color.parseColor("#00ff00"));
-            answer3.setBackgroundColor(Color.parseColor("#ffff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff0088"));
-            check_answer = 2;
-        }
-
-        else if (gameCount == 8) {
-            red.setText("00");
-            green.setText("00");
-            blue.setText("ff");
-            answer1.setBackgroundColor(Color.parseColor("#008888"));
-            answer2.setBackgroundColor(Color.parseColor("#0000ff"));
-            answer3.setBackgroundColor(Color.parseColor("#88ff00"));
-            answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
-            check_answer = 2;
-        }
-
-        else if (gameCount == 9) {
-            red.setText("88");
-            green.setText("00");
-            blue.setText("88");
-            answer1.setBackgroundColor(Color.parseColor("#880088"));
-            answer2.setBackgroundColor(Color.parseColor("#888888"));
-            answer3.setBackgroundColor(Color.parseColor("#888800"));
-            answer4.setBackgroundColor(Color.parseColor("#ff8888"));
-            check_answer = 1;
-        }
-
-        else if (gameCount == 10) {
-            red.setText("00");
-            green.setText("88");
-            blue.setText("88");
-            answer1.setBackgroundColor(Color.parseColor("#8800ff"));
-            answer2.setBackgroundColor(Color.parseColor("#ff88ff"));
-            answer3.setBackgroundColor(Color.parseColor("#88ff00"));
-            answer4.setBackgroundColor(Color.parseColor("#008888"));
-            check_answer = 4;
+        if (colormode == 1 ) {
+            if (gameCount == 1) {
+                red.setText("00");
+                green.setText("00");
+                blue.setText("00");
+                answer1.setBackgroundColor(Color.parseColor("#000000"));
+                answer2.setBackgroundColor(Color.parseColor("#ffffff"));
+                answer3.setBackgroundColor(Color.parseColor("#ff0000"));
+                answer4.setBackgroundColor(Color.parseColor("#0000ff"));
+                check_answer = 1;
+            } else if (gameCount == 2) {
+                red.setText("ff");
+                green.setText("ff");
+                blue.setText("ff");
+                answer1.setBackgroundColor(Color.parseColor("#00ffff"));
+                answer2.setBackgroundColor(Color.parseColor("#ffffff"));
+                answer3.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
+                check_answer = 2;
+            } else if (gameCount == 3) {
+                red.setText("00");
+                green.setText("ff");
+                blue.setText("ff");
+                answer1.setBackgroundColor(Color.parseColor("#00ffff"));
+                answer2.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer3.setBackgroundColor(Color.parseColor("#0088ff"));
+                answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
+                check_answer = 1;
+            } else if (gameCount == 4) {
+                red.setText("ff");
+                green.setText("00");
+                blue.setText("ff");
+                answer1.setBackgroundColor(Color.parseColor("#00ffff"));
+                answer2.setBackgroundColor(Color.parseColor("#ff00ff"));
+                answer3.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff88ff"));
+                check_answer = 2;
+            } else if (gameCount == 5) {
+                red.setText("ff");
+                green.setText("ff");
+                blue.setText("00");
+                answer1.setBackgroundColor(Color.parseColor("#00ffff"));
+                answer2.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer3.setBackgroundColor(Color.parseColor("#88ff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
+                check_answer = 2;
+            } else if (gameCount == 6) {
+                red.setText("ff");
+                green.setText("00");
+                blue.setText("00");
+                answer1.setBackgroundColor(Color.parseColor("#ff0000"));
+                answer2.setBackgroundColor(Color.parseColor("#ffffff"));
+                answer3.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
+                check_answer = 1;
+            } else if (gameCount == 7) {
+                red.setText("00");
+                green.setText("ff");
+                blue.setText("00");
+                answer1.setBackgroundColor(Color.parseColor("#00ffff"));
+                answer2.setBackgroundColor(Color.parseColor("#00ff00"));
+                answer3.setBackgroundColor(Color.parseColor("#ffff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff0088"));
+                check_answer = 2;
+            } else if (gameCount == 8) {
+                red.setText("00");
+                green.setText("00");
+                blue.setText("ff");
+                answer1.setBackgroundColor(Color.parseColor("#008888"));
+                answer2.setBackgroundColor(Color.parseColor("#0000ff"));
+                answer3.setBackgroundColor(Color.parseColor("#88ff00"));
+                answer4.setBackgroundColor(Color.parseColor("#ff00ff"));
+                check_answer = 2;
+            } else if (gameCount == 9) {
+                red.setText("88");
+                green.setText("00");
+                blue.setText("88");
+                answer1.setBackgroundColor(Color.parseColor("#880088"));
+                answer2.setBackgroundColor(Color.parseColor("#888888"));
+                answer3.setBackgroundColor(Color.parseColor("#888800"));
+                answer4.setBackgroundColor(Color.parseColor("#ff8888"));
+                check_answer = 1;
+            } else if (gameCount == 10) {
+                red.setText("00");
+                green.setText("88");
+                blue.setText("88");
+                answer1.setBackgroundColor(Color.parseColor("#8800ff"));
+                answer2.setBackgroundColor(Color.parseColor("#ff88ff"));
+                answer3.setBackgroundColor(Color.parseColor("#88ff00"));
+                answer4.setBackgroundColor(Color.parseColor("#008888"));
+                check_answer = 4;
+            }
+        }else if (colormode == 2){
+           if (gameCount == 1){
+               red.setTextColor(Color.parseColor("#000000"));or.HSVToColor()
+           }
         }
     }
 

@@ -34,6 +34,7 @@ public class MenuActivity extends AppCompatActivity {
     private int HSB_nocomp_ColortoCode0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,9 +129,9 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(intent);
     }
 
-    public void selectRGB(View v){
-         colormode = 1;
-         nowPointview.setText("RGBPoint:"+RGB_nowPoint);
+    public void selectRGB(View v) {
+        colormode = 1;
+        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
     }
 
     public void selectHSB (View v){
@@ -142,7 +143,7 @@ public class MenuActivity extends AppCompatActivity {
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 1 || RGB_ull_CodetoColor >= 1) {
                 Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
-                intent.putExtra("colormode", colormode);
+                intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
                 new AlertDialog.Builder(MenuActivity.this)
@@ -154,7 +155,7 @@ public class MenuActivity extends AppCompatActivity {
         } else if (colormode == 2) {
             if (HSB_ull_CodetoColor >= 1 || HSB_ull_CodetoColor >= 1) {
                 Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
-                intent.putExtra("colormode", colormode);
+                intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
                 new AlertDialog.Builder(MenuActivity.this)
@@ -171,7 +172,7 @@ public class MenuActivity extends AppCompatActivity {
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 6 || RGB_ull_CodetoColor >= 6) {
                 Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
-                intent.putExtra("colormode", colormode);
+                intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
                 new AlertDialog.Builder(MenuActivity.this)
@@ -183,7 +184,7 @@ public class MenuActivity extends AppCompatActivity {
         }else if (colormode ==2){
             if (HSB_ull_CodetoColor >= 6 || HSB_ull_CodetoColor >= 6) {
                 Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
-                intent.putExtra("colormode", colormode);
+                intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
                 new AlertDialog.Builder(MenuActivity.this)
@@ -196,21 +197,21 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void CodetoColor_practice (View v){
-        int thisnocomp = 0;
+        int this_nocomp = 0;
         if(colormode == 1){
-           thisnocomp = RGB_nocomp_CodetoColor0;
+           this_nocomp = RGB_nocomp_CodetoColor0;
         } else if (colormode == 2){
-           thisnocomp = HSB_nocomp_CodetoColor0;
+           this_nocomp = HSB_nocomp_CodetoColor0;
         }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ thisnocomp +"回クリアしています。")
+                .setMessage("問題は10問です。"+ this_nocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MenuActivity.this, MainActivity.class);
-                        intent.putExtra("colormode",colormode);
+                        intent.putExtra("getcolormode",colormode);
                         startActivity(intent);
                     }
                 })
@@ -219,21 +220,21 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void ColortoCode_practice (View v){
-        int thisnocomp = 0;
+        int this_nocomp = 0;
         if(colormode == 1){
-            thisnocomp = RGB_nocomp_CodetoColor0;
+            this_nocomp = RGB_nocomp_ColortoCode0;
         } else if (colormode == 2){
-            thisnocomp = HSB_nocomp_CodetoColor0;
+            this_nocomp = HSB_nocomp_ColortoCode0;
         }
         new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ thisnocomp +"回クリアしています。")
+                .setTitle("ColortoCode_praciceをStartしますか？")
+                .setMessage("問題は10問です。"+ this_nocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MenuActivity.this, ColortoCode_practiceActivity.class);
-                        intent.putExtra("colormode",colormode);
+                        intent.putExtra("getcolormode",colormode);
                         startActivity(intent);
                     }
                 })

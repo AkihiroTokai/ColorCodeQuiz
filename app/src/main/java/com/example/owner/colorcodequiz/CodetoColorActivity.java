@@ -102,7 +102,6 @@ public class CodetoColorActivity extends AppCompatActivity {
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
-
         //getData（Parse)
        /* getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();

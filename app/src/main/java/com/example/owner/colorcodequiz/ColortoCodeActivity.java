@@ -52,7 +52,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
     private int r , g , b;
     private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
-    private int bgcolor_ca,bgcolor_a1,bgcolor_a2,bgcolor_a3;
+    private int colormode;
 
     private int nocomp_CodetoColor1;
     private int nocomp_CodetoColor2;
@@ -103,11 +103,11 @@ public class ColortoCodeActivity extends AppCompatActivity {
         question = (ImageView) findViewById(R.id.questioncode);
 
         Intent intent = getIntent();
-
         noq = intent.getIntExtra("getnumber", 10);
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
+        colormode = intent.getIntExtra("getcolormode",1);
 
         //getData(Parse)
        /* getData checkData = new getData();

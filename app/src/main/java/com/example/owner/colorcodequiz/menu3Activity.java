@@ -14,30 +14,32 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class menu3Activity extends AppCompatActivity {
-    private int ull_CodetoColor;
-    private int ull_ColortoCode;
+    private int this_ull_CodetoColor;
+    private int this_ull_ColortoCode;
     private int maxlimit;
     private int minlimit;
     private int number;
     private int level;
-    private int nowPoint;
+    private int this_nowPoint;
+    private int colormode;
 
+    private int this_nocomp_CodetoColor6;
+    private int this_nocomp_CodetoColor7;
+    private int this_nocomp_CodetoColor8;
+    private int this_nocomp_CodetoColor9;
+    private int this_nocomp_CodetoColor10;
 
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
-
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
+    private int this_nocomp_ColortoCode6;
+    private int this_nocomp_ColortoCode7;
+    private int this_nocomp_ColortoCode8;
+    private int this_nocomp_ColortoCode9;
+    private int this_nocomp_ColortoCode10;
 
     private int req_nocomp;
     private int req_Point;
     private int req_level;
+
+    private int now_nocomp;
 
     private String plus;
 
@@ -53,6 +55,9 @@ public class menu3Activity extends AppCompatActivity {
         setnum.setKeyListener(null);
         nowPointview = (TextView)findViewById(R.id.nowPointview);
 
+        Intent intent = getIntent();
+        colormode = intent.getIntExtra("getcolormode", 1);
+
         //getData (Parse)
        /* getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();
@@ -60,71 +65,90 @@ public class menu3Activity extends AppCompatActivity {
         nowPoint = checkData.getnowPoint();   */
 
         //getData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
+        if (colormode == 1) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
+            this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
-        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
-        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
-        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
-        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
-        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+            this_nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
 
-        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
-        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
-        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
-        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
-        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+            nowPointview.setText("RGBPoint:" + this_nowPoint);
+        } else if (colormode == 2){
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
-        nowPointview.setText("YourPoint:"+nowPoint);
+            this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
 
+            this_nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
+
+            nowPointview.setText("HSBPoint:" + this_nowPoint);
+        }
         //IconChange
-        if(ull_CodetoColor >= 6){
+        if(this_ull_CodetoColor >= 6){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor6);
             CodetoColor6.setLeftIcon("fa-unlock");
         }
-        if(ull_CodetoColor >= 7){
+        if(this_ull_CodetoColor >= 7){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor7 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor7);
             CodetoColor7.setLeftIcon("fa-unlock");
         }
-        if(ull_CodetoColor >= 8){
+        if(this_ull_CodetoColor >= 8){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor8 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor8);
             CodetoColor8.setLeftIcon("fa-unlock");
         }
-        if(ull_CodetoColor >= 9){
+        if(this_ull_CodetoColor >= 9){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor9 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor9);
             CodetoColor9.setLeftIcon("fa-unlock");
         }
-        if(ull_CodetoColor >= 10){
+        if(this_ull_CodetoColor >= 10){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor10 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor10);
             CodetoColor10.setLeftIcon("fa-unlock");
         }
-        if(ull_ColortoCode >= 6){
+        if(this_ull_ColortoCode >= 6){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode6);
             ColortoCode6.setLeftIcon("fa-unlock");
         }
-        if(ull_ColortoCode >= 7){
+        if(this_ull_ColortoCode >= 7){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode7 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode7);
             ColortoCode7.setLeftIcon("fa-unlock");
         }
-        if(ull_ColortoCode >= 8){
+        if(this_ull_ColortoCode >= 8){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode8 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode8);
             ColortoCode8.setLeftIcon("fa-unlock");
         }
-        if(ull_ColortoCode >= 9){
+        if(this_ull_ColortoCode >= 9){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode9 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode9);
             ColortoCode9.setLeftIcon("fa-unlock");
         }
-        if(ull_ColortoCode >= 10){
+        if(this_ull_ColortoCode >= 10){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode10 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode10);
             ColortoCode10.setLeftIcon("fa-unlock");
         }
     }
     public void ColortoCode6(View v){
         level = 6;
-        if(ull_ColortoCode >= 6){
+        if(this_ull_ColortoCode >= 6){
             maxlimit = 105;
             minlimit = 85;
             intent_ColortoCode();
@@ -138,7 +162,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void ColortoCode7(View v){
         level = 7;
-        if(ull_ColortoCode >= 7){
+        if(this_ull_ColortoCode >= 7){
             maxlimit = 85;
             minlimit = 65;
             intent_ColortoCode();
@@ -153,7 +177,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void ColortoCode8(View v){
         level = 8;
-        if(ull_ColortoCode >= 8){
+        if(this_ull_ColortoCode >= 8){
             maxlimit = 65;
             minlimit = 45;
             intent_ColortoCode();
@@ -167,7 +191,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void ColortoCode9(View v){
         level = 9;
-        if(ull_ColortoCode >=9){
+        if(this_ull_ColortoCode >=9){
             maxlimit = 45;
             minlimit = 30;
             intent_ColortoCode();
@@ -182,7 +206,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void ColortoCode10(View v){
         level = 10;
-        if(ull_ColortoCode >=10){
+        if(this_ull_ColortoCode >=10){
             maxlimit = 30;
             minlimit = 20;
             intent_ColortoCode();
@@ -196,7 +220,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void CodetoColor6(View v){
         level = 6 ;
-        if(ull_CodetoColor >=6){
+        if( this_ull_CodetoColor>=6){
             maxlimit = 105 ;
             minlimit = 85;
             intent_CodetoColor();
@@ -210,7 +234,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void CodetoColor7(View v){
         level = 7;
-        if(ull_CodetoColor >= 7){
+        if(this_ull_CodetoColor >= 7){
             maxlimit = 85;
             minlimit = 65;
             intent_CodetoColor();
@@ -225,7 +249,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void CodetoColor8(View v){
         level = 8;
-        if(ull_CodetoColor >= 8){
+        if(this_ull_CodetoColor >= 8){
             maxlimit = 65;
             minlimit = 45;
             intent_CodetoColor();
@@ -239,7 +263,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void CodetoColor9(View v){
         level = 9;
-        if(ull_CodetoColor >= 9){
+        if(this_ull_CodetoColor >= 9){
             maxlimit = 45;
             minlimit = 30;
             intent_CodetoColor();
@@ -254,7 +278,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void CodetoColor10(View v){
         level = 10;
-        if(ull_CodetoColor >= 10){
+        if(this_ull_CodetoColor >= 10){
             maxlimit = 30;
             minlimit = 20;
             intent_CodetoColor();
@@ -284,7 +308,7 @@ public class menu3Activity extends AppCompatActivity {
         } if (number > 0){
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("ColortoCodeをStartしますか？")
-                    .setMessage("問題は"+number+"問です。")
+                    .setMessage("問題は"+number+"問です。"+ now_nocomp + "回クリアしています。")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -294,10 +318,11 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
                             intent.putExtra("getlevel",level);
+                            intent.putExtra("getcolormode",colormode);
                             startActivity(intent);
                         }
                     })
-                    .setNegativeButton("Cancel",null)
+                    .setNegativeButton("Cancel", null)
                     .show();
         }else {
             new AlertDialog.Builder(menu3Activity.this)
@@ -318,7 +343,7 @@ public class menu3Activity extends AppCompatActivity {
         } if (number > 0){
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("CodetoColorをStartしますか？")
-                    .setMessage("問題は"+number+"問です。")
+                    .setMessage("問題は"+number+"問です。"+ now_nocomp +"回クリアしています。")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -328,10 +353,11 @@ public class menu3Activity extends AppCompatActivity {
                             intent.putExtra("getmaxlimit",maxlimit);
                             intent.putExtra("getminlimit",minlimit);
                             intent.putExtra("getlevel",level);
+                            intent.putExtra("getcolormode",colormode);
                             startActivity(intent);
                         }
                     })
-                    .setNegativeButton("Cancel",null)
+                    .setNegativeButton("Cancel", null)
                     .show();
         }else {
             new AlertDialog.Builder(menu3Activity.this)

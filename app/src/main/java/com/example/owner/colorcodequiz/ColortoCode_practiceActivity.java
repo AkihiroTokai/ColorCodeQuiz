@@ -47,29 +47,34 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     private int nowPoint;
     private int getPoint;
 
-    private int nocomp_CodetoColor0;
-    private int nocomp_CodetoColor1;
-    private int nocomp_CodetoColor2;
-    private int nocomp_CodetoColor3;
-    private int nocomp_CodetoColor4;
-    private int nocomp_CodetoColor5;
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
+    private int colormode;
 
-    private int nocomp_ColortoCode0;
-    private int nocomp_ColortoCode1;
-    private int nocomp_ColortoCode2;
-    private int nocomp_ColortoCode3;
-    private int nocomp_ColortoCode4;
-    private int nocomp_ColortoCode5;
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
+    private int this_ull_CodetoColor;
+    private int this_ull_ColortoCode;
+    private int this_nowPoint;
+    private int this_nocomp_CodetoColor0;
+    private int this_nocomp_CodetoColor1;
+    private int this_nocomp_CodetoColor2;
+    private int this_nocomp_CodetoColor3;
+    private int this_nocomp_CodetoColor4;
+    private int this_nocomp_CodetoColor5;
+    private int this_nocomp_CodetoColor6;
+    private int this_nocomp_CodetoColor7;
+    private int this_nocomp_CodetoColor8;
+    private int this_nocomp_CodetoColor9;
+    private int this_nocomp_CodetoColor10;
+
+    private int this_nocomp_ColortoCode0;
+    private int this_nocomp_ColortoCode1;
+    private int this_nocomp_ColortoCode2;
+    private int this_nocomp_ColortoCode3;
+    private int this_nocomp_ColortoCode4;
+    private int this_nocomp_ColortoCode5;
+    private int this_nocomp_ColortoCode6;
+    private int this_nocomp_ColortoCode7;
+    private int this_nocomp_ColortoCode8;
+    private int this_nocomp_ColortoCode9;
+    private int this_nocomp_ColortoCode10;
 
     private boolean nextquestion;
 
@@ -96,6 +101,9 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         check_select3 = (ImageView) findViewById(R.id.check_select3);
         check_select4 = (ImageView) findViewById(R.id.check_select4);
         question = (ImageView) findViewById(R.id.questioncode);
+
+        Intent intent = getIntent();
+        colormode = intent.getIntExtra("getcolormode",1);
 
 
         //getData(Parse)
@@ -139,37 +147,66 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             getPoint = checkData.getgetPoint();
         }   */
 
-        //getData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
+        if (colormode == 1) {
+            //getData（SharedPreference)
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
-        nocomp_CodetoColor0 = getData.getInt("nocomp_CodetoColor",0);
-        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
-        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
-        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
-        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
-        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
-        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
-        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
-        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
-        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
-        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+            this_nocomp_CodetoColor0 = getData.getInt("RGB_nocomp_CodetoColor", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
-        nocomp_ColortoCode0 = getData.getInt("nocomp_ColortoCode0", 0);
-        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
-        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
-        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
-        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
-        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
-        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
-        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
-        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
-        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
-        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+            this_nocomp_ColortoCode0 = getData.getInt("RGB_nocomp_ColortoCode0", 0);
+            this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
+            this_nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
+        } else if (colormode == 2) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
+            this_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
 
+            this_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
+            this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
+            this_nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
+        }
         setanswer();
     }
 

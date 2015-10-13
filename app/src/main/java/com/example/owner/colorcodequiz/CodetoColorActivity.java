@@ -36,6 +36,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     private String unlockmode;
     private String gameResult;
 
+    private int colormode;
     private int gameCount;
     private int check_answer;
     private int noq;
@@ -102,6 +103,7 @@ public class CodetoColorActivity extends AppCompatActivity {
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
+        colormode = intent.getIntExtra("getcolormode",1);
         //getData（Parse)
        /* getData checkData = new getData();
         ull_CodetoColor = checkData.getull_CodetoColor();

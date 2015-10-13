@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
     private int getPoint;
     private int colormode;
 
+
+    private boolean nextquestion;
+
+    private String gameResult;
+
     private int this_ull_CodetoColor;
     private int this_ull_ColortoCode;
     private int this_nowPoint;
@@ -67,10 +72,6 @@ public class MainActivity extends AppCompatActivity {
     private int this_nocomp_ColortoCode8;
     private int this_nocomp_ColortoCode9;
     private int this_nocomp_ColortoCode10;
-
-    private boolean nextquestion;
-
-    private String gameResult;
     private String unlockmode;
 
 
@@ -661,7 +662,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }else if (colormode == 2){
            if (gameCount == 1){
-               red.setTextColor(Color.parseColor("#000000"));or.HSVToColor()
+               red.setTextColor(Color.parseColor("#000000"));
+               //Color.HSVToColor()
            }
         }
     }

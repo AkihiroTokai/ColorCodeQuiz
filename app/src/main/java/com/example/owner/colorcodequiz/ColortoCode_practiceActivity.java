@@ -314,7 +314,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         nowPoint = nowPoint + getPoint ;
 
         //Check:Levelup(ColortoCode)
-        if (ull_ColortoCode  == 0&& nowPoint >= 30& nocomp_ColortoCode0 >= 3 ){
+        if (ull_ColortoCode  == 0&& nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
             unlockmode = "ColortoCode";
             ull_CodetoColor  = 1;
             ull_old = ull_CodetoColor-1;

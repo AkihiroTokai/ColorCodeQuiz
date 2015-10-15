@@ -392,84 +392,84 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
 
         //Check:Levelup(CodetoColor)
-         if (ull_CodetoColor  == 0&& nowPoint >= 30& nocomp_CodetoColor0 >= 3 ){
+         if (ull_CodetoColor  == 0&& nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
             unlockmode = "CodetoColor";
             ull_CodetoColor  = 1;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor  == 1 && nowPoint >= 60 && nocomp_CodetoColor1 >= 3 ){
+        else if (ull_CodetoColor  == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
             unlockmode = "CodetoColor";
             ull_CodetoColor  = 2;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 2 && nowPoint >= 90 && nocomp_CodetoColor2 >= 3 ){
+        else if(ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 3;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 3 && nowPoint >= 125 && nocomp_CodetoColor3 >= 3){
+        else if(ull_CodetoColor == 3 && nowPoint >= 125 && this_ocomp_CodetoColor3 >= 3){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 4;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 4 && nowPoint >= 180 && nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
+        else if (ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 5;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 5 && nowPoint >= 240 && nocomp_CodetoColor5 >= 4) {
+        else if(ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
             ull_CodetoColor = 6;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 6 && nowPoint >= 320 && nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
+        else if (ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 7;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 7 && nowPoint >= 425 && nocomp_CodetoColor7 >= 6){
+        else if(ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 8;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 8 && nowPoint >= 560 && nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
+        else if (ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 9;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 9 && nowPoint >= 750 && nocomp_CodetoColor9 >= 8){
+        else if(ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
             unlockmode = "CodetoColor";
             ull_CodetoColor= 10;
             ull_old = ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 10 && nowPoint >= 1000 && nocomp_CodetoColor10 >= 10){
+        else if(ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 11;
             ull_old = ull_CodetoColor-1;
             compm();
         }
 
-        nocomp_ColortoCode0++;
+        this_nocomp_ColortoCode0++;
 
         //saveData(Parse)
         /*getData checkData = new getData();

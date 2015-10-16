@@ -320,70 +320,70 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             ull_old = ull_CodetoColor-1;
             ulm_ColortoCode();
         }
-        if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  nocomp_ColortoCode1 >= 3 ){
+        if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
             ull_ColortoCode  = 2;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 2 && nowPoint >= 90 && nocomp_ColortoCode2>= 3 ){
+        else if(ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 3;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 3 && nowPoint >= 125 && nocomp_ColortoCode3 >= 3){
+        else if(ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 4;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 4 && nowPoint >= 180 && nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
+        else if(ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 5;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 5 && nowPoint >= 240 && nocomp_ColortoCode5 >= 4) {
+        else if(ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
             ull_ColortoCode = 6;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 6 && nowPoint >= 320 && nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
+        else if(ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 7;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 7 && nowPoint >= 425 && nocomp_ColortoCode7 >= 6){
+        else if(ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 8;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 8 && nowPoint >= 560 && nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
+        else if(ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 9;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 9 && nowPoint >= 750 && nocomp_ColortoCode9 >= 8){
+        else if(ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 10;
             ull_old = ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && nocomp_ColortoCode10 >= 10){
+        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
             unlockmode = "ColortoCode";
             ull_ColortoCode = 11;
             ull_old = ull_ColortoCode-1;
@@ -413,7 +413,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 3 && nowPoint >= 125 && this_ocomp_CodetoColor3 >= 3){
+        else if(ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
             unlockmode = "CodetoColor";
             ull_CodetoColor = 4;
             ull_old = ull_CodetoColor-1;
@@ -486,7 +486,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         editor.putInt("ull_CodetoColor", ull_CodetoColor);
         editor.putInt("ull_ColoretoCode", ull_ColortoCode);
         editor.putInt("nowPoint", nowPoint);
-        editor.putInt("nocomp_ColortoCode0", nocomp_ColortoCode0);
+        editor.putInt("nocomp_ColortoCode0", this_nocomp_ColortoCode0);
         editor.apply();
 
         //gameFinish

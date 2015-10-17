@@ -153,18 +153,19 @@ public class CodetoColorActivity extends AppCompatActivity {
         //getData（SharedPreference)
         if (colormode == 1){
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-            ull_CodetoColor = getData.getInt("ull_CodetoColor", 0);
-            ull_ColortoCode = getData.getInt("ull_ColortoCode", 0);
-            nowPoint = getData.getInt("nowPoint", 0);
-            nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2", 0);
-            nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3", 0);
-            nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4", 0);
-            nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5", 0);
-            nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6", 0);
-            nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7", 0);
-            nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8", 0);
-            nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9", 0);
-            nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10", 0);
+            ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            nowPoint = getData.getInt("RGB_nowPoint", 0);
+            nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
+            nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
+            nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
+            nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
+            nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
+            nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
+            nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
+            nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
+            nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
+            nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
         }else if (colormode == 2){
 
         }

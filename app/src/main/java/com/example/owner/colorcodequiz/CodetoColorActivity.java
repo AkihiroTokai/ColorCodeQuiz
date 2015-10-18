@@ -167,7 +167,20 @@ public class CodetoColorActivity extends AppCompatActivity {
             nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
             nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
         }else if (colormode == 2){
-
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            nowPoint = getData.getInt("HSB_nowPoint", 0);
+            nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
+            nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
+            nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
+            nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
+            nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
+            nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
+            nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
+            nocomp_ColortoCode8 = getData.getInt(B_nocomp_ColortoCode8", 0);
+            nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
+            nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
 
     }

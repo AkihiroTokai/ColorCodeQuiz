@@ -178,7 +178,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
             nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
             nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
-            nocomp_ColortoCode8 = getData.getInt(B_nocomp_ColortoCode8", 0);
+            nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
             nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
@@ -586,23 +586,24 @@ public class CodetoColorActivity extends AppCompatActivity {
         checkData.saveEventually();            */
 
         //saveData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = getData.edit();
-        editor.putInt("ull_CodetoColor", ull_CodetoColor);
-        editor.putInt("ull_ColoretoCode", ull_ColortoCode);
-        editor.putInt("nowPoint", nowPoint);
-        editor.putInt("nocomp_CodetoColor1", nocomp_CodetoColor1);
-        editor.putInt("nocomp_CodetoColor2", nocomp_CodetoColor2);
-        editor.putInt("nocomp_CodetoColor3", nocomp_CodetoColor3);
-        editor.putInt("nocomp_CodetoColor4", nocomp_CodetoColor4);
-        editor.putInt("nocomp_CodetoColor5", nocomp_CodetoColor5);
-        editor.putInt("nocomp_CodetoColor6", nocomp_CodetoColor6);
-        editor.putInt("nocomp_CodetoColor7", nocomp_CodetoColor7);
-        editor.putInt("nocomp_CodetoColor8", nocomp_CodetoColor8);
-        editor.putInt("nocomp_CodetoColor9", nocomp_CodetoColor9);
-        editor.putInt("nocomp_CodetoColor10", nocomp_CodetoColor10);
-        editor.apply();
-
+        if(colormode == 1) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+            editor.putInt("RGB_ull_CodetoColor", ull_CodetoColor);
+            editor.putInt("RGB_ull_ColoretoCode", ull_ColortoCode);
+            editor.putInt("RGB_nowPoint", nowPoint);
+            editor.putInt("RGB_nocomp_CodetoColor1", nocomp_CodetoColor1);
+            editor.putInt("RGB_nocomp_CodetoColor2", nocomp_CodetoColor2);
+            editor.putInt("RGB_nocomp_CodetoColor3", nocomp_CodetoColor3);
+            editor.putInt("RGB_nocomp_CodetoColor4", nocomp_CodetoColor4);
+            editor.putInt("RGB_nocomp_CodetoColor5", nocomp_CodetoColor5);
+            editor.putInt("RGB_nocomp_CodetoColor6", nocomp_CodetoColor6);
+            editor.putInt("RGB_nocomp_CodetoColor7", nocomp_CodetoColor7);
+            editor.putInt("RGB_nocomp_CodetoColor8", nocomp_CodetoColor8);
+            editor.putInt("RGB_nocomp_CodetoColor9", nocomp_CodetoColor9);
+            editor.putInt("RGB_nocomp_CodetoColor10", nocomp_CodetoColor10);
+            editor.apply();
+        }
 
         //gameFinish
         new AlertDialog.Builder(CodetoColorActivity.this)

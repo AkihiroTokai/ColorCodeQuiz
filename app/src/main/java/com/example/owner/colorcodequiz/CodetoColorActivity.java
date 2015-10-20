@@ -603,6 +603,23 @@ public class CodetoColorActivity extends AppCompatActivity {
             editor.putInt("RGB_nocomp_CodetoColor9", nocomp_CodetoColor9);
             editor.putInt("RGB_nocomp_CodetoColor10", nocomp_CodetoColor10);
             editor.apply();
+        }else if (colormode == 2){
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+            editor.putInt("HSB_ull_CodetoColor", ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode", ull_ColortoCode);
+            editor.putInt("HSB_nowPoint", nowPoint);
+            editor.putInt("HSB_nocomp_CodetoColor1", nocomp_CodetoColor1);
+            editor.putInt("HSB_nocomp_CodetoColor2", nocomp_CodetoColor2);
+            editor.putInt("HSB_nocomp_CodetoColor3", nocomp_CodetoColor3);
+            editor.putInt("HSB_nocomp_CodetoColor4", nocomp_CodetoColor4);
+            editor.putInt("HSB_nocomp_CodetoColor5", nocomp_CodetoColor5);
+            editor.putInt("HSB_nocomp_CodetoColor6", nocomp_CodetoColor6);
+            editor.putInt("HSB_nocomp_CodetoColor7", nocomp_CodetoColor7);
+            editor.putInt("HSB_nocomp_CodetoColor8", nocomp_CodetoColor8);
+            editor.putInt("HSB_nocomp_CodetoColor9", nocomp_CodetoColor9);
+            editor.putInt("HSB_nocomp_CodetoColor10", nocomp_CodetoColor10);
+            editor.apply();
         }
 
         //gameFinish

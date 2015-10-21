@@ -43,10 +43,10 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int noca;
     private int maxlimit;
     private int minlimit;
-    private int ull_ColortoCode;
-    private int ull_CodetoColor;
+    private int this_ull_ColortoCode;
+    private int this_ull_CodetoColor;
     private int getPoint;
-    private int nowPoint;
+    private int this_nowPoint;
     private int level;
     private int ull_old;
 
@@ -54,29 +54,28 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
     private int colormode;
 
-    private int nocomp_CodetoColor1;
-    private int nocomp_CodetoColor2;
+    private int this_nocomp_CodetoColor1;
+    private int this_nocomp_CodetoColor2;
+    private int this_nocomp_CodetoColor3;
+    private int this_nocomp_CodetoColor4;
+    private int this_nocomp_CodetoColor5;
+    private int this_nocomp_CodetoColor6;
+    private int this_nocomp_CodetoColor7;
+    private int this_nocomp_CodetoColor8;
+    private int this_nocomp_CodetoColor9;
+    private int this_nocomp_CodetoColor10;
 
-    private int nocomp_CodetoColor3;
-    private int nocomp_CodetoColor4;
-    private int nocomp_CodetoColor5;
-    private int nocomp_CodetoColor6;
-    private int nocomp_CodetoColor7;
-    private int nocomp_CodetoColor8;
-    private int nocomp_CodetoColor9;
-    private int nocomp_CodetoColor10;
 
-
-    private int nocomp_ColortoCode1;
-    private int nocomp_ColortoCode2;
-    private int nocomp_ColortoCode3;
-    private int nocomp_ColortoCode4;
-    private int nocomp_ColortoCode5;
-    private int nocomp_ColortoCode6;
-    private int nocomp_ColortoCode7;
-    private int nocomp_ColortoCode8;
-    private int nocomp_ColortoCode9;
-    private int nocomp_ColortoCode10;
+    private int this_nocomp_ColortoCode1;
+    private int this_nocomp_ColortoCode2;
+    private int this_nocomp_ColortoCode3;
+    private int this_nocomp_ColortoCode4;
+    private int this_nocomp_ColortoCode5;
+    private int this_nocomp_ColortoCode6;
+    private int this_nocomp_ColortoCode7;
+    private int this_nocomp_ColortoCode8;
+    private int this_nocomp_ColortoCode9;
+    private int this_nocomp_ColortoCode10;
 
     private boolean nextquestion;
 
@@ -152,33 +151,36 @@ public class ColortoCodeActivity extends AppCompatActivity {
         }                                        */
 
         //getData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        ull_CodetoColor = getData.getInt("ull_CodetoColor",0 );
-        ull_ColortoCode = getData.getInt("ull_ColortoCode",0);
-        nowPoint = getData.getInt("nowPoint",0);
+        if (colormode == 1) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
-        nocomp_CodetoColor1 = getData.getInt("nocomp_CodetoColor1",0);
-        nocomp_CodetoColor2 = getData.getInt("nocomp_CodetoColor2",0);
-        nocomp_CodetoColor3 = getData.getInt("nocomp_CodetoColor3",0);
-        nocomp_CodetoColor4 = getData.getInt("nocomp_CodetoColor4",0);
-        nocomp_CodetoColor5 = getData.getInt("nocomp_CodetoColor5",0);
-        nocomp_CodetoColor6 = getData.getInt("nocomp_CodetoColor6",0);
-        nocomp_CodetoColor7 = getData.getInt("nocomp_CodetoColor7",0);
-        nocomp_CodetoColor8 = getData.getInt("nocomp_CodetoColor8",0);
-        nocomp_CodetoColor9 = getData.getInt("nocomp_CodetoColor9",0);
-        nocomp_CodetoColor10 = getData.getInt("nocomp_CodetoColor10",0);
+            this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
-        nocomp_ColortoCode1 = getData.getInt("nocomp_ColortoCode1",0);
-        nocomp_ColortoCode2 = getData.getInt("nocomp_ColortoCode2",0);
-        nocomp_ColortoCode3 = getData.getInt("nocomp_ColortoCode3",0);
-        nocomp_ColortoCode4 = getData.getInt("nocomp_ColortoCode4",0);
-        nocomp_ColortoCode5 = getData.getInt("nocomp_ColortoCode5",0);
-        nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6",0);
-        nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7",0);
-        nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8",0);
-        nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9",0);
-        nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10",0);
+            this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
+            this_nocomp_ColortoCode6 = getData.getInt("nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("nocomp_ColortoCode10", 0);
+        } else if(colormode == 2){
 
+        }
         setanswer();
     }
 
@@ -351,210 +353,210 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
         }
 
-        nowPoint = nowPoint + getPoint ;
+        this_nowPoint = this_nowPoint + getPoint ;
 
         // Count:nocomp
        switch(level) {
            case 1:
                getData checkData1 = new getData();
-               nocomp_ColortoCode1++;
-               checkData1.setnocomp_ColortoCode1(nocomp_ColortoCode1);
+               this_nocomp_ColortoCode1++;
+               checkData1.setnocomp_ColortoCode1(this_nocomp_ColortoCode1);
            break;
 
            case 2:
                getData checkData2 = new getData();
-               nocomp_ColortoCode2++;
-               checkData2.setnocomp_ColortoCode2(nocomp_ColortoCode2);
+               this_nocomp_ColortoCode2++;
+               checkData2.setnocomp_ColortoCode2(this_nocomp_ColortoCode2);
            break;
 
            case 3:
                getData checkData3 = new getData();
-               nocomp_ColortoCode3++;
-               checkData3.setnocomp_ColortoCode3(nocomp_ColortoCode3);
+               this_nocomp_ColortoCode3++;
+               checkData3.setnocomp_ColortoCode3(this_nocomp_ColortoCode3);
            break;
 
            case 4:
                getData checkData4 = new getData();
-               nocomp_ColortoCode4++;
-               checkData4.setnocomp_ColortoCode4(nocomp_ColortoCode4);
+               this_nocomp_ColortoCode4++;
+               checkData4.setnocomp_ColortoCode4(this_nocomp_ColortoCode4);
 
            case 5:
                getData checkData5 = new getData();
-               nocomp_ColortoCode5++;
-               checkData5.setnocomp_ColortoCode5(nocomp_ColortoCode5);
+               this_nocomp_ColortoCode5++;
+               checkData5.setnocomp_ColortoCode5(this_nocomp_ColortoCode5);
            break;
 
            case 6:
                getData checkData6 = new getData();
-               nocomp_ColortoCode6++;
-               checkData6.setnocomp_ColortoCode6(nocomp_ColortoCode6);
+               this_nocomp_ColortoCode6++;
+               checkData6.setnocomp_ColortoCode6(this_nocomp_ColortoCode6);
            break;
 
            case 7:
                getData checkData7 = new getData();
-               nocomp_ColortoCode7++;
-               checkData7.setnocomp_ColortoCode7(nocomp_ColortoCode7);
+               this_nocomp_ColortoCode7++;
+               checkData7.setnocomp_ColortoCode7(this_nocomp_ColortoCode7);
            break;
 
            case 8:
                getData checkData8 = new getData();
-               nocomp_ColortoCode8++;
-               checkData8.setnocomp_ColortoCode8(nocomp_ColortoCode8);
+               this_nocomp_ColortoCode8++;
+               checkData8.setnocomp_ColortoCode8(this_nocomp_ColortoCode8);
            break;
 
            case 9:
                getData checkData9 = new getData();
-               nocomp_ColortoCode9++;
-               checkData9.setnocomp_ColortoCode9(nocomp_ColortoCode9);
+               this_nocomp_ColortoCode9++;
+               checkData9.setnocomp_ColortoCode9(this_nocomp_ColortoCode9);
            break;
 
            case 10:
                getData checkData10 = new getData();
-               nocomp_ColortoCode10++;
-               checkData10.setnocomp_ColortoCode10(nocomp_ColortoCode10);
+               this_nocomp_ColortoCode10++;
+               checkData10.setnocomp_ColortoCode10(this_nocomp_ColortoCode10);
            break;
        }
 
         //Check:Levelup(ColortoCode)
-        if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  nocomp_ColortoCode1 >= 3 ){
+        if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode  = 2;
+            this_ull_ColortoCode  = 2;
             ulm_ColortoCode();
-            ull_old = ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode-1;
         }
 
-        else if(ull_ColortoCode == 2 && nowPoint >= 90 && nocomp_ColortoCode2>= 3 ){
+        else if(this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 3;
-            ull_old = ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(ull_ColortoCode == 3 && nowPoint >= 125 && nocomp_ColortoCode3 >= 3){
-            unlockmode = "ColortoCode";
-            ull_ColortoCode = 4;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 3;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 4 && nowPoint >= 180 && nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
+        else if(this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 5;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 4;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 5 && nowPoint >= 240 && nocomp_ColortoCode5 >= 4) {
+        else if(this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 6;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 5;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 6;
+            ull_old = this_ull_ColortoCode-1;
            ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 6 && nowPoint >= 320 && nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
+        else if(this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 7;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 7;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 7 && nowPoint >= 425 && nocomp_ColortoCode7 >= 6){
+        else if(this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 8;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 8;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 8 && nowPoint >= 560 && nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
+        else if(this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 9;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 9;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 9 && nowPoint >= 750 && nocomp_ColortoCode9 >= 8){
+        else if(this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 10;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 10;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && nocomp_ColortoCode10 >= 10){
+        else if(this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 11;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 11;
+            ull_old = this_ull_ColortoCode-1;
             compm();
         }
 
 
         //Check:Levelup(CodetoColor)
-        if (ull_CodetoColor  == 1 && nowPoint >= 60 && nocomp_CodetoColor1 >= 3 ){
+        if (this_ull_CodetoColor  == 1 && this_nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor  = 2;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 2;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 2 && nowPoint >= 90 && nocomp_CodetoColor2 >= 3 ){
+        else if(this_ull_CodetoColor == 2 && this_nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 3;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 3;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 3 && nowPoint >= 125 && nocomp_CodetoColor3 >= 3){
+        else if(this_ull_CodetoColor == 3 && this_nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 4;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 4;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 4 && nowPoint >= 180 && nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
+        else if(this_ull_CodetoColor == 4 && this_nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode>= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 5;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 5;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 5 && nowPoint >= 240 && nocomp_CodetoColor5 >= 4) {
+        else if(this_ull_CodetoColor == 5 && this_nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 6;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 6;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 6 && nowPoint >= 320 && nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
+        else if(this_ull_CodetoColor == 6 && this_nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode>= 5){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 7;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 7;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 7 && nowPoint >= 425 && nocomp_CodetoColor7 >= 6){
+        else if(this_ull_CodetoColor == 7 && this_nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 8;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 8;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 8 && nowPoint >= 560 && nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
+        else if(this_ull_CodetoColor == 8 && this_nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode>= 7){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 9;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 9;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 9 && nowPoint >= 750 && nocomp_CodetoColor9 >= 8){
+        else if(this_ull_CodetoColor == 9 && this_nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
             unlockmode = "CodetoColor";
-            ull_CodetoColor= 10;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor= 10;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 10 && nowPoint >= 1000 && nocomp_CodetoColor10 >= 10){
+        else if(this_ull_CodetoColor == 10 && this_nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 11;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 11;
+            ull_old = this_ull_CodetoColor-1;
             compm();
         }
 
@@ -567,22 +569,45 @@ public class ColortoCodeActivity extends AppCompatActivity {
         checkData.saveEventually();       */
 
         //saveData（SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = getData.edit();
-        editor.putInt("ull_CodetoColor", ull_CodetoColor);
-        editor.putInt("ull_ColoretoCode", ull_ColortoCode);
-        editor.putInt("nowPoint", nowPoint);
-        editor.putInt("nocomp_ColortoCode1", nocomp_ColortoCode1);
-        editor.putInt("nocomp_ColortoCode2", nocomp_ColortoCode2);
-        editor.putInt("nocomp_ColortoCode3", nocomp_ColortoCode3);
-        editor.putInt("nocomp_ColortoCode4", nocomp_ColortoCode4);
-        editor.putInt("nocomp_ColortoCode5", nocomp_ColortoCode5);
-        editor.putInt("nocomp_ColortoCode6", nocomp_ColortoCode6);
-        editor.putInt("nocomp_ColortoCode7", nocomp_ColortoCode7);
-        editor.putInt("nocomp_ColortoCode8", nocomp_ColortoCode8);
-        editor.putInt("nocomp_ColortoCode9", nocomp_ColortoCode9);
-        editor.putInt("nocomp_ColortoCode10", nocomp_ColortoCode10);
-        editor.apply();
+        if (colormode == 1) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+
+            editor.putInt("RGB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("RGB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("RGB_nowPoint", this_nowPoint);
+
+            editor.putInt("RGB_nocomp_ColortoCode1", this_nocomp_ColortoCode1);
+            editor.putInt("RGB_nocomp_ColortoCode2", this_nocomp_ColortoCode2);
+            editor.putInt("RGB_nocomp_ColortoCode3", this_nocomp_ColortoCode3);
+            editor.putInt("RGB_nocomp_ColortoCode4", this_nocomp_ColortoCode4);
+            editor.putInt("RGB_nocomp_ColortoCode5", this_nocomp_ColortoCode5);
+            editor.putInt("RGB_nocomp_ColortoCode6", this_nocomp_ColortoCode6);
+            editor.putInt("RGB_nocomp_ColortoCode7", this_nocomp_ColortoCode7);
+            editor.putInt("RGB_nocomp_ColortoCode8", this_nocomp_ColortoCode8);
+            editor.putInt("RGB_nocomp_ColortoCode9", this_nocomp_ColortoCode9);
+            editor.putInt("RGB_nocomp_ColortoCode10", this_nocomp_ColortoCode10);
+            editor.apply();
+        } else if (colormode == 2) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+
+            editor.putInt("HSB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("HSB_nowPoint", this_nowPoint);
+
+            editor.putInt("HSB_nocomp_ColortoCode1", this_nocomp_ColortoCode1);
+            editor.putInt("HSB_nocomp_ColortoCode2", this_nocomp_ColortoCode2);
+            editor.putInt("HSB_nocomp_ColortoCode3", this_nocomp_ColortoCode3);
+            editor.putInt("HSB_nocomp_ColortoCode4", this_nocomp_ColortoCode4);
+            editor.putInt("HSB_nocomp_ColortoCode5", this_nocomp_ColortoCode5);
+            editor.putInt("HSB_nocomp_ColortoCode6", this_nocomp_ColortoCode6);
+            editor.putInt("HSB_nocomp_ColortoCode7", this_nocomp_ColortoCode7);
+            editor.putInt("HSB_nocomp_ColortoCode8", this_nocomp_ColortoCode8);
+            editor.putInt("HSB_nocomp_ColortoCode9", this_nocomp_ColortoCode9);
+            editor.putInt("HSB_nocomp_ColortoCode10", this_nocomp_ColortoCode10);
+            editor.apply();
+        }
 
         //gameFinish
         new AlertDialog.Builder(ColortoCodeActivity.this)
@@ -593,9 +618,9 @@ public class ColortoCodeActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore",nowPoint);
+                        intent.putExtra("nowScore",this_nowPoint);
                         intent.putExtra("getScore",getPoint);
-                        intent.putExtra("ull_ColortoCode ",ull_ColortoCode );
+                        intent.putExtra("ull_ColortoCode ",this_ull_ColortoCode );
                         startActivity(intent);
                     }
                 }).show();
@@ -604,7 +629,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     public  void ulm_CodetoColor(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -619,7 +644,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     public  void ulm_ColortoCode(){
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -666,80 +691,96 @@ public class ColortoCodeActivity extends AppCompatActivity {
     }
 
     public void setanswer() {
-        //createColorCode
-        Random rnd1 = new Random();
-        r = rnd1.nextInt(256);
-        Random rnd2 = new Random();
-        g = rnd2.nextInt(256);
-        Random rnd3 = new Random();
-        b = rnd3.nextInt(256);
+        if (colormode == 1) {
+            //createColorCode
+            Random rnd1 = new Random();
+            r = rnd1.nextInt(256);
+            Random rnd2 = new Random();
+            g = rnd2.nextInt(256);
+            Random rnd3 = new Random();
+            b = rnd3.nextInt(256);
 
 
+            //createChoicesColorcode
+            while (true) {
 
-        //createChoicesColorcode
-        while (true) {
+                Random rnd5 = new Random();
+                r_a1 = rnd5.nextInt(256);
+                Random rnd6 = new Random();
+                r_a2 = rnd6.nextInt(256);
+                Random rnd7 = new Random();
+                r_a3 = rnd7.nextInt(256);
 
-            Random rnd5 = new Random();
-            r_a1 = rnd5.nextInt(256);
-            Random rnd6 = new Random();
-            r_a2 = rnd6.nextInt(256);
-            Random rnd7 = new Random();
-            r_a3 = rnd7.nextInt(256);
+                Random rnd8 = new Random();
+                g_a1 = rnd8.nextInt(256);
+                Random rnd9 = new Random();
+                g_a2 = rnd9.nextInt(256);
+                Random rnd10 = new Random();
+                g_a3 = rnd10.nextInt(256);
 
-            Random rnd8 = new Random();
-            g_a1 = rnd8.nextInt(256);
-            Random rnd9 = new Random();
-            g_a2 = rnd9.nextInt(256);
-            Random rnd10 = new Random();
-            g_a3 = rnd10.nextInt(256);
-
-            Random rnd11 = new Random();
-            b_a1 = rnd11.nextInt(256);
-            Random rnd12 = new Random();
-            b_a2 = rnd12.nextInt(256);
-            Random rnd13 = new Random();
-            b_a3 = rnd13.nextInt(256);
-
-
-            int abs_r1_2 = Math.abs(r_a1 - r_a2);
-            int abs_r2_3 = Math.abs(r_a2 - r_a3);
-            int abs_r3_1 = Math.abs(r_a3 - r_a1);
-            int abs_r_1 = Math.abs(r - r_a1);
-            int abs_r_2 = Math.abs(r - r_a2);
-            int abs_r_3 = Math.abs(r - r_a3);
-
-            int abs_g1_2 = Math.abs(g_a1 - g_a2);
-            int abs_g2_3 = Math.abs(g_a2 - g_a3);
-            int abs_g3_1 = Math.abs(g_a3 - g_a1);
-            int abs_g_1 = Math.abs(g - g_a1);
-            int abs_g_2 = Math.abs(g - g_a2);
-            int abs_g_3 = Math.abs(g - g_a3);
-
-            int abs_b1_2 = Math.abs(b_a1 - b_a2);
-            int abs_b2_3 = Math.abs(b_a2 - b_a3);
-            int abs_b3_1 = Math.abs(b_a3 - b_a1);
-            int abs_b_1 = Math.abs(b - b_a1);
-            int abs_b_2 = Math.abs(b - b_a2);
-            int abs_b_3 = Math.abs(b - b_a3);
-
-            int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
-            int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
-            int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
-            int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
-            int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
-            int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
-
-            boolean check_break = false;
+                Random rnd11 = new Random();
+                b_a1 = rnd11.nextInt(256);
+                Random rnd12 = new Random();
+                b_a2 = rnd12.nextInt(256);
+                Random rnd13 = new Random();
+                b_a3 = rnd13.nextInt(256);
 
 
-            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
-            if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
-                if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
-                    if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
-                        if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
-                            if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
-                                if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
-                                    check_break = true;
+                int abs_r1_2 = Math.abs(r_a1 - r_a2);
+                int abs_r2_3 = Math.abs(r_a2 - r_a3);
+                int abs_r3_1 = Math.abs(r_a3 - r_a1);
+                int abs_r_1 = Math.abs(r - r_a1);
+                int abs_r_2 = Math.abs(r - r_a2);
+                int abs_r_3 = Math.abs(r - r_a3);
+
+                int abs_g1_2 = Math.abs(g_a1 - g_a2);
+                int abs_g2_3 = Math.abs(g_a2 - g_a3);
+                int abs_g3_1 = Math.abs(g_a3 - g_a1);
+                int abs_g_1 = Math.abs(g - g_a1);
+                int abs_g_2 = Math.abs(g - g_a2);
+                int abs_g_3 = Math.abs(g - g_a3);
+
+                int abs_b1_2 = Math.abs(b_a1 - b_a2);
+                int abs_b2_3 = Math.abs(b_a2 - b_a3);
+                int abs_b3_1 = Math.abs(b_a3 - b_a1);
+                int abs_b_1 = Math.abs(b - b_a1);
+                int abs_b_2 = Math.abs(b - b_a2);
+                int abs_b_3 = Math.abs(b - b_a3);
+
+                int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
+                int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
+                int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
+                int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
+                int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
+                int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
+
+                boolean check_break = false;
+
+
+                //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+                if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
+                    if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
+                        if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
+                            if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
+                                if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
+                                    if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
+                                        check_break = true;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 難易度調整
+                if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                    if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                        if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                            if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                                if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                    if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
+                                        break;
+                                    }
                                 }
                             }
                         }
@@ -747,90 +788,77 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }
             }
 
-            // 難易度調整
-            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
-                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
-                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
-                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
-                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
-                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
+
+            //cleanCheckselect
+            check_select1.setImageDrawable(null);
+            check_select2.setImageDrawable(null);
+            check_select3.setImageDrawable(null);
+            check_select4.setImageDrawable(null);
+
+            // setanswer
+            Random rnd4 = new Random();
+            check_answer = rnd4.nextInt(3) + 1;
+            String r16 = Integer.toHexString(r);
+            if (r16.length() < 2) r16 = "0" + r16;
+            String g16 = Integer.toHexString(g);
+            if (g16.length() < 2) g16 = "0" + g16;
+            String b16 = Integer.toHexString(b);
+            if (b16.length() < 2) b16 = "0" + b16;
+
+            String r_a1_16 = Integer.toHexString(r_a1);
+            if (r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
+            String g_a1_16 = Integer.toHexString(g_a1);
+            if (g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
+            String b_a1_16 = Integer.toHexString(b_a1);
+            if (b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
+
+            String r_a2_16 = Integer.toHexString(r_a2);
+            if (r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
+            String g_a2_16 = Integer.toHexString(g_a2);
+            if (g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
+            String b_a2_16 = Integer.toHexString(b_a2);
+            if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+
+            String r_a3_16 = Integer.toHexString(r_a3);
+            if (r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
+            String g_a3_16 = Integer.toHexString(g_a3);
+            if (g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
+            String b_a3_16 = Integer.toHexString(b_a3);
+            if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+
+            switch (check_answer) {
+                case 1:
+                    answer1.setText("#" + r16 + g16 + b16);
+                    answer2.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                    answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                    break;
+
+                case 2:
+                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                    answer2.setText("#" + r16 + g16 + b16);
+                    answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                    break;
+
+                case 3:
+                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                    answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                    answer3.setText("#" + r16 + g16 + b16);
+                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                    break;
+
+                case 4:
+                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                    answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                    answer3.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                    answer4.setText("#" + r16 + g16 + b16);
+                    break;
             }
+            question.setBackgroundColor(Color.rgb(r, g, b));
+        }else if (colormode == 2){
+            //Color.HSVToColor()
         }
-
-
-        //cleanCheckselect
-        check_select1.setImageDrawable(null);
-        check_select2.setImageDrawable(null);
-        check_select3.setImageDrawable(null);
-        check_select4.setImageDrawable(null);
-
-        // setanswer
-        Random rnd4 = new Random();
-        check_answer = rnd4.nextInt(3) + 1;
-        String r16 = Integer.toHexString(r);
-        if (r16.length() < 2) r16 = "0" + r16;
-        String g16 = Integer.toHexString(g);
-        if (g16.length() < 2) g16 = "0" + g16;
-        String b16 = Integer.toHexString(b);
-        if (b16.length() < 2) b16 = "0" + b16;
-
-        String r_a1_16 = Integer.toHexString(r_a1);
-        if (r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
-        String g_a1_16 = Integer.toHexString(g_a1);
-        if (g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
-        String b_a1_16 = Integer.toHexString(b_a1);
-        if (b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
-
-        String r_a2_16 = Integer.toHexString(r_a2);
-        if (r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
-        String g_a2_16 = Integer.toHexString(g_a2);
-        if (g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
-        String b_a2_16 = Integer.toHexString(b_a2);
-        if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
-
-        String r_a3_16 = Integer.toHexString(r_a3);
-        if (r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
-        String g_a3_16 = Integer.toHexString(g_a3);
-        if (g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
-        String b_a3_16 = Integer.toHexString(b_a3);
-        if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
-
-        switch (check_answer) {
-            case 1:
-                answer1.setText("#" + r16 + g16 + b16);
-                answer2.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-            break;
-
-            case 2:
-                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                answer2.setText("#" + r16 + g16 + b16);
-                answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-            break;
-
-            case 3:
-                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                answer3.setText("#" + r16 + g16 + b16);
-                answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-            break;
-
-            case 4:
-                answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                answer3.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-                answer4.setText("#" + r16 + g16 + b16);
-            break;
-        }
-        question.setBackgroundColor(Color.rgb(r, g, b));
     }
 
     @Override

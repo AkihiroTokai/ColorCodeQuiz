@@ -470,6 +470,7 @@ public class MainActivity extends AppCompatActivity {
             //saveData(SharedPreference)
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
+
             editor.putInt("RGB_ull_CodetoColor", this_ull_CodetoColor);
             editor.putInt("RGB_ull_ColoretoCode", this_ull_ColortoCode);
             editor.putInt("RGB_nowPoint", this_nowPoint);
@@ -478,6 +479,7 @@ public class MainActivity extends AppCompatActivity {
         }else if (colormode == 2){
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
+
             editor.putInt("HSB_ull_CodetoColor", this_ull_CodetoColor);
             editor.putInt("HSB_ull_ColoretoCode", this_ull_ColortoCode);
             editor.putInt("HSB_nowPoint", this_nowPoint);

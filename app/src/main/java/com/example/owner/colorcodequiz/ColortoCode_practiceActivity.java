@@ -481,13 +481,25 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         checkData.saveEventually(); */
 
         //saveData(SharedPreference)
-        SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = getData.edit();
-        editor.putInt("ull_CodetoColor", ull_CodetoColor);
-        editor.putInt("ull_ColoretoCode", ull_ColortoCode);
-        editor.putInt("nowPoint", nowPoint);
-        editor.putInt("nocomp_ColortoCode0", this_nocomp_ColortoCode0);
-        editor.apply();
+        if (colormode == 1) {
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+
+            editor.putInt("RGB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("RGB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("RGB_nowPoint", this_nowPoint);
+            editor.putInt("RGB_nocomp_ColortoCode0", this_nocomp_ColortoCode0);
+            editor.apply();
+        } else if (colormode == 2){
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = getData.edit();
+
+            editor.putInt("HSB_ull_CodetoColor",this_ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode",this_ull_ColortoCode);
+            editor.putInt("HSB_nowPoint", this_nowPoint);
+            editor.putInt("HSB_nocomp_ColortoCode0", this_nocomp_ColortoCode0);
+            editor.apply();
+        }
 
         //gameFinish
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
@@ -577,179 +589,163 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         check_select2.setImageDrawable(null);
         check_select3.setImageDrawable(null);
         check_select4.setImageDrawable(null);
+        if (colormode == 1) {
+            if (gameCount == 1) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
 
-        if (gameCount == 1) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#000000"));
 
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#000000"));
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#000000");
+                answer2.setText("#ffff00");
+                answer3.setText("#ff00ff");
+                answer4.setText("#ffffff");
+                check_answer = 1;
+            } else if (gameCount == 2) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
 
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#000000");
-            answer2.setText("#ffff00");
-            answer3.setText("#ff00ff");
-            answer4.setText("#ffffff");
-            check_answer = 1;
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#ffffff"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#000000");
+                answer2.setText("#ffffff");
+                answer3.setText("#ffff00");
+                answer4.setText("#ff00ff");
+                check_answer = 2;
+            } else if (gameCount == 3) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#00ffff"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#0088ff");
+                answer2.setText("#00ffff");
+                answer3.setText("#ffff00");
+                answer4.setText("#ff00ff");
+                check_answer = 2;
+            } else if (gameCount == 4) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#ff00ff"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#ff88ff");
+                answer2.setText("#00ffff");
+                answer3.setText("#ffff00");
+                answer4.setText("#ff00ff");
+                check_answer = 4;
+            } else if (gameCount == 5) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#ffff00"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#ffff00");
+                answer2.setText("#00ffff");
+                answer3.setText("#ffff88");
+                answer4.setText("#ff00ff");
+                check_answer = 1;
+            } else if (gameCount == 6) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#00ffff"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#00ff00");
+                answer2.setText("#880000");
+                answer3.setText("#00ffff");
+                answer4.setText("#ff00ff");
+                check_answer = 3;
+            } else if (gameCount == 7) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#ff0088"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#ff0000");
+                answer2.setText("#ff0088");
+                answer3.setText("#ffff00");
+                answer4.setText("#00ffff");
+                check_answer = 2;
+            } else if (gameCount == 8) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#00ff00"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#ff0000");
+                answer2.setText("#00ffff");
+                answer3.setText("#ffff88");
+                answer4.setText("#00ff00");
+                check_answer = 4;
+            } else if (gameCount == 9) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#880088"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#008800");
+                answer2.setText("#008888");
+                answer3.setText("#000088");
+                answer4.setText("#880088");
+
+                check_answer = 4;
+            } else if (gameCount == 10) {
+                //setQuestionImage
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(Color.parseColor("#008888"));
+
+                question.setImageBitmap(bitmap);
+                //setChoices
+                answer1.setText("#008800");
+                answer2.setText("#008888");
+                answer3.setText("#000088");
+                answer4.setText("#880000");
+
+                check_answer = 2;
+            }
+        } else if (colormode == 2) {
+            //Color.HSVToColor()
         }
-
-        else if (gameCount == 2) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#ffffff"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#000000");
-            answer2.setText("#ffffff");
-            answer3.setText("#ffff00");
-            answer4.setText("#ff00ff");
-            check_answer = 2;
-        }
-
-        else if (gameCount == 3) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#00ffff"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#0088ff");
-            answer2.setText("#00ffff");
-            answer3.setText("#ffff00");
-            answer4.setText("#ff00ff");
-            check_answer = 2;
-        }
-
-        else if (gameCount == 4) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#ff00ff"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#ff88ff");
-            answer2.setText("#00ffff");
-            answer3.setText("#ffff00");
-            answer4.setText("#ff00ff");
-            check_answer = 4;
-        }
-
-        else if (gameCount == 5) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#ffff00"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#ffff00");
-            answer2.setText("#00ffff");
-            answer3.setText("#ffff88");
-            answer4.setText("#ff00ff");
-            check_answer = 1;
-        }
-
-        else if (gameCount == 6) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#00ffff"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#00ff00");
-            answer2.setText("#880000");
-            answer3.setText("#00ffff");
-            answer4.setText("#ff00ff");
-            check_answer = 3;
-        }
-
-        else if (gameCount == 7) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#ff0088"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#ff0000");
-            answer2.setText("#ff0088");
-            answer3.setText("#ffff00");
-            answer4.setText("#00ffff");
-            check_answer = 2;
-        }
-
-        else if (gameCount == 8) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#00ff00"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#ff0000");
-            answer2.setText("#00ffff");
-            answer3.setText("#ffff88");
-            answer4.setText("#00ff00");
-            check_answer = 4;
-        }
-
-        else if (gameCount == 9) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#880088"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#008800");
-            answer2.setText("#008888");
-            answer3.setText("#000088");
-            answer4.setText("#880088");
-
-            check_answer = 4;
-        }
-
-        else if (gameCount == 10) {
-            //setQuestionImage
-            Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-
-            Canvas canvas;
-            canvas = new Canvas(bitmap);
-            canvas.drawColor(Color.parseColor("#008888"));
-
-            question.setImageBitmap(bitmap);
-            //setChoices
-            answer1.setText("#008800");
-            answer2.setText("#008888");
-            answer3.setText("#000088");
-            answer4.setText("#880000");
-
-    check_answer = 2;
-}
-
 }
 
 

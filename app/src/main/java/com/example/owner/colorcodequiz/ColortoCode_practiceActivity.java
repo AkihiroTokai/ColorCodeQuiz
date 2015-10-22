@@ -745,6 +745,22 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
         } else if (colormode == 2) {
             //Color.HSVToColor()
+            int h,s,b,color;
+            if (gameCount == 1) {
+                //SetQuestionImage
+                h = 360;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[] { h, s, b });
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("360,100,100");
+                answer2.setText("0,0,0");
+            }
         }
 }
 

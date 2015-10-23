@@ -760,6 +760,10 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
                 answer1.setText("360,100,100");
                 answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 1;
             }
         }
 }

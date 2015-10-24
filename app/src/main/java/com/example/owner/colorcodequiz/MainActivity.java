@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean nextquestion;
 
-    private String gameResult;
+
 
     private int this_ull_CodetoColor;
     private int this_ull_ColortoCode;
@@ -72,7 +72,10 @@ public class MainActivity extends AppCompatActivity {
     private int this_nocomp_ColortoCode8;
     private int this_nocomp_ColortoCode9;
     private int this_nocomp_ColortoCode10;
+
+    private String gameResult;
     private String unlockmode;
+    private String st_colormode;
 
 
     @Override
@@ -139,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
             getPoint = checkData.getgetPoint();
         }       */
          if (colormode == 1) {
+             st_colormode = "RGB_";
              //getData（SharedPreference)
              SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
              this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
@@ -169,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
              this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
              this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
          } else if (colormode == 2) {
+             st_colormode = "HSB_";
+
              SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
              this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
              this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
@@ -502,7 +508,7 @@ public class MainActivity extends AppCompatActivity {
 
     public  void ulm_CodetoColor(){
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -517,7 +523,7 @@ public class MainActivity extends AppCompatActivity {
 
     public  void ulm_ColortoCode(){
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -532,7 +538,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void compm(){
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(unlockmode+"をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -547,7 +553,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = unlockmode + ull_old + "をMasterしました！";
+        String strMessage =  st_colormode + unlockmode + ull_old + "をMasterしました！";
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {

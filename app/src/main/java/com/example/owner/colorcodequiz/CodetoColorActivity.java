@@ -35,6 +35,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     private String unlockmode;
     private String gameResult;
+    private String st_colormode;
 
     private int colormode;
     private int gameCount;
@@ -152,6 +153,8 @@ public class CodetoColorActivity extends AppCompatActivity {
 
         //getData（SharedPreference)
         if (colormode == 1){
+            st_colormode = "RGB_";
+
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
 
             ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
@@ -169,6 +172,8 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
         }else if (colormode == 2){
+            st_colormode = "HSB_";
+
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
 
             ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
@@ -652,7 +657,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     public void ulm_CodetoColor() {
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -667,7 +672,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     public void ulm_ColortoCode() {
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(unlockmode + "Level" + ull_old + "をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -682,7 +687,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     public void compm() {
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(unlockmode + "をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -697,7 +702,7 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = "ColorCodeQuizで" + unlockmode + ull_old + "をMasterしました！";
+        String strMessage = st_colormode + unlockmode + ull_old + "をMasterしました！";
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {

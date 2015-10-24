@@ -23,9 +23,6 @@ import java.net.URLEncoder;
 public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     private TextView progress;
-    private TextView red;
-    private TextView green;
-    private TextView blue;
 
     private TextView answer1;
     private TextView answer2;
@@ -41,8 +38,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     private int gameCount;
     private int check_answer;
     private int noca;
-    private int ull_CodetoColor;
-    private int ull_ColortoCode;
+
     private int ull_old;
     private int nowPoint;
     private int getPoint;
@@ -52,6 +48,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     private int this_ull_CodetoColor;
     private int this_ull_ColortoCode;
     private int this_nowPoint;
+
     private int this_nocomp_CodetoColor0;
     private int this_nocomp_CodetoColor1;
     private int this_nocomp_CodetoColor2;
@@ -80,6 +77,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     private String gameResult;
     private String unlockmode;
+    private String st_colormode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,9 +90,6 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         answer4 = (TextView) findViewById(R.id.answer4);
 
         progress = (TextView) findViewById(R.id.progress);
-        red = (TextView) findViewById(R.id.red);
-        green = (TextView) findViewById(R.id.green);
-        blue = (TextView) findViewById(R.id.blue);
 
         check_select1 = (ImageView) findViewById(R.id.check_select1);
         check_select2 = (ImageView) findViewById(R.id.check_select2);
@@ -148,6 +143,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }   */
 
         if (colormode == 1) {
+            st_colormode = "RGB_";
             //getData（SharedPreference)
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
@@ -178,6 +174,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
         } else if (colormode == 2) {
+            st_colormode = "HSB_";
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
             this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
@@ -314,158 +311,158 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         nowPoint = nowPoint + getPoint ;
 
         //Check:Levelup(ColortoCode)
-        if (ull_ColortoCode  == 0&& nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
+        if (this_ull_ColortoCode  == 0&& nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
             unlockmode = "ColortoCode";
-            ull_CodetoColor  = 1;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 1;
+            ull_old = this_ull_CodetoColor-1;
             ulm_ColortoCode();
         }
-        if (ull_ColortoCode  == 1 && nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
+        if (this_ull_ColortoCode  == 1 && nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode  = 2;
-            ull_old = ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
-            unlockmode = "ColortoCode";
-            ull_ColortoCode = 3;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode  = 2;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
+        else if(this_ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 4;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 3;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && ull_CodetoColor>= 3){
+        else if(this_ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 5;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 4;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+        else if(this_ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 6;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 5;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && ull_CodetoColor>= 5){
+        else if(this_ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 7;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 6;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
+        else if(this_ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 8;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 7;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && ull_CodetoColor>= 7){
+        else if(this_ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 9;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 8;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
+        else if(this_ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 10;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 9;
+            ull_old = this_ull_ColortoCode-1;
             ulm_ColortoCode();
         }
 
-        else if(ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+        else if(this_ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 11;
-            ull_old = ull_ColortoCode-1;
+            this_ull_ColortoCode = 10;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 11;
+            ull_old = this_ull_ColortoCode-1;
             compm();
         }
 
 
         //Check:Levelup(CodetoColor)
-         if (ull_CodetoColor  == 0&& nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
+         if (this_ull_CodetoColor  == 0&& nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor  = 1;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 1;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor  == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
+        else if (this_ull_CodetoColor  == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor  = 2;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor  = 2;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
+        else if(this_ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 3;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 3;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
+        else if(this_ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 4;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 4;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && ull_ColortoCode>= 3){
+        else if (this_ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode>= 3){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 5;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 5;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
+        else if(this_ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 6;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 6;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && ull_ColortoCode>= 5){
+        else if (this_ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode>= 5){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 7;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 7;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
+        else if(this_ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 8;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 8;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if (ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && ull_ColortoCode>= 7){
+        else if (this_ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode>= 7){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 9;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 9;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
+        else if(this_ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
             unlockmode = "CodetoColor";
-            ull_CodetoColor= 10;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor= 10;
+            ull_old = this_ull_CodetoColor-1;
             ulm_CodetoColor();
         }
 
-        else if(ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
+        else if(this_ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 11;
-            ull_old = ull_CodetoColor-1;
+            this_ull_CodetoColor = 11;
+            ull_old = this_ull_CodetoColor-1;
             compm();
         }
 
@@ -512,7 +509,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                         Intent intent = new Intent(ColortoCode_practiceActivity.this, MenuActivity.class);
                         intent.putExtra("nowScore",nowPoint);
                         intent.putExtra("getScore",getPoint);
-                        intent.putExtra("ull_ColortoCode ",ull_ColortoCode );
+                        intent.putExtra("ull_ColortoCode ",this_ull_ColortoCode );
                         startActivity(intent);
                     }
                 }).show();
@@ -521,8 +518,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     public  void ulm_CodetoColor(){
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
+                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -536,8 +533,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     public  void ulm_ColortoCode(){
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(unlockmode+"Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
+                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -551,7 +548,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     public void compm(){
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(unlockmode+"をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -566,7 +563,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = unlockmode + ull_old + "をMasterしました！";
+        String strMessage = st_colormode + unlockmode + ull_old + "をMasterしました！";
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {
@@ -745,28 +742,194 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
         } else if (colormode == 2) {
             //Color.HSVToColor()
-            int h,s,b,color;
+            int h, s, b, color;
             if (gameCount == 1) {
                 //SetQuestionImage
-                h = 360;
+                h = 0;
                 s = 100;
                 b = 100;
 
-                color = Color.HSVToColor(new float[] { h, s, b });
+                color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
                 Canvas canvas;
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
-                answer1.setText("360,100,100");
+                answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
                 check_answer = 1;
+            } else if (gameCount == 2) {
+                //SetQuestionImage
+                h = 45;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 4;
+            } else if (gameCount == 3) {
+                //SetQuestionImage
+                h = 90;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 2;
+            } else if (gameCount == 4) {
+                //SetQuestionImage
+                h = 135;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 1;
+            } else if (gameCount == 5) {
+                //SetQuestionImage
+                h = 180;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 2;
+            } else if (gameCount == 6) {
+                //SetQuestionImage
+                h = 225;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 2;
+            } else if (gameCount == 7) {
+                //SetQuestionImage
+                h = 225;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 3;
+            } else if (gameCount == 8) {
+                //SetQuestionImage
+                h = 270;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 3;
+            } else if (gameCount == 9) {
+                //SetQuestionImage
+                h = 225;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 3;
+
+            }  else if (gameCount == 10) {
+                //SetQuestionImage
+                h = 270;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 3;
+
             }
         }
-}
+    }
 
 
     @Override

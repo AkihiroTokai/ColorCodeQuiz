@@ -294,19 +294,31 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }
 
     }
-    public void gameFinish(){
+    public void gameFinish() {
         //Add:Score
+        if (colormode == 1){
             if (noca <= 7) {
                 getPoint = 1;
                 gameResult = "クリアできませんでした。";
-            } else if (noca == 8  ) {
+            } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
-            } else if (noca == 9 ||noca == 10) {
+            } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
             }
-
+        }else if (colormode == 2){
+            if (noca <= 11) {
+                getPoint = 1;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 12|| noca==13) {
+                getPoint = 10;
+                gameResult = "クリアしました。";
+            } else if (noca == 14 || noca == 15) {
+                getPoint = 11;
+                gameResult = "クリアしました。";
+            }
+        }
 
         nowPoint = nowPoint + getPoint ;
 
@@ -744,7 +756,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             //Color.HSVToColor()
             int h, s, b, color;
             if (gameCount == 1) {
-                //SetQuestionImage
+                //setQuestionImage
                 h = 0;
                 s = 100;
                 b = 100;
@@ -755,15 +767,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
                 answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer2.setText("45,100,100");
+                answer3.setText("90,0,100");
+                answer4.setText("135,100,0");
 
                 check_answer = 1;
             } else if (gameCount == 2) {
-                //SetQuestionImage
-                h = 45;
+                //setQuestionImage
+                h = 30;
                 s = 100;
                 b = 100;
 
@@ -773,13 +786,34 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
+                answer1.setText("30,50,50");
+                answer2.setText("30,100,100");
+                answer3.setText("0,0,0");
+                answer4.setText("0,50,50");
+
+                check_answer = 2;
+            } else if (gameCount == 3) {
+                //SetQuestionImage
+                h = 60;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
+                answer3.setText("60,100,100");
                 answer4.setText("180,50,50");
 
-                check_answer = 4;
-            } else if (gameCount == 3) {
+                check_answer = 3;
+            } else if (gameCount == 4) {
                 //SetQuestionImage
                 h = 90;
                 s = 100;
@@ -791,17 +825,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
-
-
-                answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
+                //setChoices
+                answer1.setText("90,100,100");
+                answer2.setText("360,0,0");
                 answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer4.setText("90,0,0");
 
-                check_answer = 2;
-            } else if (gameCount == 4) {
+                check_answer = 1;
+            } else if (gameCount == 5) {
                 //SetQuestionImage
-                h = 135;
+                h = 120;
                 s = 100;
                 b = 100;
 
@@ -811,33 +844,15 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
-                answer1.setText("0,100,100");
+                answer1.setText("120,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
                 check_answer = 1;
-            } else if (gameCount == 5) {
-                //SetQuestionImage
-                h = 180;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
-
-                answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
-
-                check_answer = 2;
             } else if (gameCount == 6) {
                 //SetQuestionImage
-                h = 225;
+                h = 150;
                 s = 100;
                 b = 100;
 
@@ -847,15 +862,93 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("150,100,100");
+                answer4.setText("180,50,50");
+
+                check_answer = 3;
+            } else if (gameCount == 7) {
+                //setQuestionImage
+                h = 180;
+                s = 50;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                answer1.setText("210,100,100");
+                answer2.setText("210,50,100");
+                answer3.setText("180,50,0");
+                answer4.setText("180,50,100");
+
+                check_answer = 4;
+            } else if (gameCount == 8) {
+                //setQuestionImage
+                h = 210;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                //setChoices
+                answer1.setText("0,100,100");
+                answer2.setText("210,100,100");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 2;
+            } else if (gameCount == 9) {
+                //setQuestionImage
+                h = 240;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                //setChoices
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("" +
+                        "0,50,50");
+
+                check_answer = 4;
+
+            } else if (gameCount == 10) {
+                //setQuestionImage
+                h = 270;
+                s = 100;
+                b = 100;
+
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
                 check_answer = 2;
-            } else if (gameCount == 7) {
-                //SetQuestionImage
-                h = 225;
+
+            } else if (gameCount == 11) {
+                //setQuestionImage
+                h = 300;
                 s = 100;
                 b = 100;
 
@@ -865,15 +958,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
-                check_answer = 3;
-            } else if (gameCount == 8) {
-                //SetQuestionImage
-                h = 270;
+                check_answer = 4;
+            } else if (gameCount == 12) {
+                //setQuestionImage
+                h = 330;
                 s = 100;
                 b = 100;
 
@@ -883,15 +977,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
-                check_answer = 3;
-            } else if (gameCount == 9) {
-                //SetQuestionImage
-                h = 225;
+                check_answer = 2;
+            }  else if (gameCount == 13) {
+                //setQuestionImage
+                h = 0;
                 s = 100;
                 b = 100;
 
@@ -901,16 +996,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
-                check_answer = 3;
-
-            }  else if (gameCount == 10) {
-                //SetQuestionImage
-                h = 270;
+                check_answer = 4;
+            }   else if (gameCount == 14) {
+                //setQuestionImage
+                h = 0;
                 s = 100;
                 b = 100;
 
@@ -920,13 +1015,32 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas = new Canvas(bitmap);
                 canvas.drawColor(color);
 
+                //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
-                check_answer = 3;
+                check_answer = 4;
+            }  else if (gameCount == 15) {
+                //setQuestionImage
+                h = 0;
+                s = 100;
+                b = 100;
 
+                color = Color.HSVToColor(new float[]{h, s, b});
+                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+                Canvas canvas;
+                canvas = new Canvas(bitmap);
+                canvas.drawColor(color);
+
+                //setChoices
+                answer1.setText("0,100,100");
+                answer2.setText("0,0,0");
+                answer3.setText("180,0,0");
+                answer4.setText("180,50,50");
+
+                check_answer = 4;
             }
         }
     }

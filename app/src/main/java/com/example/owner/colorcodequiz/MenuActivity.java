@@ -18,8 +18,8 @@ import com.beardedhen.androidbootstrap.BootstrapButton;
 public class MenuActivity extends AppCompatActivity {
 
     private TextView nowPointview;
-    private TextView mode;
     private int colormode;
+    private int noq;
 
     private int RGB_nowPoint;
     private int RGB_ull_CodetoColor;
@@ -41,7 +41,6 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
-        mode =(TextView)findViewById(R.id.mode);
         colormode = 1;
        /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
         parseQuery.findInBackground(new FindCallback<getData>() {
@@ -200,12 +199,14 @@ public class MenuActivity extends AppCompatActivity {
         int this_nocomp = 0;
         if(colormode == 1){
            this_nocomp = RGB_nocomp_CodetoColor0;
+           noq = 10;
         } else if (colormode == 2){
            this_nocomp = HSB_nocomp_CodetoColor0;
+           noq = 15;
         }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ this_nocomp +"回クリアしています。")
+                .setMessage("問題は"+noq+"問です。"+ this_nocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -223,12 +224,14 @@ public class MenuActivity extends AppCompatActivity {
         int this_nocomp = 0;
         if(colormode == 1){
             this_nocomp = RGB_nocomp_ColortoCode0;
+            noq = 10;
         } else if (colormode == 2){
             this_nocomp = HSB_nocomp_ColortoCode0;
+            noq = 15;
         }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("ColortoCode_praciceをStartしますか？")
-                .setMessage("問題は10問です。"+ this_nocomp +"回クリアしています。")
+                .setMessage("問題は"+noq+"問です。"+ this_nocomp +"回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

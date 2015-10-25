@@ -295,15 +295,28 @@ public class MainActivity extends AppCompatActivity {
 
     public void gameFinish(){
         //Add:Score
-        if (noca <= 7) {
-            getPoint = 1;
-            gameResult = "クリアできませんでした。";
-        } else if (noca == 8 ) {
-            getPoint = 10;
-            gameResult = "クリアしました。";
-        } else if (noca == 9|| noca == 10) {
-            getPoint = 11;
-            gameResult = "クリアしました。";
+        if (colormode == 1){
+            if (noca <= 7) {
+                getPoint = 1;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 8) {
+                getPoint = 10;
+                gameResult = "クリアしました。";
+            } else if (noca == 9 || noca == 10) {
+                getPoint = 11;
+                gameResult = "クリアしました。";
+            }
+        }else if (colormode == 2){
+            if (noca <= 11) {
+                getPoint = 1;
+                gameResult = "クリアできませんでした。";
+            } else if (noca == 12|| noca==13) {
+                getPoint = 10;
+                gameResult = "クリアしました。";
+            } else if (noca == 14 || noca == 15) {
+                getPoint = 11;
+                gameResult = "クリアしました。";
+            }
         }
 
         this_nowPoint = this_nowPoint + getPoint ;

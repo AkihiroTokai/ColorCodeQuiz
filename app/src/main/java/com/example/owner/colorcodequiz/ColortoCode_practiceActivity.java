@@ -761,6 +761,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 s = 100;
                 b = 100;
 
+
                 color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
                 Canvas canvas;
@@ -918,19 +919,18 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas.drawColor(color);
 
                 //setChoices
-                answer1.setText("0,100,100");
+                answer1.setText("240,0,100");
                 answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("" +
-                        "0,50,50");
+                answer3.setText("120,0,0");
+                answer4.setText("240,100,100");
 
                 check_answer = 4;
 
             } else if (gameCount == 10) {
                 //setQuestionImage
                 h = 270;
-                s = 100;
-                b = 100;
+                s = 0;
+                b = 0;
 
                 color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
@@ -940,8 +940,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
                 //setChoices
                 answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
+                answer2.setText("270,0,0");
+                answer3.setText("180,50,100");
                 answer4.setText("180,50,50");
 
                 check_answer = 2;
@@ -979,15 +979,15 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
                 //setChoices
                 answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer2.setText("330,100,100");
+                answer3.setText("330,50,50");
+                answer4.setText("300,50,50");
 
                 check_answer = 2;
             }  else if (gameCount == 13) {
                 //setQuestionImage
-                h = 0;
-                s = 100;
+                h = 60;
+                s = 50;
                 b = 100;
 
                 color = Color.HSVToColor(new float[]{h, s, b});
@@ -998,16 +998,16 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
                 //setChoices
                 answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
+                answer2.setText("30,100,100");
                 answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer4.setText("60,50,100");
 
                 check_answer = 4;
             }   else if (gameCount == 14) {
                 //setQuestionImage
-                h = 0;
-                s = 100;
-                b = 100;
+                h = 270;
+                s = 50;
+                b = 50;
 
                 color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
@@ -1016,17 +1016,17 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas.drawColor(color);
 
                 //setChoices
-                answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
+                answer1.setText("270,100,100");
+                answer2.setText("180,50,0");
                 answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer4.setText("270,50,50");
 
                 check_answer = 4;
             }  else if (gameCount == 15) {
                 //setQuestionImage
-                h = 0;
-                s = 100;
-                b = 100;
+                h = 360;
+                s = 30;
+                b = 30;
 
                 color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
@@ -1035,10 +1035,10 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas.drawColor(color);
 
                 //setChoices
-                answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer1.setText("360,100,100");
+                answer2.setText("360,80,40");
+                answer3.setText("360,70,30");
+                answer4.setText("360,30,30");
 
                 check_answer = 4;
             }

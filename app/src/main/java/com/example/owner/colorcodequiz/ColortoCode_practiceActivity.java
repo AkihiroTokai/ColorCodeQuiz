@@ -761,7 +761,6 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 s = 100;
                 b = 100;
 
-
                 color = Color.HSVToColor(new float[]{h, s, b});
                 Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
                 Canvas canvas;

@@ -828,8 +828,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 //setChoices
                 answer1.setText("90,100,100");
                 answer2.setText("360,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("90,0,0");
+                answer3.setText("180,50,0");
+                answer4.setText("90,0,50");
 
                 check_answer = 1;
             } else if (gameCount == 5) {
@@ -845,7 +845,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas.drawColor(color);
 
                 answer1.setText("120,100,100");
-                answer2.setText("0,0,0");
+                answer2.setText("0,20,0");
                 answer3.setText("180,0,0");
                 answer4.setText("180,50,50");
 
@@ -863,7 +863,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 canvas.drawColor(color);
 
                 answer1.setText("0,100,100");
-                answer2.setText("0,0,0");
+                answer2.setText("0,20,0");
                 answer3.setText("150,100,100");
                 answer4.setText("180,50,50");
 
@@ -919,8 +919,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
                 //setChoices
                 answer1.setText("240,0,100");
-                answer2.setText("0,0,0");
-                answer3.setText("120,0,0");
+                answer2.setText("0,0,50");
+                answer3.setText("120,30,0");
                 answer4.setText("240,100,100");
 
                 check_answer = 4;

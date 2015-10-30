@@ -710,15 +710,68 @@ public class MainActivity extends AppCompatActivity {
                answer3.setBackgroundColor(color_a2);
                answer4.setBackgroundColor(color_a3);
 
+               check_answer = 1;
+
            }else if (gameCount == 2){
                //setQuestion
                red.setText("(30,");
                green.setText("100,");
                blue.setText("100)");
 
-               h_ca  = 0; s_ca = 100; b_ca = 100;
-               h_a1  = 45; s_a1 = 100; b_a1 = 100;
-               h_a2  = 90; s_a2 = 0; b_a2 = h_a3  = 135; s_a3 = 100; b_a3 = 0;
+               h_ca = 30; s_ca = 100; b_ca = 100;
+               h_a1 = 30; s_a1 = 50;  b_a1 = 50;
+               h_a2 = 0;  s_a2 = 0;   b_a2 = 0;
+               h_a3 = 0;  s_a3 = 50;  b_a3 = 0;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_ca);
+               answer3.setBackgroundColor(color_a2);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 2;
+
+           }else if (gameCount == 3){
+               //setQuestion
+               red.setText("(60,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 60;  s_ca = 100; b_ca = 100;
+               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
+               h_a2 = 0;   s_a2 = 0;   b_a2 = 0;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_a2);
+               answer3.setBackgroundColor(color_ca);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 3;
+
+           }else if (gameCount == 4){
+               //setQuestion
+               red.setText("(90,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 90;  s_ca = 100; b_ca = 100;
+               h_a1 = 360; s_a1 = 0;   b_a1 = 0;
+               h_a2 = 180; s_a2 = 50;  b_a2 = 0;
+               h_a3 = 90;  s_a3 = 0;   b_a3 = 50;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -731,6 +784,158 @@ public class MainActivity extends AppCompatActivity {
                answer2.setBackgroundColor(color_a1);
                answer3.setBackgroundColor(color_a2);
                answer4.setBackgroundColor(color_a3);
+
+               check_answer = 1;
+
+           }else if (gameCount == 5){
+               //setQuestion
+               red.setText("(120,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 120; s_ca = 100; b_ca = 100;
+               h_a1 = 0;   s_a1 = 20;  b_a1 = 0;
+               h_a2 = 180; s_a2 = 0;   b_a2 = 0;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_ca);
+               answer2.setBackgroundColor(color_a1);
+               answer3.setBackgroundColor(color_a2);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 1;
+
+           }else if (gameCount == 6){
+               //setQuestion
+               red.setText("(150,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 150; s_ca = 100; b_ca = 100;
+               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
+               h_a2 = 0;   s_a2 = 20;  b_a2 = 0;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_a2);
+               answer3.setBackgroundColor(color_ca);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 3;
+
+           }else if (gameCount == 7){
+               //setQuestion
+               red.setText("(180,");
+               green.setText("50,");
+               blue.setText("100)");
+
+               h_ca = 180; s_ca = 50;  b_ca = 100;
+               h_a1 = 210; s_a1 = 100; b_a1 = 100;
+               h_a2 = 210; s_a2 = 50;  b_a2 = 100;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 100;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_a2);
+               answer3.setBackgroundColor(color_a3);
+               answer4.setBackgroundColor(color_ca);
+
+               check_answer = 4;
+
+           }else if (gameCount == 8){
+               //setQuestion
+               red.setText("(210,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 210; s_ca = 100; b_ca = 100;
+               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
+               h_a2 = 180; s_a2 = 0;   b_a2 = 0;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_ca);
+               answer3.setBackgroundColor(color_a2);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 2;
+
+           }else if (gameCount == 9){
+               //setQuestion
+               red.setText("(240,");
+               green.setText("100,");
+               blue.setText("100)");
+
+               h_ca = 240; s_ca = 100;b_ca = 100;
+               h_a1 = 240; s_a1 = 0;  b_a1 = 100;
+               h_a2 = 0;   s_a2 = 0;  b_a2 = 50;
+               h_a3 = 120; s_a3 = 30; b_a3 = 0;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_a2);
+               answer3.setBackgroundColor(color_a3);
+               answer4.setBackgroundColor(color_ca);
+
+               check_answer = 4;
+
+           }else if (gameCount == 10){
+               //setQuestion
+               red.setText("(270,");
+               green.setText("0,");
+               blue.setText("0)");
+
+               h_ca = 270; s_ca = 0;   b_ca = 0;
+               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
+               h_a2 = 180; s_a2 = 50;  b_a2 = 100;
+               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+
+               //changeColormode
+               color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
+               color_a1 =  Color.HSVToColor(new float[]{h_a1, s_a1, b_a1});
+               color_a2 =  Color.HSVToColor(new float[]{h_a2, s_a2, b_a2});
+               color_a3 =  Color.HSVToColor(new float[]{h_a3, s_a3, b_a3});
+
+               //setChoices
+               answer1.setBackgroundColor(color_a1);
+               answer2.setBackgroundColor(color_ca);
+               answer3.setBackgroundColor(color_a2);
+               answer4.setBackgroundColor(color_a3);
+
+               check_answer = 2;
 
            }
         }

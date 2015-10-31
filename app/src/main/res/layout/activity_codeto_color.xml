@@ -109,7 +109,8 @@
         <ImageView
             android:id="@+id/check_select3"
             android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal|top" />
     </FrameLayout>
 
     <FrameLayout android:layout_height="100dp"
@@ -130,6 +131,7 @@
         <ImageView
             android:id="@+id/check_select4"
             android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal|top" />
     </FrameLayout>
 </RelativeLayout>

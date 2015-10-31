@@ -720,19 +720,14 @@ public class CodetoColorActivity extends AppCompatActivity {
     }
 
     public void setanswer() {
-        if (colormode == 1) {
             //createQuesionCode
             Random rnd1 = new Random();
             r = rnd1.nextInt(256);
-            Random rnd2 = new Random();
             g = rnd1.nextInt(256);
-            Random rnd3 = new Random();
-            b = rnd3.nextInt(256);
-
+            b = rnd1.nextInt(256);
 
             //setQuestionCode
-            Random rnd4 = new Random();
-            check_answer = rnd4.nextInt(3) + 1;
+            check_answer = rnd1.nextInt(3) + 1;
             String r16 = Integer.toHexString(r);
             if (r16.length() < 2) r16 = "0" + r16;
             String g16 = Integer.toHexString(g);
@@ -745,41 +740,33 @@ public class CodetoColorActivity extends AppCompatActivity {
             //createChoicesColorcode
             while (true) {
 
-                Random rnd5 = new Random();
-                r_a1 = rnd5.nextInt(256);
-                Random rnd6 = new Random();
-                r_a2 = rnd6.nextInt(256);
-                Random rnd7 = new Random();
-                r_a3 = rnd7.nextInt(256);
+                r_a1 = rnd1.nextInt(256);
+                r_a2 = rnd1.nextInt(256);
+                r_a3 = rnd1.nextInt(256);
 
-                Random rnd8 = new Random();
-                g_a1 = rnd8.nextInt(256);
-                Random rnd9 = new Random();
-                g_a2 = rnd9.nextInt(256);
-                Random rnd10 = new Random();
-                g_a3 = rnd10.nextInt(256);
+                g_a1 = rnd1.nextInt(256);
+                g_a2 = rnd1.nextInt(256);
+                g_a3 = rnd1.nextInt(256);
 
-                Random rnd11 = new Random();
-                b_a1 = rnd11.nextInt(256);
-                Random rnd12 = new Random();
-                b_a2 = rnd12.nextInt(256);
-                Random rnd13 = new Random();
-                b_a3 = rnd13.nextInt(256);
+
+                b_a1 = rnd1.nextInt(256);
+                b_a2 = rnd1.nextInt(256);
+                b_a3 = rnd1.nextInt(256);
 
 
                 int abs_r1_2 = Math.abs(r_a1 - r_a2);
                 int abs_r2_3 = Math.abs(r_a2 - r_a3);
                 int abs_r3_1 = Math.abs(r_a3 - r_a1);
-                int abs_r_1 = Math.abs(r - r_a1);
-                int abs_r_2 = Math.abs(r - r_a2);
-                int abs_r_3 = Math.abs(r - r_a3);
+                int abs_r_1  = Math.abs(r - r_a1);
+                int abs_r_2  = Math.abs(r - r_a2);
+                int abs_r_3  = Math.abs(r - r_a3);
 
                 int abs_g1_2 = Math.abs(g_a1 - g_a2);
                 int abs_g2_3 = Math.abs(g_a2 - g_a3);
                 int abs_g3_1 = Math.abs(g_a3 - g_a1);
-                int abs_g_1 = Math.abs(g - g_a1);
-                int abs_g_2 = Math.abs(g - g_a2);
-                int abs_g_3 = Math.abs(g - g_a3);
+                int abs_g_1  = Math.abs(g - g_a1);
+                int abs_g_2  = Math.abs(g - g_a2);
+                int abs_g_3  = Math.abs(g - g_a3);
 
                 int abs_b1_2 = Math.abs(b_a1 - b_a2);
                 int abs_b2_3 = Math.abs(b_a2 - b_a3);
@@ -829,12 +816,12 @@ public class CodetoColorActivity extends AppCompatActivity {
                 boolean check_break = false;
 
                 //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
-                if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
-                    if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
-                        if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
-                            if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
-                                if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
-                                    if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
+                if ((minlimit <= abs_r_1) || (minlimit <= abs_g_1) || ((minlimit <= abs_b_1))) {
+                    if ((minlimit <= abs_r_2) || (minlimit <= abs_g_2) || (minlimit <= abs_b_2)) {
+                        if ((minlimit <= abs_r_3) || (minlimit <= abs_g_3) || (minlimit <= abs_b_3)) {
+                            if ((minlimit <= abs_r1_2) || (minlimit <= abs_g1_2) || (minlimit <= abs_b1_2)) {
+                                if ((minlimit <= abs_r2_3) || (minlimit <= abs_g2_3) || (minlimit <= abs_b2_3)) {
+                                    if ((minlimit <= abs_r3_1) || (minlimit <= abs_g3_1) || (minlimit <= abs_b3_1)) {
                                         check_break = true;
                                     }
                                 }
@@ -858,6 +845,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                     }
                 }
             }
+
 
             //cleanCheckselect
             check_select1.setImageDrawable(null);
@@ -892,10 +880,11 @@ public class CodetoColorActivity extends AppCompatActivity {
                     answer4.setBackgroundColor(Color.rgb(r, g, b));
                     break;
             }
-        }else if (colormode == 2){
+
             //Color.HSVToColor()
-        }
+
     }
+
 
 
     @Override

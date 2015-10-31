@@ -78,6 +78,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     private String gameResult;
     private String unlockmode;
     private String st_colormode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,7 +99,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         question = (ImageView) findViewById(R.id.questioncode);
 
         Intent intent = getIntent();
-        colormode = intent.getIntExtra("getcolormode",1);
+        colormode = intent.getIntExtra("getcolormode", 1);
 
 
         //getData(Parse)
@@ -208,45 +209,45 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     }
 
     public void select1(View view) {
-        if (!nextquestion)   {
-            if (check_answer == 1 ) {
+        if (!nextquestion) {
+            if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10 );
+                progress.setText("Progress:" + gameCount + "/" + 10);
                 nextquestion = true;
-            }  if (gameCount >= 10 ){
+            }
+            if (gameCount >= 10) {
                 gameFinish();
             }
-        }else {
+        } else {
             setanswer();
             nextquestion = false;
         }
     }
 
 
-
-
     public void select2(View view) {
-        if (!nextquestion)   {
+        if (!nextquestion) {
             if (check_answer == 2) {
                 check_select2.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10 );
+                progress.setText("Progress:" + gameCount + "/" + 10);
                 nextquestion = true;
-            }  if (gameCount >= 10 ){
+            }
+            if (gameCount >= 10) {
                 gameFinish();
             }
-        }else {
+        } else {
             setanswer();
             nextquestion = false;
         }
@@ -256,25 +257,26 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         if (!nextquestion) {
             if (check_answer == 3) {
                 check_select3.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ 10);
+                progress.setText("Progress:" + gameCount + "/" + 10);
                 nextquestion = true;
-            }if (gameCount >= 10){
+            }
+            if (gameCount >= 10) {
                 gameFinish();
             }
-        }else {
+        } else {
             setanswer();
             nextquestion = false;
         }
     }
 
     public void select4(View view) {
-        if (!nextquestion )   {
+        if (!nextquestion) {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
             } else {
@@ -282,21 +284,23 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
             if (gameCount <= 10) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+10);
+                progress.setText("Progress:" + gameCount + "/" + 10);
                 nextquestion = true;
-            }if(gameCount >= 10){
+            }
+            if (gameCount >= 10) {
                 gameFinish();
             }
             nextquestion = true;
-        }else {
+        } else {
             setanswer();
             nextquestion = false;
         }
 
     }
+
     public void gameFinish() {
         //Add:Score
-        if (colormode == 1){
+        if (colormode == 1) {
             if (noca <= 7) {
                 getPoint = 1;
                 gameResult = "クリアできませんでした。";
@@ -307,11 +311,11 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 getPoint = 11;
                 gameResult = "クリアしました。";
             }
-        }else if (colormode == 2){
+        } else if (colormode == 2) {
             if (noca <= 11) {
                 getPoint = 1;
                 gameResult = "クリアできませんでした。";
-            } else if (noca == 12|| noca==13) {
+            } else if (noca == 12 || noca == 13) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
             } else if (noca == 14 || noca == 15) {
@@ -320,161 +324,123 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
         }
 
-        nowPoint = nowPoint + getPoint ;
+        nowPoint = nowPoint + getPoint;
 
         //Check:Levelup(ColortoCode)
-        if (this_ull_ColortoCode  == 0&& nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
+        if (this_ull_ColortoCode == 0 && nowPoint >= 30 & this_nocomp_ColortoCode0 >= 3) {
             unlockmode = "ColortoCode";
-            this_ull_CodetoColor  = 1;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_ColortoCode();
         }
-        if (this_ull_ColortoCode  == 1 && nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
+        if (this_ull_ColortoCode == 1 && nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
-            this_ull_ColortoCode  = 2;
-            ull_old = this_ull_ColortoCode-1;
+            this_ull_ColortoCode = 2;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
+        } else if (this_ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2 >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 3;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
+        } else if (this_ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 4;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
+        } else if (this_ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 5;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+        } else if (this_ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 6;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
+        } else if (this_ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor >= 5) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 7;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
+        } else if (this_ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 8;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
+        } else if (this_ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor >= 7) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 9;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
+        } else if (this_ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 10;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+        } else if (this_ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 11;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             compm();
         }
 
 
         //Check:Levelup(CodetoColor)
-         if (this_ull_CodetoColor  == 0&& nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
+        if (this_ull_CodetoColor == 0 && nowPoint >= 30 & this_nocomp_CodetoColor0 >= 3) {
             unlockmode = "CodetoColor";
-            this_ull_CodetoColor  = 1;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if (this_ull_CodetoColor  == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
+        } else if (this_ull_CodetoColor == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3) {
             unlockmode = "CodetoColor";
-            this_ull_CodetoColor  = 2;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 2;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
+        } else if (this_ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 3;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
+        } else if (this_ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 4;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if (this_ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode>= 3){
+        } else if (this_ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 5;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
+        } else if (this_ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 6;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if (this_ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode>= 5){
+        } else if (this_ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode >= 5) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 7;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
+        } else if (this_ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 8;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if (this_ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode>= 7){
+        } else if (this_ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode >= 7) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 9;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
+        } else if (this_ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8) {
             unlockmode = "CodetoColor";
-            this_ull_CodetoColor= 10;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 10;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
+        } else if (this_ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 11;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             compm();
         }
 
@@ -499,12 +465,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             editor.putInt("RGB_nowPoint", this_nowPoint);
             editor.putInt("RGB_nocomp_ColortoCode0", this_nocomp_ColortoCode0);
             editor.apply();
-        } else if (colormode == 2){
+        } else if (colormode == 2) {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
 
-            editor.putInt("HSB_ull_CodetoColor",this_ull_CodetoColor);
-            editor.putInt("HSB_ull_ColoretoCode",this_ull_ColortoCode);
+            editor.putInt("HSB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode", this_ull_ColortoCode);
             editor.putInt("HSB_nowPoint", this_nowPoint);
             editor.putInt("HSB_nocomp_ColortoCode0", this_nocomp_ColortoCode0);
             editor.apply();
@@ -512,23 +478,23 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
         //gameFinish
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle( getPoint + "Point獲得しました。")
+                .setTitle(getPoint + "Point獲得しました。")
                 .setMessage(10 + "問中" + noca + "問正解したので、" + gameResult)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(ColortoCode_practiceActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore",nowPoint);
-                        intent.putExtra("getScore",getPoint);
-                        intent.putExtra("ull_ColortoCode ",this_ull_ColortoCode );
+                        intent.putExtra("nowScore", nowPoint);
+                        intent.putExtra("getScore", getPoint);
+                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
     }
 
 
-    public  void ulm_CodetoColor(){
+    public void ulm_CodetoColor() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
@@ -543,7 +509,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 .show();
     }
 
-    public  void ulm_ColortoCode(){
+    public void ulm_ColortoCode() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
@@ -558,7 +524,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 .show();
     }
 
-    public void compm(){
+    public void compm() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
@@ -566,7 +532,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                       tweeting();
+                        tweeting();
                     }
                 })
                 .setNegativeButton("No", null)
@@ -753,19 +719,9 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             }
         } else if (colormode == 2) {
-            //Color.HSVToColor()
-            int h, s, b, color;
             if (gameCount == 1) {
                 //setQuestionImage
-                h = 0;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(0,100,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -776,15 +732,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 2) {
                 //setQuestionImage
-                h = 30;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(30,100,100);
 
                 //setChoices
                 answer1.setText("30,50,50");
@@ -795,16 +743,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             } else if (gameCount == 3) {
                 //SetQuestionImage
-                h = 60;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
-
+                drawQuestionColor(60,100,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -815,15 +754,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 3;
             } else if (gameCount == 4) {
                 //SetQuestionImage
-                h = 90;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(90,100,100);
 
                 //setChoices
                 answer1.setText("90,100,100");
@@ -834,15 +765,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 5) {
                 //SetQuestionImage
-                h = 120;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(120,100,100);
 
                 answer1.setText("120,100,100");
                 answer2.setText("0,20,0");
@@ -852,15 +775,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 6) {
                 //SetQuestionImage
-                h = 150;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(150,100,100);
 
                 answer1.setText("0,100,100");
                 answer2.setText("0,20,0");
@@ -870,15 +785,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 3;
             } else if (gameCount == 7) {
                 //setQuestionImage
-                h = 180;
-                s = 50;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(180,50,100);
 
                 answer1.setText("210,100,100");
                 answer2.setText("210,50,100");
@@ -888,15 +795,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 4;
             } else if (gameCount == 8) {
                 //setQuestionImage
-                h = 210;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(210,100,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -907,15 +806,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             } else if (gameCount == 9) {
                 //setQuestionImage
-                h = 240;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(240,100,100);
 
                 //setChoices
                 answer1.setText("240,0,100");
@@ -927,15 +818,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
             } else if (gameCount == 10) {
                 //setQuestionImage
-                h = 270;
-                s = 0;
-                b = 0;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(270,0,0);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -947,34 +830,18 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
             } else if (gameCount == 11) {
                 //setQuestionImage
-                h = 300;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+               drawQuestionColor(300,100,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
                 answer2.setText("0,0,0");
-                answer3.setText("180,0,0");
-                answer4.setText("180,50,50");
+                answer3.setText("180,50,0");
+                answer4.setText("300,100,100");
 
                 check_answer = 4;
             } else if (gameCount == 12) {
                 //setQuestionImage
-                h = 330;
-                s = 100;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(330,100,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -983,17 +850,9 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 answer4.setText("300,50,50");
 
                 check_answer = 2;
-            }  else if (gameCount == 13) {
+            } else if (gameCount == 13) {
                 //setQuestionImage
-                h = 60;
-                s = 50;
-                b = 100;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(60,50,100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -1002,17 +861,9 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 answer4.setText("60,50,100");
 
                 check_answer = 4;
-            }   else if (gameCount == 14) {
+            } else if (gameCount == 14) {
                 //setQuestionImage
-                h = 270;
-                s = 50;
-                b = 50;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(270, 50, 50);
 
                 //setChoices
                 answer1.setText("270,100,100");
@@ -1021,17 +872,9 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 answer4.setText("270,50,50");
 
                 check_answer = 4;
-            }  else if (gameCount == 15) {
+            } else if (gameCount == 15) {
                 //setQuestionImage
-                h = 360;
-                s = 30;
-                b = 30;
-
-                color = Color.HSVToColor(new float[]{h, s, b});
-                Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
-                Canvas canvas;
-                canvas = new Canvas(bitmap);
-                canvas.drawColor(color);
+                drawQuestionColor(360, 30, 30);
 
                 //setChoices
                 answer1.setText("360,100,100");
@@ -1044,6 +887,13 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }
     }
 
+    public void drawQuestionColor(int h, int s, int b) {
+        int color = Color.HSVToColor(new float[]{h, s, b});
+        Bitmap bitmap = Bitmap.createBitmap(500, 500, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawColor(color);
+        question.setImageBitmap(bitmap);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

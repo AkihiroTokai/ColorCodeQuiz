@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView red;
     private TextView green;
     private TextView blue;
+    private TextView tag;
     private ImageView check_select1;
     private ImageView check_select2;
     private ImageView check_select3;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private int gameCount;
     private int check_answer;
     private int noca;
+    private int noq;
     private int ull_old;
     private int getPoint;
     private int colormode;
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         answer4 = (TextView) findViewById(R.id.answer4);
 
         progress = (TextView) findViewById(R.id.progress);
+        tag = (TextView)findViewById(R.id.tag);
         red = (TextView) findViewById(R.id.red);
         green = (TextView) findViewById(R.id.green);
         blue = (TextView) findViewById(R.id.blue);
@@ -143,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         }       */
          if (colormode == 1) {
              st_colormode = "RGB_";
+             noq = 10;
              //getData（SharedPreference)
              SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
              this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
@@ -173,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
              this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
              this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
          } else if (colormode == 2) {
+             noq = 15;
              st_colormode = "HSB_";
 
              SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
@@ -205,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
              this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
          }
         gameCount = 1;
+        setQuestion();
     }
     public void select1(View view) {
         if (!nextquestion)   {
@@ -214,15 +220,15 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 check_select1.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10 );
+                progress.setText("Progress:" + gameCount + "/" + noq );
                 nextquestion = true;
-            }  if (gameCount >= 10 ){
+            }  if (gameCount >= noq ){
                 gameFinish();
             }
         }else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -237,15 +243,15 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10 );
+                progress.setText("Progress:" + gameCount + "/" + noq );
                 nextquestion = true;
-            }  if (gameCount >= 10 ){
+            }  if (gameCount >= noq ){
                 gameFinish();
             }
         }else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -258,15 +264,15 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ 10);
+                progress.setText("Progress:" + gameCount + "/"+ noq);
                 nextquestion = true;
-            }if (gameCount >= 10){
+            }if (gameCount >= noq){
                 gameFinish();
             }
         }else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -278,16 +284,16 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+10);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if(gameCount >= 10){
+            }if(gameCount >= noq){
                 gameFinish();
             }
             nextquestion = true;
         }else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
 
@@ -583,7 +589,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void setanswer() {
+    private void setQuestion() {
         //cleanCheckselect
         check_select1.setImageDrawable(null);
         check_select2.setImageDrawable(null);
@@ -685,8 +691,9 @@ public class MainActivity extends AppCompatActivity {
             //Color.HSVToColor()
             int h_ca, s_ca, b_ca, h_a1, s_a1, b_a1, h_a2, s_a2, b_a2, h_a3, s_a3, b_a3, color_ca, color_a1,color_a2,color_a3;
             red.setTextColor(Color.parseColor("#000000"));
-            green.setTextColor(Color.parseColor("000000"));
+            green.setTextColor(Color.parseColor("#000000"));
             blue.setTextColor(Color.parseColor("#000000"));
+            tag.setText("");
            if (gameCount == 1){
                //setQuestion
                red.setText("(0,");

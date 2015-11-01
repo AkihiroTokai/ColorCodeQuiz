@@ -38,6 +38,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     private int gameCount;
     private int check_answer;
     private int noca;
+    private int noq;
 
     private int ull_old;
     private int nowPoint;
@@ -145,6 +146,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
         if (colormode == 1) {
             st_colormode = "RGB_";
+            noq = 10;
             //getData（SharedPreference)
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
@@ -176,6 +178,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
         } else if (colormode == 2) {
             st_colormode = "HSB_";
+            noq = 15;
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
             this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
@@ -216,12 +219,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else {
                 check_select1.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
-            if (gameCount >= 10) {
+            if (gameCount >= noq) {
                 gameFinish();
             }
         } else {
@@ -239,12 +242,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
-            if (gameCount >= 10) {
+            if (gameCount >= noq) {
                 gameFinish();
             }
         } else {
@@ -261,12 +264,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
-            if (gameCount >= 10) {
+            if (gameCount >= noq) {
                 gameFinish();
             }
         } else {
@@ -282,12 +285,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
-            if (gameCount <= 10) {
+            if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + 10);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
-            if (gameCount >= 10) {
+            if (gameCount >= noq) {
                 gameFinish();
             }
             nextquestion = true;

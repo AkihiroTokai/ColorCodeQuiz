@@ -52,7 +52,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     private int ull_old;
     private int r, g, b;
     private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
-    private int textcolor_ca,textcolor_a1,textcolor_a2,textcolor_a3;
+    private int textcolor_ca, textcolor_a1, textcolor_a2, textcolor_a3;
 
 
     private int this_nocomp_CodetoColor1;
@@ -152,7 +152,7 @@ public class CodetoColorActivity extends AppCompatActivity {
       */
 
         //getData（SharedPreference)
-        if (colormode == 1){
+        if (colormode == 1) {
             st_colormode = "RGB_";
 
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
@@ -171,7 +171,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
-        }else if (colormode == 2){
+        } else if (colormode == 2) {
             st_colormode = "HSB_";
 
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
@@ -203,6 +203,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 noca = noca + 1;
             }
             if (gameCount <= noq) {
+                showRightAnswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
@@ -211,7 +212,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 gameFinish();
             }
         } else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -226,8 +227,9 @@ public class CodetoColorActivity extends AppCompatActivity {
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
-            gameCount = gameCount + 1;
             if (gameCount <= noq) {
+                showRightAnswer();
+                gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
@@ -235,7 +237,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 gameFinish();
             }
         } else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -247,16 +249,18 @@ public class CodetoColorActivity extends AppCompatActivity {
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
-            gameCount = gameCount + 1;
-            nextquestion = true;
+
             if (gameCount <= noq) {
+                showRightAnswer();
+                gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
+                nextquestion = true;
             }
             if (gameCount >= noq) {
                 gameFinish();
             }
         } else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -268,8 +272,9 @@ public class CodetoColorActivity extends AppCompatActivity {
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
-            gameCount = gameCount + 1;
             if (gameCount <= noq) {
+                showRightAnswer();
+                gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
             }
@@ -277,12 +282,12 @@ public class CodetoColorActivity extends AppCompatActivity {
                 gameFinish();
             }
         } else {
-            setanswer();
+            setQuestion();
             nextquestion = false;
         }
     }
 
-    public void showRightanswer() {
+    public void showRightAnswer() {
         answer1.setTextColor(Color.parseColor("#000000"));
         answer2.setTextColor(Color.parseColor("#000000"));
         answer3.setTextColor(Color.parseColor("#000000"));
@@ -342,7 +347,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                     answer3.setTextColor(Color.parseColor("#ffffff"));
                 }
                 answer4.setText("#" + r_a3 + g_a3 + b_a3);
-                if (textcolor_a3== 1) {
+                if (textcolor_a3 == 1) {
                     answer4.setTextColor(Color.parseColor("#ffffff"));
                 }
                 break;
@@ -595,9 +600,8 @@ public class CodetoColorActivity extends AppCompatActivity {
         checkData.saveEventually();            */
 
 
-
         //saveData（SharedPreference)
-        if(colormode == 1) {
+        if (colormode == 1) {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
 
@@ -616,7 +620,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             editor.putInt("RGB_nocomp_CodetoColor9", this_nocomp_CodetoColor9);
             editor.putInt("RGB_nocomp_CodetoColor10", this_nocomp_CodetoColor10);
             editor.apply();
-        }else if (colormode == 2){
+        } else if (colormode == 2) {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
 
@@ -719,126 +723,111 @@ public class CodetoColorActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void setanswer() {
-            //createQuesionCode
-            Random rnd1 = new Random();
-            r = rnd1.nextInt(256);
-            g = rnd1.nextInt(256);
-            b = rnd1.nextInt(256);
-
-            //setQuestionCode
-            check_answer = rnd1.nextInt(3) + 1;
-            String r16 = Integer.toHexString(r);
-            if (r16.length() < 2) r16 = "0" + r16;
-            String g16 = Integer.toHexString(g);
-            if (g16.length() < 2) g16 = "0" + g16;
-            String b16 = Integer.toHexString(b);
-            if (b16.length() < 2) b16 = "0" + b16;
-            questioncode.setText("#" + r16 + g16 + b16);
 
 
-            //createChoicesColorcode
-            while (true) {
+    public void setQuestion() {
+        //createQuestionCode
+        Random rnd1 = new Random();
+        r = rnd1.nextInt(256);
+        g = rnd1.nextInt(256);
+        b = rnd1.nextInt(256);
+        check_answer = rnd1.nextInt(3) + 1;
 
-                r_a1 = rnd1.nextInt(256);
-                r_a2 = rnd1.nextInt(256);
-                r_a3 = rnd1.nextInt(256);
-
-                g_a1 = rnd1.nextInt(256);
-                g_a2 = rnd1.nextInt(256);
-                g_a3 = rnd1.nextInt(256);
-
-
-                b_a1 = rnd1.nextInt(256);
-                b_a2 = rnd1.nextInt(256);
-                b_a3 = rnd1.nextInt(256);
-
-
-                int abs_r1_2 = Math.abs(r_a1 - r_a2);
-                int abs_r2_3 = Math.abs(r_a2 - r_a3);
-                int abs_r3_1 = Math.abs(r_a3 - r_a1);
-                int abs_r_1  = Math.abs(r - r_a1);
-                int abs_r_2  = Math.abs(r - r_a2);
-                int abs_r_3  = Math.abs(r - r_a3);
-
-                int abs_g1_2 = Math.abs(g_a1 - g_a2);
-                int abs_g2_3 = Math.abs(g_a2 - g_a3);
-                int abs_g3_1 = Math.abs(g_a3 - g_a1);
-                int abs_g_1  = Math.abs(g - g_a1);
-                int abs_g_2  = Math.abs(g - g_a2);
-                int abs_g_3  = Math.abs(g - g_a3);
-
-                int abs_b1_2 = Math.abs(b_a1 - b_a2);
-                int abs_b2_3 = Math.abs(b_a2 - b_a3);
-                int abs_b3_1 = Math.abs(b_a3 - b_a1);
-                int abs_b_1 = Math.abs(b - b_a1);
-                int abs_b_2 = Math.abs(b - b_a2);
-                int abs_b_3 = Math.abs(b - b_a3);
-
-                int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
-                int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
-                int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
-                int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
-                int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
-                int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
+        //setQuestionCode
+        String r16 = Integer.toHexString(r);
+        if (r16.length() < 2) r16 = "0" + r16;
+        String g16 = Integer.toHexString(g);
+        if (g16.length() < 2) g16 = "0" + g16;
+        String b16 = Integer.toHexString(b);
+        if (b16.length() < 2) b16 = "0" + b16;
 
 
-                //CheckBrightness
-                int brightness_ca = r + g + b;
-                int brightness_a1 = r_a1 + g_a1 + b_a1;
-                int brightness_a2 = r_a2 + g_a2 + b_a2;
-                int brightness_a3 = r_a2 + g_a2 + b_a2;
+        //createChoicesColor
+        while (true) {
 
-                if (r >= 127 || g > 127 || b >= 127 || brightness_ca >= 384) {
-                    textcolor_ca = 1;
-                } else {
-                    textcolor_ca = 2;
-                }
+            r_a1 = rnd1.nextInt(256);
+            r_a2 = rnd1.nextInt(256);
+            r_a3 = rnd1.nextInt(256);
 
-                if (r_a1 >= 127 || g_a2 > 127 || b_a3 >= 127 || brightness_a1 >= 384) {
-                    textcolor_a1 = 1;
-                } else {
-                    textcolor_a1 = 2;
-                }
+            g_a1 = rnd1.nextInt(256);
+            g_a2 = rnd1.nextInt(256);
+            g_a3 = rnd1.nextInt(256);
 
-                if (r_a2 >= 127 || g_a2 > 127 || b_a2 >= 127 || brightness_a2 >= 384) {
-                    textcolor_a2 = 1;
-                } else {
-                    textcolor_a2 = 2;
-                }
 
-                if (r_a3 >= 127 || g_a3 > 127 || b_a3 >= 127 || brightness_a3 >= 384) {
-                    textcolor_a3 = 1;
-                } else {
-                    textcolor_a3 = 2;
-                }
+            b_a1 = rnd1.nextInt(256);
+            b_a2 = rnd1.nextInt(256);
+            b_a3 = rnd1.nextInt(256);
 
-                boolean check_break = false;
 
-                //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
-                if ((minlimit <= abs_r_1) || (minlimit <= abs_g_1) || ((minlimit <= abs_b_1))) {
-                    if ((minlimit <= abs_r_2) || (minlimit <= abs_g_2) || (minlimit <= abs_b_2)) {
-                        if ((minlimit <= abs_r_3) || (minlimit <= abs_g_3) || (minlimit <= abs_b_3)) {
-                            if ((minlimit <= abs_r1_2) || (minlimit <= abs_g1_2) || (minlimit <= abs_b1_2)) {
-                                if ((minlimit <= abs_r2_3) || (minlimit <= abs_g2_3) || (minlimit <= abs_b2_3)) {
-                                    if ((minlimit <= abs_r3_1) || (minlimit <= abs_g3_1) || (minlimit <= abs_b3_1)) {
-                                        check_break = true;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            int abs_r1_2 = Math.abs(r_a1 - r_a2);
+            int abs_r2_3 = Math.abs(r_a2 - r_a3);
+            int abs_r3_1 = Math.abs(r_a3 - r_a1);
+            int abs_r_1 = Math.abs(r - r_a1);
+            int abs_r_2 = Math.abs(r - r_a2);
+            int abs_r_3 = Math.abs(r - r_a3);
 
-                // 難易度調整
-                if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
-                    if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
-                        if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
-                            if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
-                                if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
-                                    if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
-                                        break;
-                                    }
+            int abs_g1_2 = Math.abs(g_a1 - g_a2);
+            int abs_g2_3 = Math.abs(g_a2 - g_a3);
+            int abs_g3_1 = Math.abs(g_a3 - g_a1);
+            int abs_g_1 = Math.abs(g - g_a1);
+            int abs_g_2 = Math.abs(g - g_a2);
+            int abs_g_3 = Math.abs(g - g_a3);
+
+            int abs_b1_2 = Math.abs(b_a1 - b_a2);
+            int abs_b2_3 = Math.abs(b_a2 - b_a3);
+            int abs_b3_1 = Math.abs(b_a3 - b_a1);
+            int abs_b_1 = Math.abs(b - b_a1);
+            int abs_b_2 = Math.abs(b - b_a2);
+            int abs_b_3 = Math.abs(b - b_a3);
+
+            int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
+            int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
+            int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
+            int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
+            int abs_1_3 = abs_r3_1 + abs_g3_1 + abs_b3_1;
+            int abs_2_3 = abs_r2_3 + abs_g2_3 + abs_b2_3;
+
+
+            //checkBrightness
+            int brightness_ca = r + g + b;
+            int brightness_a1 = r_a1 + g_a1 + b_a1;
+            int brightness_a2 = r_a2 + g_a2 + b_a2;
+            int brightness_a3 = r_a2 + g_a2 + b_a2;
+
+            if (r >= 127 || g > 127 || b >= 127 || brightness_ca >= 384) {
+                textcolor_ca = 1;
+            } else {
+                textcolor_ca = 2;
+            }
+
+            if (r_a1 >= 127 || g_a2 > 127 || b_a3 >= 127 || brightness_a1 >= 384) {
+                textcolor_a1 = 1;
+            } else {
+                textcolor_a1 = 2;
+            }
+
+            if (r_a2 >= 127 || g_a2 > 127 || b_a2 >= 127 || brightness_a2 >= 384) {
+                textcolor_a2 = 1;
+            } else {
+                textcolor_a2 = 2;
+            }
+
+            if (r_a3 >= 127 || g_a3 > 127 || b_a3 >= 127 || brightness_a3 >= 384) {
+                textcolor_a3 = 1;
+            } else {
+                textcolor_a3 = 2;
+            }
+
+            boolean check_break = false;
+            int abs_minimum = 20;
+            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            if ((abs_minimum <= abs_r_1) || (abs_minimum <= abs_g_1) || ((abs_minimum <= abs_b_1))) {
+                if ((abs_minimum <= abs_r_2) || (abs_minimum <= abs_g_2) || (abs_minimum <= abs_b_2)) {
+                    if ((abs_minimum <= abs_r_3) || (abs_minimum <= abs_g_3) || (abs_minimum <= abs_b_3)) {
+                        if ((abs_minimum <= abs_r1_2) || (abs_minimum <= abs_g1_2) || (abs_minimum <= abs_b1_2)) {
+                            if ((abs_minimum <= abs_r2_3) || (abs_minimum <= abs_g2_3) || (abs_minimum <= abs_b2_3)) {
+                                if ((abs_minimum <= abs_r3_1) || (abs_minimum <= abs_g3_1) || (abs_minimum <= abs_b3_1)) {
+                                    check_break = true;
                                 }
                             }
                         }
@@ -846,44 +835,75 @@ public class CodetoColorActivity extends AppCompatActivity {
                 }
             }
 
-
-            //cleanCheckselect
-            check_select1.setImageDrawable(null);
-            check_select2.setImageDrawable(null);
-            check_select3.setImageDrawable(null);
-            check_select4.setImageDrawable(null);
-
-            // setanswer
-            switch (check_answer) {
-                case 1:
-                    answer1.setBackgroundColor(Color.rgb(r, g, b));
-                    answer2.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
-                    answer3.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
-                    answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
-                    break;
-                case 2:
-                    answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
-                    answer2.setBackgroundColor(Color.rgb(r, g, b));
-                    answer3.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
-                    answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
-                    break;
-                case 3:
-                    answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
-                    answer2.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
-                    answer3.setBackgroundColor(Color.rgb(r, g, b));
-                    answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
-                    break;
-                case 4:
-                    answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
-                    answer2.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
-                    answer3.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
-                    answer4.setBackgroundColor(Color.rgb(r, g, b));
-                    break;
+            // 難易度調整
+            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
             }
+        }
 
-            //Color.HSVToColor()
+        //setQuestionCode
+        if (colormode == 1 ){
+           questioncode.setText("#"+r16+g16+b16);
+        }else if (colormode == 2){
+            int color =Color.rgb (r,g,b);
+            float[] hsb = new float[3];
+            Color.colorToHSV(color, hsb);
+            float fl_h = hsb[0];
+            float fl_s = hsb[1]*100;
+            float fl_b = hsb[2]*100;
+            int in_h = (int)fl_h;
+            int in_s = (int)fl_s;
+            int in_b = (int)fl_b;
+            questioncode.setText(in_h + "," + in_s + "," + in_b);
+        }
+
+
+        //cleanCheckSelect
+        check_select1.setImageDrawable(null);
+        check_select2.setImageDrawable(null);
+        check_select3.setImageDrawable(null);
+        check_select4.setImageDrawable(null);
+
+        // setChoicesColor
+        switch (check_answer) {
+            case 1:
+                answer1.setBackgroundColor(Color.rgb(r, g, b));
+                answer2.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer3.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
+                break;
+            case 2:
+                answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setBackgroundColor(Color.rgb(r, g, b));
+                answer3.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
+                break;
+            case 3:
+                answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer3.setBackgroundColor(Color.rgb(r, g, b));
+                answer4.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
+                break;
+            case 4:
+                answer1.setBackgroundColor(Color.rgb(r_a1, g_a1, b_a1));
+                answer2.setBackgroundColor(Color.rgb(r_a2, g_a2, b_a2));
+                answer3.setBackgroundColor(Color.rgb(r_a3, g_a3, b_a3));
+                answer4.setBackgroundColor(Color.rgb(r, g, b));
+                break;
+        }
 
     }
+
 
 
 

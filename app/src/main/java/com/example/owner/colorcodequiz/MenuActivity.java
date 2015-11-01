@@ -135,7 +135,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void selectHSB (View v){
         colormode = 2;
-        nowPointview.setText("HSBPoint"+HSB_nowPoint);
+        nowPointview.setText("HSBPoint:"+HSB_nowPoint);
     }
 
     public void tomenu2(View v) {

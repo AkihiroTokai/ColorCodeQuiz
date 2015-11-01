@@ -2492,7 +2492,7 @@ containing a value of this type.
         public static final int art=0x7f0c00dd;
         public static final int automatic=0x7f0c004c;
         public static final int beginning=0x7f0c0015;
-        public static final int blue=0x7f0c0096;
+        public static final int blue=0x7f0c0097;
         public static final int book_now=0x7f0c0033;
         public static final int bottom=0x7f0c0046;
         public static final int box_count=0x7f0c0043;
@@ -2541,7 +2541,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0c00f2;
         public static final int expand_activities_button=0x7f0c0055;
         public static final int expanded_menu=0x7f0c0065;
-        public static final int frameLayout=0x7f0c0097;
+        public static final int frameLayout=0x7f0c0096;
         public static final int frameLayout2=0x7f0c0081;
         public static final int frameLayout3=0x7f0c0098;
         public static final int frameLayout4=0x7f0c0083;

@@ -56,8 +56,8 @@
         android:text="00"
         android:id="@+id/green"
         android:textColor="#00ff00"
-        android:layout_alignTop="@+id/blue"
-        android:layout_toEndOf="@+id/blue" />
+        android:layout_above="@+id/frameLayout"
+        android:layout_toEndOf="@+id/red" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,8 +66,8 @@
         android:text="00"
         android:id="@+id/blue"
         android:textColor="#0000ff"
-        android:layout_alignTop="@+id/red"
-        android:layout_toEndOf="@+id/red" />
+        android:layout_alignTop="@+id/green"
+        android:layout_toEndOf="@+id/green" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -83,7 +83,6 @@
             android:id="@+id/answer1"
             android:layout_gravity="center"
             android:onClick="select1"
-            android:background="#000000"
             android:clickable="true" />
 
         <ImageView
@@ -110,7 +109,6 @@
             android:id="@+id/answer2"
             android:layout_gravity="center"
             android:onClick="select2"
-            android:background="#ffffff"
             android:clickable="true" />
 
         <ImageView
@@ -135,7 +133,6 @@
             android:id="@+id/answer3"
             android:layout_gravity="center"
             android:onClick="select3"
-            android:background="#ff0000"
             android:clickable="true"/>
 
         <ImageView
@@ -160,7 +157,6 @@
             android:id="@+id/answer4"
             android:layout_gravity="center"
             android:onClick="select4"
-            android:background="#0000ff"
             android:clickable="true"/>
 
         <ImageView

@@ -48,7 +48,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int level;
     private int ull_old;
 
-    private int r , g , b;
+    private int r, g, b;
     private int r_a1, r_a2, r_a3, g_a1, g_a2, g_a3, b_a1, b_a2, b_a3;
     private int colormode;
 
@@ -108,7 +108,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
         maxlimit = intent.getIntExtra("getnumber", 255);
         minlimit = intent.getIntExtra("getnumber", 0);
         level = intent.getIntExtra("getlevel", level);
-        colormode = intent.getIntExtra("getcolormode",1);
+        colormode = intent.getIntExtra("getcolormode", 1);
 
         //getData(Parse)
        /* getData checkData = new getData();
@@ -182,7 +182,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
             this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
-        } else if(colormode == 2){
+        } else if (colormode == 2) {
             st_colormode = "HSB_";
 
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
@@ -212,7 +212,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
-        setanswer();
+        setQuestion();
     }
 
     public void select1(View view) {
@@ -232,7 +232,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
             if (gameCount >= noq) {
                 gameFinish();
             } else {
-                setanswer();
+                setQuestion();
                 nextquestion = false;
             }
         }
@@ -240,10 +240,10 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
 
     public void select2(View view) {
-        if (!nextquestion)   {
+        if (!nextquestion) {
             if (check_answer == 2) {
                 check_select2.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
@@ -252,11 +252,12 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }  if (gameCount >= noq ){
-               gameFinish();
             }
-        }else {
-            setanswer();
+            if (gameCount >= noq) {
+                gameFinish();
+            }
+        } else {
+            setQuestion();
             nextquestion = false;
         }
     }
@@ -265,26 +266,27 @@ public class ColortoCodeActivity extends AppCompatActivity {
         if (!nextquestion) {
             if (check_answer == 3) {
                 check_select3.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 showRightanswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ noq);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if (gameCount >= noq){
+            }
+            if (gameCount >= noq) {
                 gameFinish();
             }
-        }else {
-            setanswer();
+        } else {
+            setQuestion();
             nextquestion = false;
         }
     }
 
     public void select4(View view) {
-        if (!nextquestion )   {
+        if (!nextquestion) {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
             } else {
@@ -293,53 +295,54 @@ public class ColortoCodeActivity extends AppCompatActivity {
             if (gameCount <= noq) {
                 showRightanswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ noq);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if(gameCount >= noq){
-              gameFinish();
+            }
+            if (gameCount >= noq) {
+                gameFinish();
             }
             nextquestion = true;
-        }else {
-            setanswer();
+        } else {
+            setQuestion();
             nextquestion = false;
         }
 
     }
 
-    public void showRightanswer(){
+    public void showRightanswer() {
         switch (check_answer) {
             case 1:
                 answer1.setTextColor(Color.rgb(r, g, b));
                 answer2.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 2:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r, g, b));
                 answer3.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 3:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r, g, b));
                 answer4.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
-            break;
+                break;
 
             case 4:
                 answer1.setTextColor(Color.rgb(r_a1, g_a1, b_a1));
                 answer2.setTextColor(Color.rgb(r_a2, g_a2, b_a2));
                 answer3.setTextColor(Color.rgb(r_a3, g_a3, b_a3));
                 answer4.setTextColor(Color.rgb(r, g, b));
-            break;
+                break;
         }
     }
 
 
-    public void gameFinish(){
+    public void gameFinish() {
         //Add:Score
         if (level <= 3) {
             if (noca <= 7) {
@@ -348,13 +351,12 @@ public class ColortoCodeActivity extends AppCompatActivity {
             } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
-            } else if ( noca == 9 ||noca == 10) {
+            } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
             }
-        }
-        else if (level >= 4 && level <= 8) {
-            if(noca <= 6) {
+        } else if (level >= 4 && level <= 8) {
+            if (noca <= 6) {
                 getPoint = 2;
                 gameResult = "クリアできませんでした。";
             } else if (noca == 7 || noca == 8) {
@@ -363,20 +365,19 @@ public class ColortoCodeActivity extends AppCompatActivity {
             } else if (noca == 9) {
                 getPoint = 13;
                 gameResult = "クリアしました。";
-            }else if(noca == 10){
+            } else if (noca == 10) {
                 getPoint = 14;
                 gameResult = "クリアしました。";
             }
-        }
-        else if (level>=9&&level<=10){
+        } else if (level >= 9 && level <= 10) {
             if (noca <= 7) {
-                 getPoint = 3;
+                getPoint = 3;
                 gameResult = "クリアできませんでした。";
             } else if (noca == 8) {
-                 getPoint = 14;
+                getPoint = 14;
                 gameResult = "クリアしました。";
             } else if (noca == 9) {
-                 getPoint = 15;
+                getPoint = 15;
                 gameResult = "クリアしました。";
             } else if (noca == 10) {
                 getPoint = 16;
@@ -384,210 +385,174 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
         }
 
-        this_nowPoint = this_nowPoint + getPoint ;
+        this_nowPoint = this_nowPoint + getPoint;
 
         // Count:nocomp
-       switch(level) {
-           case 1:
-               getData checkData1 = new getData();
-               this_nocomp_ColortoCode1++;
-               checkData1.setnocomp_ColortoCode1(this_nocomp_ColortoCode1);
-           break;
+        switch (level) {
+            case 1:
+                getData checkData1 = new getData();
+                this_nocomp_ColortoCode1++;
+                checkData1.setnocomp_ColortoCode1(this_nocomp_ColortoCode1);
+                break;
 
-           case 2:
-               getData checkData2 = new getData();
-               this_nocomp_ColortoCode2++;
-               checkData2.setnocomp_ColortoCode2(this_nocomp_ColortoCode2);
-           break;
+            case 2:
+                getData checkData2 = new getData();
+                this_nocomp_ColortoCode2++;
+                checkData2.setnocomp_ColortoCode2(this_nocomp_ColortoCode2);
+                break;
 
-           case 3:
-               getData checkData3 = new getData();
-               this_nocomp_ColortoCode3++;
-               checkData3.setnocomp_ColortoCode3(this_nocomp_ColortoCode3);
-           break;
+            case 3:
+                getData checkData3 = new getData();
+                this_nocomp_ColortoCode3++;
+                checkData3.setnocomp_ColortoCode3(this_nocomp_ColortoCode3);
+                break;
 
-           case 4:
-               getData checkData4 = new getData();
-               this_nocomp_ColortoCode4++;
-               checkData4.setnocomp_ColortoCode4(this_nocomp_ColortoCode4);
+            case 4:
+                getData checkData4 = new getData();
+                this_nocomp_ColortoCode4++;
+                checkData4.setnocomp_ColortoCode4(this_nocomp_ColortoCode4);
 
-           case 5:
-               getData checkData5 = new getData();
-               this_nocomp_ColortoCode5++;
-               checkData5.setnocomp_ColortoCode5(this_nocomp_ColortoCode5);
-           break;
+            case 5:
+                getData checkData5 = new getData();
+                this_nocomp_ColortoCode5++;
+                checkData5.setnocomp_ColortoCode5(this_nocomp_ColortoCode5);
+                break;
 
-           case 6:
-               getData checkData6 = new getData();
-               this_nocomp_ColortoCode6++;
-               checkData6.setnocomp_ColortoCode6(this_nocomp_ColortoCode6);
-           break;
+            case 6:
+                getData checkData6 = new getData();
+                this_nocomp_ColortoCode6++;
+                checkData6.setnocomp_ColortoCode6(this_nocomp_ColortoCode6);
+                break;
 
-           case 7:
-               getData checkData7 = new getData();
-               this_nocomp_ColortoCode7++;
-               checkData7.setnocomp_ColortoCode7(this_nocomp_ColortoCode7);
-           break;
+            case 7:
+                getData checkData7 = new getData();
+                this_nocomp_ColortoCode7++;
+                checkData7.setnocomp_ColortoCode7(this_nocomp_ColortoCode7);
+                break;
 
-           case 8:
-               getData checkData8 = new getData();
-               this_nocomp_ColortoCode8++;
-               checkData8.setnocomp_ColortoCode8(this_nocomp_ColortoCode8);
-           break;
+            case 8:
+                getData checkData8 = new getData();
+                this_nocomp_ColortoCode8++;
+                checkData8.setnocomp_ColortoCode8(this_nocomp_ColortoCode8);
+                break;
 
-           case 9:
-               getData checkData9 = new getData();
-               this_nocomp_ColortoCode9++;
-               checkData9.setnocomp_ColortoCode9(this_nocomp_ColortoCode9);
-           break;
+            case 9:
+                getData checkData9 = new getData();
+                this_nocomp_ColortoCode9++;
+                checkData9.setnocomp_ColortoCode9(this_nocomp_ColortoCode9);
+                break;
 
-           case 10:
-               getData checkData10 = new getData();
-               this_nocomp_ColortoCode10++;
-               checkData10.setnocomp_ColortoCode10(this_nocomp_ColortoCode10);
-           break;
-       }
+            case 10:
+                getData checkData10 = new getData();
+                this_nocomp_ColortoCode10++;
+                checkData10.setnocomp_ColortoCode10(this_nocomp_ColortoCode10);
+                break;
+        }
 
         //Check:Levelup(ColortoCode)
-        if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
+        if (this_ull_ColortoCode == 1 && this_nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
-            this_ull_ColortoCode  = 2;
+            this_ull_ColortoCode = 2;
             ulm_ColortoCode();
-            ull_old = this_ull_ColortoCode-1;
-        }
-
-        else if(this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
+            ull_old = this_ull_ColortoCode - 1;
+        } else if (this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2 >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 3;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
+        } else if (this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 4;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
+        } else if (this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor >= 3) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 5;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+        } else if (this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 6;
-            ull_old = this_ull_ColortoCode-1;
-           ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
+            ull_old = this_ull_ColortoCode - 1;
+            ulm_ColortoCode();
+        } else if (this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor >= 5) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 7;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
+        } else if (this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 8;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
+        } else if (this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor >= 7) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 9;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
+        } else if (this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 10;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+        } else if (this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10) {
             unlockmode = "ColortoCode";
             this_ull_ColortoCode = 11;
-            ull_old = this_ull_ColortoCode-1;
+            ull_old = this_ull_ColortoCode - 1;
             compm();
         }
 
 
         //Check:Levelup(CodetoColor)
-        if (this_ull_CodetoColor  == 1 && this_nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3 ){
+        if (this_ull_CodetoColor == 1 && this_nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3) {
             unlockmode = "CodetoColor";
-            this_ull_CodetoColor  = 2;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 2;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 2 && this_nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3 ){
+        } else if (this_ull_CodetoColor == 2 && this_nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 3;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 3 && this_nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3){
+        } else if (this_ull_CodetoColor == 3 && this_nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 4;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 4 && this_nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode>= 3){
+        } else if (this_ull_CodetoColor == 4 && this_nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode >= 3) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 5;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 5 && this_nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
+        } else if (this_ull_CodetoColor == 5 && this_nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 6;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 6 && this_nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode>= 5){
+        } else if (this_ull_CodetoColor == 6 && this_nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode >= 5) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 7;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 7 && this_nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6){
+        } else if (this_ull_CodetoColor == 7 && this_nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 8;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 8 && this_nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode>= 7){
+        } else if (this_ull_CodetoColor == 8 && this_nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode >= 7) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 9;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 9 && this_nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8){
+        } else if (this_ull_CodetoColor == 9 && this_nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8) {
             unlockmode = "CodetoColor";
-            this_ull_CodetoColor= 10;
-            ull_old = this_ull_CodetoColor-1;
+            this_ull_CodetoColor = 10;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        }
-
-        else if(this_ull_CodetoColor == 10 && this_nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10){
+        } else if (this_ull_CodetoColor == 10 && this_nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10) {
             unlockmode = "CodetoColor";
             this_ull_CodetoColor = 11;
-            ull_old = this_ull_CodetoColor-1;
+            ull_old = this_ull_CodetoColor - 1;
             compm();
         }
 
@@ -642,22 +607,22 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
         //gameFinish
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle( getPoint + "Point獲得しました。")
+                .setTitle(getPoint + "Point獲得しました。")
                 .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore",this_nowPoint);
-                        intent.putExtra("getScore",getPoint);
-                        intent.putExtra("ull_ColortoCode ",this_ull_ColortoCode );
+                        intent.putExtra("nowScore", this_nowPoint);
+                        intent.putExtra("getScore", getPoint);
+                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
     }
 
-    public  void ulm_CodetoColor(){
+    public void ulm_CodetoColor() {
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
@@ -672,7 +637,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 .show();
     }
 
-    public  void ulm_ColortoCode(){
+    public void ulm_ColortoCode() {
         new AlertDialog.Builder(ColortoCodeActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
                 .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
@@ -687,9 +652,9 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 .show();
     }
 
-    public void compm(){
+    public void compm() {
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(st_colormode + unlockmode+"をMasterしました！")
+                .setTitle(st_colormode + unlockmode + "をMasterしました！")
                 .setMessage("おめでとうございます。Twetterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -721,97 +686,69 @@ public class ColortoCodeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void setanswer() {
-        if (colormode == 1) {
-            //createColorCode
-            Random rnd1 = new Random();
-            r = rnd1.nextInt(256);
-            Random rnd2 = new Random();
-            g = rnd2.nextInt(256);
-            Random rnd3 = new Random();
-            b = rnd3.nextInt(256);
+    public void setQuestion() {
+        //createColorCode
+        Random rnd1 = new Random();
+        r = rnd1.nextInt(256);
+        g = rnd1.nextInt(256);
+        b = rnd1.nextInt(256);
 
 
-            //createChoicesColorcode
-            while (true) {
+        //createChoicesColorcode
+        while (true) {
 
-                Random rnd5 = new Random();
-                r_a1 = rnd5.nextInt(256);
-                Random rnd6 = new Random();
-                r_a2 = rnd6.nextInt(256);
-                Random rnd7 = new Random();
-                r_a3 = rnd7.nextInt(256);
+            r_a1 = rnd1.nextInt(256);
+            r_a2 = rnd1.nextInt(256);
+            r_a3 = rnd1.nextInt(256);
 
-                Random rnd8 = new Random();
-                g_a1 = rnd8.nextInt(256);
-                Random rnd9 = new Random();
-                g_a2 = rnd9.nextInt(256);
-                Random rnd10 = new Random();
-                g_a3 = rnd10.nextInt(256);
+            g_a1 = rnd1.nextInt(256);
+            g_a2 = rnd1.nextInt(256);
+            g_a3 = rnd1.nextInt(256);
 
-                Random rnd11 = new Random();
-                b_a1 = rnd11.nextInt(256);
-                Random rnd12 = new Random();
-                b_a2 = rnd12.nextInt(256);
-                Random rnd13 = new Random();
-                b_a3 = rnd13.nextInt(256);
+            b_a1 = rnd1.nextInt(256);
+            b_a2 = rnd1.nextInt(256);
+            b_a3 = rnd1.nextInt(256);
 
 
-                int abs_r1_2 = Math.abs(r_a1 - r_a2);
-                int abs_r2_3 = Math.abs(r_a2 - r_a3);
-                int abs_r3_1 = Math.abs(r_a3 - r_a1);
-                int abs_r_1 = Math.abs(r - r_a1);
-                int abs_r_2 = Math.abs(r - r_a2);
-                int abs_r_3 = Math.abs(r - r_a3);
+            int abs_r1_2 = Math.abs(r_a1 - r_a2);
+            int abs_r2_3 = Math.abs(r_a2 - r_a3);
+            int abs_r3_1 = Math.abs(r_a3 - r_a1);
+            int abs_r_1 = Math.abs(r - r_a1);
+            int abs_r_2 = Math.abs(r - r_a2);
+            int abs_r_3 = Math.abs(r - r_a3);
 
-                int abs_g1_2 = Math.abs(g_a1 - g_a2);
-                int abs_g2_3 = Math.abs(g_a2 - g_a3);
-                int abs_g3_1 = Math.abs(g_a3 - g_a1);
-                int abs_g_1 = Math.abs(g - g_a1);
-                int abs_g_2 = Math.abs(g - g_a2);
-                int abs_g_3 = Math.abs(g - g_a3);
+            int abs_g1_2 = Math.abs(g_a1 - g_a2);
+            int abs_g2_3 = Math.abs(g_a2 - g_a3);
+            int abs_g3_1 = Math.abs(g_a3 - g_a1);
+            int abs_g_1 = Math.abs(g - g_a1);
+            int abs_g_2 = Math.abs(g - g_a2);
+            int abs_g_3 = Math.abs(g - g_a3);
 
-                int abs_b1_2 = Math.abs(b_a1 - b_a2);
-                int abs_b2_3 = Math.abs(b_a2 - b_a3);
-                int abs_b3_1 = Math.abs(b_a3 - b_a1);
-                int abs_b_1 = Math.abs(b - b_a1);
-                int abs_b_2 = Math.abs(b - b_a2);
-                int abs_b_3 = Math.abs(b - b_a3);
+            int abs_b1_2 = Math.abs(b_a1 - b_a2);
+            int abs_b2_3 = Math.abs(b_a2 - b_a3);
+            int abs_b3_1 = Math.abs(b_a3 - b_a1);
+            int abs_b_1 = Math.abs(b - b_a1);
+            int abs_b_2 = Math.abs(b - b_a2);
+            int abs_b_3 = Math.abs(b - b_a3);
 
-                int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
-                int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
-                int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
-                int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
-                int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
-                int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
+            int abs_ca_1 = abs_r_1 + abs_g_1 + abs_b_1;
+            int abs_ca_2 = abs_r_2 + abs_g_2 + abs_b_2;
+            int abs_ca_3 = abs_r_3 + abs_g_3 + abs_b_3;
+            int abs_1_2 = abs_r1_2 + abs_g1_2 + abs_b1_2;
+            int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
+            int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
 
-                boolean check_break = false;
+            boolean check_break = false;
 
 
-                //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
-                if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
-                    if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
-                        if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
-                            if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
-                                if ((minlimit <= abs_r2_3) || (minlimit <= abs_b2_3) || (minlimit <= abs_b2_3)) {
-                                    if ((minlimit <= abs_r3_1) || (minlimit <= abs_b3_1) || (minlimit <= abs_b3_1)) {
-                                        check_break = true;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                // 難易度調整
-                if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
-                    if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
-                        if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
-                            if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
-                                if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
-                                    if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
-                                        break;
-                                    }
+            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
+                if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
+                    if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
+                        if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
+                            if ((minlimit <= abs_r2_3) || (minlimit <= abs_g2_3) || (minlimit <= abs_b2_3)) {
+                                if ((minlimit <= abs_r3_1) || (minlimit <= abs_g3_1) || (minlimit <= abs_b3_1)) {
+                                    check_break = true;
                                 }
                             }
                         }
@@ -819,76 +756,167 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }
             }
 
-
-            //cleanCheckselect
-            check_select1.setImageDrawable(null);
-            check_select2.setImageDrawable(null);
-            check_select3.setImageDrawable(null);
-            check_select4.setImageDrawable(null);
-
-            // setanswer
-            Random rnd4 = new Random();
-            check_answer = rnd4.nextInt(3) + 1;
-            String r16 = Integer.toHexString(r);
-            if (r16.length() < 2) r16 = "0" + r16;
-            String g16 = Integer.toHexString(g);
-            if (g16.length() < 2) g16 = "0" + g16;
-            String b16 = Integer.toHexString(b);
-            if (b16.length() < 2) b16 = "0" + b16;
-
-            String r_a1_16 = Integer.toHexString(r_a1);
-            if (r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
-            String g_a1_16 = Integer.toHexString(g_a1);
-            if (g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
-            String b_a1_16 = Integer.toHexString(b_a1);
-            if (b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
-
-            String r_a2_16 = Integer.toHexString(r_a2);
-            if (r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
-            String g_a2_16 = Integer.toHexString(g_a2);
-            if (g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
-            String b_a2_16 = Integer.toHexString(b_a2);
-            if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
-
-            String r_a3_16 = Integer.toHexString(r_a3);
-            if (r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
-            String g_a3_16 = Integer.toHexString(g_a3);
-            if (g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
-            String b_a3_16 = Integer.toHexString(b_a3);
-            if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
-
-            switch (check_answer) {
-                case 1:
-                    answer1.setText("#" + r16 + g16 + b16);
-                    answer2.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                    answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-                    break;
-
-                case 2:
-                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                    answer2.setText("#" + r16 + g16 + b16);
-                    answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-                    break;
-
-                case 3:
-                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                    answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                    answer3.setText("#" + r16 + g16 + b16);
-                    answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-                    break;
-
-                case 4:
-                    answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
-                    answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
-                    answer3.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
-                    answer4.setText("#" + r16 + g16 + b16);
-                    break;
+            // 難易度調整
+            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            question.setBackgroundColor(Color.rgb(r, g, b));
-        }else if (colormode == 2){
-            //Color.HSVToColor()
+        }
+
+
+        //cleanCheckselect
+        check_select1.setImageDrawable(null);
+        check_select2.setImageDrawable(null);
+        check_select3.setImageDrawable(null);
+        check_select4.setImageDrawable(null);
+
+
+        // setanswer
+        check_answer = rnd1.nextInt(3) + 1;
+        question.setBackgroundColor(Color.rgb(r, g, b));
+        switch (colormode) {
+            case 1:
+                String r16 = Integer.toHexString(r);
+                if (r16.length() < 2) r16 = "0" + r16;
+                String g16 = Integer.toHexString(g);
+                if (g16.length() < 2) g16 = "0" + g16;
+                String b16 = Integer.toHexString(b);
+                if (b16.length() < 2) b16 = "0" + b16;
+
+                String r_a1_16 = Integer.toHexString(r_a1);
+                if (r_a1_16.length() < 2) r_a1_16 = "0" + r_a1_16;
+                String g_a1_16 = Integer.toHexString(g_a1);
+                if (g_a1_16.length() < 2) g_a1_16 = "0" + g_a1_16;
+                String b_a1_16 = Integer.toHexString(b_a1);
+                if (b_a1_16.length() < 2) b_a1_16 = "0" + b_a1_16;
+
+                String r_a2_16 = Integer.toHexString(r_a2);
+                if (r_a2_16.length() < 2) r_a2_16 = "0" + r_a2_16;
+                String g_a2_16 = Integer.toHexString(g_a2);
+                if (g_a2_16.length() < 2) g_a2_16 = "0" + g_a2_16;
+                String b_a2_16 = Integer.toHexString(b_a2);
+                if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+
+                String r_a3_16 = Integer.toHexString(r_a3);
+                if (r_a3_16.length() < 2) r_a3_16 = "0" + r_a3_16;
+                String g_a3_16 = Integer.toHexString(g_a3);
+                if (g_a3_16.length() < 2) g_a3_16 = "0" + g_a3_16;
+                String b_a3_16 = Integer.toHexString(b_a3);
+                if (b_a2_16.length() < 2) b_a2_16 = "0" + b_a2_16;
+
+
+                switch (check_answer) {
+                    case 1:
+                        answer1.setText("#" + r16 + g16 + b16);
+                        answer2.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                        answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                        answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                        break;
+
+                    case 2:
+                        answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                        answer2.setText("#" + r16 + g16 + b16);
+                        answer3.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                        answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                        break;
+
+                    case 3:
+                        answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                        answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                        answer3.setText("#" + r16 + g16 + b16);
+                        answer4.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                        break;
+
+                    case 4:
+                        answer1.setText("#" + r_a1_16 + g_a1_16 + b_a1_16);
+                        answer2.setText("#" + r_a2_16 + g_a2_16 + b_a2_16);
+                        answer3.setText("#" + r_a3_16 + g_a3_16 + b_a3_16);
+                        answer4.setText("#" + r16 + g16 + b16);
+                        break;
+                }
+                break;
+
+            case 2:
+                //chngeColorMode
+                int color_ca =Color.rgb (r,g,b);
+                float[] hsb_ca = new float[3];
+                Color.colorToHSV(color_ca, hsb_ca);
+                float fl_h = hsb_ca[0];
+                float fl_s = hsb_ca[1]*100;
+                float fl_b = hsb_ca[2]*100;
+                int in_h = (int)fl_h;
+                int in_s = (int)fl_s;
+                int in_b = (int)fl_b;
+
+                int color_a1 =Color.rgb (r_a1,g_a1,b_a1);
+                float[] hsb_a1 = new float[3];
+                Color.colorToHSV(color_a1, hsb_a1);
+                float fl_h_a1 = hsb_a1[0];
+                float fl_s_a1 = hsb_a1[1]*100;
+                float fl_b_a1 = hsb_a1[2]*100;
+                int in_h_a1 = (int)fl_h_a1;
+                int in_s_a1 = (int)fl_s_a1;
+                int in_b_a1 = (int)fl_b_a1;
+
+                int color_a2 =Color.rgb (r_a2,g_a2,b_a2);
+                float[] hsb_a2 = new float[3];
+                Color.colorToHSV(color_a2, hsb_a2);
+                float fl_h_a2 = hsb_a1[0];
+                float fl_s_a2 = hsb_a1[1]*100;
+                float fl_b_a2 = hsb_a1[2]*100;
+                int in_h_a2 = (int)fl_h_a2;
+                int in_s_a2 = (int)fl_s_a2;
+                int in_b_a2 = (int)fl_b_a2;
+
+                int color_a3 =Color.rgb (r_a3,g_a3,b_a3);
+                float[] hsb_a3 = new float[3];
+                Color.colorToHSV(color_a3, hsb_a3);
+                float fl_h_a3 = hsb_a1[0];
+                float fl_s_a3 = hsb_a1[1]*100;
+                float fl_b_a3 = hsb_a1[2]*100;
+                int in_h_a3 = (int)fl_h_a3;
+                int in_s_a3 = (int)fl_s_a3;
+                int in_b_a3 = (int)fl_b_a3;
+
+                switch (check_answer) {
+                    case 1:
+                        answer1.setText(in_h + "," + in_s + "," + in_b);
+                        answer2.setText(in_h_a1 + "," + in_s_a1 + "," + in_b_a1);
+                        answer3.setText(in_h_a2 + "," + in_s_a2 + "," + in_b_a2);
+                        answer4.setText(in_h_a3 + "," + in_s_a3 + "," + in_b_a3);
+                        break;
+
+                    case 2:
+                        answer1.setText(in_h_a1 + "," + in_s_a1 + "," + in_b_a1);
+                        answer2.setText(in_h + "," + in_s + "," + in_b);
+                        answer3.setText(in_h_a2 + "," + in_s_a2 + "," + in_b_a2);
+                        answer4.setText(in_h_a3 + "," + in_s_a3 + "," + in_b_a3);
+                        break;
+
+                    case 3:
+                        answer1.setText(in_h_a1 + "," + in_s_a1 + "," + in_b_a1);
+                        answer2.setText(in_h_a2 + "," + in_s_a2 + "," + in_b_a2);
+                        answer3.setText(in_h + "," + in_s + "," + in_b);
+                        answer4.setText(in_h_a3 + "," + in_s_a3 + "," + in_b_a3);
+                        break;
+
+                    case 4:
+                        answer1.setText(in_h_a1 + "," + in_s_a1 + "," + in_b_a1);
+                        answer2.setText(in_h_a2 + "," + in_s_a2 + "," + in_b_a2);
+                        answer3.setText(in_h_a3 + "," + in_s_a3 + "," + in_b_a3);
+                        answer4.setText(in_h + "," + in_s + "," + in_b);
+                        break;
+                }
+                break;
         }
     }
 

@@ -310,9 +310,11 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
+                this_nocomp_ColortoCode0++;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
+                this_nocomp_ColortoCode0++;
             }
         } else if (colormode == 2) {
             if (noca <= 11) {
@@ -321,9 +323,11 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             } else if (noca == 12 || noca == 13) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
+                this_nocomp_ColortoCode0++;
             } else if (noca == 14 || noca == 15) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
+                this_nocomp_ColortoCode0++;
             }
         }
 
@@ -447,7 +451,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             compm();
         }
 
-        this_nocomp_ColortoCode0++;
+
 
         //saveData(Parse)
         /*getData checkData = new getData();

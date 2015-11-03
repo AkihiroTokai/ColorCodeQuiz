@@ -78,7 +78,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
     private int this_nocomp_ColortoCode9;
     private int this_nocomp_ColortoCode10;
 
-    private boolean nextquestion;
+    private boolean isnextquestion;
 
     private String gameResult;
     private String st_colormode;
@@ -216,31 +216,31 @@ public class ColortoCodeActivity extends AppCompatActivity {
     }
 
     public void select1(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
+                noca = noca + 1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
-                noca = noca + 1;
             }
             if (gameCount <= noq) {
-                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
+                isnextquestion = true;
             }
-            if (gameCount >= noq) {
+        } else {
+            if (gameCount > noq) {
                 gameFinish();
             } else {
                 setQuestion();
-                nextquestion = false;
             }
+            isnextquestion = false;
         }
     }
 
 
     public void select2(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 2) {
                 check_select2.setImageResource(R.drawable.maru);
                 noca = noca + 1;
@@ -248,22 +248,22 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
-                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else{
+                setQuestion();
+            }
+            isnextquestion = false;
         }
     }
 
     public void select3(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 3) {
                 check_select3.setImageResource(R.drawable.maru);
                 noca = noca + 1;
@@ -271,42 +271,42 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
-                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
+            isnextquestion = false;
         }
     }
 
+
     public void select4(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion )   {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
+                noca = noca +1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
-                showRightanswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
+                isnextquestion = true;
             }
-            if (gameCount >= noq) {
+        }else {
+            if (gameCount > noq){
                 gameFinish();
+            } else {
+                setQuestion();
             }
-            nextquestion = true;
-        } else {
-            setQuestion();
-            nextquestion = false;
+            isnextquestion = false;
         }
-
     }
 
     public void showRightanswer() {
@@ -343,6 +343,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
 
     public void gameFinish() {
+        boolean isCompleted = false;
         //Add:Score
         if (level <= 3) {
             if (noca <= 7) {
@@ -350,9 +351,11 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameResult = "クリアできませんでした。";
             } else if (noca == 8) {
                 getPoint = 10;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             }
         } else if (level >= 4 && level <= 8) {
@@ -361,12 +364,15 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameResult = "クリアできませんでした。";
             } else if (noca == 7 || noca == 8) {
                 getPoint = 12;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 9) {
                 getPoint = 13;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 10) {
                 getPoint = 14;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             }
         } else if (level >= 9 && level <= 10) {
@@ -375,12 +381,15 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 gameResult = "クリアできませんでした。";
             } else if (noca == 8) {
                 getPoint = 14;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 9) {
                 getPoint = 15;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 10) {
                 getPoint = 16;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             }
         }
@@ -388,67 +397,68 @@ public class ColortoCodeActivity extends AppCompatActivity {
         this_nowPoint = this_nowPoint + getPoint;
 
         // Count:nocomp
-        switch (level) {
-            case 1:
-                getData checkData1 = new getData();
-                this_nocomp_ColortoCode1++;
-                checkData1.setnocomp_ColortoCode1(this_nocomp_ColortoCode1);
-                break;
+        if (isCompleted == true) {
+            switch (level) {
+                case 1:
+                    getData checkData1 = new getData();
+                    this_nocomp_ColortoCode1++;
+                    checkData1.setnocomp_ColortoCode1(this_nocomp_ColortoCode1);
+                    break;
 
-            case 2:
-                getData checkData2 = new getData();
-                this_nocomp_ColortoCode2++;
-                checkData2.setnocomp_ColortoCode2(this_nocomp_ColortoCode2);
-                break;
+                case 2:
+                    getData checkData2 = new getData();
+                    this_nocomp_ColortoCode2++;
+                    checkData2.setnocomp_ColortoCode2(this_nocomp_ColortoCode2);
+                    break;
 
-            case 3:
-                getData checkData3 = new getData();
-                this_nocomp_ColortoCode3++;
-                checkData3.setnocomp_ColortoCode3(this_nocomp_ColortoCode3);
-                break;
+                case 3:
+                    getData checkData3 = new getData();
+                    this_nocomp_ColortoCode3++;
+                    checkData3.setnocomp_ColortoCode3(this_nocomp_ColortoCode3);
+                    break;
 
-            case 4:
-                getData checkData4 = new getData();
-                this_nocomp_ColortoCode4++;
-                checkData4.setnocomp_ColortoCode4(this_nocomp_ColortoCode4);
+                case 4:
+                    getData checkData4 = new getData();
+                    this_nocomp_ColortoCode4++;
+                    checkData4.setnocomp_ColortoCode4(this_nocomp_ColortoCode4);
 
-            case 5:
-                getData checkData5 = new getData();
-                this_nocomp_ColortoCode5++;
-                checkData5.setnocomp_ColortoCode5(this_nocomp_ColortoCode5);
-                break;
+                case 5:
+                    getData checkData5 = new getData();
+                    this_nocomp_ColortoCode5++;
+                    checkData5.setnocomp_ColortoCode5(this_nocomp_ColortoCode5);
+                    break;
 
-            case 6:
-                getData checkData6 = new getData();
-                this_nocomp_ColortoCode6++;
-                checkData6.setnocomp_ColortoCode6(this_nocomp_ColortoCode6);
-                break;
+                case 6:
+                    getData checkData6 = new getData();
+                    this_nocomp_ColortoCode6++;
+                    checkData6.setnocomp_ColortoCode6(this_nocomp_ColortoCode6);
+                    break;
 
-            case 7:
-                getData checkData7 = new getData();
-                this_nocomp_ColortoCode7++;
-                checkData7.setnocomp_ColortoCode7(this_nocomp_ColortoCode7);
-                break;
+                case 7:
+                    getData checkData7 = new getData();
+                    this_nocomp_ColortoCode7++;
+                    checkData7.setnocomp_ColortoCode7(this_nocomp_ColortoCode7);
+                    break;
 
-            case 8:
-                getData checkData8 = new getData();
-                this_nocomp_ColortoCode8++;
-                checkData8.setnocomp_ColortoCode8(this_nocomp_ColortoCode8);
-                break;
+                case 8:
+                    getData checkData8 = new getData();
+                    this_nocomp_ColortoCode8++;
+                    checkData8.setnocomp_ColortoCode8(this_nocomp_ColortoCode8);
+                    break;
 
-            case 9:
-                getData checkData9 = new getData();
-                this_nocomp_ColortoCode9++;
-                checkData9.setnocomp_ColortoCode9(this_nocomp_ColortoCode9);
-                break;
+                case 9:
+                    getData checkData9 = new getData();
+                    this_nocomp_ColortoCode9++;
+                    checkData9.setnocomp_ColortoCode9(this_nocomp_ColortoCode9);
+                    break;
 
-            case 10:
-                getData checkData10 = new getData();
-                this_nocomp_ColortoCode10++;
-                checkData10.setnocomp_ColortoCode10(this_nocomp_ColortoCode10);
-                break;
+                case 10:
+                    getData checkData10 = new getData();
+                    this_nocomp_ColortoCode10++;
+                    checkData10.setnocomp_ColortoCode10(this_nocomp_ColortoCode10);
+                    break;
+            }
         }
-
         //Check:Levelup(ColortoCode)
         if (this_ull_ColortoCode == 1 && this_nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
@@ -757,7 +767,8 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
 
             // 難易度調整
-            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+            if ((
+                    check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
                 if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
                     if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
                         if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
@@ -847,45 +858,45 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
             case 2:
                 //chngeColorMode
-                int color_ca =Color.rgb (r,g,b);
+                int color_ca = Color.rgb(r, g, b);
                 float[] hsb_ca = new float[3];
                 Color.colorToHSV(color_ca, hsb_ca);
                 float fl_h = hsb_ca[0];
-                float fl_s = hsb_ca[1]*100;
-                float fl_b = hsb_ca[2]*100;
-                int in_h = (int)fl_h;
-                int in_s = (int)fl_s;
-                int in_b = (int)fl_b;
+                float fl_s = hsb_ca[1] * 100;
+                float fl_b = hsb_ca[2] * 100;
+                int in_h = (int) fl_h;
+                int in_s = (int) fl_s;
+                int in_b = (int) fl_b;
 
-                int color_a1 =Color.rgb (r_a1,g_a1,b_a1);
+                int color_a1 = Color.rgb(r_a1, g_a1, b_a1);
                 float[] hsb_a1 = new float[3];
                 Color.colorToHSV(color_a1, hsb_a1);
                 float fl_h_a1 = hsb_a1[0];
-                float fl_s_a1 = hsb_a1[1]*100;
-                float fl_b_a1 = hsb_a1[2]*100;
-                int in_h_a1 = (int)fl_h_a1;
-                int in_s_a1 = (int)fl_s_a1;
-                int in_b_a1 = (int)fl_b_a1;
+                float fl_s_a1 = hsb_a1[1] * 100;
+                float fl_b_a1 = hsb_a1[2] * 100;
+                int in_h_a1 = (int) fl_h_a1;
+                int in_s_a1 = (int) fl_s_a1;
+                int in_b_a1 = (int) fl_b_a1;
 
-                int color_a2 =Color.rgb (r_a2,g_a2,b_a2);
+                int color_a2 = Color.rgb(r_a2, g_a2, b_a2);
                 float[] hsb_a2 = new float[3];
                 Color.colorToHSV(color_a2, hsb_a2);
                 float fl_h_a2 = hsb_a1[0];
-                float fl_s_a2 = hsb_a1[1]*100;
-                float fl_b_a2 = hsb_a1[2]*100;
-                int in_h_a2 = (int)fl_h_a2;
-                int in_s_a2 = (int)fl_s_a2;
-                int in_b_a2 = (int)fl_b_a2;
+                float fl_s_a2 = hsb_a1[1] * 100;
+                float fl_b_a2 = hsb_a1[2] * 100;
+                int in_h_a2 = (int) fl_h_a2;
+                int in_s_a2 = (int) fl_s_a2;
+                int in_b_a2 = (int) fl_b_a2;
 
-                int color_a3 =Color.rgb (r_a3,g_a3,b_a3);
+                int color_a3 = Color.rgb(r_a3, g_a3, b_a3);
                 float[] hsb_a3 = new float[3];
                 Color.colorToHSV(color_a3, hsb_a3);
                 float fl_h_a3 = hsb_a1[0];
-                float fl_s_a3 = hsb_a1[1]*100;
-                float fl_b_a3 = hsb_a1[2]*100;
-                int in_h_a3 = (int)fl_h_a3;
-                int in_s_a3 = (int)fl_s_a3;
-                int in_b_a3 = (int)fl_b_a3;
+                float fl_s_a3 = hsb_a1[1] * 100;
+                float fl_b_a3 = hsb_a1[2] * 100;
+                int in_h_a3 = (int) fl_h_a3;
+                int in_s_a3 = (int) fl_s_a3;
+                int in_b_a3 = (int) fl_b_a3;
 
                 switch (check_answer) {
                     case 1:

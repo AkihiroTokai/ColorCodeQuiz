@@ -21,8 +21,8 @@ public class ColorCodeQuizApplication extends Application {
         ParseObject.registerSubclass(getData.class);
         FacebookSdk.sdkInitialize(getApplicationContext());
 
-        Parse.initialize(this, "bXmubL3ilMV11CRRnyP4JTYjvC4lAhlBqRfqOMpB", "LdziUvHA4Yku0TNx2gZNVzjNrjUJFlKGdDygd9Xn");
-        ParseTwitterUtils.initialize("NfdDzPee0duxR5blAPdmQbFEO", "PbidbbDG3FY85Pf76dE875zyQy6fTQLFIPEkxwragmQ5pIHP89");
-       // ParseFacebookUtils.initialize("1643052322619255");
+        Parse.initialize(this, "key", "key");
+        ParseTwitterUtils.initialize("key", "key");
+       // ParseFacebookUtils.initialize("key");
     }
 }

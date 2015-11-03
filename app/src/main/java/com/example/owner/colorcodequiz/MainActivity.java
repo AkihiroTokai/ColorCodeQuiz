@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean nextquestion;
 
 
-
     private int this_ull_CodetoColor;
     private int this_ull_ColortoCode;
     private int this_nowPoint;
@@ -91,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         answer4 = (TextView) findViewById(R.id.answer4);
 
         progress = (TextView) findViewById(R.id.progress);
-        tag = (TextView)findViewById(R.id.tag);
+        tag = (TextView) findViewById(R.id.tag);
         red = (TextView) findViewById(R.id.red);
         green = (TextView) findViewById(R.id.green);
         blue = (TextView) findViewById(R.id.blue);
@@ -102,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         check_select4 = (ImageView) findViewById(R.id.check_select4);
 
         Intent intent = getIntent();
-        colormode = intent.getIntExtra("getcolormode",1);
+        colormode = intent.getIntExtra("getcolormode", 1);
         //getData(Parse)
       /*  getData checkData = new getData();
 
@@ -131,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         nocomp_ColortoCode10 = checkData.getnocomp_ColortoCode10();
         nowPoint = checkData.getnowPoint();                      */
 
-    /*    Calendar cal = Calendar.getInstance();
+    /*  Calendar cal = Calendar.getInstance();
         int nowyear = cal.get(Calendar.YEAR);
         String stnowyear = String.valueOf(nowyear);
         int nowmoth = cal.get(Calendar.MONTH);
@@ -144,114 +143,118 @@ public class MainActivity extends AppCompatActivity {
         } else {
             getPoint = checkData.getgetPoint();
         }       */
-         if (colormode == 1) {
-             st_colormode = "RGB_";
-             noq = 10;
-             //getData（SharedPreference)
-             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-             this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
-             this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
-             this_nowPoint = getData.getInt("RGB_nowPoint", 0);
+        if (colormode == 1) {
+            st_colormode = "RGB_";
+            noq = 10;
+            //getData（SharedPreference)
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
-             this_nocomp_CodetoColor0 = getData.getInt("RGB_nocomp_CodetoColor", 0);
-             this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
-             this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
-             this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
-             this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
-             this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
-             this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
-             this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
-             this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
-             this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
-             this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
+            this_nocomp_CodetoColor0 = getData.getInt("RGB_nocomp_CodetoColor", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
-             this_nocomp_ColortoCode0 = getData.getInt("RGB_nocomp_ColortoCode0", 0);
-             this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
-             this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
-             this_nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
-             this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
-             this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
-             this_nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
-             this_nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
-             this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
-             this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
-             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
-         } else if (colormode == 2) {
-             noq = 15;
-             st_colormode = "HSB_";
+            this_nocomp_ColortoCode0 = getData.getInt("RGB_nocomp_ColortoCode0", 0);
+            this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("RGB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
+            this_nocomp_ColortoCode6 = getData.getInt("RGB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("RGB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("RGB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("RGB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
+        } else if (colormode == 2) {
+            noq = 15;
+            st_colormode = "HSB_";
 
-             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-             this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
-             this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
-             this_nowPoint = getData.getInt("HSB_nowPoint", 0);
+            SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
-             this_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
-             this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
-             this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
-             this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
-             this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
-             this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
-             this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
-             this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
-             this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
-             this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
-             this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
+            this_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
 
-             this_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
-             this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
-             this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
-             this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
-             this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
-             this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
-             this_nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
-             this_nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
-             this_nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
-             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
-             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
-         }
+            this_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
+            this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
+            this_nocomp_ColortoCode6 = getData.getInt("HSB_nocomp_ColortoCode6", 0);
+            this_nocomp_ColortoCode7 = getData.getInt("HSB_nocomp_ColortoCode7", 0);
+            this_nocomp_ColortoCode8 = getData.getInt("HSB_nocomp_ColortoCode8", 0);
+            this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
+            this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
+        }
         gameCount = 1;
         setQuestion();
     }
+
     public void select1(View view) {
-        if (!nextquestion)   {
-            if (check_answer == 1 ) {
+        if (!nextquestion) {
+            if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq );
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }  if (gameCount >= noq ){
-                gameFinish();
             }
-        }else {
-            setQuestion();
+        } else {
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
             nextquestion = false;
         }
     }
 
 
-
     public void select2(View view) {
-        if (!nextquestion)   {
+        if (!nextquestion) {
             if (check_answer == 2) {
                 check_select2.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq );
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }  if (gameCount >= noq ){
-                gameFinish();
             }
-        }else {
-            setQuestion();
+        } else {
+            if (gameCount > noq) {
+                gameFinish();
+            } else{
+                setQuestion();
+            }
             nextquestion = false;
         }
     }
@@ -260,27 +263,31 @@ public class MainActivity extends AppCompatActivity {
         if (!nextquestion) {
             if (check_answer == 3) {
                 check_select3.setImageResource(R.drawable.maru);
-                noca = noca+1;
+                noca = noca + 1;
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/"+ noq);
+                progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if (gameCount >= noq){
-                gameFinish();
             }
-        }else {
-            setQuestion();
+        } else {
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
             nextquestion = false;
         }
     }
+
 
     public void select4(View view) {
         if (!nextquestion )   {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
+                noca = noca +1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
@@ -288,12 +295,13 @@ public class MainActivity extends AppCompatActivity {
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
                 nextquestion = true;
-            }if(gameCount >= noq){
-                gameFinish();
             }
-            nextquestion = true;
         }else {
-            setQuestion();
+            if (gameCount > noq){
+                gameFinish();
+            } else {
+                setQuestion();
+            }
             nextquestion = false;
         }
 
@@ -308,9 +316,11 @@ public class MainActivity extends AppCompatActivity {
             } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
+                this_nocomp_CodetoColor0++;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
+                this_nocomp_CodetoColor0++;
             }
         }else if (colormode == 2){
             if (noca <= 11) {
@@ -319,22 +329,24 @@ public class MainActivity extends AppCompatActivity {
             } else if (noca == 12|| noca==13) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
+                this_nocomp_CodetoColor0++;
             } else if (noca == 14 || noca == 15) {
                 getPoint = 11;
                 gameResult = "クリアしました。";
+                this_nocomp_CodetoColor0++;
             }
         }
 
         this_nowPoint = this_nowPoint + getPoint ;
 
         //Check:Levelup(ColortoCode)
-        if (this_ull_ColortoCode  == 0&& this_nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
+        if (this_ull_ColortoCode  == 0 && this_nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
             unlockmode = "ColortoCode";
             this_ull_CodetoColor  = 1;
             ull_old = this_ull_CodetoColor-1;
             ulm_ColortoCode();
         }
-        if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
+        else if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
             unlockmode = "ColortoCode";
             this_ull_ColortoCode  = 2;
             ulm_ColortoCode();
@@ -689,21 +701,22 @@ public class MainActivity extends AppCompatActivity {
             }
         }else if (colormode == 2){
             //Color.HSVToColor()
-            int h_ca, s_ca, b_ca, h_a1, s_a1, b_a1, h_a2, s_a2, b_a2, h_a3, s_a3, b_a3, color_ca, color_a1,color_a2,color_a3;
+            float h_ca, s_ca, b_ca, h_a1, s_a1, b_a1, h_a2, s_a2, b_a2, h_a3, s_a3, b_a3;
+            int  color_ca, color_a1,color_a2,color_a3;
             red.setTextColor(Color.parseColor("#000000"));
             green.setTextColor(Color.parseColor("#000000"));
             blue.setTextColor(Color.parseColor("#000000"));
             tag.setText("");
            if (gameCount == 1){
                //setQuestion
-               red.setText("(0,");
+               red.setText("0,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 0;  s_ca = 100; b_ca = 100;
-               h_a1 = 45; s_a1 = 100; b_a1 = 100;
-               h_a2 = 90; s_a2 = 0;   b_a2 = 100;
-               h_a3 =135; s_a3 = 100; b_a3 = 0;
+               h_ca = 0;  s_ca = 1.00F; b_ca = 1.00F;
+               h_a1 = 45; s_a1 = 1.00F; b_a1 = 1.00F;
+               h_a2 = 90; s_a2 = 0;     b_a2 = 1.00F;
+               h_a3 =135; s_a3 = 1.00F; b_a3 = 0;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -721,14 +734,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 2){
                //setQuestion
-               red.setText("(30,");
+               red.setText("30,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 30; s_ca = 100; b_ca = 100;
-               h_a1 = 30; s_a1 = 50;  b_a1 = 50;
-               h_a2 = 0;  s_a2 = 0;   b_a2 = 0;
-               h_a3 = 0;  s_a3 = 50;  b_a3 = 0;
+               h_ca = 30; s_ca = 1.00F;  b_ca = 1.00F;
+               h_a1 = 30; s_a1 = 0.50F;  b_a1 = 0.50F;
+               h_a2 = 0;  s_a2 = 0;      b_a2 = 0;
+               h_a3 = 0;  s_a3 = 0.50F;  b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -746,14 +759,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 3){
                //setQuestion
-               red.setText("(60,");
+               red.setText("60,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 60;  s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 0;   s_a2 = 0;   b_a2 = 0;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+               h_ca = 60;  s_ca = 1.00F;  b_ca = 1.00F;
+               h_a1 = 0;   s_a1 = 1.00F;  b_a1 = 1.00F;
+               h_a2 = 0;   s_a2 = 0;      b_a2 = 0;
+               h_a3 = 180; s_a3 = 0.50F;  b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -771,14 +784,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 4){
                //setQuestion
-               red.setText("(90,");
+               red.setText("90,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 90;  s_ca = 100; b_ca = 100;
-               h_a1 = 360; s_a1 = 0;   b_a1 = 0;
-               h_a2 = 180; s_a2 = 50;  b_a2 = 0;
-               h_a3 = 90;  s_a3 = 0;   b_a3 = 50;
+               h_ca = 90;  s_ca = 1.00F;  b_ca = 1.00F;
+               h_a1 = 360; s_a1 = 0.50F;  b_a1 = 0.50F;
+               h_a2 = 180; s_a2 = 0.50F;  b_a2 = 0;
+               h_a3 = 90;  s_a3 = 0;      b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -796,14 +809,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 5){
                //setQuestion
-               red.setText("(120,");
+               red.setText("120,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 120; s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 20;  b_a1 = 0;
-               h_a2 = 180; s_a2 = 0;   b_a2 = 0;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+               h_ca = 120;  s_ca = 1.00F;  b_ca = 1.00F;
+               h_a1 = 0;    s_a1 = 0.20F;  b_a1 = 0;
+               h_a2 = 180;  s_a2 = 0;      b_a2 = 0;
+               h_a3 = 180;  s_a3 = 0.50F;  b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -821,14 +834,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 6){
                //setQuestion
-               red.setText("(150,");
+               red.setText("150,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 150; s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 0;   s_a2 = 20;  b_a2 = 0;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+               h_ca = 150; s_ca = 1.00F;  b_ca = 1.00F;
+               h_a1 = 0;   s_a1 = 1.00F;  b_a1 = 100;
+               h_a2 = 0;   s_a2 = 0.20F;  b_a2 = 0;
+               h_a3 = 180; s_a3 = 0.50F;  b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -846,14 +859,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 7){
                //setQuestion
-               red.setText("(180,");
+               red.setText("180,");
                green.setText("50,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 180; s_ca = 50;  b_ca = 100;
-               h_a1 = 210; s_a1 = 100; b_a1 = 100;
-               h_a2 = 210; s_a2 = 50;  b_a2 = 100;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 100;
+               h_ca = 180; s_ca = 0.50F;  b_ca = 1.00F;
+               h_a1 = 210; s_a1 = 1.00F;  b_a1 = 1.00F;
+               h_a2 = 210; s_a2 = 0.50F;  b_a2 = 1.00F;
+               h_a3 = 180; s_a3 = 0.50F;  b_a3 = 1.00F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -871,14 +884,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 8){
                //setQuestion
-               red.setText("(210,");
+               red.setText("210,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 210; s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 180; s_a2 = 0;   b_a2 = 0;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+               h_ca = 210; s_ca = 1.00F; b_ca = 1.00F;
+               h_a1 = 0;   s_a1 = 1.00F; b_a1 = 1.00F;
+               h_a2 = 180; s_a2 = 0;     b_a2 = 0;
+               h_a3 = 180; s_a3 = 0.50F; b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -896,14 +909,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 9){
                //setQuestion
-               red.setText("(240,");
+               red.setText("240,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 240; s_ca = 100;b_ca = 100;
-               h_a1 = 240; s_a1 = 0;  b_a1 = 100;
-               h_a2 = 0;   s_a2 = 0;  b_a2 = 50;
-               h_a3 = 120; s_a3 = 30; b_a3 = 0;
+               h_ca = 240; s_ca = 1.00F; b_ca = 1.00F;
+               h_a1 = 240; s_a1 = 0;     b_a1 = 1.00F;
+               h_a2 = 0;   s_a2 = 0;     b_a2 = 0.50F;
+               h_a3 = 120; s_a3 = 0.30F; b_a3 = 0;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -921,14 +934,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 10){
                //setQuestion
-               red.setText("(270,");
+               red.setText("270,");
                green.setText("0,");
-               blue.setText("0)");
+               blue.setText("0");
 
-               h_ca = 270; s_ca = 0;   b_ca = 0;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 180; s_a2 = 50;  b_a2 = 100;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 50;
+               h_ca = 270; s_ca = 0;     b_ca = 0;
+               h_a1 = 0;   s_a1 = 1.00F; b_a1 = 1.00F;
+               h_a2 = 180; s_a2 = 0.50F; b_a2 = 1.00F;
+               h_a3 = 180; s_a3 = 0.50F; b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -946,14 +959,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 11){
                //setQuestion
-               red.setText("(300,");
+               red.setText("300,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 300; s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 0;   s_a2 = 0;   b_a2 = 0;
-               h_a3 = 180; s_a3 = 50;  b_a3 = 0;
+               h_ca = 300; s_ca = 1.00F; b_ca = 1.00F;
+               h_a1 = 20;  s_a1 = 1.00F; b_a1 = 1.00F;
+               h_a2 = 0;   s_a2 = 0.70F; b_a2 = 0.70F;
+               h_a3 = 180; s_a3 = 0.50F; b_a3 = 0.30F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -971,14 +984,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 12){
                //setQuestion
-               red.setText("(330,");
+               red.setText("330,");
                green.setText("100,");
-               blue.setText("100)");
+               blue.setText("80");
 
-               h_ca = 330; s_ca = 100; b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 330; s_a2 = 50;  b_a2 = 50;
-               h_a3 = 300; s_a3 = 50;  b_a3 = 50;
+               h_ca = 330; s_ca = 1.00F;   b_ca = 0.80F;
+               h_a1 = 0;   s_a1 = 1.00F;  b_a1 = 1.00F;
+               h_a2 = 330; s_a2 = 0.30F;  b_a2 = 0.50F;
+               h_a3 = 300; s_a3 = 0.50F;  b_a3 = 0.50F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -996,14 +1009,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 13){
                //setQuestion
-               red.setText("(60,");
+               red.setText("60,");
                green.setText("50,");
-               blue.setText("100)");
+               blue.setText("100");
 
-               h_ca = 60;  s_ca = 50;  b_ca = 100;
-               h_a1 = 0;   s_a1 = 100; b_a1 = 100;
-               h_a2 = 30;  s_a2 = 100; b_a2 = 100;
-               h_a3 = 180; s_a3 = 0;   b_a3 = 0;
+               h_ca = 60;  s_ca = 0.50F; b_ca = 1.00F;
+               h_a1 = 0;   s_a1 = 1.00F; b_a1 = 1.00F;
+               h_a2 = 30;  s_a2 = 1.00F; b_a2 = 1.00F;
+               h_a3 = 180; s_a3 = 0;     b_a3 = 0;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -1021,14 +1034,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 14){
                //setQuestion
-               red.setText("(270,");
+               red.setText("270,");
                green.setText("50,");
-               blue.setText("50)");
+               blue.setText("50");
 
-               h_ca = 270; s_ca = 50;  b_ca = 50;
-               h_a1 = 270; s_a1 = 100; b_a1 = 100;
-               h_a2 = 180; s_a2 = 50;  b_a2 = 0;
-               h_a3 = 180; s_a3 = 0;   b_a3 = 0;
+               h_ca = 270; s_ca = 0.50F;  b_ca = 0.50F;
+               h_a1 = 300; s_a1 = 0.30F;  b_a1 = 1.00F;
+               h_a2 = 180; s_a2 = 0.50F;  b_a2 = 0.20F;
+               h_a3 = 180; s_a3 = 0;      b_a3 = 0;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -1046,14 +1059,14 @@ public class MainActivity extends AppCompatActivity {
 
            }else if (gameCount == 15){
                //setQuestion
-               red.setText("(360,");
+               red.setText("360,");
                green.setText("30,");
-               blue.setText("30)");
+               blue.setText("30");
 
-               h_ca = 360; s_ca = 30;  b_ca = 30;
-               h_a1 = 360; s_a1 = 80;  b_a1 = 40;
-               h_a2 = 360; s_a2 = 70;  b_a2 = 30;
-               h_a3 = 360; s_a3 = 30;  b_a3 = 30;
+               h_ca = 360; s_ca = 0.50F;  b_ca = 0.60F;
+               h_a1 = 360; s_a1 = 0.80F;  b_a1 = 0.90F;
+               h_a2 = 360; s_a2 = 1.00F;  b_a2 = 0.70F;
+               h_a3 = 360; s_a3 = 0.00F;  b_a3 = 0.30F;
 
                //changeColormode
                color_ca =  Color.HSVToColor(new float[]{h_ca, s_ca, b_ca});
@@ -1068,7 +1081,6 @@ public class MainActivity extends AppCompatActivity {
                answer4.setBackgroundColor(color_ca);
 
                check_answer = 4;
-
            }
         }
     }

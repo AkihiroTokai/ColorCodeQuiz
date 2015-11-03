@@ -30,7 +30,6 @@ public class menu2Activity extends AppCompatActivity {
     private int this_nocomp_ColortoCode4;
     private int this_nocomp_ColortoCode5;
 
-    private int this_nocomp;
     private int this_nowPoint;
     private int maxlimit;
     private int minlimit;
@@ -84,9 +83,9 @@ public class menu2Activity extends AppCompatActivity {
         } else if(colormode == 2){
             //getData（SharedPreference)
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor",0 );
-            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode",0);
-            this_nowPoint = getData.getInt("RGB_nowPoint",0);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor",0 );
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode",0);
+            this_nowPoint = getData.getInt("HSB_nowPoint",0);
 
             this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1",0);
             this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2",0);

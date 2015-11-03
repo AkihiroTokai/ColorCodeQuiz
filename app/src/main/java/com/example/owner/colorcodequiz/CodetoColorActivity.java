@@ -46,6 +46,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     private int minlimit;
     private int ull_ColortoCode;
     private int ull_CodetoColor;
+    private int this_nocomp;
     private int getPoint;
     private int nowPoint;
     private int level;
@@ -77,7 +78,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     private int this_nocomp_ColortoCode9;
     private int this_nocomp_ColortoCode10;
 
-    private boolean nextquestion;
+    private boolean isnextquestion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -191,101 +192,103 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
-
+        setQuestion();
     }
 
     public void select1(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 1) {
                 check_select1.setImageResource(R.drawable.maru);
+                noca = noca + 1;
             } else {
                 check_select1.setImageResource(R.drawable.batu);
-                noca = noca + 1;
             }
             if (gameCount <= noq) {
-                showRightAnswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
+            isnextquestion = false;
         }
     }
 
     public void select2(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 2) {
-                check_select1.setImageDrawable(null);
                 check_select2.setImageResource(R.drawable.maru);
-                check_select3.setImageDrawable(null);
-                check_select4.setImageDrawable(null);
+                noca = noca + 1;
             } else {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
-                showRightAnswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
+            isnextquestion = false;
         }
     }
 
     public void select3(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 3) {
                 check_select3.setImageResource(R.drawable.maru);
+                noca = noca + 1;
             } else {
                 check_select3.setImageResource(R.drawable.batu);
             }
-
             if (gameCount <= noq) {
-                showRightAnswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
+            isnextquestion = false;
         }
     }
 
+
     public void select4(View view) {
-        if (!nextquestion) {
+        if (!isnextquestion) {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
+                noca = noca + 1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
-                showRightAnswer();
                 gameCount = gameCount + 1;
                 progress.setText("Progress:" + gameCount + "/" + noq);
-                nextquestion = true;
-            }
-            if (gameCount >= noq) {
-                gameFinish();
+                isnextquestion = true;
             }
         } else {
-            setQuestion();
-            nextquestion = false;
+            if (gameCount > noq) {
+                gameFinish();
+            } else {
+                setQuestion();
+            }
+            isnextquestion = false;
         }
+
     }
+
 
     public void showRightAnswer() {
         answer1.setTextColor(Color.parseColor("#000000"));
@@ -377,6 +380,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     }
 
     public void gameFinish() {
+        boolean isCompleted = false;
         //Add:Score
         if (level <= 3) {
             if (noca <= 7) {
@@ -385,8 +389,10 @@ public class CodetoColorActivity extends AppCompatActivity {
             } else if (noca == 8) {
                 getPoint = 10;
                 gameResult = "クリアしました。";
+                isCompleted = true;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             }
         } else if (level >= 4 && level <= 8) {
@@ -395,12 +401,15 @@ public class CodetoColorActivity extends AppCompatActivity {
                 gameResult = "クリアできませんでした。";
             } else if (noca == 7 || noca == 8) {
                 getPoint = 12;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 9) {
+                isCompleted = true;
                 getPoint = 13;
                 gameResult = "クリアしました。";
             } else if (noca == 10) {
                 getPoint = 14;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             }
         } else if (level >= 9 && level <= 10) {
@@ -409,81 +418,84 @@ public class CodetoColorActivity extends AppCompatActivity {
                 gameResult = "クリアできませんでした。";
             } else if (noca == 8) {
                 getPoint = 14;
+                isCompleted = true;
                 gameResult = "クリアしました。";
             } else if (noca == 9) {
+                isCompleted = true;
                 getPoint = 15;
                 gameResult = "クリアしました。";
             } else if (noca == 10) {
+                isCompleted = true;
                 getPoint = 16;
                 gameResult = "クリアしました。";
             }
         }
 
         nowPoint = nowPoint + getPoint;
+        if (isCompleted == true) {
+            //Count:nocomp
+            switch (level) {
+                case 1:
+                    getData checkData1 = new getData();
+                    this_nocomp_CodetoColor1++;
+                    checkData1.setnocomp_CodetoColor1(this_nocomp_CodetoColor1);
+                    break;
 
-        //Count:nocomp
-        switch (level) {
-            case 1:
-                getData checkData1 = new getData();
-                this_nocomp_CodetoColor1++;
-                checkData1.setnocomp_CodetoColor1(this_nocomp_CodetoColor1);
-                break;
+                case 2:
+                    getData checkData2 = new getData();
+                    this_nocomp_CodetoColor2++;
+                    checkData2.setnocomp_CodetoColor1(this_nocomp_CodetoColor2);
+                    break;
 
-            case 2:
-                getData checkData2 = new getData();
-                this_nocomp_CodetoColor2++;
-                checkData2.setnocomp_CodetoColor1(this_nocomp_CodetoColor2);
-                break;
+                case 3:
+                    getData checkData3 = new getData();
+                    this_nocomp_CodetoColor3++;
+                    checkData3.setnocomp_CodetoColor1(this_nocomp_CodetoColor3);
+                    break;
 
-            case 3:
-                getData checkData3 = new getData();
-                this_nocomp_CodetoColor3++;
-                checkData3.setnocomp_CodetoColor1(this_nocomp_CodetoColor3);
-                break;
+                case 4:
+                    getData checkData4 = new getData();
+                    this_nocomp_CodetoColor4++;
+                    checkData4.setnocomp_CodetoColor1(this_nocomp_CodetoColor4);
+                    break;
 
-            case 4:
-                getData checkData4 = new getData();
-                this_nocomp_CodetoColor4++;
-                checkData4.setnocomp_CodetoColor1(this_nocomp_CodetoColor4);
-                break;
+                case 5:
+                    getData checkData5 = new getData();
+                    this_nocomp_CodetoColor5++;
+                    checkData5.setnocomp_CodetoColor1(this_nocomp_CodetoColor5);
+                    break;
 
-            case 5:
-                getData checkData5 = new getData();
-                this_nocomp_CodetoColor5++;
-                checkData5.setnocomp_CodetoColor1(this_nocomp_CodetoColor5);
-                break;
+                case 6:
+                    getData checkData6 = new getData();
+                    this_nocomp_CodetoColor6++;
+                    checkData6.setnocomp_CodetoColor1(this_nocomp_CodetoColor6);
+                    break;
 
-            case 6:
-                getData checkData6 = new getData();
-                this_nocomp_CodetoColor6++;
-                checkData6.setnocomp_CodetoColor1(this_nocomp_CodetoColor6);
-                break;
+                case 7:
+                    getData checkData7 = new getData();
+                    this_nocomp_CodetoColor7++;
+                    checkData7.setnocomp_CodetoColor1(this_nocomp_CodetoColor7);
+                    break;
 
-            case 7:
-                getData checkData7 = new getData();
-                this_nocomp_CodetoColor7++;
-                checkData7.setnocomp_CodetoColor1(this_nocomp_CodetoColor7);
-                break;
+                case 8:
+                    getData checkData8 = new getData();
+                    this_nocomp_CodetoColor8++;
+                    checkData8.setnocomp_CodetoColor8(this_nocomp_CodetoColor8);
+                    break;
 
-            case 8:
-                getData checkData8 = new getData();
-                this_nocomp_CodetoColor8++;
-                checkData8.setnocomp_CodetoColor8(this_nocomp_CodetoColor8);
-                break;
+                case 9:
+                    getData checkData9 = new getData();
+                    this_nocomp_CodetoColor9++;
+                    checkData9.setnocomp_CodetoColor9(this_nocomp_CodetoColor9);
+                    break;
 
-            case 9:
-                getData checkData9 = new getData();
-                this_nocomp_CodetoColor9++;
-                checkData9.setnocomp_CodetoColor9(this_nocomp_CodetoColor9);
-                break;
-
-            case 10:
-                getData checkData10 = new getData();
-                this_nocomp_CodetoColor10++;
-                checkData10.setnocomp_CodetoColor10(this_nocomp_CodetoColor10);
-                break;
+                case 10:
+                    getData checkData10 = new getData();
+                    this_nocomp_CodetoColor10++;
+                    checkData10.setnocomp_CodetoColor10(this_nocomp_CodetoColor10);
+                    break;
+            }
         }
-
         //Check:Levelup(ColortoCode)
         if (ull_ColortoCode == 1 && nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
@@ -724,7 +736,6 @@ public class CodetoColorActivity extends AppCompatActivity {
     }
 
 
-
     public void setQuestion() {
         //createQuestionCode
         Random rnd1 = new Random();
@@ -818,16 +829,16 @@ public class CodetoColorActivity extends AppCompatActivity {
                 textcolor_a3 = 2;
             }
 
-            boolean check_break = false;
+            boolean canBreak = false;
             int abs_minimum = 20;
-            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            //条件A:ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
             if ((abs_minimum <= abs_r_1) || (abs_minimum <= abs_g_1) || ((abs_minimum <= abs_b_1))) {
                 if ((abs_minimum <= abs_r_2) || (abs_minimum <= abs_g_2) || (abs_minimum <= abs_b_2)) {
                     if ((abs_minimum <= abs_r_3) || (abs_minimum <= abs_g_3) || (abs_minimum <= abs_b_3)) {
                         if ((abs_minimum <= abs_r1_2) || (abs_minimum <= abs_g1_2) || (abs_minimum <= abs_b1_2)) {
                             if ((abs_minimum <= abs_r2_3) || (abs_minimum <= abs_g2_3) || (abs_minimum <= abs_b2_3)) {
                                 if ((abs_minimum <= abs_r3_1) || (abs_minimum <= abs_g3_1) || (abs_minimum <= abs_b3_1)) {
-                                    check_break = true;
+                                    canBreak = true;
                                 }
                             }
                         }
@@ -835,8 +846,8 @@ public class CodetoColorActivity extends AppCompatActivity {
                 }
             }
 
-            // 難易度調整
-            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+            // 条件B：r,g,bのそれぞれの差を選択肢ごとに加えたものがそのレベルの範囲内になっている。
+            if ((canBreak == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
                 if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
                     if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
                         if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
@@ -852,18 +863,18 @@ public class CodetoColorActivity extends AppCompatActivity {
         }
 
         //setQuestionCode
-        if (colormode == 1 ){
-           questioncode.setText("#"+r16+g16+b16);
-        }else if (colormode == 2){
-            int color =Color.rgb (r,g,b);
+        if (colormode == 1) {
+            questioncode.setText("#" + r16 + g16 + b16);
+        } else if (colormode == 2) {
+            int color = Color.rgb(r, g, b);
             float[] hsb = new float[3];
             Color.colorToHSV(color, hsb);
             float fl_h = hsb[0];
-            float fl_s = hsb[1]*100;
-            float fl_b = hsb[2]*100;
-            int in_h = (int)fl_h;
-            int in_s = (int)fl_s;
-            int in_b = (int)fl_b;
+            float fl_s = hsb[1] * 100;
+            float fl_b = hsb[2] * 100;
+            int in_h = (int) fl_h;
+            int in_s = (int) fl_s;
+            int in_b = (int) fl_b;
             questioncode.setText(in_h + "," + in_s + "," + in_b);
         }
 
@@ -903,8 +914,6 @@ public class CodetoColorActivity extends AppCompatActivity {
         }
 
     }
-
-
 
 
     @Override

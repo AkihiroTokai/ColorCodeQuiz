@@ -103,6 +103,12 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPointview.setText("RGBPoint:" + RGB_nowPoint);
 
+        //-----------------↓TestData↓-----------------.
+        RGB_ull_CodetoColor = 5;
+        RGB_ull_ColortoCode = 5;
+        HSB_ull_CodetoColor = 4;
+        HSB_ull_ColortoCode = 4;
+        //------------------↑TestData↑--------------ー
     }
 
     public void gotologin(View v) {

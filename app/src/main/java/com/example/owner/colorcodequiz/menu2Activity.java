@@ -100,6 +100,11 @@ public class menu2Activity extends AppCompatActivity {
             this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5",0);
 
             nowPointview.setText("HSBPoint:"+this_nowPoint);
+
+            //-----------------↓TestData↓-----------------.
+            this_ull_ColortoCode = 5;
+            this_ull_CodetoColor = 4;
+            //------------------↑TestData↑--------------ー
         }
 
 
@@ -117,7 +122,7 @@ public class menu2Activity extends AppCompatActivity {
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor3 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor3);
             CodetoColor3.setLeftIcon("fa-unlock");
         }
-        if(this_ull_CodetoColor >= 4){
+        if(this_ull_Codetolor >= 4){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor4 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor4);
             CodetoColor4.setLeftIcon("fa-unlock");
         }

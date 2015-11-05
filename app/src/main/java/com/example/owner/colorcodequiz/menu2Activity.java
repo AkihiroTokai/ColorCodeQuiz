@@ -122,7 +122,7 @@ public class menu2Activity extends AppCompatActivity {
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor3 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor3);
             CodetoColor3.setLeftIcon("fa-unlock");
         }
-        if(this_ull_Codetolor >= 4){
+        if(this_ull_CodetoColor >= 4){
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor4 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor4);
             CodetoColor4.setLeftIcon("fa-unlock");
         }

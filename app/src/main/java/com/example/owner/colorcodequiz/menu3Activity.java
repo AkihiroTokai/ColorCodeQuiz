@@ -144,8 +144,7 @@ public class menu3Activity extends AppCompatActivity {
         if(this_ull_ColortoCode >= 10){
             com.beardedhen.androidbootstrap.BootstrapButton ColortoCode10 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode10);
             ColortoCode10.setLeftIcon("fa-unlock");
-        }
-    }
+
     public void ColortoCode6(View v){
         level = 6;
         if(this_ull_ColortoCode >= 6){

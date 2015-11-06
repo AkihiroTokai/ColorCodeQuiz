@@ -767,8 +767,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
 
             // 難易度調整
-            if ((
-                    check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
                 if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
                     if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
                         if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {

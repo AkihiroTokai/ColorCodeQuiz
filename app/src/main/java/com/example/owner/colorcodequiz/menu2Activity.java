@@ -155,6 +155,7 @@ public class menu2Activity extends AppCompatActivity {
     public void ColortoCode1(View v){
             maxlimit = 255;
             minlimit = 225;
+            plus= "";
             intent_ColortoCode();
     }
 
@@ -168,6 +169,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 3;
             req_Point = 60;
+            plus= "";
             lockedmessage();
         }
     }
@@ -182,6 +184,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 3;
             req_Point = 90;
+            plus= "";
             lockedmessage();
         }
     }
@@ -196,6 +199,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 3;
             req_Point = 90;
+            plus= "";
             plus = "CodetoColorのLevel3をUnlockしてください。";
             lockedmessage();
         }
@@ -206,11 +210,13 @@ public class menu2Activity extends AppCompatActivity {
         if(this_ull_ColortoCode >=5){
             maxlimit = 135;
             minlimit = 105;
+            plus= "";
             intent_ColortoCode();
         }else{
             req_level = level -1;
             req_nocomp = 4;
             req_Point = 125;
+            plus= "";
             lockedmessage();
         }
     }
@@ -219,6 +225,7 @@ public class menu2Activity extends AppCompatActivity {
             maxlimit = 255;
             minlimit = 225;
             level = 1;
+            plus= "";
             intent_CodetoColor();
     }
 
@@ -232,6 +239,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 3;
             req_Point = 60;
+            plus= "";
             lockedmessage();
         }
     }
@@ -246,6 +254,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 3;
             req_Point = 90;
+            plus= "";
             lockedmessage();
         }
     }
@@ -275,6 +284,7 @@ public class menu2Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 180;
             req_Point = 4;
+            plus= "";
             lockedmessage();
         }
     }

@@ -51,9 +51,9 @@ public class menu3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu3);
-        setnum = (EditText)findViewById(R.id.setnum);
+        setnum = (EditText) findViewById(R.id.setnum);
         setnum.setKeyListener(null);
-        nowPointview = (TextView)findViewById(R.id.nowPointview);
+        nowPointview = (TextView) findViewById(R.id.nowPointview);
 
         Intent intent = getIntent();
         colormode = intent.getIntExtra("getcolormode", 1);
@@ -84,7 +84,7 @@ public class menu3Activity extends AppCompatActivity {
             this_nocomp_ColortoCode10 = getData.getInt("RGB_nocomp_ColortoCode10", 0);
 
             nowPointview.setText("RGBPoint:" + this_nowPoint);
-        } else if (colormode == 2){
+        } else if (colormode == 2) {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
             this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
@@ -105,46 +105,52 @@ public class menu3Activity extends AppCompatActivity {
             nowPointview.setText("HSBPoint:" + this_nowPoint);
         }
         //IconChange
-        if(this_ull_CodetoColor >= 6){
-            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor6);
+        if (this_ull_CodetoColor >= 6) {
+            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor6);
             CodetoColor6.setLeftIcon("fa-unlock");
         }
-        if(this_ull_CodetoColor >= 7){
-            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor7 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor7);
+        if (this_ull_CodetoColor >= 7) {
+            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor7 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor7);
             CodetoColor7.setLeftIcon("fa-unlock");
         }
-        if(this_ull_CodetoColor >= 8){
-            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor8 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor8);
+        if (this_ull_CodetoColor >= 8) {
+            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor8 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor8);
             CodetoColor8.setLeftIcon("fa-unlock");
         }
-        if(this_ull_CodetoColor >= 9){
-            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor9 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor9);
+        if (this_ull_CodetoColor >= 9) {
+            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor9 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor9);
             CodetoColor9.setLeftIcon("fa-unlock");
         }
-        if(this_ull_CodetoColor >= 10){
-            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor10 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.CodetoColor10);
+        if (this_ull_CodetoColor >= 10) {
+            com.beardedhen.androidbootstrap.BootstrapButton CodetoColor10 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor10);
             CodetoColor10.setLeftIcon("fa-unlock");
         }
-        if(this_ull_ColortoCode >= 6){
-            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode6 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode6);
+        if (this_ull_ColortoCode >= 6) {
+            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode6 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.ColortoCode6);
             ColortoCode6.setLeftIcon("fa-unlock");
         }
-        if(this_ull_ColortoCode >= 7){
-            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode7 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode7);
+        if (this_ull_ColortoCode >= 7) {
+            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode7 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.ColortoCode7);
             ColortoCode7.setLeftIcon("fa-unlock");
         }
-        if(this_ull_ColortoCode >= 8){
-            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode8 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode8);
+        if (this_ull_ColortoCode >= 8) {
+            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode8 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.ColortoCode8);
             ColortoCode8.setLeftIcon("fa-unlock");
         }
-        if(this_ull_ColortoCode >= 9){
-            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode9 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode9);
+        if (this_ull_ColortoCode >= 9) {
+            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode9 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.ColortoCode9);
             ColortoCode9.setLeftIcon("fa-unlock");
         }
-        if(this_ull_ColortoCode >= 10){
-            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode10 = (com.beardedhen.androidbootstrap.BootstrapButton)findViewById(R.id.ColortoCode10);
+        if (this_ull_ColortoCode >= 10) {
+            com.beardedhen.androidbootstrap.BootstrapButton ColortoCode10 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.ColortoCode10);
             ColortoCode10.setLeftIcon("fa-unlock");
+        }
 
+        //-----------------↓TestData↓-----------------.
+        this_ull_ColortoCode = 8;
+        this_ull_CodetoColor = 7;
+        //------------------↑TestData↑--------------ー
+    }
     public void ColortoCode6(View v){
         level = 6;
         if(this_ull_ColortoCode >= 6){
@@ -155,6 +161,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 4;
             req_Point = 240;
+            plus= "";
             lockedmessage();
         }
     }
@@ -184,6 +191,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 6;
             req_Point = 425;
+            plus= "";
             lockedmessage();
         }
     }
@@ -213,6 +221,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 8;
             req_Point = 750;
+            plus= "";
             lockedmessage();
         }
     }
@@ -227,6 +236,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 4;
             req_Point = 240;
+            plus= "";
             lockedmessage();
         }
     }
@@ -256,6 +266,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 6;
             req_Point = 425;
+            plus= "";
             lockedmessage();
         }
     }
@@ -285,6 +296,7 @@ public class menu3Activity extends AppCompatActivity {
             req_level = level -1;
             req_nocomp = 8;
             req_Point = 750;
+            plus= "";
             lockedmessage();
         }
     }

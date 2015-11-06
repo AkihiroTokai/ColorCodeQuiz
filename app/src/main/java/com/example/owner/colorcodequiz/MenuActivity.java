@@ -105,9 +105,9 @@ public class MenuActivity extends AppCompatActivity {
 
         //-----------------↓TestData↓-----------------.
         RGB_ull_CodetoColor = 5;
-        RGB_ull_ColortoCode = 5;
-        HSB_ull_CodetoColor = 4;
-        HSB_ull_ColortoCode = 4;
+        RGB_ull_ColortoCode = 4;
+        HSB_ull_CodetoColor = 7;
+        HSB_ull_ColortoCode = 8;
         //------------------↑TestData↑--------------ー
     }
 

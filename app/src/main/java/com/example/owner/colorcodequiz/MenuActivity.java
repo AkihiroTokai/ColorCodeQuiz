@@ -34,6 +34,7 @@ public class MenuActivity extends AppCompatActivity {
     private int HSB_nocomp_ColortoCode0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -178,7 +179,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         }
     }
-
 
     public void tomenu3(View v) {
         if (colormode == 1) {

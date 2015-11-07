@@ -80,6 +80,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
     private boolean isnextquestion;
 
+
     private String gameResult;
     private String st_colormode;
 
@@ -307,6 +308,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
             isnextquestion = false;
         }
+
     }
 
     public void showRightanswer() {

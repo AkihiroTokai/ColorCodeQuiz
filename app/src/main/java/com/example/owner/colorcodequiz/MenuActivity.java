@@ -100,16 +100,17 @@ public class MenuActivity extends AppCompatActivity {
         HSB_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
         HSB_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
 
-        changeIcon();
-
-        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
-
         //-----------------↓TestData↓-----------------.
         RGB_ull_CodetoColor = 5;
         RGB_ull_ColortoCode = 4;
         HSB_ull_CodetoColor = 7;
         HSB_ull_ColortoCode = 8;
         //------------------↑TestData↑--------------ー
+
+        changeIcon();
+
+        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
+
     }
 
     public void gotologin(View v) {
@@ -257,6 +258,7 @@ public class MenuActivity extends AppCompatActivity {
                 .setNegativeButton("Cancel", null)
                 .show();
     }
+
 
 
     @Override

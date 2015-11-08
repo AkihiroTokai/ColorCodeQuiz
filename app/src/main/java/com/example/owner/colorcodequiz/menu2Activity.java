@@ -358,6 +358,7 @@ public class menu2Activity extends AppCompatActivity {
                     })
                     .setNegativeButton("Cancel",null)
                     .show();
+
         }else {
             new AlertDialog.Builder(menu2Activity.this)
                     .setTitle("CodetoColorをStartできません。")

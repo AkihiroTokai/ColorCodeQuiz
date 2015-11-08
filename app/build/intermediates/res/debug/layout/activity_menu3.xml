@@ -42,7 +42,7 @@
             android:id="@+id/Numberofquestion"
             android:layout_alignBottom="@+id/setnum"
             android:layout_alignEnd="@+id/mode"
-            android:layout_margin="10dp" />
+            android:layout_gravity="center" />
 
         <EditText
             android:layout_width="70dp"

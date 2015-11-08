@@ -151,29 +151,30 @@ public class menu3Activity extends AppCompatActivity {
         this_ull_CodetoColor = 7;
         //------------------↑TestData↑--------------ー
     }
-    public void ColortoCode6(View v){
+
+    public void ColortoCode6(View v) {
         level = 6;
-        if(this_ull_ColortoCode >= 6){
+        if (this_ull_ColortoCode >= 6) {
             maxlimit = 105;
             minlimit = 85;
             intent_ColortoCode();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 4;
             req_Point = 240;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void ColortoCode7(View v){
+    public void ColortoCode7(View v) {
         level = 7;
-        if(this_ull_ColortoCode >= 7){
+        if (this_ull_ColortoCode >= 7) {
             maxlimit = 85;
             minlimit = 65;
             intent_ColortoCode();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 5;
             req_Point = 320;
             plus = "CodetoColorのLevel5をUnlockしてください。";
@@ -181,29 +182,29 @@ public class menu3Activity extends AppCompatActivity {
         }
     }
 
-    public void ColortoCode8(View v){
+    public void ColortoCode8(View v) {
         level = 8;
-        if(this_ull_ColortoCode >= 8){
+        if (this_ull_ColortoCode >= 8) {
             maxlimit = 65;
             minlimit = 45;
             intent_ColortoCode();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 6;
             req_Point = 425;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void ColortoCode9(View v){
+    public void ColortoCode9(View v) {
         level = 9;
-        if(this_ull_ColortoCode >=9){
+        if (this_ull_ColortoCode >= 9) {
             maxlimit = 45;
             minlimit = 30;
             intent_ColortoCode();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 7;
             req_Point = 560;
             plus = "CodetoColorのLevel7をUnlockしてください。";
@@ -211,44 +212,44 @@ public class menu3Activity extends AppCompatActivity {
         }
     }
 
-    public void ColortoCode10(View v){
+    public void ColortoCode10(View v) {
         level = 10;
-        if(this_ull_ColortoCode >=10){
+        if (this_ull_ColortoCode >= 10) {
             maxlimit = 30;
             minlimit = 20;
             intent_ColortoCode();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 8;
             req_Point = 750;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void CodetoColor6(View v){
-        level = 6 ;
-        if( this_ull_CodetoColor>=6){
-            maxlimit = 105 ;
+    public void CodetoColor6(View v) {
+        level = 6;
+        if (this_ull_CodetoColor >= 6) {
+            maxlimit = 105;
             minlimit = 85;
             intent_CodetoColor();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 4;
             req_Point = 240;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void CodetoColor7(View v){
+    public void CodetoColor7(View v) {
         level = 7;
-        if(this_ull_CodetoColor >= 7){
+        if (this_ull_CodetoColor >= 7) {
             maxlimit = 85;
             minlimit = 65;
             intent_CodetoColor();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 5;
             req_Point = 320;
             plus = "ColortoCodeのLevel5をUnlockしてください。";
@@ -256,29 +257,29 @@ public class menu3Activity extends AppCompatActivity {
         }
     }
 
-    public void CodetoColor8(View v){
+    public void CodetoColor8(View v) {
         level = 8;
-        if(this_ull_CodetoColor >= 8){
+        if (this_ull_CodetoColor >= 8) {
             maxlimit = 65;
             minlimit = 45;
             intent_CodetoColor();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 6;
             req_Point = 425;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void CodetoColor9(View v){
+    public void CodetoColor9(View v) {
         level = 9;
-        if(this_ull_CodetoColor >= 9){
+        if (this_ull_CodetoColor >= 9) {
             maxlimit = 45;
             minlimit = 30;
             intent_CodetoColor();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 7;
             req_Point = 560;
             plus = "ColortoCodeのLevel7をUnlockしてください。";
@@ -286,25 +287,25 @@ public class menu3Activity extends AppCompatActivity {
         }
     }
 
-    public void CodetoColor10(View v){
+    public void CodetoColor10(View v) {
         level = 10;
-        if(this_ull_CodetoColor >= 10){
+        if (this_ull_CodetoColor >= 10) {
             maxlimit = 30;
             minlimit = 20;
             intent_CodetoColor();
-        }else{
-            req_level = level -1;
+        } else {
+            req_level = level - 1;
             req_nocomp = 8;
             req_Point = 750;
-            plus= "";
+            plus = "";
             lockedmessage();
         }
     }
 
-    public void lockedmessage(){
+    public void lockedmessage() {
         new AlertDialog.Builder(menu3Activity.this)
                 .setTitle("Lockされています。")
-                .setMessage("Level"+ req_level+"を"+req_nocomp+"回以上クリアし、"+req_Point+"以上獲得してください。"+plus)
+                .setMessage("Level" + req_level + "を" + req_nocomp + "回以上クリアし、" + req_Point + "以上獲得してください。" + plus)
                 .setPositiveButton("OK", null)
                 .show();
     }
@@ -312,34 +313,36 @@ public class menu3Activity extends AppCompatActivity {
     public void intent_ColortoCode() {
         setnum.selectAll();
         String num = setnum.getText().toString();
-        if( num.equals("") ){
+        if (num.equals("")) {
             number = 0;
-        }else {
+        } else {
             number = Integer.parseInt(num);
-        } if (number > 0){
+        }
+        if (number > 0) {
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("ColortoCodeをStartしますか？")
-                    .setMessage("問題は"+number+"問です。"+ now_nocomp + "回クリアしています。")
+                    .setMessage("問題は" + number + "問です。" + now_nocomp + "回クリアしています。")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             // OK button pressed
                             Intent intent = new Intent(menu3Activity.this, ColortoCodeActivity.class);
                             intent.putExtra("getnumber", number);
-                            intent.putExtra("getmaxlimit",maxlimit);
-                            intent.putExtra("getminlimit",minlimit);
-                            intent.putExtra("getlevel",level);
-                            intent.putExtra("getcolormode",colormode);
+                            intent.putExtra("getmaxlimit", maxlimit);
+                            intent.putExtra("getminlimit", minlimit);
+                            intent.putExtra("getlevel", level);
+                            intent.putExtra("getcolormode", colormode);
                             startActivity(intent);
                         }
                     })
                     .setNegativeButton("Cancel", null)
                     .show();
-        }else {
+
+        } else {
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("ColortoCodeをStartできません。")
                     .setMessage("入力した内容を確認してください。")
-                    .setPositiveButton("OK",null)
+                    .setPositiveButton("OK", null)
                     .show();
         }
     }
@@ -347,34 +350,37 @@ public class menu3Activity extends AppCompatActivity {
     public void intent_CodetoColor() {
         setnum.selectAll();
         String num = setnum.getText().toString();
-        if( num.equals("") ){
+        if (num.equals("")) {
             number = 0;
-        }else {
+        } else {
             number = Integer.parseInt(num);
-        } if (number > 0){
+        }
+        if (number > 0) {
+
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("CodetoColorをStartしますか？")
-                    .setMessage("問題は"+number+"問です。"+ now_nocomp +"回クリアしています。")
+                    .setMessage("問題は" + number + "問です。" + now_nocomp + "回クリアしています。")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             // OK button pressed
                             Intent intent = new Intent(menu3Activity.this, CodetoColorActivity.class);
                             intent.putExtra("getnumber", number);
-                            intent.putExtra("getmaxlimit",maxlimit);
-                            intent.putExtra("getminlimit",minlimit);
-                            intent.putExtra("getlevel",level);
-                            intent.putExtra("getcolormode",colormode);
+                            intent.putExtra("getmaxlimit", maxlimit);
+                            intent.putExtra("getminlimit", minlimit);
+                            intent.putExtra("getlevel", level);
+                            intent.putExtra("getcolormode", colormode);
                             startActivity(intent);
                         }
                     })
                     .setNegativeButton("Cancel", null)
                     .show();
-        }else {
+
+        } else {
             new AlertDialog.Builder(menu3Activity.this)
                     .setTitle("CodetoColorをStartできません。")
                     .setMessage("入力した内容を確認してください。")
-                    .setPositiveButton("OK",null)
+                    .setPositiveButton("OK", null)
                     .show();
         }
     }

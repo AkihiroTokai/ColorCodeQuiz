@@ -905,7 +905,7 @@ int id production 0x7f0c002c
 int id progress 0x7f0c007f
 int id progress_circular 0x7f0c0006
 int id progress_horizontal 0x7f0c0007
-int id questioncode 0x7f0c0080
+int id question 0x7f0c0080
 int id radio 0x7f0c0068
 int id radiogroup 0x7f0c009c
 int id red 0x7f0c0094

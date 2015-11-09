@@ -35,7 +35,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/questioncode"
+        android:id="@+id/question"
         android:layout_marginTop="34dp"
         android:layout_below="@+id/mode"
         android:layout_centerHorizontal="true"
@@ -45,7 +45,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_below="@+id/questioncode"
+        android:layout_below="@+id/question"
         android:layout_alignParentStart="true"
         android:layout_marginTop="86dp"
         android:id="@+id/frameLayout2"
@@ -58,7 +58,7 @@
             android:layout_gravity="center"
             android:onClick="select1"
             android:layout_above="@+id/frameLayout4"
-            android:layout_alignStart="@+id/questioncode"
+            android:layout_alignStart="@+id/question"
             android:clickable="true"
             android:gravity="center" />
 

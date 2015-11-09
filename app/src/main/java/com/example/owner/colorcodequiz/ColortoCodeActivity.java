@@ -102,12 +102,13 @@ public class ColortoCodeActivity extends AppCompatActivity {
         check_select2 = (ImageView) findViewById(R.id.check_select2);
         check_select3 = (ImageView) findViewById(R.id.check_select3);
         check_select4 = (ImageView) findViewById(R.id.check_select4);
-        question = (ImageView) findViewById(R.id.questioncode);
+        question = (ImageView) findViewById(R.id.question);
+
 
         Intent intent = getIntent();
         noq = intent.getIntExtra("getnumber", 10);
-        maxlimit = intent.getIntExtra("getnumber", 255);
-        minlimit = intent.getIntExtra("getnumber", 0);
+        maxlimit = intent.getIntExtra("getmaxlimit", 255);
+        minlimit = intent.getIntExtra("getminlimit", 0);
         level = intent.getIntExtra("getlevel", level);
         colormode = intent.getIntExtra("getcolormode", 1);
 
@@ -461,6 +462,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                     break;
             }
         }
+
         //Check:Levelup(ColortoCode)
         if (this_ull_ColortoCode == 1 && this_nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
@@ -750,17 +752,16 @@ public class ColortoCodeActivity extends AppCompatActivity {
             int abs_1_3 = abs_r3_1 + abs_b3_1 + abs_b3_1;
             int abs_2_3 = abs_r2_3 + abs_b2_3 + abs_b2_3;
 
-            boolean check_break = false;
-
-
-            //ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
-            if ((minlimit <= abs_r_1) || (minlimit <= abs_b_1) || ((minlimit <= abs_b_1))) {
-                if ((minlimit <= abs_r_2) || (minlimit <= abs_b_2) || (minlimit <= abs_b_2)) {
-                    if ((minlimit <= abs_r_3) || (minlimit <= abs_b_3) || (minlimit <= abs_b_3)) {
-                        if ((minlimit <= abs_r1_2) || (minlimit <= abs_b1_2) || (minlimit <= abs_b1_2)) {
-                            if ((minlimit <= abs_r2_3) || (minlimit <= abs_g2_3) || (minlimit <= abs_b2_3)) {
-                                if ((minlimit <= abs_r3_1) || (minlimit <= abs_g3_1) || (minlimit <= abs_b3_1)) {
-                                    check_break = true;
+            boolean canBreak = false;
+            int abs_minimum = 20;
+            //条件A:ｒ,g,bのいずれかがほかの選択肢及び正解と20以上離れている。
+            if ((abs_minimum <= abs_r_1) || (abs_minimum <= abs_g_1) || ((abs_minimum <= abs_b_1))) {
+                if ((abs_minimum <= abs_r_2) || (abs_minimum <= abs_g_2) || (abs_minimum <= abs_b_2)) {
+                    if ((abs_minimum <= abs_r_3) || (abs_minimum <= abs_g_3) || (abs_minimum <= abs_b_3)) {
+                        if ((abs_minimum <= abs_r1_2) || (abs_minimum <= abs_g1_2) || (abs_minimum <= abs_b1_2)) {
+                            if ((abs_minimum <= abs_r2_3) || (abs_minimum <= abs_g2_3) || (abs_minimum <= abs_b2_3)) {
+                                if ((abs_minimum <= abs_r3_1) || (abs_minimum <= abs_g3_1) || (abs_minimum <= abs_b3_1)) {
+                                    canBreak = true;
                                 }
                             }
                         }
@@ -768,21 +769,21 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }
             }
 
-            // 難易度調整
-            if ((check_break == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
-                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
-                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
-                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
-                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
-                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
-                                    break;
-                                }
+        // 条件B:r,g,bのそれぞれの差を選択肢ごとに加えたものがそのレベルの範囲内になっている。
+        if ((canBreak == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+            if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                    if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                        if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                            if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
+                                break;
                             }
                         }
                     }
                 }
             }
         }
+    }
 
 
         //cleanCheckselect

@@ -2600,7 +2600,7 @@ containing a value of this type.
         public static final int progress=0x7f0c007f;
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
-        public static final int questioncode=0x7f0c0080;
+        public static final int question=0x7f0c0080;
         public static final int radio=0x7f0c0068;
         public static final int radiogroup=0x7f0c009c;
         public static final int red=0x7f0c0094;

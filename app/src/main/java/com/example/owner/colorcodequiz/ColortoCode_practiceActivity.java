@@ -97,7 +97,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         check_select2 = (ImageView) findViewById(R.id.check_select2);
         check_select3 = (ImageView) findViewById(R.id.check_select3);
         check_select4 = (ImageView) findViewById(R.id.check_select4);
-        question = (ImageView) findViewById(R.id.questioncode);
+        question = (ImageView) findViewById(R.id.question);
 
         Intent intent = getIntent();
         colormode = intent.getIntExtra("getcolormode", 1);
@@ -509,7 +509,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     public void ulm_CodetoColor() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -524,7 +524,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     public void ulm_ColortoCode() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -539,7 +539,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
     public void compm() {
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
                 .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twetterに投稿しますか？")
+                .setMessage("おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

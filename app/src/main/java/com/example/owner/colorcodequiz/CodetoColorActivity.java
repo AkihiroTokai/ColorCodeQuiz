@@ -44,11 +44,10 @@ public class CodetoColorActivity extends AppCompatActivity {
     private int noca;
     private int maxlimit;
     private int minlimit;
-    private int ull_ColortoCode;
-    private int ull_CodetoColor;
-    private int this_nocomp;
+    private int this_ull_ColortoCode;
+    private int this_ull_CodetoColor;
     private int getPoint;
-    private int nowPoint;
+    private int this_nowPoint;
     private int level;
     private int ull_old;
     private int r, g, b;
@@ -86,13 +85,16 @@ public class CodetoColorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_codeto_color);
 
         gameCount = 1;
+        noca = 0;
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
         answer3 = (TextView) findViewById(R.id.answer3);
         answer4 = (TextView) findViewById(R.id.answer4);
-        questioncode = (TextView) findViewById(R.id.questioncode);
+        questioncode = (TextView) findViewById(R.id.question);
 
         progress = (TextView) findViewById(R.id.progress);
+
+
 
         check_select1 = (ImageView) findViewById(R.id.check_select1);
         check_select2 = (ImageView) findViewById(R.id.check_select2);
@@ -102,8 +104,8 @@ public class CodetoColorActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         noq = intent.getIntExtra("getnumber", 10);
-        maxlimit = intent.getIntExtra("getnumber", 255);
-        minlimit = intent.getIntExtra("getnumber", 0);
+        maxlimit = intent.getIntExtra("getmaxlimit", 255);
+        minlimit = intent.getIntExtra("getminlimit", 0);
         level = intent.getIntExtra("getlevel", level);
         colormode = intent.getIntExtra("getcolormode", 1);
         //getData（Parse)
@@ -157,10 +159,20 @@ public class CodetoColorActivity extends AppCompatActivity {
             st_colormode = "RGB_";
 
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("RGB_nowPoint", 0);
 
-            ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
-            ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
-            nowPoint = getData.getInt("RGB_nowPoint", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("RGB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("RGB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("RGB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("RGB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("RGB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("RGB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("RGB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("RGB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("RGB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("RGB_nocomp_CodetoColor10", 0);
 
             this_nocomp_ColortoCode1 = getData.getInt("RGB_nocomp_ColortoCode1", 0);
             this_nocomp_ColortoCode2 = getData.getInt("RGB_nocomp_ColortoCode2", 0);
@@ -176,10 +188,20 @@ public class CodetoColorActivity extends AppCompatActivity {
             st_colormode = "HSB_";
 
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
-            ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
-            ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
-            nowPoint = getData.getInt("HSB_nowPoint", 0);
+            this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
+            this_nocomp_CodetoColor6 = getData.getInt("HSB_nocomp_CodetoColor6", 0);
+            this_nocomp_CodetoColor7 = getData.getInt("HSB_nocomp_CodetoColor7", 0);
+            this_nocomp_CodetoColor8 = getData.getInt("HSB_nocomp_CodetoColor8", 0);
+            this_nocomp_CodetoColor9 = getData.getInt("HSB_nocomp_CodetoColor9", 0);
+            this_nocomp_CodetoColor10 = getData.getInt("HSB_nocomp_CodetoColor10", 0);
 
             this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
             this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
@@ -192,7 +214,6 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
-
 
         setQuestion();
     }
@@ -433,7 +454,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             }
         }
 
-        nowPoint = nowPoint + getPoint;
+        this_nowPoint = this_nowPoint + getPoint;
         if (isCompleted == true) {
             //Count:nocomp
             switch (level) {
@@ -498,110 +519,111 @@ public class CodetoColorActivity extends AppCompatActivity {
                     break;
             }
         }
+
         //Check:Levelup(ColortoCode)
-        if (ull_ColortoCode == 1 && nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
+        if (this_ull_ColortoCode == 1 && this_nowPoint >= 60 && this_nocomp_ColortoCode1 >= 3) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 2;
+            this_ull_ColortoCode = 2;
             ulm_ColortoCode();
-            ull_old = ull_ColortoCode - 1;
-        } else if (ull_ColortoCode == 2 && nowPoint >= 90 && this_nocomp_ColortoCode2 >= 3) {
+            ull_old = this_ull_ColortoCode - 1;
+        } else if (this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2 >= 3) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 3;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 3;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 3 && nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3) {
+        } else if (this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 4;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 4;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 4 && nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && ull_CodetoColor >= 3) {
+        } else if (this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor >= 3) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 5;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 5;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 5 && nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+        } else if (this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 6;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 6;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 6 && nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && ull_CodetoColor >= 5) {
+        } else if (this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor >= 5) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 7;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 7;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 7 && nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6) {
+        } else if (this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 8;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 8;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 8 && nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && ull_CodetoColor >= 7) {
+        } else if (this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor >= 7) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 9;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 9;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 9 && nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8) {
+        } else if (this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 10;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 10;
+            ull_old = this_ull_ColortoCode - 1;
             ulm_ColortoCode();
-        } else if (ull_ColortoCode == 10 && nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10) {
+        } else if (this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10) {
             unlockmode = "ColortoCode";
-            ull_ColortoCode = 11;
-            ull_old = ull_ColortoCode - 1;
+            this_ull_ColortoCode = 11;
+            ull_old = this_ull_ColortoCode - 1;
             compm();
         }
 
 
         //Check:Levelup(CodetoColor)
-        if (ull_CodetoColor == 1 && nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3) {
+        if (this_ull_CodetoColor == 1 && this_nowPoint >= 60 && this_nocomp_CodetoColor1 >= 3) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 2;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 2;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 2 && nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3) {
+        } else if (this_ull_CodetoColor == 2 && this_nowPoint >= 90 && this_nocomp_CodetoColor2 >= 3) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 3;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 3;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 3 && nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3) {
+        } else if (this_ull_CodetoColor == 3 && this_nowPoint >= 125 && this_nocomp_CodetoColor3 >= 3) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 4;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 4;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 4 && nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && ull_ColortoCode >= 3) {
+        } else if (this_ull_CodetoColor == 4 && this_nowPoint >= 180 && this_nocomp_CodetoColor4 >= 4 && this_ull_ColortoCode >= 3) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 5;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 5;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 5 && nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
+        } else if (this_ull_CodetoColor == 5 && this_nowPoint >= 240 && this_nocomp_CodetoColor5 >= 4) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 6;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 6;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 6 && nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && ull_ColortoCode >= 5) {
+        } else if (this_ull_CodetoColor == 6 && this_nowPoint >= 320 && this_nocomp_CodetoColor6 >= 5 && this_ull_ColortoCode >= 5) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 7;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 7;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 7 && nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6) {
+        } else if (this_ull_CodetoColor == 7 && this_nowPoint >= 425 && this_nocomp_CodetoColor7 >= 6) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 8;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 8;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 8 && nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && ull_ColortoCode >= 7) {
+        } else if (this_ull_CodetoColor == 8 && this_nowPoint >= 560 && this_nocomp_CodetoColor8 >= 7 && this_ull_ColortoCode >= 7) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 9;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 9;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 9 && nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8) {
+        } else if (this_ull_CodetoColor == 9 && this_nowPoint >= 750 && this_nocomp_CodetoColor9 >= 8) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 10;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 10;
+            ull_old = this_ull_CodetoColor - 1;
             ulm_CodetoColor();
-        } else if (ull_CodetoColor == 10 && nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10) {
+        } else if (this_ull_CodetoColor == 10 && this_nowPoint >= 1000 && this_nocomp_CodetoColor10 >= 10) {
             unlockmode = "CodetoColor";
-            ull_CodetoColor = 11;
-            ull_old = ull_CodetoColor - 1;
+            this_ull_CodetoColor = 11;
+            ull_old = this_ull_CodetoColor - 1;
             compm();
         }
 
@@ -619,9 +641,9 @@ public class CodetoColorActivity extends AppCompatActivity {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
 
-            editor.putInt("RGB_ull_CodetoColor", ull_CodetoColor);
-            editor.putInt("RGB_ull_ColoretoCode", ull_ColortoCode);
-            editor.putInt("RGB_nowPoint", nowPoint);
+            editor.putInt("RGB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("RGB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("RGB_nowPoint", this_nowPoint);
 
             editor.putInt("RGB_nocomp_CodetoColor1", this_nocomp_CodetoColor1);
             editor.putInt("RGB_nocomp_CodetoColor2", this_nocomp_CodetoColor2);
@@ -638,9 +660,9 @@ public class CodetoColorActivity extends AppCompatActivity {
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = getData.edit();
 
-            editor.putInt("HSB_ull_CodetoColor", ull_CodetoColor);
-            editor.putInt("HSB_ull_ColoretoCode", ull_ColortoCode);
-            editor.putInt("HSB_nowPoint", nowPoint);
+            editor.putInt("HSB_ull_CodetoColor", this_ull_CodetoColor);
+            editor.putInt("HSB_ull_ColoretoCode", this_ull_ColortoCode);
+            editor.putInt("HSB_nowPoint", this_nowPoint);
 
             editor.putInt("HSB_nocomp_CodetoColor1", this_nocomp_CodetoColor1);
             editor.putInt("HSB_nocomp_CodetoColor2", this_nocomp_CodetoColor2);
@@ -664,9 +686,9 @@ public class CodetoColorActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(CodetoColorActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore", nowPoint);
+                        intent.putExtra("nowScore", this_nowPoint);
                         intent.putExtra("getScore", getPoint);
-                        intent.putExtra("ull_ColortoCode ", ull_ColortoCode);
+                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
@@ -676,7 +698,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     public void ulm_CodetoColor() {
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -691,7 +713,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     public void ulm_ColortoCode() {
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
+                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -706,7 +728,7 @@ public class CodetoColorActivity extends AppCompatActivity {
     public void compm() {
         new AlertDialog.Builder(CodetoColorActivity.this)
                 .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twetterに投稿しますか？")
+                .setMessage("おめでとうございます。Twitterに投稿しますか？")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

@@ -104,6 +104,17 @@ public class menu3Activity extends AppCompatActivity {
 
             nowPointview.setText("HSBPoint:" + this_nowPoint);
         }
+
+        //-----------------↓TestData↓-----------------
+        if (colormode == 1) {
+            this_ull_ColortoCode = 5;
+            this_ull_CodetoColor = 4;
+        }else if (colormode == 2){
+            this_ull_ColortoCode = 7;
+            this_ull_CodetoColor = 8;
+        }
+        //------------------↑TestData↑--------------ー
+
         //IconChange
         if (this_ull_CodetoColor >= 6) {
             com.beardedhen.androidbootstrap.BootstrapButton CodetoColor6 = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.CodetoColor6);
@@ -146,10 +157,6 @@ public class menu3Activity extends AppCompatActivity {
             ColortoCode10.setLeftIcon("fa-unlock");
         }
 
-        //-----------------↓TestData↓-----------------.
-        this_ull_ColortoCode = 8;
-        this_ull_CodetoColor = 7;
-        //------------------↑TestData↑--------------ー
     }
 
     public void ColortoCode6(View v) {

@@ -86,8 +86,6 @@ public class MenuActivity extends AppCompatActivity {
 
         //getData（SharedPreference)
         SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-        /*SharedPreferences.Editor editor = getData.edit();
-        editor.clear().commit();*/
         RGB_ull_CodetoColor = getData.getInt("RGB_ull_CodetoColor", 0);
         RGB_ull_ColortoCode = getData.getInt("RGB_ull_ColortoCode", 0);
         RGB_nowPoint = getData.getInt("RGB_nowPoint", 0);
@@ -100,12 +98,14 @@ public class MenuActivity extends AppCompatActivity {
         HSB_nocomp_CodetoColor0 = getData.getInt("HSB_nocomp_CodetoColor", 0);
         HSB_nocomp_ColortoCode0 = getData.getInt("HSB_nocomp_ColortoCode0", 0);
 
-        //-----------------↓TestData↓-----------------.
+        //-----------------↓TestData↓-----------------//
+        /*SharedPreferences.Editor editor = getData.edit();
+        editor.clear().commit();*/
         RGB_ull_CodetoColor = 5;
         RGB_ull_ColortoCode = 4;
         HSB_ull_CodetoColor = 7;
         HSB_ull_ColortoCode = 8;
-        //------------------↑TestData↑--------------ー
+        //------------------↑TestData↑--------------ー //
 
         changeIcon();
 

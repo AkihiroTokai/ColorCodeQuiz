@@ -214,7 +214,16 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
+        //-----------------↓TestData↓-----------------
+        if (colormode == 1) {
+            this_ull_ColortoCode = 5;
+            this_ull_CodetoColor = 4;
 
+        }else if (colormode == 2){
+            this_ull_ColortoCode = 7;
+            this_ull_CodetoColor = 8;
+        }
+        //------------------↑TestData↑--------------ー
         setQuestion();
     }
 

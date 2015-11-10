@@ -80,31 +80,27 @@ public class menu2Activity extends AppCompatActivity {
 
             nowPointview.setText("RGBPoint:"+this_nowPoint);
 
-        } else if(colormode == 2){
+        } else if(colormode == 2) {
             //getData（SharedPreference)
             SharedPreferences getData = getSharedPreferences("DataSave", Context.MODE_PRIVATE);
-            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor",0 );
-            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode",0);
-            this_nowPoint = getData.getInt("HSB_nowPoint",0);
+            this_ull_CodetoColor = getData.getInt("HSB_ull_CodetoColor", 0);
+            this_ull_ColortoCode = getData.getInt("HSB_ull_ColortoCode", 0);
+            this_nowPoint = getData.getInt("HSB_nowPoint", 0);
 
-            this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1",0);
-            this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2",0);
-            this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3",0);
-            this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4",0);
-            this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5",0);
+            this_nocomp_CodetoColor1 = getData.getInt("HSB_nocomp_CodetoColor1", 0);
+            this_nocomp_CodetoColor2 = getData.getInt("HSB_nocomp_CodetoColor2", 0);
+            this_nocomp_CodetoColor3 = getData.getInt("HSB_nocomp_CodetoColor3", 0);
+            this_nocomp_CodetoColor4 = getData.getInt("HSB_nocomp_CodetoColor4", 0);
+            this_nocomp_CodetoColor5 = getData.getInt("HSB_nocomp_CodetoColor5", 0);
 
-            this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1",0);
-            this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2",0);
-            this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3",0);
-            this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4",0);
-            this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5",0);
+            this_nocomp_ColortoCode1 = getData.getInt("HSB_nocomp_ColortoCode1", 0);
+            this_nocomp_ColortoCode2 = getData.getInt("HSB_nocomp_ColortoCode2", 0);
+            this_nocomp_ColortoCode3 = getData.getInt("HSB_nocomp_ColortoCode3", 0);
+            this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
+            this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
 
-            nowPointview.setText("HSBPoint:"+this_nowPoint);
+            nowPointview.setText("HSBPoint:" + this_nowPoint);
 
-            //-----------------↓TestData↓-----------------.
-            this_ull_ColortoCode = 5;
-            this_ull_CodetoColor = 4;
-            //------------------↑TestData↑--------------ー
         }
 
 

@@ -217,7 +217,9 @@ public class CodetoColorActivity extends AppCompatActivity {
         //-----------------↓TestData↓-----------------
         if (colormode == 1) {
             this_ull_ColortoCode = 5;
+            this_nocomp_ColortoCode5 = 6;
             this_ull_CodetoColor = 4;
+            this_nocomp_CodetoColor4 = 4;
 
         }else if (colormode == 2){
             this_ull_ColortoCode = 7;

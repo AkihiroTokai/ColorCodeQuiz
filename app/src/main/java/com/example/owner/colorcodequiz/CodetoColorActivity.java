@@ -218,8 +218,9 @@ public class CodetoColorActivity extends AppCompatActivity {
         if (colormode == 1) {
             this_ull_ColortoCode = 5;
             this_nocomp_ColortoCode5 = 6;
-            this_ull_CodetoColor = 4;
-            this_nocomp_CodetoColor4 = 4;
+            this_ull_CodetoColor = 5;
+            this_nocomp_CodetoColor4 = 3;
+            this_nowPoint = 178;
 
         }else if (colormode == 2){
             this_ull_ColortoCode = 7;
@@ -636,6 +637,8 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_ull_CodetoColor = 11;
             ull_old = this_ull_CodetoColor - 1;
             compm();
+        }else{
+            finishActivity();
         }
 
         //saveData  (Parse)
@@ -688,21 +691,6 @@ public class CodetoColorActivity extends AppCompatActivity {
             editor.apply();
         }
 
-        //gameFinish
-        new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(getPoint + "Point獲得しました。")
-                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // OK button pressed
-                        Intent intent = new Intent(CodetoColorActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore", this_nowPoint);
-                        intent.putExtra("getScore", getPoint);
-                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
-                        startActivity(intent);
-                    }
-                }).show();
     }
 
 
@@ -719,6 +707,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("No", null)
                 .show();
+        finishActivity();
     }
 
     public void ulm_ColortoCode() {
@@ -734,6 +723,8 @@ public class CodetoColorActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("No", null)
                 .show();
+
+        finishActivity();
     }
 
     public void compm() {
@@ -749,6 +740,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("No", null)
                 .show();
+        finishActivity();
     }
 
     private void tweeting() {
@@ -768,9 +760,27 @@ public class CodetoColorActivity extends AppCompatActivity {
         }
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(strTweet));
         startActivity(intent);
+
+        finishActivity();
     }
 
-
+    public void finishActivity(){
+        //gameFinish
+        new AlertDialog.Builder(CodetoColorActivity.this)
+                .setTitle(getPoint + "Point獲得しました。")
+                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        Intent intent = new Intent(CodetoColorActivity.this, MenuActivity.class);
+                        intent.putExtra("nowScore", this_nowPoint);
+                        intent.putExtra("getScore", getPoint);
+                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
+                        startActivity(intent);
+                    }
+                }).show();
+    }
     public void setQuestion() {
         //createQuestionCode
         Random rnd1 = new Random();
@@ -919,7 +929,7 @@ public class CodetoColorActivity extends AppCompatActivity {
         check_select2.setImageDrawable(null);
         check_select3.setImageDrawable(null);
         check_select4.setImageDrawable(null);
-
+        check_answer=1;
         // setChoicesColor
         switch (check_answer) {
             case 1:
@@ -947,6 +957,7 @@ public class CodetoColorActivity extends AppCompatActivity {
                 answer4.setBackgroundColor(Color.rgb(r, g, b));
                 break;
         }
+
 
     }
 

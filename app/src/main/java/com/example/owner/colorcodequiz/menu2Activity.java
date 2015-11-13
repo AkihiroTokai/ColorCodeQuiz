@@ -102,6 +102,12 @@ public class menu2Activity extends AppCompatActivity {
             nowPointview.setText("HSBPoint:" + this_nowPoint);
 
         }
+        //-----------------↓TestData↓-----------------//
+        /*SharedPreferences.Editor editor = getData.edit();
+        editor.clear().commit();*/
+        this_ull_CodetoColor = 4;
+        this_ull_ColortoCode = 8;
+        //------------------↑TestData↑--------------ー //
 
 
 

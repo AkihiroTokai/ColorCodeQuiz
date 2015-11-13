@@ -15,8 +15,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:weightSum="0"
-        android:layout_gravity="left"
+        android:weightSum="1"
         android:gravity="center|end">
 
 
@@ -25,7 +24,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="nowPoint"
-            android:id="@+id/nowPointview" />
+            android:id="@+id/nowPointview"
+            android:layout_weight="1.00"
+            android:gravity="right" />
     </LinearLayout>
 
     <LinearLayout

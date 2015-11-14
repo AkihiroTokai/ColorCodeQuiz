@@ -38,7 +38,10 @@ android {
         compile 'com.beardedhen:androidbootstrap:1.2.3'
         compile 'com.parse.bolts:bolts-android:1.+'
         compile files('libs/ParseFacebookUtilsV3-1.10.1.jar')
+        compile 'com.google.android.gms:play-services-ads:7.5.0'
         compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+
+
         compile files('libs/ParseTwitterUtils-1.10.1.jar')
 
     }

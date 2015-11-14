@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -24,7 +25,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="nowPoint"
             android:id="@+id/nowPointview"
-            android:layout_marginLeft="250dp" />
+            android:layout_weight="1"
+            android:gravity="right" />
     </LinearLayout>
 
     <LinearLayout
@@ -288,6 +290,15 @@
             android:onClick="ColortoCode5" />
     </LinearLayout>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_marginTop="40dp">
+    </com.google.android.gms.ads.AdView>
 
-</LinearLayout>
-<!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/layout/activity_menu2.xml -->
+</LinearLayout><!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/layout/activity_menu2.xml -->

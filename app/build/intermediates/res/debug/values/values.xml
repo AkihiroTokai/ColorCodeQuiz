@@ -387,6 +387,9 @@
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>

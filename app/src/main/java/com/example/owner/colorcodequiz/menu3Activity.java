@@ -13,6 +13,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class menu3Activity extends AppCompatActivity {
     private int this_ull_CodetoColor;
     private int this_ull_ColortoCode;
@@ -51,6 +54,12 @@ public class menu3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu3);
+
+        //ShowAd
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         setnum = (EditText) findViewById(R.id.setnum);
         setnum.setKeyListener(null);
         nowPointview = (TextView) findViewById(R.id.nowPointview);

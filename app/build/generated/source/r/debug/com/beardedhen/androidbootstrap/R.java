@@ -120,15 +120,15 @@ public final class R {
 		public static final int thumbnail_circle_minimal = 0x7f0200ba;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0c00f3;
-		public static final int container = 0x7f0c00cc;
-		public static final int dimensionsLabel = 0x7f0c00ce;
+		public static final int action_settings = 0x7f0c00f4;
+		public static final int container = 0x7f0c00cd;
+		public static final int dimensionsLabel = 0x7f0c00cf;
 		public static final int image = 0x7f0c0056;
-		public static final int layout = 0x7f0c00c8;
-		public static final int lblLeft = 0x7f0c00c9;
-		public static final int lblMiddle = 0x7f0c00ca;
-		public static final int lblRight = 0x7f0c00cb;
-		public static final int placeholder = 0x7f0c00cd;
+		public static final int layout = 0x7f0c00c9;
+		public static final int lblLeft = 0x7f0c00ca;
+		public static final int lblMiddle = 0x7f0c00cb;
+		public static final int lblRight = 0x7f0c00cc;
+		public static final int placeholder = 0x7f0c00ce;
 	}
 	public static final class layout {
 		public static final int bootstrap_button = 0x7f030022;
@@ -142,7 +142,7 @@ public final class R {
 	public static final class string {
 		public static final int action_settings = 0x7f06004a;
 		public static final int app_name = 0x7f06004b;
-		public static final int hello_world = 0x7f060056;
+		public static final int hello_world = 0x7f060057;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f080077;

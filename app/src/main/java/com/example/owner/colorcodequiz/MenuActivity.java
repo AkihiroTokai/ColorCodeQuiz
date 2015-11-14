@@ -13,6 +13,11 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
+import java.util.Random;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -33,12 +38,23 @@ public class MenuActivity extends AppCompatActivity {
     private int HSB_nocomp_CodetoColor0;
     private int HSB_nocomp_ColortoCode0;
 
+    private int this_nocomp_CodetoColor0;
+    private int this_nocomp_ColortoCode0;
+
+    private InterstitialAd mInterstitialAd;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_menu
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        requestNewInterstitial();
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
         colormode = 1;
@@ -111,6 +127,15 @@ public class MenuActivity extends AppCompatActivity {
 
         nowPointview.setText("RGBPoint:" + RGB_nowPoint);
 
+    }
+
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("YOUR_DEVICE_HASH")
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
 
     public void gotologin(View v) {
@@ -210,17 +235,16 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void CodetoColor_practice(View v) {
-        int this_nocomp = 0;
         if (colormode == 1) {
-            this_nocomp = RGB_nocomp_CodetoColor0;
+            this_nocomp_CodetoColor0 = RGB_nocomp_CodetoColor0;
             noq = 10;
         } else if (colormode == 2) {
-            this_nocomp = HSB_nocomp_CodetoColor0;
+            this_nocomp_CodetoColor0 = HSB_nocomp_CodetoColor0;
             noq = 15;
         }
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は" + noq + "問です。" + this_nocomp + "回クリアしています。")
+                .setMessage("問題は" + noq + "問です。" + this_nocomp_CodetoColor0 + "回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -235,17 +259,20 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void ColortoCode_practice(View v) {
-        int this_nocomp = 0;
         if (colormode == 1) {
-            this_nocomp = RGB_nocomp_ColortoCode0;
+            this_nocomp_ColortoCode0 = RGB_nocomp_ColortoCode0;
             noq = 10;
         } else if (colormode == 2) {
-            this_nocomp = HSB_nocomp_ColortoCode0;
+            this_nocomp_ColortoCode0 = HSB_nocomp_ColortoCode0;
             noq = 15;
         }
+
+       Random rnd = new Random ();
+       int showAd = rnd.nextInt(5)+1;
+
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("ColortoCode_praciceをStartしますか？")
-                .setMessage("問題は" + noq + "問です。" + this_nocomp + "回クリアしています。")
+                .setMessage("問題は" + noq + "問です。" + this_nocomp_ColortoCode0 + "回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

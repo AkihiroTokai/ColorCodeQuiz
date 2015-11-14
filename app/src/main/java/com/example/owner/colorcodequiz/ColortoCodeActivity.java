@@ -16,6 +16,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Random;
@@ -88,6 +91,12 @@ public class ColortoCodeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colorto_code);
+
+        //ShowAd
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         gameCount = 1;
         noca = 0;
 

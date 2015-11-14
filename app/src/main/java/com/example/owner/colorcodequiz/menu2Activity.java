@@ -13,6 +13,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class menu2Activity extends AppCompatActivity {
 
     private int this_ull_CodetoColor;
@@ -50,6 +53,11 @@ public class menu2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu2);
+        //ShowAd
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         setnum = (EditText)findViewById(R.id.setnum);
         nowPointview = (TextView)findViewById(R.id.nowPointview);
         setnum.setKeyListener(null);
@@ -108,8 +116,6 @@ public class menu2Activity extends AppCompatActivity {
         this_ull_CodetoColor = 4;
         this_ull_ColortoCode = 8;
         //------------------↑TestData↑--------------ー //
-
-
 
         //IconChange
         if(this_ull_CodetoColor >= 1){
@@ -284,8 +290,8 @@ public class menu2Activity extends AppCompatActivity {
             intent_CodetoColor();
         }else{
             req_level = level -1;
-            req_nocomp = 180;
-            req_Point = 4;
+            req_nocomp = 4;
+            req_Point = 180;
             plus= "";
             lockedmessage();
         }

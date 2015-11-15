@@ -87,10 +87,11 @@ public class CodetoColorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_codeto_color);
 
-        //ShowAd
+        //showAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
 
         gameCount = 1;
         noca = 0;

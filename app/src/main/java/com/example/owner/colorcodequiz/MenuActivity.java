@@ -58,6 +58,7 @@ public class MenuActivity extends AppCompatActivity {
         mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         requestNewInterstitial();
 
+
         nowPointview = (TextView) findViewById(R.id.nowPointview);
         colormode = 1;
        /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
@@ -269,8 +270,8 @@ public class MenuActivity extends AppCompatActivity {
             noq = 15;
         }
 
-       Random rnd = new Random ();
-       int showAd = rnd.nextInt(5)+1;
+        Random rnd = new Random();
+        int showAd = rnd.nextInt(5) + 1;
 
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("ColortoCode_praciceをStartしますか？")
@@ -287,6 +288,18 @@ public class MenuActivity extends AppCompatActivity {
                 .setNegativeButton("Cancel", null)
                 .show();
     }
+
+    public boolean decide_showAd() {
+        boolean  canshowAd = false;
+        Random rnd = new Random();
+        int decide_showAd = rnd.nextInt(5) + 1;
+        if (mInterstitialAd.isLoaded() && decide_showAd == 1) {
+            canshowAd = true;
+        }
+        return canshowAd;
+    }
+
+
 
 
 

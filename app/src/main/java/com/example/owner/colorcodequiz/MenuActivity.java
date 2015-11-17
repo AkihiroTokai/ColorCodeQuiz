@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
@@ -41,6 +42,7 @@ public class MenuActivity extends AppCompatActivity {
     private int this_nocomp_CodetoColor0;
     private int this_nocomp_ColortoCode0;
 
+
     private InterstitialAd mInterstitialAd;
 
 
@@ -60,6 +62,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
         nowPointview = (TextView) findViewById(R.id.nowPointview);
+
         colormode = 1;
        /* ParseQuery<getData> parseQuery = new ParseQuery<>(getData.class);
         parseQuery.findInBackground(new FindCallback<getData>() {
@@ -132,14 +135,6 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
-
-    private void requestNewInterstitial() {
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("YOUR_DEVICE_HASH")
-                .build();
-
-        mInterstitialAd.loadAd(adRequest);
-    }
 
     public void gotologin(View v) {
         Intent intent = new Intent(MenuActivity.this, loginActivity.class);
@@ -245,6 +240,25 @@ public class MenuActivity extends AppCompatActivity {
             this_nocomp_CodetoColor0 = HSB_nocomp_CodetoColor0;
             noq = 15;
         }
+
+        Random rnd = new Random();
+        int decide_showAd = rnd.nextInt(5);
+        if (decide_showAd == 0 && mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+            mInterstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdClosed() {
+                    mInterstitialAd.show();
+                    requestNewInterstitial();
+                    intent_CodetoColor_practice();
+                }
+            });
+        } else {
+            intent_CodetoColor_practice();
+        }
+    }
+
+    public void intent_CodetoColor_practice() {
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle("CodetoColor_praciceをStartしますか？")
                 .setMessage("問題は" + noq + "問です。" + this_nocomp_CodetoColor0 + "回クリアしています。")
@@ -261,6 +275,7 @@ public class MenuActivity extends AppCompatActivity {
                 .show();
     }
 
+
     public void ColortoCode_practice(View v) {
         if (colormode == 1) {
             this_nocomp_ColortoCode0 = RGB_nocomp_ColortoCode0;
@@ -269,12 +284,26 @@ public class MenuActivity extends AppCompatActivity {
             this_nocomp_ColortoCode0 = HSB_nocomp_ColortoCode0;
             noq = 15;
         }
-
         Random rnd = new Random();
-        int showAd = rnd.nextInt(5) + 1;
+        int decide_showAd = rnd.nextInt(5);
+        if (decide_showAd == 0 && mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+            mInterstitialAd.setAdListener(new AdListener() {
+                @Override
+                public void onAdClosed() {
+                    mInterstitialAd.show();
+                    requestNewInterstitial();
+                    intent_ColortoCode_practice();
+                }
+            });
+        } else {
+            intent_ColortoCode_practice();
+        }
+    }
 
+    public void intent_ColortoCode_practice() {
         new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("ColortoCode_praciceをStartしますか？")
+                .setTitle("CodetoColor_praciceをStartしますか？")
                 .setMessage("問題は" + noq + "問です。" + this_nocomp_ColortoCode0 + "回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -289,20 +318,13 @@ public class MenuActivity extends AppCompatActivity {
                 .show();
     }
 
-    public boolean decide_showAd() {
-        boolean  canshowAd = false;
-        Random rnd = new Random();
-        int decide_showAd = rnd.nextInt(5) + 1;
-        if (mInterstitialAd.isLoaded() && decide_showAd == 1) {
-            canshowAd = true;
-        }
-        return canshowAd;
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("YOUR_DEVICE_HASH")
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

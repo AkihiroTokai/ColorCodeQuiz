@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- 自動アクティビティ計測を有効にする。 -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- 
+        screenNameタグでActivityごとにAnalyticsでの表示名を設定する。
+        nameはフルパッケージ名で指定する。
+        screenNameを定義していない場合、Analyticsにはクラス名そのままで計上される。
+
+    <screenName name="jp.hoge.DemoActivity1">デモ画面1</screenName>
+    <screenName name="jp.hoge.DemoActivity2">デモ画面2</screenName>   -->
+
+    <!-- トラッキングID -->
+    <string name="ga_trackingId">UA-70250118-2</string>
+</resources>

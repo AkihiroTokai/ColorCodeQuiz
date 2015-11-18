@@ -23,7 +23,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="nowPoint"
             android:id="@+id/nowPointview"
-            android:layout_weight="1"
+            android:layout_weight="0.85"
             android:gravity="right" />
     </LinearLayout>
 

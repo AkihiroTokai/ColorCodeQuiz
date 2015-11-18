@@ -3,9 +3,10 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
     android:id="@+id/RelativeLayout"
-    android:focusable="true">
+    android:focusable="false">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +15,7 @@
         android:text="Mode:Practice"
         android:id="@+id/level"
         android:layout_marginLeft="34dp"
-        android:focusable="true"
+        android:focusable="false"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
@@ -26,7 +27,7 @@
         android:id="@+id/progress"
         android:layout_marginLeft="41dp"
         android:layout_alignTop="@+id/level"
-        android:layout_alignParentEnd="true" />
+        android:layout_toEndOf="@+id/red" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,9 +74,10 @@
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_below="@+id/tag"
-        android:layout_toStartOf="@+id/red"
+        android:layout_toStartOf="@+id/frameLayout3"
         android:layout_marginTop="145dp"
-        android:id="@+id/frameLayout">
+        android:id="@+id/frameLayout"
+        android:layout_alignParentStart="false">
 
         <TextView
             android:layout_width="89dp"
@@ -100,8 +102,9 @@
         android:layout_alignTop="@+id/frameLayout"
         android:layout_alignEnd="@+id/progress"
         android:layout_alignBottom="@+id/frameLayout"
-        android:layout_toEndOf="@+id/frameLayout"
-        android:id="@+id/frameLayout3">
+        android:layout_toEndOf="@+id/green"
+        android:id="@+id/frameLayout3"
+        android:layout_alignParentEnd="true">
 
         <TextView
             android:layout_width="89dp"
@@ -115,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/check_select2"
-            android:layout_gravity="center" />
+            android:layout_gravity="right|center_vertical" />
 
     </FrameLayout>
 
@@ -139,7 +142,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/check_select3"
-            android:layout_gravity="left|top" />
+            android:layout_gravity="left" />
 
 
     </FrameLayout>
@@ -163,7 +166,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/check_select4"
-            android:layout_gravity="right|bottom" />
+            android:layout_gravity="bottom|right" />
+
     </FrameLayout>
 
     <com.google.android.gms.ads.AdView

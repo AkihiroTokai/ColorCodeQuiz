@@ -103,7 +103,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         progress = (TextView) findViewById(R.id.progress);
 
         check_select1 = (ImageView) findViewById(R.id.check_select1);
-        check_select2 = (ImageView) findViewById(R.id.check_select2);
+        check_select2 = (ImageView) findViewById(R.id.check_select1);
         check_select3 = (ImageView) findViewById(R.id.check_select3);
         check_select4 = (ImageView) findViewById(R.id.check_select4);
         question = (ImageView) findViewById(R.id.question);

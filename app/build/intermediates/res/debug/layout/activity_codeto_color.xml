@@ -157,7 +157,7 @@
     </FrameLayout>
 
 
-    <android.media.tv.TvView
+    <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -166,6 +166,6 @@
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/frameLayout"
         android:layout_alignParentStart="true">
-    </android.media.tv.TvView>
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout><!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/layout/activity_codeto_color.xml -->

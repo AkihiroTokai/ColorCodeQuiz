@@ -82,7 +82,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/check_select2"
+            android:id="@+id/check_select1"
             android:layout_gravity="center"
             android:layout_alignBottom="@+id/frameLayout6"
             android:layout_below="@+id/frameLayout3"
@@ -96,7 +96,7 @@
             android:onClick="select2"
             android:clickable="true"
             android:layout_above="@+id/frameLayout7"
-            android:layout_alignEnd="@+id/check_select2" />
+            android:layout_alignEnd="@+id/check_select1" />
     </FrameLayout>
 
     <FrameLayout

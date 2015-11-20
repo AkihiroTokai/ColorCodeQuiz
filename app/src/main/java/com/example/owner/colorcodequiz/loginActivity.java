@@ -29,7 +29,7 @@ public class loginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-       try {
+        try {
             PackageInfo info = getPackageManager().getPackageInfo(
                     "com.facebook.samples.loginhowto",
                     PackageManager.GET_SIGNATURES);
@@ -38,30 +38,32 @@ public class loginActivity extends AppCompatActivity {
                 md.update(signature.toByteArray());
                 Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
-       } catch (PackageManager.NameNotFoundException e) {
+        } catch (PackageManager.NameNotFoundException e) {
 
-       } catch (NoSuchAlgorithmException e) {
+        } catch (NoSuchAlgorithmException e) {
 
-       }
+        }
 
     }
-        public void Twitterlogin(View v) {
-            ParseTwitterUtils.logIn(this, new LogInCallback() {
-                @Override
-                public void done(ParseUser user, ParseException err) {
-                    if (user == null) {
-                        Log.d("MyApp", "Uh oh. The user cancelled the Twitter login.");
-                    } else if (user.isNew()) {
-                        Log.d("MyApp", "User signed up and logged in through Twitter!");
-                        MenuActivity();
-                    } else {
-                        Log.d("MyApp", "User logged in through Twitter!");
-                        MenuActivity();
-                    }
+
+    public void Twitterlogin(View v) {
+        ParseTwitterUtils.logIn(this, new LogInCallback() {
+            @Override
+            public void done(ParseUser user, ParseException err) {
+                if (user == null) {
+                    Log.d("MyApp", "Uh oh. The user cancelled the Twitter login.");
+                } else if (user.isNew()) {
+                    Log.d("MyApp", "User signed up and logged in through Twitter!");
+                    MenuActivity();
+                } else {
+                    Log.d("MyApp", "User logged in through Twitter!");
+                    MenuActivity();
                 }
-            });
-        }
-    public void Anonymouslogin(View v){
+            }
+        });
+    }
+
+    public void Anonymouslogin(View v) {
         ParseAnonymousUtils.logIn(new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
@@ -75,46 +77,45 @@ public class loginActivity extends AppCompatActivity {
             }
         });
     }
-     /*  public void Facebooklogin (View v){
-            ParseFacebookUtils.logIn(permissions, this, new LogInCallback() {
-            @Override
-            public void done(ParseUser user, ParseException err) {
-                if (user == null) {
-                    Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
-                } else if (user.isNew()) {
-                    Log.d("MyApp", "User signed up and logged in through Facebook!");
-                    MenuActivity();
-                } else {
-                    Log.d("MyApp", "User logged in through Facebook!");
-                    MenuActivity();
-                }
-            }
-        });
-    }   */
-      private void MenuActivity() {
-          Intent intent = new Intent(this, MenuActivity.class);
-          startActivity(intent);
-          finish();
-      }
 
-       @Override
-       protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-           super.onActivityResult(requestCode, resultCode, data);
-           ParseFacebookUtils.finishAuthentication(requestCode, resultCode, data);
-       }
+    /*  public void Facebooklogin (View v){
+           ParseFacebookUtils.logIn(permissions, this, new LogInCallback() {
+           @Override
+           public void done(ParseUser user, ParseException err) {
+               if (user == null) {
+                   Log.d("MyApp", "Uh oh. The user cancelled the Facebook login.");
+               } else if (user.isNew()) {
+                   Log.d("MyApp", "User signed up and logged in through Facebook!");
+                   MenuActivity();
+               } else {
+                   Log.d("MyApp", "User logged in through Facebook!");
+                   MenuActivity();
+               }
+           }
+       });
+   }   */
+    private void MenuActivity() {
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        ParseFacebookUtils.finishAuthentication(requestCode, resultCode, data);
+    }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_login, menu);
+        return true;
+    }
 
-
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_login, menu);
-            return true;
-        }
-
-        @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.

@@ -57,7 +57,7 @@ public class MenuActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("@string/interstitial_ad_menu1_unit_id");
         requestNewInterstitial();
 
 

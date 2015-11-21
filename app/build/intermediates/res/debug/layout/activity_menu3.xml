@@ -299,7 +299,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:adUnitId="@string/banner_ad_menu3_unit_id"
         android:layout_marginTop="40dp">
     </com.google.android.gms.ads.AdView>
 

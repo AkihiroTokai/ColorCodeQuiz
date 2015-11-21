@@ -60,7 +60,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/check_select1"
+            android:id="@+id/check_select2"
             android:layout_gravity="center"
             android:layout_toStartOf="@+id/question"
             android:layout_alignTop="@+id/frameLayout3"
@@ -162,7 +162,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:adUnitId="@string/banner_ad_CodetoColor_unit_id"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/frameLayout"
         android:layout_alignParentStart="true">

@@ -2,17 +2,15 @@
 <resources>
     <integer name="ga_sessionTimeout">300</integer>
 
-    <!-- 自動アクティビティ計測を有効にする。 -->
+    <!-- 自動アクティビティ計測の有効化 -->
     <bool name="ga_autoActivityTracking">true</bool>
 
-    <!-- 
-        screenNameタグでActivityごとにAnalyticsでの表示名を設定する。
-        nameはフルパッケージ名で指定する。
-        screenNameを定義していない場合、Analyticsにはクラス名そのままで計上される。
-
-    <screenName name="jp.hoge.DemoActivity1">デモ画面1</screenName>
-    <screenName name="jp.hoge.DemoActivity2">デモ画面2</screenName>   -->
+    <!-- screenName設定 -->
+    <screenName name="com.google.android.gms.ads.AdActivity">InterstitialAd</screenName>
+    <screenName name="com.example.owner.colorcodequiz.MainActivity">CodetoColor_practice</screenName>
+    <screenName name="com.example.owner.colorcodequiz.ColortoCode_practiceActivity">CodetoColor_practice</screenName>
 
     <!-- トラッキングID -->
     <string name="ga_trackingId">UA-70250118-2</string>
+
 </resources>

@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class menu3Activity extends AppCompatActivity {
     private int this_ull_CodetoColor;
@@ -50,15 +51,21 @@ public class menu3Activity extends AppCompatActivity {
 
     private TextView nowPointview;
 
+    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu3);
 
-        //ShowAd
+        //showAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("@string/interstitial_ad_menu3_unit_id");
+        requestNewInterstitial();
 
         setnum = (EditText) findViewById(R.id.setnum);
         setnum.setKeyListener(null);
@@ -316,6 +323,14 @@ public class menu3Activity extends AppCompatActivity {
             plus = "";
             lockedmessage();
         }
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("YOUR_DEVICE_HASH")
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
     }
 
     public void lockedmessage() {

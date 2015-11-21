@@ -389,7 +389,13 @@
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_CodetoColor_practice_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_ColortoCode_practice_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_menu1_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_menu2_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_menu3_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
@@ -457,6 +463,9 @@
     <string name="facebook_app_id">1643052322619255</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
+    <string name="interstitial_ad_menu1_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_menu2_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_menu3_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values/values.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">Send</string>

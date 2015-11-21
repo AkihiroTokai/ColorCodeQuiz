@@ -13,7 +13,22 @@
     <string name="title_activity_menu3">menu3Activity</string>
     <string name="title_activity_login">loginActivity</string>
     <string name="facebook_app_id">1643052322619255</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>ZASsss
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--bannerAd-->
+    <string name="banner_ad_menu1_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_menu2_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_menu3_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_CodetoColor_practice_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_ColortoCode_practice_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--interstialAd-->
+    <string name="interstitial_ad_menu1_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_menu2_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_menu3_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

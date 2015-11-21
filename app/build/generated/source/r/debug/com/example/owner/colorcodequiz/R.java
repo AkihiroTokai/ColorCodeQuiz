@@ -2508,7 +2508,7 @@ containing a value of this type.
         public static final int cast_notification_id=0x7f0d0004;
         public static final int center=0x7f0d0049;
         public static final int check_select1=0x7f0d0085;
-        public static final int check_select1 =0x7f0d0087;
+        public static final int check_select2 =0x7f0d0087;
         public static final int check_select3=0x7f0d008b;
         public static final int check_select4=0x7f0d008d;
         public static final int checkbox=0x7f0d0066;

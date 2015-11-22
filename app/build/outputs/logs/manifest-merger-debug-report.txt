@@ -154,6 +154,7 @@ MERGED from com.google.android.gms:play-services-base:7.8.0:20:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.android.support:appcompat-v7:22.2.1:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
+MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.android.support:appcompat-v7:22.2.1:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.beardedhen:androidbootstrap:1.2.3:11:5
@@ -391,6 +392,7 @@ MERGED from com.google.android.gms:play-services-wearable:7.8.0:18:5
 MERGED from com.google.android.gms:play-services-base:7.8.0:18:5
 MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from com.android.support:appcompat-v7:22.2.1:20:5
+MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from com.android.support:appcompat-v7:22.2.1:20:5
 MERGED from com.android.support:support-v4:22.2.1:20:5

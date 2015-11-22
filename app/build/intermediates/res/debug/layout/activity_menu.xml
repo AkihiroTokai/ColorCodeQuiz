@@ -90,8 +90,7 @@
             android:id="@+id/mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/twitter"
-            android:layout_toStartOf="@+id/CodertoColor_practice"
+            android:layout_above="@+id/ColortoCode_practice"
             android:text="Practice"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -104,11 +103,10 @@
         android:orientation="horizontal">
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/CodertoColor_practice"
+            android:id="@+id/CodetoColor_practice"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_alignTop="@+id/ColortoCode_practice"
-            android:layout_toEndOf="@+id/Others"
             android:nestedScrollingEnabled="false"
             android:onClick="CodetoColor_practice"
             android:text="CodetoColor"
@@ -117,12 +115,11 @@
             bootstrap:bb_type="info" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/twitter"
+            android:id="@+id/ColortoCode_practice"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_above="@+id/Others"
             android:layout_marginLeft="10dp"
-            android:layout_toStartOf="@+id/Others"
             android:onClick="ColortoCode_practice"
             android:text="ColortoCode"
             bootstrap:bb_icon_left="fa-unlock"
@@ -148,7 +145,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/tomenu1"
+        android:id="@+id/tomenu"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
@@ -171,7 +168,7 @@
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
+
             android:layout_marginLeft="10dp"
             android:onClick="tomenu3"
             android:text="Level6～10"
@@ -208,7 +205,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/Random"
+
             android:layout_gravity="center_horizontal"
             android:text="Coming Soon !"
             android:textAppearance="?android:attr/textAppearanceMedium" />

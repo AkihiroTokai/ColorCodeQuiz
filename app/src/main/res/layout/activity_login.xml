@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Sign in with Twitter"
-            android:id="@+id/twitter"
+            android:id="@+id/ColortoCode_practice"
             bootstrap:bb_type="info"
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-twitter"

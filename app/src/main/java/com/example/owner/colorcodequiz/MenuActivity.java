@@ -157,7 +157,7 @@ public class MenuActivity extends AppCompatActivity {
         //changeIcon
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 1 || RGB_ull_ColortoCode >= 1) {
-                BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
+                BootstrapButton tomenu2= (BootstrapButton) findViewById(R.id.tomenu2);
                 tomenu2.setLeftIcon("fa-unlock");
             }
             if (RGB_ull_CodetoColor >= 6 || RGB_ull_ColortoCode >= 6) {

@@ -3,13 +3,14 @@ apply plugin: 'com.android.application'
 dependencies {
     compile 'com.google.android.gms:play-services:7.8.0'
     compile 'com.android.support:appcompat-v7:22.0.1'
+    compile 'com.android.support:support-v4:21.+'
 }
 android {
     compileSdkVersion 21
     buildToolsVersion '21.1.2'
     defaultConfig {
         applicationId "com.example.owner.colorcodequiz"
-        minSdkVersion 17
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"

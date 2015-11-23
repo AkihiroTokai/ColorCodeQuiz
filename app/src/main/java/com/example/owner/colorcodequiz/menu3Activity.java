@@ -327,7 +327,8 @@ public class menu3Activity extends AppCompatActivity {
 
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("YOUR_DEVICE_HASH")
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("@strings/test_device_hash")
                 .build();
 
         mInterstitialAd.loadAd(adRequest);

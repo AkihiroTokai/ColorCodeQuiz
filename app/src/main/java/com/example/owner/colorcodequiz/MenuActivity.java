@@ -57,7 +57,8 @@ public class MenuActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("@string/interstitial_ad_menu1_unit_id");
+        String interstitial_ad_menu1_unit_id = getString(R.string.interstitial_ad_menu1_unit_id);
+        mInterstitialAd.setAdUnitId(interstitial_ad_menu1_unit_id);
         requestNewInterstitial();
 
 
@@ -161,7 +162,7 @@ public class MenuActivity extends AppCompatActivity {
                 tomenu2.setLeftIcon("fa-unlock");
             }
             if (RGB_ull_CodetoColor >= 6 || RGB_ull_ColortoCode >= 6) {
-                BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
+                BootstrapButton tomenu3= (BootstrapButton) findViewById(R.id.tomenu3);
                 tomenu3.setLeftIcon("fa-unlock");
             }
         } else if (colormode == 2) {
@@ -183,10 +184,13 @@ public class MenuActivity extends AppCompatActivity {
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
+                String locked_message = getString(R.string.locked_message);
+                String locked_message_tomenu2 =getString(R.string.locked_message_tomenu2);
+                String posstive_button = getString(R.string.posstive_button);
                 new AlertDialog.Builder(MenuActivity.this)
-                        .setTitle("Lockされています。")
-                        .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
-                        .setPositiveButton("OK", null)
+                        .setTitle(locked_message)
+                        .setMessage(locked_message_tomenu2)
+                        .setPositiveButton(posstive_button, null)
                         .show();
             }
         } else if (colormode == 2) {
@@ -195,10 +199,13 @@ public class MenuActivity extends AppCompatActivity {
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
+                String locked_message = getString(R.string.locked_message);
+                String locked_message_tomenu2 =getString(R.string.locked_message_tomenu2);
+                String posstive_button = getString(R.string.posstive_button);
                 new AlertDialog.Builder(MenuActivity.this)
-                        .setTitle("Lockされています。")
-                        .setMessage("Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。")
-                        .setPositiveButton("OK", null)
+                        .setTitle(locked_message)
+                        .setMessage(locked_message_tomenu2)
+                        .setPositiveButton(posstive_button, null)
                         .show();
             }
         }
@@ -211,10 +218,13 @@ public class MenuActivity extends AppCompatActivity {
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
+                String locked_message = getString(R.string.locked_message);
+                String locked_message_tomenu3 =getString(R.string.locked_message_tomenu3);
+                String posstive_button = getString(R.string.posstive_button);
                 new AlertDialog.Builder(MenuActivity.this)
-                        .setTitle("Lockされています。")
-                        .setMessage("レベル6をUnLockしてください。")
-                        .setPositiveButton("OK", null)
+                        .setTitle(locked_message)
+                        .setMessage(locked_message_tomenu3)
+                        .setPositiveButton(posstive_button, null)
                         .show();
             }
         } else if (colormode == 2) {
@@ -223,10 +233,13 @@ public class MenuActivity extends AppCompatActivity {
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
+                String locked_message = getString(R.string.locked_message);
+                String locked_message_tomenu3 =getString(R.string.locked_message_tomenu3);
+                String posstive_button = getString(R.string.posstive_button);
                 new AlertDialog.Builder(MenuActivity.this)
-                        .setTitle("Lockされています。")
-                        .setMessage("レベル6をUnLockしてください。")
-                        .setPositiveButton("OK", null)
+                        .setTitle(locked_message)
+                        .setMessage(locked_message_tomenu3)
+                        .setPositiveButton(posstive_button, null)
                         .show();
             }
         }
@@ -260,7 +273,8 @@ public class MenuActivity extends AppCompatActivity {
 
     public void intent_CodetoColor_practice() {
         new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("CodetoColor_praciceをStartしますか？")
+                String start_message_CodetoColor_practice = getString(R.string.start_message_CodetoColor_practice)
+                .setTitle(start_message_CodetoColor_practice)
                 .setMessage("問題は" + noq + "問です。" + this_nocomp_CodetoColor0 + "回クリアしています。")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -320,7 +334,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("YOUR_DEVICE_HASH")
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
 
         mInterstitialAd.loadAd(adRequest);

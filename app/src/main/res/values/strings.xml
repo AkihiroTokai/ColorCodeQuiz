@@ -49,11 +49,46 @@
     ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆↑Release↑☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆-->
 
     <!--menuActivity -->
+    <string name="label_RGB">RGBPoint:%1$d</string>
+    <string name="label_HSB">HSBPoint:%1$d</string>
     <string name="locked_message">Lockされています。</string>
     <string name="locked_message_tomenu2">Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。</string>
-    <string name="posstive_button">OK</string>
+    <string name="positive_button">OK</string>
     <string name="locked_message_tomenu3">レベル6をUnLockしてください。</string>
-    <string name="start_message_CodetoColor_practice">CodetoColorPracticeをStartしますか？</string>
+    <string name="start_message_CodetoColor_practice">CodetoColor_practiceをStartしますか？</string>
+    <string name="status_message_unlocked">問題は %1$d問です。%2$d回クリアしています。</string>
+    <string name="negative_button">Cancel</string>
+    <string name="start_message_ColortoCode_practice">ColortoCode_practiceをStartしますか？</string>
+
+    <!--menu2Activity -->
+    <string name="plus_CodetoColor4">ColortoCodeのLevel3をUnlockしてください。</string>
+    <string name="plus_ColortoCode4">CodetoColorのLevel3をUnlockしてください。</string>
+    <string name="status_message_locked">Level%1$dを%2$d回以上クリアし、%3$dPoint以上獲得してください。%4$d</string>
+    <string name="cannot_start_CodetoColor">CodetoColorをStartできません。</string>
+    <string name="alert_input_number">"入力した内容を確認してください。"</string>
+    <string name="cannot_start_ColortoCode">"ColortoCodeをStartできません。</string>
+    <string name="start_CodetoColor">CodetoColorをStartしますか？</string>
+    <string name="start_ColortoCode">ColortoCodeをStartしますか？</string>
+
+    <!--menu3Activity-->
+    <string name="plus_CodetoColor7">ColortoCodeのLevel5をUnlockしてください。</string>
+    <string name="plus_CodetoColor9">ColortoCodeのLevel7をUnlockしてください。</string>
+    <string name="plus_ColortoCode7">CodetoColorのLevel5をUnlockしてください。</string>
+    <string name="plus_ColortoCode9">CodetoColorのLevel7をUnlockしてください。</string>
+
+    <!--CodetoColor_practiceActivity-->
+    <string name="progress">Progress:%1$d/%2$d</string>
+    <string name="cannot_gameclear">クリアできませんでした。</string>
+    <string name="gameclear">クリアしました。</string>
+    <string name="get_point">%1$dPoint獲得しました。</string>
+    <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
+    <string name="status_ulm_old">%1$d%2$dLevel%3$d をMasterしました！</string>
+    <string name="status_ulm_twitter"> %1$dLevel%2$d "がUnLockされました。おめでとうございます。Twetterに投稿しますか？"</string>
+    <string name="agree_button">Yes</string>
+    <string name="oppose_button">No</string>
+    <string name="compm_title">%1$d%2$dをMasterしました！</string>
+    <string name="compm_twitter">おめでとうございます。Twetterに投稿しますか？</string>
+    <string name="preset_twitter">%1$d%2$dLevel%3$dをMasterしました！</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

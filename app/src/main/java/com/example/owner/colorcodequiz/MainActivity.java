@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
             getPoint = checkData.getgetPoint();
         }       */
         if (colormode == 1) {
+
             st_colormode = "RGB_";
             noq = 10;
             //getData（SharedPreference)
@@ -230,7 +231,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
@@ -254,7 +256,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
@@ -277,7 +280,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
@@ -301,7 +305,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         }else {
@@ -317,113 +322,36 @@ public class MainActivity extends AppCompatActivity {
 
     public void gameFinish(){
         //Add:Score
+
         if (colormode == 1){
             if (noca <= 7) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 8) {
                 getPoint = 10;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_CodetoColor0++;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.cannot_gameclear);;
                 this_nocomp_CodetoColor0++;
             }
         }else if (colormode == 2){
             if (noca <= 11) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 12|| noca==13) {
                 getPoint = 10;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_CodetoColor0++;
             } else if (noca == 14 || noca == 15) {
                 getPoint = 11;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_CodetoColor0++;
             }
         }
 
         this_nowPoint = this_nowPoint + getPoint ;
-
-        //Check:Levelup(ColortoCode)
-        if (this_ull_ColortoCode  == 0 && this_nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
-            unlockmode = "ColortoCode";
-            this_ull_CodetoColor  = 1;
-            ull_old = this_ull_CodetoColor-1;
-            ulm_ColortoCode();
-        }
-        else if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode  = 2;
-            ulm_ColortoCode();
-            ull_old = this_ull_ColortoCode-1;
-        }
-
-        else if(this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 3;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 4;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 5;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 6;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 7;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 8;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 9;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 10;
-            ull_old = this_ull_ColortoCode-1;
-            ulm_ColortoCode();
-        }
-
-        else if(this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
-            unlockmode = "ColortoCode";
-            this_ull_ColortoCode = 11;
-            ull_old = this_ull_ColortoCode-1;
-            compm();
-        }
-
         //Check:Levelup(CodetoColor)
         if (this_ull_CodetoColor  == 0&& this_nowPoint >= 30& this_nocomp_CodetoColor0 >= 3 ){
             unlockmode = "CodetoColor";
@@ -502,6 +430,84 @@ public class MainActivity extends AppCompatActivity {
             compm();
         }
 
+        //Check:Levelup(ColortoCode)
+        if (this_ull_ColortoCode  == 0 && this_nowPoint >= 30& this_nocomp_ColortoCode0 >= 3 ){
+            unlockmode = "ColortoCode";
+            this_ull_CodetoColor  = 1;
+            ull_old = this_ull_CodetoColor-1;
+            ulm_ColortoCode();
+        }
+        else if (this_ull_ColortoCode  == 1 && this_nowPoint >= 60 &&  this_nocomp_ColortoCode1 >= 3 ){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode  = 2;
+            ulm_ColortoCode();
+            ull_old = this_ull_ColortoCode-1;
+        }
+
+        else if(this_ull_ColortoCode == 2 && this_nowPoint >= 90 && this_nocomp_ColortoCode2>= 3 ){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 3;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 3 && this_nowPoint >= 125 && this_nocomp_ColortoCode3 >= 3){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 4;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 4 && this_nowPoint >= 180 && this_nocomp_ColortoCode4 >= 4 && this_ull_CodetoColor>= 3){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 5;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 5 && this_nowPoint >= 240 && this_nocomp_ColortoCode5 >= 4) {
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 6;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 6 && this_nowPoint >= 320 && this_nocomp_ColortoCode6 >= 5 && this_ull_CodetoColor>= 5){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 7;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 7 && this_nowPoint >= 425 && this_nocomp_ColortoCode7 >= 6){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 8;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 8 && this_nowPoint >= 560 && this_nocomp_ColortoCode8 >= 7 && this_ull_CodetoColor>= 7){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 9;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 9 && this_nowPoint >= 750 && this_nocomp_ColortoCode9 >= 8){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 10;
+            ull_old = this_ull_ColortoCode-1;
+            ulm_ColortoCode();
+        }
+
+        else if(this_ull_ColortoCode == 10 && this_nowPoint >= 1000 && this_nocomp_ColortoCode10 >= 10){
+            unlockmode = "ColortoCode";
+            this_ull_ColortoCode = 11;
+            ull_old = this_ull_ColortoCode-1;
+            compm();
+        }
+
+
         //saveData(Parse)
      /*   getData checkData = new getData();
         checkData.setull_CodetoColor(ull_CodetoColor);
@@ -532,67 +538,86 @@ public class MainActivity extends AppCompatActivity {
             editor.apply();
         }
         //gameFinish
+        String get_point =getString(R.string.get_point,getPoint);
+        String game_result =getString(R.string.game_result,noq,noca,gameResult);
+        String positive_button = getString(R.string.positive_button);
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(getPoint + "Point獲得しました。")
-                .setMessage(10 + "問中" + noca + "問正解したので、" + gameResult)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(get_point)
+                .setMessage(game_result)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                        intent.putExtra("nowPoint", 0);
+                        intent.putExtra("getPoint", getPoint);
+                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
     }
 
     public  void ulm_CodetoColor(){
+        String status_ulm_old = getString(R.string.status_ulm_old,st_colormode,unlockmode,ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter,unlockmode,this_ull_CodetoColor);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     public  void ulm_ColortoCode(){
+        String status_ulm_old = getString(R.string.status_ulm_old,st_colormode,unlockmode,ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter,unlockmode,this_ull_ColortoCode);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     public void compm(){
+        String compm_title = getString(R.string.compm_title,st_colormode,unlockmode);
+        String compm_twitter = getString(R.string.compm_twitter);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(compm_title)
+                .setMessage(compm_twitter)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
+                        ull_old =10;
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage =  st_colormode + unlockmode + ull_old + "をMasterしました！";
+        String strMessage =  getString(R.string.preset_twitter,colormode,unlockmode,ull_old);;
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {

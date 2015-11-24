@@ -230,7 +230,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
@@ -254,13 +255,14 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
             if (gameCount > noq) {
                 gameFinish();
-            } else{
+            } else {
                 setQuestion();
             }
             nextquestion = false;
@@ -277,7 +279,8 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
         } else {
@@ -292,20 +295,21 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
 
     public void select4(View view) {
-        if (!nextquestion )   {
+        if (!nextquestion) {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
-                noca = noca +1;
+                noca = noca + 1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 nextquestion = true;
             }
-        }else {
-            if (gameCount > noq){
+        } else {
+            if (gameCount > noq) {
                 gameFinish();
             } else {
                 setQuestion();
@@ -320,27 +324,27 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         if (colormode == 1) {
             if (noca <= 7) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 8) {
                 getPoint = 10;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.cannot_gameclear);
                 this_nocomp_ColortoCode0++;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_ColortoCode0++;
             }
         } else if (colormode == 2) {
             if (noca <= 11) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 12 || noca == 13) {
                 getPoint = 10;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_ColortoCode0++;
             } else if (noca == 14 || noca == 15) {
                 getPoint = 11;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 this_nocomp_ColortoCode0++;
             }
         }
@@ -466,7 +470,6 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }
 
 
-
         //saveData(Parse)
         /*getData checkData = new getData();
         checkData.setull_CodetoColor(ull_CodetoColor);
@@ -498,17 +501,17 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }
 
         //gameFinish
+        String get_point = getString(R.string.get_point, getPoint);
+        String game_result = getString(R.string.game_result, noq, noca, gameResult);
+        String positive_button = getString(R.string.positive_button);
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(getPoint + "Point獲得しました。")
-                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(get_point)
+                .setMessage(game_result)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(ColortoCode_practiceActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore", nowPoint);
-                        intent.putExtra("getScore", getPoint);
-                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
@@ -516,53 +519,67 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
 
     public void ulm_CodetoColor() {
+        String status_ulm_old = getString(R.string.status_ulm_old, st_colormode, unlockmode, ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_CodetoColor);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     public void ulm_ColortoCode() {
+        String status_ulm_old = getString(R.string.status_ulm_old, st_colormode, unlockmode, ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_ColortoCode);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
+
     public void compm() {
+        String compm_title = getString(R.string.compm_title, st_colormode, unlockmode);
+        String compm_twitter = getString(R.string.compm_twitter);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCode_practiceActivity.this)
-                .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(compm_title)
+                .setMessage(compm_twitter)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = st_colormode + unlockmode + ull_old + "をMasterしました！";
+        String strMessage = getString(R.string.preset_twitter, colormode, unlockmode, ull_old);
+        ;
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {
@@ -577,6 +594,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         }
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(strTweet));
         startActivity(intent);
+
     }
 
     public void setQuestion() {
@@ -742,7 +760,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         } else if (colormode == 2) {
             if (gameCount == 1) {
                 //setQuestionImage
-                drawQuestionColor(0,1.00F,1.00F);
+                drawQuestionColor(0, 1.00F, 1.00F);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -753,7 +771,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 2) {
                 //setQuestionImage
-                drawQuestionColor(30,100,100);
+                drawQuestionColor(30, 100, 100);
 
                 //setChoices
                 answer1.setText("30,50,50");
@@ -764,7 +782,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             } else if (gameCount == 3) {
                 //SetQuestionImage
-                drawQuestionColor(60,100,100);
+                drawQuestionColor(60, 100, 100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -775,7 +793,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 3;
             } else if (gameCount == 4) {
                 //SetQuestionImage
-                drawQuestionColor(90,1.00F,1.00F);
+                drawQuestionColor(90, 1.00F, 1.00F);
 
                 //setChoices
                 answer1.setText("90,100,100");
@@ -786,7 +804,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 5) {
                 //SetQuestionImage
-                drawQuestionColor(120,100,100);
+                drawQuestionColor(120, 100, 100);
 
                 answer1.setText("120,100,100");
                 answer2.setText("0,20,0");
@@ -796,7 +814,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 1;
             } else if (gameCount == 6) {
                 //SetQuestionImage
-                drawQuestionColor(150,100,100);
+                drawQuestionColor(150, 100, 100);
 
                 answer1.setText("0,100,100");
                 answer2.setText("0,20,0");
@@ -806,7 +824,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 3;
             } else if (gameCount == 7) {
                 //setQuestionImage
-                drawQuestionColor(180,50,100);
+                drawQuestionColor(180, 50, 100);
 
                 answer1.setText("210,100,100");
                 answer2.setText("210,50,100");
@@ -816,7 +834,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 4;
             } else if (gameCount == 8) {
                 //setQuestionImage
-                drawQuestionColor(210,100,100);
+                drawQuestionColor(210, 100, 100);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -827,7 +845,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             } else if (gameCount == 9) {
                 //setQuestionImage
-                drawQuestionColor(240,1.00F,1.00F);
+                drawQuestionColor(240, 1.00F, 1.00F);
 
                 //setChoices
                 answer1.setText("240,0,100");
@@ -839,7 +857,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
             } else if (gameCount == 10) {
                 //setQuestionImage
-                drawQuestionColor(270,0,0);
+                drawQuestionColor(270, 0, 0);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -851,7 +869,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
 
             } else if (gameCount == 11) {
                 //setQuestionImage
-               drawQuestionColor(300,1.00F,1.00F);
+                drawQuestionColor(300, 1.00F, 1.00F);
 
                 //setChoices
                 answer1.setText("20,100,100");
@@ -862,7 +880,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 4;
             } else if (gameCount == 12) {
                 //setQuestionImage
-                drawQuestionColor(330,1.00F,0.80F);
+                drawQuestionColor(330, 1.00F, 0.80F);
 
                 //setChoices
                 answer1.setText("0,100,100");
@@ -873,7 +891,7 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
                 check_answer = 2;
             } else if (gameCount == 13) {
                 //setQuestionImage
-                drawQuestionColor(0.60F,0.50F,1.00F);
+                drawQuestionColor(0.60F, 0.50F, 1.00F);
 
                 //setChoices
                 answer1.setText("0,100,100");

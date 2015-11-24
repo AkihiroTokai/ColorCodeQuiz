@@ -37,7 +37,9 @@ public class menu2Activity extends AppCompatActivity {
     private int this_nocomp_ColortoCode4;
     private int this_nocomp_ColortoCode5;
 
+    private int this_nocomp;
     private int this_nowPoint;
+
     private int maxlimit;
     private int minlimit;
     private int number;
@@ -46,6 +48,7 @@ public class menu2Activity extends AppCompatActivity {
     private int req_Point;
     private int req_level;
     private int colormode;
+
 
     private String plus;
 
@@ -64,7 +67,8 @@ public class menu2Activity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("@string/interstitial_ad_menu2_unit_id");
+        String interstitial_ad_menu2_unit_id = getString(R.string.interstitial_ad_menu2_unit_id);
+        mInterstitialAd.setAdUnitId(interstitial_ad_menu2_unit_id);
         requestNewInterstitial();
 
 
@@ -95,8 +99,8 @@ public class menu2Activity extends AppCompatActivity {
             this_nocomp_ColortoCode4 = getData.getInt("RGB_nocomp_ColortoCode4", 0);
             this_nocomp_ColortoCode5 = getData.getInt("RGB_nocomp_ColortoCode5", 0);
 
-
-            nowPointview.setText("RGBPoint:" + this_nowPoint);
+            String label_RGB = getString(R.string.label_RGB, this_nowPoint);
+            nowPointview.setText(label_RGB);
 
         } else if (colormode == 2) {
             //getData（SharedPreference)
@@ -117,7 +121,8 @@ public class menu2Activity extends AppCompatActivity {
             this_nocomp_ColortoCode4 = getData.getInt("HSB_nocomp_ColortoCode4", 0);
             this_nocomp_ColortoCode5 = getData.getInt("HSB_nocomp_ColortoCode5", 0);
 
-            nowPointview.setText("HSBPoint:" + this_nowPoint);
+            String label_HSB = getString(R.string.label_HSB, this_nowPoint);
+            nowPointview.setText(label_HSB);
 
         }
         //-----------------↓TestData↓-----------------//
@@ -170,79 +175,12 @@ public class menu2Activity extends AppCompatActivity {
         }
     }
 
-    public void ColortoCode1(View v) {
-        maxlimit = 255;
-        minlimit = 225;
-        plus = "";
-        setintent_ColortoCode();
-    }
-
-    public void ColortoCode2(View v) {
-        level = 2;
-        if (this_ull_ColortoCode >= 2) {
-            maxlimit = 225;
-            minlimit = 195;
-            setintent_ColortoCode();
-        } else {
-            req_level = level - 1;
-            req_nocomp = 3;
-            req_Point = 60;
-            plus = "";
-            lockedmessage();
-        }
-    }
-
-    public void ColortoCode3(View v) {
-        level = 3;
-        if (this_ull_ColortoCode >= 3) {
-            maxlimit = 195;
-            minlimit = 165;
-            setintent_ColortoCode();
-        } else {
-            req_level = level - 1;
-            req_nocomp = 3;
-            req_Point = 90;
-            plus = "";
-            lockedmessage();
-        }
-    }
-
-    public void ColortoCode4(View v) {
-        level = 4;
-        if (this_ull_ColortoCode >= 4) {
-            maxlimit = 165;
-            minlimit = 135;
-            setintent_ColortoCode();
-        } else {
-            req_level = level - 1;
-            req_nocomp = 3;
-            req_Point = 90;
-            plus = "";
-            plus = "CodetoColorのLevel3をUnlockしてください。";
-            lockedmessage();
-        }
-    }
-
-    public void ColortoCode5(View v) {
-        level = 5;
-        if (this_ull_ColortoCode >= 5) {
-            maxlimit = 135;
-            minlimit = 105;
-            plus = "";
-            setintent_ColortoCode();
-        } else {
-            req_level = level - 1;
-            req_nocomp = 4;
-            req_Point = 125;
-            plus = "";
-            lockedmessage();
-        }
-    }
 
     public void CodetoColor1(View v) {
         maxlimit = 255;
         minlimit = 225;
         level = 1;
+        this_nocomp = this_nocomp_CodetoColor1;
         plus = "";
         setintent_CodetoColor();
     }
@@ -252,6 +190,7 @@ public class menu2Activity extends AppCompatActivity {
         if (this_ull_CodetoColor >= 2) {
             maxlimit = 225;
             minlimit = 195;
+            this_nocomp = this_nocomp_CodetoColor2;
             setintent_CodetoColor();
         } else {
             req_level = level - 1;
@@ -267,6 +206,7 @@ public class menu2Activity extends AppCompatActivity {
         if (this_ull_CodetoColor >= 3) {
             maxlimit = 195;
             minlimit = 165;
+            this_nocomp = this_nocomp_CodetoColor3;
             setintent_CodetoColor();
         } else {
             req_level = level - 1;
@@ -282,12 +222,13 @@ public class menu2Activity extends AppCompatActivity {
         if (this_ull_CodetoColor >= 4) {
             maxlimit = 165;
             minlimit = 135;
+            this_nocomp = this_nocomp_CodetoColor4;
             setintent_CodetoColor();
         } else {
             req_level = level - 1;
             req_nocomp = 3;
             req_Point = 125;
-            plus = "ColortoCodeのLevel3をUnlockしてください。";
+            plus = getString(R.string.plus_ColortoCode4);
             lockedmessage();
         }
     }
@@ -297,6 +238,7 @@ public class menu2Activity extends AppCompatActivity {
         if (this_ull_CodetoColor >= 5) {
             maxlimit = 135;
             minlimit = 105;
+            this_nocomp = this_nocomp_CodetoColor5;
             setintent_CodetoColor();
         } else {
             req_level = level - 1;
@@ -307,46 +249,89 @@ public class menu2Activity extends AppCompatActivity {
         }
     }
 
+    public void ColortoCode1(View v) {
+        maxlimit = 255;
+        minlimit = 225;
+        this_nocomp = this_nocomp_ColortoCode1;
+        setintent_ColortoCode();
+    }
+
+    public void ColortoCode2(View v) {
+        level = 2;
+        if (this_ull_ColortoCode >= 2) {
+            maxlimit = 225;
+            minlimit = 195;
+            this_nocomp = this_nocomp_ColortoCode2;
+            setintent_ColortoCode();
+        } else {
+            req_level = level - 1;
+            req_nocomp = 3;
+            req_Point = 60;
+            plus = "";
+            lockedmessage();
+        }
+    }
+
+    public void ColortoCode3(View v) {
+        level = 3;
+        if (this_ull_ColortoCode >= 3) {
+            maxlimit = 195;
+            minlimit = 165;
+            this_nocomp = this_nocomp_ColortoCode3;
+            setintent_ColortoCode();
+        } else {
+            req_level = level - 1;
+            req_nocomp = 3;
+            req_Point = 90;
+            plus = "";
+            lockedmessage();
+        }
+    }
+
+    public void ColortoCode4(View v) {
+        level = 4;
+        if (this_ull_ColortoCode >= 4) {
+            maxlimit = 165;
+            minlimit = 135;
+            this_nocomp = this_nocomp_ColortoCode4;
+            setintent_ColortoCode();
+        } else {
+            req_level = level - 1;
+            req_nocomp = 3;
+            req_Point = 90;
+            plus = getString(R.string.plus_ColortoCode4);
+            lockedmessage();
+        }
+    }
+
+    public void ColortoCode5(View v) {
+        level = 5;
+        if (this_ull_ColortoCode >= 5) {
+            maxlimit = 135;
+            minlimit = 105;
+            plus = "";
+            this_nocomp = this_nocomp_ColortoCode5;
+            setintent_ColortoCode();
+        } else {
+            req_level = level - 1;
+            req_nocomp = 4;
+            req_Point = 125;
+            plus = "";
+            lockedmessage();
+        }
+    }
+
     public void lockedmessage() {
+        String locked_message = getString(R.string.locked_message);
+        String status_message_locked = getString(R.string.status_message_locked, req_Point, req_nocomp, req_Point, plus);
+        String positive_button = getString(R.string.positive_button);
         new AlertDialog.Builder(menu2Activity.this)
-                .setTitle("Lockされています。")
-                .setMessage("Level" + req_level + "を" + req_nocomp + "回以上クリアし、" + req_Point + "以上獲得してください。" + plus)
-                .setPositiveButton("OK", null)
+                .setTitle(locked_message)
+                .setMessage(status_message_locked)
+                .setPositiveButton(positive_button, null)
                 .show();
     }
 
-    public void setintent_ColortoCode() {
-        setnum.selectAll();
-        String num = setnum.getText().toString();
-        if (num.equals("")) {
-            number = 0;
-        } else {
-            number = Integer.parseInt(num);
-        }
-        if (number > 0) {
-            Random rnd = new Random();
-            int decide_showAd = rnd.nextInt(5);
-            if (decide_showAd == 0 && mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-                mInterstitialAd.setAdListener(new AdListener() {
-                    @Override
-                    public void onAdClosed() {
-                        mInterstitialAd.show();
-                        requestNewInterstitial();
-                        intent_ColortoCode();
-                    }
-                });
-            } else {
-                intent_ColortoCode();
-            }
-        } else {
-            new AlertDialog.Builder(menu2Activity.this)
-                    .setTitle("ColortoCodeをStartできません。")
-                    .setMessage("入力した内容を確認してください。")
-                    .setPositiveButton("OK", null)
-                    .show();
-        }
-    }
 
     public void setintent_CodetoColor() {
         setnum.selectAll();
@@ -375,19 +360,62 @@ public class menu2Activity extends AppCompatActivity {
             }
 
         } else {
+            String cannot_start_CodetoColor = getString(R.string.cannot_start_CodetoColor);
+            String alert_input_number = getString(R.string.alert_input_number);
+            String positive_button = getString(R.string.positive_button);
             new AlertDialog.Builder(menu2Activity.this)
-                    .setTitle("CodetoColorをStartできません。")
-                    .setMessage("入力した内容を確認してください。")
-                    .setPositiveButton("OK", null)
+                    .setTitle(cannot_start_CodetoColor)
+                    .setMessage(alert_input_number)
+                    .setPositiveButton(positive_button, null)
+                    .show();
+        }
+    }
+
+    public void setintent_ColortoCode() {
+        setnum.selectAll();
+        String num = setnum.getText().toString();
+        if (num.equals("")) {
+            number = 0;
+        } else {
+            number = Integer.parseInt(num);
+        }
+        if (number > 0) {
+            Random rnd = new Random();
+            int decide_showAd = rnd.nextInt(5);
+            if (decide_showAd == 0 && mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+                mInterstitialAd.setAdListener(new AdListener() {
+                    @Override
+                    public void onAdClosed() {
+                        mInterstitialAd.show();
+                        requestNewInterstitial();
+                        intent_ColortoCode();
+                    }
+                });
+            } else {
+                intent_ColortoCode();
+            }
+        } else {
+            String cannot_start_CodetoColor = getString(R.string.cannot_start_CodetoColor);
+            String alert_input_number = getString(R.string.alert_input_number);
+            String positive_button = getString(R.string.positive_button);
+            new AlertDialog.Builder(menu2Activity.this)
+                    .setTitle(cannot_start_CodetoColor)
+                    .setMessage(alert_input_number)
+                    .setPositiveButton(positive_button, null)
                     .show();
         }
     }
 
     public void intent_CodetoColor() {
+        String start_CodetoColor = getString(R.string.start_CodetoColor);
+        String status_message_unlocked = getString(R.string.status_message_unlocked, this_nowPoint, number, this_nocomp);
+        String positive_button = getString(R.string.positive_button);
+        String negative_button = getString(R.string.negative_button);
         new AlertDialog.Builder(menu2Activity.this)
-                .setTitle("CodetoColorをStartしますか？")
-                .setMessage("問題は" + number + "問です。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(start_CodetoColor)
+                .setMessage(status_message_unlocked)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
@@ -400,15 +428,19 @@ public class menu2Activity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton(negative_button, null)
                 .show();
     }
 
     public void intent_ColortoCode() {
+        String start_ColortoCode = getString(R.string.start_ColortoCode);
+        String status_message_unlocked = getString(R.string.status_message_unlocked, this_nowPoint, number, this_nocomp);
+        String positive_button = getString(R.string.positive_button);
+        String negative_button = getString(R.string.negative_button);
         new AlertDialog.Builder(menu2Activity.this)
-                .setTitle("ColortoCodeをStartしますか？")
-                .setMessage("問題は" + number + "問です。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(start_ColortoCode)
+                .setMessage(status_message_unlocked)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
@@ -421,7 +453,7 @@ public class menu2Activity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton(negative_button, null)
                 .show();
     }
 

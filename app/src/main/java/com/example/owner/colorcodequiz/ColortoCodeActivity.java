@@ -237,7 +237,8 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
@@ -261,13 +262,14 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
             if (gameCount > noq) {
                 gameFinish();
-            } else{
+            } else {
                 setQuestion();
             }
             isnextquestion = false;
@@ -284,7 +286,8 @@ public class ColortoCodeActivity extends AppCompatActivity {
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
@@ -299,20 +302,21 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
 
     public void select4(View view) {
-        if (!isnextquestion )   {
+        if (!isnextquestion) {
             if (check_answer == 4) {
                 check_select4.setImageResource(R.drawable.maru);
-                noca = noca +1;
+                noca = noca + 1;
             } else {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress, gameCount, noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
-        }else {
-            if (gameCount > noq){
+        } else {
+            if (gameCount > noq) {
                 gameFinish();
             } else {
                 setQuestion();
@@ -361,49 +365,49 @@ public class ColortoCodeActivity extends AppCompatActivity {
         if (level <= 3) {
             if (noca <= 7) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 8) {
                 getPoint = 10;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         } else if (level >= 4 && level <= 8) {
             if (noca <= 6) {
                 getPoint = 2;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 7 || noca == 8) {
                 getPoint = 12;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 9) {
                 getPoint = 13;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 10) {
                 getPoint = 14;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         } else if (level >= 9 && level <= 10) {
             if (noca <= 7) {
                 getPoint = 3;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 8) {
                 getPoint = 14;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 9) {
                 getPoint = 15;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 10) {
                 getPoint = 16;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         }
 
@@ -629,71 +633,84 @@ public class ColortoCodeActivity extends AppCompatActivity {
             editor.apply();
         }
 
-        //gameFinish
+        String get_point = getString(R.string.get_point, getPoint);
+        String game_result = getString(R.string.game_result, noq, noca, gameResult);
+        String positive_button = getString(R.string.positive_button);
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(getPoint + "Point獲得しました。")
-                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(get_point)
+                .setMessage(game_result)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore", this_nowPoint);
-                        intent.putExtra("getScore", getPoint);
-                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
                         startActivity(intent);
                     }
                 }).show();
     }
 
     public void ulm_CodetoColor() {
+        String status_ulm_old = getString(R.string.status_ulm_old, st_colormode, unlockmode, ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_CodetoColor);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     public void ulm_ColortoCode() {
+        String status_ulm_old = getString(R.string.status_ulm_old, st_colormode, unlockmode, ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_ColortoCode);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     public void compm() {
+        String compm_title = getString(R.string.compm_title, st_colormode, unlockmode);
+        String compm_twitter = getString(R.string.compm_twitter);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(ColortoCodeActivity.this)
-                .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twetterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(compm_title)
+                .setMessage(compm_twitter)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
+                        ull_old = 10;
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
     }
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = st_colormode + unlockmode + ull_old + "をMasterしました！";
+        String strMessage = getString(R.string.preset_twitter, colormode, unlockmode, ull_old);
+        ;
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {
@@ -709,6 +726,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(strTweet));
         startActivity(intent);
     }
+
 
     public void setQuestion() {
         //createColorCode
@@ -779,21 +797,21 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }
             }
 
-        // 条件B:r,g,bのそれぞれの差を選択肢ごとに加えたものがそのレベルの範囲内になっている。
-        if ((canBreak == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
-            if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
-                if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
-                    if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
-                        if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
-                            if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
-                                break;
+            // 条件B:r,g,bのそれぞれの差を選択肢ごとに加えたものがそのレベルの範囲内になっている。
+            if ((canBreak == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
+                if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
+                    if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {
+                        if ((abs_1_2 >= minlimit) && (abs_1_2 <= maxlimit)) {
+                            if ((abs_1_3 >= minlimit) && (abs_1_3 <= maxlimit)) {
+                                if ((abs_2_3 >= minlimit) && (abs_2_3 <= maxlimit)) {
+                                    break;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
 
 
         //cleanCheckselect

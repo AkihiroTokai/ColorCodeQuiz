@@ -132,7 +132,8 @@ public class MenuActivity extends AppCompatActivity {
 
         changeIcon();
 
-        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
+        String label_RGB = getString(R.string.label_RGB, RGB_nowPoint);
+        nowPointview.setText(label_RGB);
 
     }
 
@@ -144,13 +145,15 @@ public class MenuActivity extends AppCompatActivity {
 
     public void selectRGB(View v) {
         colormode = 1;
-        nowPointview.setText("RGBPoint:" + RGB_nowPoint);
+        String label_RGB = getString(R.string.label_RGB, RGB_nowPoint);
+        nowPointview.setText(label_RGB);
         changeIcon();
     }
 
     public void selectHSB(View v) {
         colormode = 2;
-        nowPointview.setText("HSBPoint:" + HSB_nowPoint);
+        String label_HSB = getString(R.string.label_HSB,HSB_nowPoint);
+        nowPointview.setText(label_HSB);
         changeIcon();
     }
 
@@ -158,11 +161,11 @@ public class MenuActivity extends AppCompatActivity {
         //changeIcon
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 1 || RGB_ull_ColortoCode >= 1) {
-                BootstrapButton tomenu2= (BootstrapButton) findViewById(R.id.tomenu2);
+                BootstrapButton tomenu2 = (BootstrapButton) findViewById(R.id.tomenu2);
                 tomenu2.setLeftIcon("fa-unlock");
             }
             if (RGB_ull_CodetoColor >= 6 || RGB_ull_ColortoCode >= 6) {
-                BootstrapButton tomenu3= (BootstrapButton) findViewById(R.id.tomenu3);
+                BootstrapButton tomenu3 = (BootstrapButton) findViewById(R.id.tomenu3);
                 tomenu3.setLeftIcon("fa-unlock");
             }
         } else if (colormode == 2) {
@@ -185,12 +188,12 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 String locked_message = getString(R.string.locked_message);
-                String locked_message_tomenu2 =getString(R.string.locked_message_tomenu2);
-                String posstive_button = getString(R.string.posstive_button);
+                String locked_message_tomenu2 = getString(R.string.locked_message_tomenu2);
+                String positive_button = getString(R.string.positive_button);
                 new AlertDialog.Builder(MenuActivity.this)
                         .setTitle(locked_message)
                         .setMessage(locked_message_tomenu2)
-                        .setPositiveButton(posstive_button, null)
+                        .setPositiveButton(positive_button, null)
                         .show();
             }
         } else if (colormode == 2) {
@@ -200,12 +203,12 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 String locked_message = getString(R.string.locked_message);
-                String locked_message_tomenu2 =getString(R.string.locked_message_tomenu2);
-                String posstive_button = getString(R.string.posstive_button);
+                String locked_message_tomenu2 = getString(R.string.locked_message_tomenu2);
+                String positive_button = getString(R.string.positive_button);
                 new AlertDialog.Builder(MenuActivity.this)
                         .setTitle(locked_message)
                         .setMessage(locked_message_tomenu2)
-                        .setPositiveButton(posstive_button, null)
+                        .setPositiveButton(positive_button, null)
                         .show();
             }
         }
@@ -219,12 +222,12 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 String locked_message = getString(R.string.locked_message);
-                String locked_message_tomenu3 =getString(R.string.locked_message_tomenu3);
-                String posstive_button = getString(R.string.posstive_button);
+                String locked_message_tomenu3 = getString(R.string.locked_message_tomenu3);
+                String positive_button = getString(R.string.positive_button);
                 new AlertDialog.Builder(MenuActivity.this)
                         .setTitle(locked_message)
                         .setMessage(locked_message_tomenu3)
-                        .setPositiveButton(posstive_button, null)
+                        .setPositiveButton(positive_button, null)
                         .show();
             }
         } else if (colormode == 2) {
@@ -234,12 +237,12 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             } else {
                 String locked_message = getString(R.string.locked_message);
-                String locked_message_tomenu3 =getString(R.string.locked_message_tomenu3);
-                String posstive_button = getString(R.string.posstive_button);
+                String locked_message_tomenu3 = getString(R.string.locked_message_tomenu3);
+                String positive_button = getString(R.string.positive_button);
                 new AlertDialog.Builder(MenuActivity.this)
                         .setTitle(locked_message)
                         .setMessage(locked_message_tomenu3)
-                        .setPositiveButton(posstive_button, null)
+                        .setPositiveButton(positive_button, null)
                         .show();
             }
         }
@@ -272,11 +275,14 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void intent_CodetoColor_practice() {
+        String start_message_CodetoColor_practice = getString(R.string.start_message_CodetoColor_practice);
+        String status_message_unlocked = getString(R.string.status_message_unlocked, noq, this_nocomp_CodetoColor0);
+        String posstive_button = getString(R.string.posstive_button);
+        String negative_button = getString(R.string.negative_button);
         new AlertDialog.Builder(MenuActivity.this)
-                String start_message_CodetoColor_practice = getString(R.string.start_message_CodetoColor_practice)
                 .setTitle(start_message_CodetoColor_practice)
-                .setMessage("問題は" + noq + "問です。" + this_nocomp_CodetoColor0 + "回クリアしています。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setMessage(status_message_unlocked)
+                .setPositiveButton(posstive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
@@ -285,7 +291,7 @@ public class MenuActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton(negative_button, null)
                 .show();
     }
 
@@ -316,10 +322,14 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void intent_ColortoCode_practice() {
+        String start_message_ColortoCode_practice = getString(R.string.start_message_ColortoCode_practice);
+        String status_message_unlocked = getString(R.string.status_message_unlocked, noq, this_nocomp_ColortoCode0);
+        String positive_button = getString(R.string.positive_button);
+        String negative_button = getString(R.string.negative_button);
         new AlertDialog.Builder(MenuActivity.this)
-                .setTitle("CodetoColor_praciceをStartしますか？")
-                .setMessage("問題は" + noq + "問です。" + this_nocomp_ColortoCode0 + "回クリアしています。")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                .setTitle(start_message_ColortoCode_practice)
+                .setMessage(status_message_unlocked)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
@@ -328,7 +338,7 @@ public class MenuActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton(negative_button, null)
                 .show();
     }
 
@@ -339,6 +349,7 @@ public class MenuActivity extends AppCompatActivity {
 
         mInterstitialAd.loadAd(adRequest);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

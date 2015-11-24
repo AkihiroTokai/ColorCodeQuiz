@@ -250,8 +250,10 @@ public class CodetoColorActivity extends AppCompatActivity {
                 check_select1.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightAnswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
@@ -273,9 +275,11 @@ public class CodetoColorActivity extends AppCompatActivity {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightAnswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
-                isnextquestion = true;
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
+                isnextquestion= true;
             }
         } else {
             if (gameCount > noq) {
@@ -296,8 +300,10 @@ public class CodetoColorActivity extends AppCompatActivity {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightAnswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
@@ -320,8 +326,10 @@ public class CodetoColorActivity extends AppCompatActivity {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightAnswer();
                 gameCount = gameCount + 1;
-                progress.setText("Progress:" + gameCount + "/" + noq);
+                String st_progress = getString(R.string.progress,gameCount,noq);
+                progress.setText(st_progress);
                 isnextquestion = true;
             }
         } else {
@@ -431,49 +439,49 @@ public class CodetoColorActivity extends AppCompatActivity {
         if (level <= 3) {
             if (noca <= 7) {
                 getPoint = 1;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 8) {
                 getPoint = 10;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
                 isCompleted = true;
             } else if (noca == 9 || noca == 10) {
                 getPoint = 11;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         } else if (level >= 4 && level <= 8) {
             if (noca <= 6) {
                 getPoint = 2;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);
             } else if (noca == 7 || noca == 8) {
                 getPoint = 12;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 9) {
                 isCompleted = true;
                 getPoint = 13;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 10) {
                 getPoint = 14;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         } else if (level >= 9 && level <= 10) {
             if (noca <= 7) {
                 getPoint = 3;
-                gameResult = "クリアできませんでした。";
+                gameResult = getString(R.string.cannot_gameclear);;
             } else if (noca == 8) {
                 getPoint = 14;
                 isCompleted = true;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 9) {
                 isCompleted = true;
                 getPoint = 15;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             } else if (noca == 10) {
                 isCompleted = true;
                 getPoint = 16;
-                gameResult = "クリアしました。";
+                gameResult = getString(R.string.gameclear);
             }
         }
 
@@ -648,8 +656,6 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_ull_CodetoColor = 11;
             ull_old = this_ull_CodetoColor - 1;
             compm();
-        }else{
-            finishActivity();
         }
 
         //saveData  (Parse)
@@ -701,62 +707,85 @@ public class CodetoColorActivity extends AppCompatActivity {
             editor.putInt("HSB_nocomp_CodetoColor10", this_nocomp_CodetoColor10);
             editor.apply();
         }
-
+        //gameFinish
+        String get_point =getString(R.string.get_point,getPoint);
+        String game_result =getString(R.string.game_result,noq,noca,gameResult);
+        String positive_button = getString(R.string.positive_button);
+        new AlertDialog.Builder(CodetoColorActivity.this)
+                .setTitle(get_point)
+                .setMessage(game_result)
+                .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK button pressed
+                        Intent intent = new Intent(CodetoColorActivity.this, MenuActivity.class);
+                        startActivity(intent);
+                    }
+                }).show();
     }
 
 
-    public void ulm_CodetoColor() {
+    public  void ulm_CodetoColor(){
+        String status_ulm_old = getString(R.string.status_ulm_old,st_colormode,unlockmode,ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter,unlockmode,this_ull_CodetoColor);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_CodetoColor + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
-        finishActivity();
     }
 
-    public void ulm_ColortoCode() {
+    public  void ulm_ColortoCode(){
+        String status_ulm_old = getString(R.string.status_ulm_old,st_colormode,unlockmode,ull_old);
+        String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter,unlockmode,this_ull_ColortoCode);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(st_colormode + unlockmode + "Level" + ull_old + "をMasterしました！")
-                .setMessage(unlockmode + "Level" + this_ull_ColortoCode + "がUnLockされました。おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(status_ulm_old)
+                .setMessage(status_ulm_CodetoColor)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
-
-        finishActivity();
     }
+
 
     public void compm() {
+        String compm_title = getString(R.string.compm_title,st_colormode,unlockmode);
+        String compm_twitter = getString(R.string.compm_twitter);
+        String agree_button = getString(R.string.agree_button);
+        String oppose_button = getString(R.string.oppose_button);
         new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(st_colormode + unlockmode + "をMasterしました！")
-                .setMessage("おめでとうございます。Twitterに投稿しますか？")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setTitle(compm_title)
+                .setMessage(compm_twitter)
+                .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
                         tweeting();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(oppose_button, null)
                 .show();
-        finishActivity();
     }
 
     private void tweeting() {
         String strTweet = "";
-        String strMessage = st_colormode + unlockmode + ull_old + "をMasterしました！";
+        String strMessage =  getString(R.string.preset_twitter,colormode,unlockmode,ull_old);;
         String strHashTag = "#Why don't you be a color code master? ";
         String strUrl = "https://twitter.com/tr_techrelation";
         try {
@@ -772,26 +801,9 @@ public class CodetoColorActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(strTweet));
         startActivity(intent);
 
-        finishActivity();
     }
 
-    public void finishActivity(){
-        //gameFinish
-        new AlertDialog.Builder(CodetoColorActivity.this)
-                .setTitle(getPoint + "Point獲得しました。")
-                .setMessage(noq + "問中" + noca + "問正解したので、" + gameResult)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // OK button pressed
-                        Intent intent = new Intent(CodetoColorActivity.this, MenuActivity.class);
-                        intent.putExtra("nowScore", this_nowPoint);
-                        intent.putExtra("getScore", getPoint);
-                        intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
-                        startActivity(intent);
-                    }
-                }).show();
-    }
+
     public void setQuestion() {
         //createQuestionCode
         Random rnd1 = new Random();

@@ -277,7 +277,7 @@ public class MenuActivity extends AppCompatActivity {
     public void intent_CodetoColor_practice() {
         String start_message_CodetoColor_practice = getString(R.string.start_message_CodetoColor_practice);
         String status_message_unlocked = getString(R.string.status_message_unlocked, noq, this_nocomp_CodetoColor0);
-        String posstive_button = getString(R.string.posstive_button);
+        String posstive_button = getString(R.string.positive_button);
         String negative_button = getString(R.string.negative_button);
         new AlertDialog.Builder(MenuActivity.this)
                 .setTitle(start_message_CodetoColor_practice)

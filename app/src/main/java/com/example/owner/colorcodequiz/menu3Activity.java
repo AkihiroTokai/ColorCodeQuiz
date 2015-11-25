@@ -345,7 +345,7 @@ public class menu3Activity extends AppCompatActivity {
 
     public void lockedmessage() {
         String locked_message = getString(R.string.locked_message);
-        String status_message_unlocked = getString(R.string.status_message_unlocked, this_nowPoint, number, this_nocomp);
+        String status_message_unlocked = getString(R.string.status_message_unlocked, req_level, req_nocomp, req_Point,plus);
         String positive_button = getString(R.string.positive_button);
         new AlertDialog.Builder(menu3Activity.this)
                 .setTitle(locked_message)

@@ -40,7 +40,6 @@
             android:text="Number of question(Locked):"
             android:id="@+id/Numberofquestion"
             android:layout_alignBottom="@+id/setnum"
-            android:layout_alignEnd="@+id/mode"
             android:layout_margin="10dp"/>
 
         <EditText
@@ -82,7 +81,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:nestedScrollingEnabled="false"
-            android:layout_toEndOf="@+id/ColortoCode"
             android:layout_marginLeft="10dp"
             android:clickable = "false"
             android:onClick="CodetoColor1" />
@@ -96,7 +94,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode1" />
     </LinearLayout>
@@ -114,8 +111,6 @@
             android:text="Level2"
             android:id="@+id/Level7"
             android:gravity="center_vertical"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/Random"
             android:layout_alignTop="@+id/tomenu3"
             android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
@@ -131,7 +126,6 @@
             bootstrap:bb_icon_left="fa-key"
             android:nestedScrollingEnabled="false"
             android:layout_below="@+id/Randommode"
-            android:layout_toEndOf="@+id/ColortoCode"
             android:layout_marginLeft="10dp"
             android:onClick="CodetoColor2" />
 
@@ -144,7 +138,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode2" />
     </LinearLayout>
@@ -162,7 +155,6 @@
             android:text="Level3"
             android:id="@+id/Level3"
             android:gravity="center_vertical"
-            android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/tomenu3"
             android:layout_alignBottom="@+id/tomenu3"
             android:layout_marginLeft="10dp" />
@@ -177,7 +169,6 @@
             bootstrap:bb_icon_left="fa-key"
             android:nestedScrollingEnabled="false"
             android:layout_below="@+id/Randommode"
-            android:layout_toEndOf="@+id/ColortoCode"
             android:layout_marginLeft="10dp"
             android:onClick="CodetoColor3" />
 
@@ -190,7 +181,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode3" />
     </LinearLayout>
@@ -207,7 +197,6 @@
             android:text="Level4"
             android:id="@+id/Level4"
             android:gravity="center_vertical"
-            android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/tomenu3"
             android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
@@ -222,7 +211,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:nestedScrollingEnabled="false"
-            android:layout_toEndOf="@+id/ColortoCode"
             android:layout_marginLeft="10dp"
             android:onClick="CodetoColor4" />
 
@@ -235,7 +223,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode4" />
     </LinearLayout>
@@ -253,8 +240,6 @@
             android:text="Level5"
             android:id="@+id/Level5"
             android:gravity="center_vertical"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/Random"
             android:layout_alignTop="@+id/tomenu3"
             android:layout_alignBottom="@+id/tomenu3"
             android:layout_gravity="center_vertical"
@@ -270,7 +255,6 @@
             bootstrap:bb_icon_left="fa-key"
             android:nestedScrollingEnabled="false"
             android:layout_below="@+id/Randommode"
-            android:layout_toEndOf="@+id/ColortoCode"
             android:layout_marginLeft="10dp"
             android:onClick="CodetoColor5" />
 
@@ -283,7 +267,6 @@
             bootstrap:bb_roundedCorners="true"
             bootstrap:bb_icon_left="fa-key"
             android:layout_above="@+id/mode"
-            android:layout_alignEnd="@+id/mode"
             android:layout_marginLeft="10dp"
             android:onClick="ColortoCode5" />
     </LinearLayout>

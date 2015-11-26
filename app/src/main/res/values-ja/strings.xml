@@ -6,7 +6,7 @@
     <string name="locked_message">Lockされています。</string>
     <string name="locked_message_tomenu2">Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。</string>
     <string name="positive_button">OK</string>
-    <string name="locked_message_tomenu3">レベル6をUnLockしてください。</string>
+    <string name="locked_message_tomenu3">レベル6をunlockしてください。</string>
     <string name="start_message_CodetoColor_practice">CodetoColor_practiceをStartしますか？</string>
     <string name="status_message_unlocked">問題は %1$d問です。%2$d回クリアしています。</string>
     <string name="negative_button">Cancel</string>
@@ -35,7 +35,7 @@
     <string name="get_point">%1$dPoint獲得しました。</string>
     <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
     <string name="status_ulm_old">%1$d%2$dLevel%3$d をMasterしました！</string>
-    <string name="status_ulm_twitter"> %1$dLevel%2$d "がunlockされました。おめでとうございます。Twetterに投稿しませんか？"</string>
+    <string name="status_ulm_twitter"> %1$dLevel%2$d がunlockされました。おめでとうございます。Twetterに投稿しませんか？</string>
     <string name="agree_button">Yes</string>
     <string name="oppose_button">No</string>
     <string name="compm_title">%1$sの%2$dをMasterしました！</string>

@@ -8,37 +8,37 @@
     <string name="positive_button">좋아</string>
     <string name="locked_message_tomenu3">레벨 6을 UnLock하십시오.</string>
     <string name="start_message_CodetoColor_practice">CodetoColor_practice를 시작 하시겠습니까?</string>
-    <string name="status_message_unlocked">問題は %1$d問です。%2$d회 크리어하고 있습니다. </string>
+    <string name="status_message_unlocked">문제는 %1$d 문항입니다.%2$d회 크리어하고 있습니다. </string>
     <string name="negative_button">취소</string>
     <string name="start_message_ColortoCode_practice">ColortoCode_practice를 시작 하시겠습니까?</string>
 
     <!--menu2Activity -->
-    <string name="plus_CodetoColor4">ColortoCodeのLevel3をUnlockしてください。</string>
-    <string name="plus_ColortoCode4">CodetoColorのLevel3をUnlockしてください。</string>
-    <string name="status_message_locked">Level%1$dを%2$d回以上クリアし、%3$dPoint以上獲得してください。%4$s</string>
-    <string name="cannot_start_CodetoColor">CodetoColorをStartできません。</string>
-    <string name="alert_input_number">"入力した内容を確認してください。"</string>
-    <string name="cannot_start_ColortoCode">"ColortoCodeをStartできません。</string>
-    <string name="start_CodetoColor">CodetoColorをStartしますか？</string>
-    <string name="start_ColortoCode">ColortoCodeをStartしますか？</string>
+    <string name="plus_CodetoColor4">ColortoCode의 Level3를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode4">CodetoColor의 Level3를 Unlock하십시오.</string>
+    <string name="status_message_locked">Level%1＄d를 %2＄d회이상 크리어해 ,% 3＄dPoint이상 획득해 주세요.%4$s</string>
+    <string name="cannot_start_CodetoColor">CodetoColor 를 개시할 수 없습니다</string>
+    <string name="alert_input_number">입력한 내용을 확인해 주세요 </string>
+    <string name="cannot_start_ColortoCode">"ColortoCode를 개시할 수 없습니다</string>
+    <string name="start_CodetoColor">CodetoColor 를 시작 하시겠습니까？</string>
+    <string name="start_ColortoCode">ColortoCode 를 시작 하시겠습니까？</string>
 
     <!--menu3Activity-->
-    <string name="plus_CodetoColor7">ColortoCodeのLevel5をunlockしてください。</string>
-    <string name="plus_CodetoColor9">ColortoCodeのLevel7をunlockしてください。</string>
-    <string name="plus_ColortoCode7">CodetoColorのLevel5をunlockしてください。</string>
-    <string name="plus_ColortoCode9">CodetoColorのLevel7をunlockしてください。</string>
+    <string name="plus_CodetoColor7">ColortoCode의 Level5를 Unlock하십시오.</string>
+    <string name="plus_CodetoColor9">ColortoCode의 Level7를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode7">CodetoColor의 Level5를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode9">CodetoColor의 Level7를 Unlock하십시오.</string>
 
     <!--CodetoColor_practiceActivity-->
     <string name="progress">Progress:%1$d/%2$d</string>
-    <string name="cannot_gameclear">クリアできませんでした。</string>
-    <string name="gameclear">クリアしました。</string>
-    <string name="get_point">%1$dPoint獲得しました。</string>
-    <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
-    <string name="status_ulm_old">%1$d%2$dLevel%3$d をMasterしました！</string>
-    <string name="status_ulm_twitter"> %1$dLevel%2$d "がunlockされました。おめでとうございます。Twetterに投稿しませんか？"</string>
-    <string name="agree_button">Yes</string>
-    <string name="oppose_button">No</string>
-    <string name="compm_title">%1$sの%2$dをMasterしました！</string>
-    <string name="compm_twitter">おめでとうございます。Twitterに投稿しませんか？</string>
-    <string name="preset_twitter">%1$sの%2$dLevel%3$dをMasterしました！</string>
+    <string name="cannot_gameclear">클리어 할 수 없었습니다.</string>
+    <string name="gameclear">클리어했습니다.</string>
+    <string name="get_point">%1$d　포인트를 획득했습니다.</string>
+    <string name="game_result">%1$d 문항 중 %2$d 문항 정답 했으므로,%3$d</string>
+    <string name="status_ulm_old">%1$d%2$dLevel%3$d 을 Master했습니다!</string>
+    <string name="status_ulm_twitter"> %1$dLevel%2$d 가 unlock 되었습니다.축하합니다.Twitter에 투고하지 않겠습니까?</string>
+    <string name="agree_button">네</string>
+    <string name="oppose_button">아니</string>
+    <string name="compm_title">%1$s의 %2$d를 Master했습니다!</string>
+    <string name="compm_twitter">축하합니다.Twitter에 투고하지 않겠습니까?</string>
+    <string name="preset_twitter">%1$s의 %2$dLevel%3$를 Master했습니다!</string>
 </resources>

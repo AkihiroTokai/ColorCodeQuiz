@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--台湾（TW)・香港（HK)では繁体字-->
+<resources>
+    <!--menuActivity -->
+    <string name="label_RGB">RGB点:%1$d</string>
+    <string name="label_HSB">HSB点:%1$d</string>
+    <string name="locked_message">已被鎖定。</string>
+    <string name="locked_message_tomenu2">我們通過超過3次的Practice，请得分超过30个点。</string>
+    <string name="positive_button">还行</string>
+    <string name="locked_message_tomenu3">请解锁级别 6。</string>
+    <string name="start_message_CodetoColor_practice">你开始CodetoColor_practice？</string>
+    <string name="status_message_unlocked">问题是 %1$d 个问题。%2$d次我已经通过了。</string>
+    <string name="negative_button">取消</string>
+    <string name="start_message_ColortoCode_practice">你开始ColortoCode_practice？</string>
+
+    <!--menu2Activity -->
+    <string name="plus_CodetoColor4">请解锁ColortoCode 级别3.</string>
+    <string name="plus_ColortoCode4">请解锁CodetoColor 级别3.</string>
+    <string name="status_message_locked">我们通过超过%2$d次的级别%1$d，请得分超过%3$d个点。%4$s</string>
+    <string name="cannot_start_CodetoColor">你无法启动　CodetoColor。</string>
+    <string name="alert_input_number">您需要检查输入的内容。</string>
+    <string name="cannot_start_ColortoCode">"你无法启动　ColortoCode。</string>
+    <string name="start_CodetoColor">你开始CodetoColor？</string>
+    <string name="start_ColortoCode">你开始ColortoCode？</string>
+
+    <!--menu3Activity-->
+    <string name="plus_CodetoColor7">请解锁ColortoCode 级别5。</string>
+    <string name="plus_CodetoColor9">请解锁ColortoCode 级别7。</string>
+    <string name="plus_ColortoCode7">请解锁CodetoColor 级别5。</string>
+    <string name="plus_ColortoCode9">请解锁CodetoColor 级别7。</string>
+
+    <!--CodetoColor_practiceActivity-->
+    <string name="progress">进展:%1$d/%2$d</string>
+    <string name="cannot_gameclear">未通过。</string>
+    <string name="gameclear">先后通过。</string>
+    <string name="get_point">你赢了%1$d点。</string>
+    <string name="game_result">因为%1$d问内答对了%2$d%3$d</string>
+    <string name="status_ulm_old">你有一个主%1$d%2$s的%3$！</string>
+    <string name="status_ulm_twitter"> %1$d级别%2$d 已被释放。恭喜。</string>
+    <string name="agree_button">是啊</string>
+    <string name="oppose_button">没有</string>
+    <string name="compm_title">你有一个主%1$s的%2$！</string>
+    <string name="compm_twitter">恭喜。</string>
+    <string name="preset_twitter">你有一个主%1$d%2$s的級別%3$！</string>
+</resources>

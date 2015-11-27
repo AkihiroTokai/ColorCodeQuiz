@@ -17,7 +17,7 @@
     <string name="plus_ColortoCode4">CodetoColorのLevel3をUnlockしてください。</string>
     <string name="status_message_locked">Level%1$dを%2$d回以上クリアし、%3$dPoint以上獲得してください。%4$s</string>
     <string name="cannot_start_CodetoColor">CodetoColorをStartできません。</string>
-    <string name="alert_input_number">"入力した内容を確認してください。"</string>
+    <string name="alert_input_number">入力した内容を確認してください。</string>
     <string name="cannot_start_ColortoCode">"ColortoCodeをStartできません。</string>
     <string name="start_CodetoColor">CodetoColorをStartしますか？</string>
     <string name="start_ColortoCode">ColortoCodeをStartしますか？</string>

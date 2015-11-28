@@ -15,8 +15,8 @@
     <string name="facebook_app_id">1643052322619255</string>
 
 
-    <!--★★★★★★★★★★★★★★★★★★★★★★★★↓AdTest↓★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★-->
-    <!--bannerAd-->
+    <!--★★★★★★★★★★★★★★★★★★★★★★★★↓AdTest↓★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+    <!-bannerAd
     <string name="test_device_hash">112DAF664CFB0B28BE8C954BCC2DD985</string>
     <string name="banner_ad_menu1_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_ad_menu2_unit_id">ca-app-pub-3940256099942544/6300978111</string>
@@ -26,14 +26,14 @@
     <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
-    <!--interstialAd-->
+    <!-interstialAd
     <string name="interstitial_ad_menu1_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="interstitial_ad_menu2_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="interstitial_ad_menu3_unit_id">ca-app-pub-3940256099942544/1033173712</string>
-    <!--★★★★★★★★★★★★★★★★★★★★★★★★↑AdTest↑★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★-->
+    ★★★★★★★★★★★★★★★★★★★★★★★★↑AdTest↑★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★-->
 
-    <!--☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆↓Release↓☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-    （bannerAd）
+    <!--☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆↓Release↓☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆-->
+
     <string name="banner_ad_menu1_unit_id">ca-app-pub-8562277261640444/3312654214</string>
     <string name="banner_ad_menu2_unit_id">ca-app-pub-8562277261640444/9740317417</string>
     <string name="banner_ad_menu3_unit_id">ca-app-pub-8562277261640444/5170517011</string>
@@ -42,13 +42,12 @@
     <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-8562277261640444/1379445814</string>
     <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-8562277261640444/4332912213</string>
 
-    （interstialAd）
+
     <string name="interstitial_ad_menu1_unit_id">ca-app-pub-8562277261640444/5809645411</string>
     <string name="interstitial_ad_menu2_unit_id">ca-app-pub-8562277261640444/8763111817</string>
     <string name="interstitial_ad_menu3_unit_id">ca-app-pub-8562277261640444/1239845018</string>
-    ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆↑Release↑☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆-->
-
-    <!--menuActivity -->
+    <!--☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆↑Release↑☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆->
+    <!-menuActivity -->
     <string name="label_RGB">RGBPoint:%1$d</string>
     <string name="label_HSB">HSBPoint:%1$d</string>
     <string name="locked_message">Has been Locked</string>
@@ -64,9 +63,9 @@
     <string name="plus_CodetoColor4">Please to unlock the Level3 of ColortoCode.</string>
     <string name="plus_ColortoCode4">Please to unlock the Level3 of CodetoColor.</string>
     <string name="status_message_locked">It is necessary for you to clear level %1$d more than %2$d  times and please acquire it more than %3$dPoint.%4$s</string>
-    <string name="cannot_start_CodetoColor">You can't start CodetoColor</string>
+    <string name="cannot_start_CodetoColor">You can\'t start CodetoColor</string>
     <string name="alert_input_number">Please confirm the content that you input.</string>
-    <string name="cannot_start_ColortoCode">You can't start ColortoCode.</string>
+    <string name="cannot_start_ColortoCode">You can\'t start ColortoCode.</string>
     <string name="start_CodetoColor">Do you want to start the CodetoColor?</string>
     <string name="start_ColortoCode">Do you want to start the ColortoCode?</string>
 

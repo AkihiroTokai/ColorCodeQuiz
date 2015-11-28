@@ -5,7 +5,7 @@ package com.example.owner.colorcodequiz;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.example.owner.colorcodequiz";
+  public static final String APPLICATION_ID = "com.techrelation.colorcodequiz";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;

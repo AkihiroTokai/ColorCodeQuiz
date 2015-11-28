@@ -60,7 +60,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/check_select2"
+            android:id="@+id/check_select1"
             android:layout_gravity="center"
             android:layout_toStartOf="@+id/question"
             android:layout_alignTop="@+id/frameLayout3"

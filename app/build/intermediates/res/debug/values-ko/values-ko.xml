@@ -15,6 +15,22 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"음성 검색"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s와(과) 공유"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ko/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="agree_button">네</string>
+    <string name="alert_input_number">입력한 내용을 확인해 주세요 </string>
+    <string name="app_name">ColorCodeQuiz</string>
+    <string name="banner_ad_CodetoColor_practice_unit_id"> ca-app-pub-8562277261640444/7425979411</string>
+    <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-8562277261640444/1379445814</string>
+    <string name="banner_ad_ColortoCode_practice_unit_id">ca-app-pub-8562277261640444/8902712611</string>
+    <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-8562277261640444/4332912213</string>
+    <string name="banner_ad_menu1_unit_id">ca-app-pub-8562277261640444/3312654214</string>
+    <string name="banner_ad_menu2_unit_id">ca-app-pub-8562277261640444/9740317417</string>
+    <string name="banner_ad_menu3_unit_id">ca-app-pub-8562277261640444/5170517011</string>
+    <string name="cannot_gameclear">클리어 할 수 없었습니다.</string>
+    <string name="cannot_start_CodetoColor">CodetoColor 를 개시할 수 없습니다</string>
+    <string name="cannot_start_ColortoCode">"ColortoCode를 개시할 수 없습니다</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
@@ -67,6 +83,24 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"휴대전화에서 열기"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"로그인"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ko/strings.xml -->
+    <eat-comment/>
+    <string name="compm_title">%1$s의 %2$d를 Master했습니다!</string>
+    <string name="compm_twitter">축하합니다.Twitter에 투고하지 않겠습니까?</string>
+    <string name="facebook_app_id">1643052322619255</string>
+    <string name="game_result">%1$d 문항 중 %2$d 문항 정답 했으므로,%3$d</string>
+    <string name="gameclear">클리어했습니다.</string>
+    <string name="get_point">%1$d　포인트를 획득했습니다.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="interstitial_ad_menu1_unit_id">ca-app-pub-8562277261640444/5809645411</string>
+    <string name="interstitial_ad_menu2_unit_id">ca-app-pub-8562277261640444/8763111817</string>
+    <string name="interstitial_ad_menu3_unit_id">ca-app-pub-8562277261640444/1239845018</string>
+    <string name="label_HSB">HSBPoint:%1$d</string>
+    <string name="label_RGB">RGBPoint:%1$d</string>
+    <string name="locked_message">Lock되어 있습니다.</string>
+    <string name="locked_message_tomenu2">Practice를 각각 3회이상 크리어하고, 30Point이상 획득해 주세요.</string>
+    <string name="locked_message_tomenu3">레벨 6을 UnLock하십시오.</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ko/values-ko.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">보내기</string>
@@ -78,4 +112,34 @@
     <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"연결 해제"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"시스템"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"기기"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ko/strings.xml -->
+    <eat-comment/>
+    <string name="negative_button">취소</string>
+    <string name="oppose_button">아니</string>
+    <string name="plus_CodetoColor4">ColortoCode의 Level3를 Unlock하십시오.</string>
+    <string name="plus_CodetoColor7">ColortoCode의 Level5를 Unlock하십시오.</string>
+    <string name="plus_CodetoColor9">ColortoCode의 Level7를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode4">CodetoColor의 Level3를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode7">CodetoColor의 Level5를 Unlock하십시오.</string>
+    <string name="plus_ColortoCode9">CodetoColor의 Level7를 Unlock하십시오.</string>
+    <string name="positive_button">좋아</string>
+    <string name="preset_twitter">%1$s의 %2$dLevel%3$를 Master했습니다!</string>
+    <string name="progress">Progress:%1$d/%2$d</string>
+    <string name="start_CodetoColor">CodetoColor 를 시작 하시겠습니까？</string>
+    <string name="start_ColortoCode">ColortoCode 를 시작 하시겠습니까？</string>
+    <string name="start_message_CodetoColor_practice">CodetoColor_practice를 시작 하시겠습니까?</string>
+    <string name="start_message_ColortoCode_practice">ColortoCode_practice를 시작 하시겠습니까?</string>
+    <string name="status_message_locked">Level%1$d를 %2$d회이상 크리어해 ,%3$dPoint이상 획득해 주세요.%4$s</string>
+    <string name="status_message_unlocked">문제는 %1$d 문항입니다.%2$d회 크리어하고 있습니다. </string>
+    <string name="status_ulm_old">%1$d%2$dLevel%3$d 을 Master했습니다!</string>
+    <string name="status_ulm_twitter"> %1$dLevel%2$d 가 unlock 되었습니다.축하합니다.Twitter에 투고하지 않겠습니까?</string>
+    <string name="title_activity_codeto_color">CodetoColorActivity</string>
+    <string name="title_activity_codetocolor">CodetCcolorActivity</string>
+    <string name="title_activity_colorto_code">ColortoCodeActivity</string>
+    <string name="title_activity_colorto_code_practice">ColortoCode_practiceActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="title_activity_menu">menuActivity</string>
+    <string name="title_activity_menu2">menu2Activity</string>
+    <string name="title_activity_menu3">menu3Activity</string>
 </resources>

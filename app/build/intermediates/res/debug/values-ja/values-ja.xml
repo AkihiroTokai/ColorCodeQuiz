@@ -15,6 +15,22 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ja/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="agree_button">Yes</string>
+    <string name="alert_input_number">入力した内容を確認してください。</string>
+    <string name="app_name">ColorCodeQuiz</string>
+    <string name="banner_ad_CodetoColor_practice_unit_id"> ca-app-pub-8562277261640444/7425979411</string>
+    <string name="banner_ad_CodetoColor_unit_id">ca-app-pub-8562277261640444/1379445814</string>
+    <string name="banner_ad_ColortoCode_practice_unit_id">ca-app-pub-8562277261640444/8902712611</string>
+    <string name="banner_ad_ColortoCode_unit_id">ca-app-pub-8562277261640444/4332912213</string>
+    <string name="banner_ad_menu1_unit_id">ca-app-pub-8562277261640444/3312654214</string>
+    <string name="banner_ad_menu2_unit_id">ca-app-pub-8562277261640444/9740317417</string>
+    <string name="banner_ad_menu3_unit_id">ca-app-pub-8562277261640444/5170517011</string>
+    <string name="cannot_gameclear">クリアできませんでした。</string>
+    <string name="cannot_start_CodetoColor">CodetoColorをStartできません。</string>
+    <string name="cannot_start_ColortoCode">"ColortoCodeをStartできません。</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ja/values-ja.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">画像のダウンロード中に予期しないエラーが発生しました。</string>
@@ -67,6 +83,24 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"端末で開く"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"ログイン"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Googleでログイン"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ja/strings.xml -->
+    <eat-comment/>
+    <string name="compm_title">%1$sの%2$dをMasterしました！</string>
+    <string name="compm_twitter">おめでとうございます。Twitterに投稿しませんか？</string>
+    <string name="facebook_app_id">1643052322619255</string>
+    <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
+    <string name="gameclear">クリアしました。</string>
+    <string name="get_point">%1$dPoint獲得しました。</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="interstitial_ad_menu1_unit_id">ca-app-pub-8562277261640444/5809645411</string>
+    <string name="interstitial_ad_menu2_unit_id">ca-app-pub-8562277261640444/8763111817</string>
+    <string name="interstitial_ad_menu3_unit_id">ca-app-pub-8562277261640444/1239845018</string>
+    <string name="label_HSB">HSBPoint:%1$d</string>
+    <string name="label_RGB">RGBPoint:%1$d</string>
+    <string name="locked_message">Lockされています。</string>
+    <string name="locked_message_tomenu2">Practiceをそれぞれ3回以上クリアし、30Point以上獲得してください。</string>
+    <string name="locked_message_tomenu3">レベル6をunlockしてください。</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ja/values-ja.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">送信</string>
@@ -78,4 +112,34 @@
     <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"接続を解除"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"システム"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"端末"</string>
+    <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/values-ja/strings.xml -->
+    <eat-comment/>
+    <string name="negative_button">Cancel</string>
+    <string name="oppose_button">No</string>
+    <string name="plus_CodetoColor4">ColortoCodeのLevel3をUnlockしてください。</string>
+    <string name="plus_CodetoColor7">ColortoCodeのLevel5をunlockしてください。</string>
+    <string name="plus_CodetoColor9">ColortoCodeのLevel7をunlockしてください。</string>
+    <string name="plus_ColortoCode4">CodetoColorのLevel3をUnlockしてください。</string>
+    <string name="plus_ColortoCode7">CodetoColorのLevel5をunlockしてください。</string>
+    <string name="plus_ColortoCode9">CodetoColorのLevel7をunlockしてください。</string>
+    <string name="positive_button">OK</string>
+    <string name="preset_twitter">%1$sの%2$dLevel%3$dをMasterしました！</string>
+    <string name="progress">Progress:%1$d/%2$d</string>
+    <string name="start_CodetoColor">CodetoColorをStartしますか？</string>
+    <string name="start_ColortoCode">ColortoCodeをStartしますか？</string>
+    <string name="start_message_CodetoColor_practice">CodetoColor_practiceをStartしますか？</string>
+    <string name="start_message_ColortoCode_practice">ColortoCode_practiceをStartしますか？</string>
+    <string name="status_message_locked">Level%1$dを%2$d回以上クリアし、%3$dPoint以上獲得してください。%4$s</string>
+    <string name="status_message_unlocked">問題は %1$d問です。%2$d回クリアしています。</string>
+    <string name="status_ulm_old">%1$d%2$dLevel%3$d をMasterしました！</string>
+    <string name="status_ulm_twitter"> %1$dLevel%2$d がunlockされました。おめでとうございます。Twetterに投稿しませんか？</string>
+    <string name="title_activity_codeto_color">CodetoColorActivity</string>
+    <string name="title_activity_codetocolor">CodetCcolorActivity</string>
+    <string name="title_activity_colorto_code">ColortoCodeActivity</string>
+    <string name="title_activity_colorto_code_practice">ColortoCode_practiceActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="title_activity_menu">menuActivity</string>
+    <string name="title_activity_menu2">menu2Activity</string>
+    <string name="title_activity_menu3">menu3Activity</string>
 </resources>

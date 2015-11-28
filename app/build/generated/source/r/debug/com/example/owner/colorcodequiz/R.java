@@ -2481,15 +2481,15 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0d0053;
         public static final int action_settings=0x7f0d00f7;
         public static final int activity_chooser_view_content=0x7f0d0054;
-        public static final int adView=0x7f0d0088;
+        public static final int adView=0x7f0d0089;
         public static final int adjust_height=0x7f0d0018;
         public static final int adjust_width=0x7f0d0019;
         public static final int alertTitle=0x7f0d005e;
         public static final int always=0x7f0d001d;
         public static final int answer1=0x7f0d0084;
-        public static final int answer2=0x7f0d0087;
-        public static final int answer3=0x7f0d0089;
-        public static final int answer4=0x7f0d008b;
+        public static final int answer2=0x7f0d0088;
+        public static final int answer3=0x7f0d008a;
+        public static final int answer4=0x7f0d008c;
         public static final int art=0x7f0d00e1;
         public static final int automatic=0x7f0d004c;
         public static final int beginning=0x7f0d0015;
@@ -2507,10 +2507,10 @@ containing a value of this type.
         public static final int cancel_action=0x7f0d00eb;
         public static final int cast_notification_id=0x7f0d0004;
         public static final int center=0x7f0d0049;
-        public static final int check_select1=0x7f0d008f;
-        public static final int check_select2=0x7f0d0085;
-        public static final int check_select3=0x7f0d008a;
-        public static final int check_select4=0x7f0d008c;
+        public static final int check_select1=0x7f0d0085;
+        public static final int check_select2=0x7f0d0087;
+        public static final int check_select3=0x7f0d008b;
+        public static final int check_select4=0x7f0d008d;
         public static final int checkbox=0x7f0d0066;
         public static final int chronometer=0x7f0d00f1;
         public static final int classic=0x7f0d003a;
@@ -2543,7 +2543,7 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0d0055;
         public static final int expanded_menu=0x7f0d0065;
         public static final int frameLayout=0x7f0d0081;
-        public static final int frameLayout2=0x7f0d008e;
+        public static final int frameLayout2=0x7f0d008f;
         public static final int frameLayout3=0x7f0d0083;
         public static final int frameLayout4=0x7f0d0090;
         public static final int frameLayout5=0x7f0d0091;
@@ -2573,7 +2573,7 @@ containing a value of this type.
         public static final int lblMiddle=0x7f0d00ce;
         public static final int lblRight=0x7f0d00cf;
         public static final int left=0x7f0d004a;
-        public static final int level=0x7f0d008d;
+        public static final int level=0x7f0d008e;
         public static final int line1=0x7f0d00ef;
         public static final int line3=0x7f0d00f3;
         public static final int linearLayout=0x7f0d0092;
@@ -2763,14 +2763,14 @@ containing a value of this type.
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f070000;
-        public static final int abc_action_bar_home_description_format=0x7f070045;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f070046;
+        public static final int abc_action_bar_home_description_format=0x7f07007f;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f070080;
         public static final int abc_action_bar_up_description=0x7f070001;
         public static final int abc_action_menu_overflow_description=0x7f070002;
         public static final int abc_action_mode_done=0x7f070003;
         public static final int abc_activity_chooser_view_see_all=0x7f070004;
         public static final int abc_activitychooserview_choose_application=0x7f070005;
-        public static final int abc_search_hint=0x7f070047;
+        public static final int abc_search_hint=0x7f070081;
         public static final int abc_searchview_description_clear=0x7f070006;
         public static final int abc_searchview_description_query=0x7f070007;
         public static final int abc_searchview_description_search=0x7f070008;
@@ -2778,27 +2778,27 @@ containing a value of this type.
         public static final int abc_searchview_description_voice=0x7f07000a;
         public static final int abc_shareactionprovider_share_with=0x7f07000b;
         public static final int abc_shareactionprovider_share_with_application=0x7f07000c;
-        public static final int abc_toolbar_collapse_description=0x7f070048;
-        public static final int accept=0x7f070049;
-        public static final int action_settings=0x7f07004a;
-        public static final int agree_button=0x7f07004b;
-        public static final int alert_input_number=0x7f07004c;
-        public static final int app_name=0x7f07004d;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f07004e;
-        public static final int auth_google_play_services_client_google_display_name=0x7f07004f;
-        public static final int banner_ad_CodetoColor_practice_unit_id=0x7f070050;
-        public static final int banner_ad_CodetoColor_unit_id=0x7f070051;
-        public static final int banner_ad_ColortoCode_practice_unit_id=0x7f070052;
-        public static final int banner_ad_ColortoCode_unit_id=0x7f070053;
-        public static final int banner_ad_menu1_unit_id=0x7f070054;
-        public static final int banner_ad_menu2_unit_id=0x7f070055;
-        public static final int banner_ad_menu3_unit_id=0x7f070056;
-        public static final int cannot_gameclear=0x7f070057;
-        public static final int cannot_start_CodetoColor=0x7f070058;
-        public static final int cannot_start_ColortoCode=0x7f070059;
-        public static final int cast_notification_connected_message=0x7f07005a;
-        public static final int cast_notification_connecting_message=0x7f07005b;
-        public static final int cast_notification_disconnect=0x7f07005c;
+        public static final int abc_toolbar_collapse_description=0x7f070082;
+        public static final int accept=0x7f070083;
+        public static final int action_settings=0x7f070045;
+        public static final int agree_button=0x7f070046;
+        public static final int alert_input_number=0x7f070047;
+        public static final int app_name=0x7f070048;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f070084;
+        public static final int auth_google_play_services_client_google_display_name=0x7f070085;
+        public static final int banner_ad_CodetoColor_practice_unit_id=0x7f070049;
+        public static final int banner_ad_CodetoColor_unit_id=0x7f07004a;
+        public static final int banner_ad_ColortoCode_practice_unit_id=0x7f07004b;
+        public static final int banner_ad_ColortoCode_unit_id=0x7f07004c;
+        public static final int banner_ad_menu1_unit_id=0x7f07004d;
+        public static final int banner_ad_menu2_unit_id=0x7f07004e;
+        public static final int banner_ad_menu3_unit_id=0x7f07004f;
+        public static final int cannot_gameclear=0x7f070050;
+        public static final int cannot_start_CodetoColor=0x7f070051;
+        public static final int cannot_start_ColortoCode=0x7f070052;
+        public static final int cast_notification_connected_message=0x7f070086;
+        public static final int cast_notification_connecting_message=0x7f070087;
+        public static final int cast_notification_disconnect=0x7f070088;
         public static final int com_facebook_image_download_unknown_error=0x7f07000d;
         public static final int com_facebook_internet_permission_error_message=0x7f07000e;
         public static final int com_facebook_internet_permission_error_title=0x7f07000f;
@@ -2847,68 +2847,67 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f07003a;
         public static final int common_signin_button_text=0x7f07003b;
         public static final int common_signin_button_text_long=0x7f07003c;
-        public static final int compm_title=0x7f07005d;
-        public static final int compm_twitter=0x7f07005e;
-        public static final int create_calendar_message=0x7f07005f;
-        public static final int create_calendar_title=0x7f070060;
-        public static final int decline=0x7f070061;
-        public static final int facebook_app_id=0x7f070062;
-        public static final int game_result=0x7f070063;
-        public static final int gameclear=0x7f070064;
-        public static final int get_point=0x7f070065;
-        public static final int hello_blank_fragment=0x7f070066;
-        public static final int hello_world=0x7f070067;
-        public static final int interstitial_ad_menu1_unit_id=0x7f070068;
-        public static final int interstitial_ad_menu2_unit_id=0x7f070069;
-        public static final int interstitial_ad_menu3_unit_id=0x7f07006a;
-        public static final int label_HSB=0x7f07006b;
-        public static final int label_RGB=0x7f07006c;
-        public static final int locked_message=0x7f07006d;
-        public static final int locked_message_tomenu2=0x7f07006e;
-        public static final int locked_message_tomenu3=0x7f07006f;
+        public static final int compm_title=0x7f070053;
+        public static final int compm_twitter=0x7f070054;
+        public static final int create_calendar_message=0x7f070089;
+        public static final int create_calendar_title=0x7f07008a;
+        public static final int decline=0x7f07008b;
+        public static final int facebook_app_id=0x7f070055;
+        public static final int game_result=0x7f070056;
+        public static final int gameclear=0x7f070057;
+        public static final int get_point=0x7f070058;
+        public static final int hello_blank_fragment=0x7f070059;
+        public static final int hello_world=0x7f07005a;
+        public static final int interstitial_ad_menu1_unit_id=0x7f07005b;
+        public static final int interstitial_ad_menu2_unit_id=0x7f07005c;
+        public static final int interstitial_ad_menu3_unit_id=0x7f07005d;
+        public static final int label_HSB=0x7f07005e;
+        public static final int label_RGB=0x7f07005f;
+        public static final int locked_message=0x7f070060;
+        public static final int locked_message_tomenu2=0x7f070061;
+        public static final int locked_message_tomenu3=0x7f070062;
         public static final int messenger_send_button_text=0x7f07003d;
         public static final int mr_media_route_button_content_description=0x7f07003e;
         public static final int mr_media_route_chooser_searching=0x7f07003f;
         public static final int mr_media_route_chooser_title=0x7f070040;
         public static final int mr_media_route_controller_disconnect=0x7f070041;
-        public static final int mr_media_route_controller_pause=0x7f070070;
-        public static final int mr_media_route_controller_play=0x7f070071;
-        public static final int mr_media_route_controller_settings_description=0x7f070072;
-        public static final int mr_media_route_controller_stop=0x7f070073;
+        public static final int mr_media_route_controller_pause=0x7f07008c;
+        public static final int mr_media_route_controller_play=0x7f07008d;
+        public static final int mr_media_route_controller_settings_description=0x7f07008e;
+        public static final int mr_media_route_controller_stop=0x7f07008f;
         public static final int mr_system_route_name=0x7f070042;
         public static final int mr_user_route_category_name=0x7f070043;
-        public static final int negative_button=0x7f070074;
-        public static final int oppose_button=0x7f070075;
-        public static final int plus_CodetoColor4=0x7f070076;
-        public static final int plus_CodetoColor7=0x7f070077;
-        public static final int plus_CodetoColor9=0x7f070078;
-        public static final int plus_ColortoCode4=0x7f070079;
-        public static final int plus_ColortoCode7=0x7f07007a;
-        public static final int plus_ColortoCode9=0x7f07007b;
-        public static final int positive_button=0x7f07007c;
-        public static final int preset_twitter=0x7f07007d;
-        public static final int progress=0x7f07007e;
-        public static final int start_CodetoColor=0x7f07007f;
-        public static final int start_ColortoCode=0x7f070080;
-        public static final int start_message_CodetoColor_practice=0x7f070081;
-        public static final int start_message_ColortoCode_practice=0x7f070082;
-        public static final int status_bar_notification_info_overflow=0x7f070083;
-        public static final int status_message_locked=0x7f070084;
-        public static final int status_message_unlocked=0x7f070085;
-        public static final int status_ulm_old=0x7f070086;
-        public static final int status_ulm_twitter=0x7f070087;
-        public static final int store_picture_message=0x7f070088;
-        public static final int store_picture_title=0x7f070089;
-        public static final int test_device_hash=0x7f07008a;
-        public static final int title_activity_codeto_color=0x7f07008b;
-        public static final int title_activity_codetocolor=0x7f07008c;
-        public static final int title_activity_colorto_code=0x7f07008d;
-        public static final int title_activity_colorto_code_practice=0x7f07008e;
-        public static final int title_activity_graph=0x7f07008f;
-        public static final int title_activity_login=0x7f070090;
-        public static final int title_activity_menu=0x7f070091;
-        public static final int title_activity_menu2=0x7f070092;
-        public static final int title_activity_menu3=0x7f070093;
+        public static final int negative_button=0x7f070063;
+        public static final int oppose_button=0x7f070064;
+        public static final int plus_CodetoColor4=0x7f070065;
+        public static final int plus_CodetoColor7=0x7f070066;
+        public static final int plus_CodetoColor9=0x7f070067;
+        public static final int plus_ColortoCode4=0x7f070068;
+        public static final int plus_ColortoCode7=0x7f070069;
+        public static final int plus_ColortoCode9=0x7f07006a;
+        public static final int positive_button=0x7f07006b;
+        public static final int preset_twitter=0x7f07006c;
+        public static final int progress=0x7f07006d;
+        public static final int start_CodetoColor=0x7f07006e;
+        public static final int start_ColortoCode=0x7f07006f;
+        public static final int start_message_CodetoColor_practice=0x7f070070;
+        public static final int start_message_ColortoCode_practice=0x7f070071;
+        public static final int status_bar_notification_info_overflow=0x7f070090;
+        public static final int status_message_locked=0x7f070072;
+        public static final int status_message_unlocked=0x7f070073;
+        public static final int status_ulm_old=0x7f070074;
+        public static final int status_ulm_twitter=0x7f070075;
+        public static final int store_picture_message=0x7f070091;
+        public static final int store_picture_title=0x7f070092;
+        public static final int title_activity_codeto_color=0x7f070076;
+        public static final int title_activity_codetocolor=0x7f070077;
+        public static final int title_activity_colorto_code=0x7f070078;
+        public static final int title_activity_colorto_code_practice=0x7f070079;
+        public static final int title_activity_graph=0x7f07007a;
+        public static final int title_activity_login=0x7f07007b;
+        public static final int title_activity_menu=0x7f07007c;
+        public static final int title_activity_menu2=0x7f07007d;
+        public static final int title_activity_menu3=0x7f07007e;
         public static final int wallet_buy_button_place_holder=0x7f070044;
     }
     public static final class style {
@@ -3255,33 +3254,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.example.owner.colorcodequiz:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.example.owner.colorcodequiz:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.example.owner.colorcodequiz:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.owner.colorcodequiz:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.owner.colorcodequiz:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.example.owner.colorcodequiz:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.example.owner.colorcodequiz:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.owner.colorcodequiz:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.example.owner.colorcodequiz:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.example.owner.colorcodequiz:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.example.owner.colorcodequiz:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.example.owner.colorcodequiz:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.owner.colorcodequiz:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.owner.colorcodequiz:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.example.owner.colorcodequiz:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.example.owner.colorcodequiz:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.owner.colorcodequiz:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.example.owner.colorcodequiz:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.example.owner.colorcodequiz:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.example.owner.colorcodequiz:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.example.owner.colorcodequiz:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.example.owner.colorcodequiz:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.example.owner.colorcodequiz:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.example.owner.colorcodequiz:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.owner.colorcodequiz:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.example.owner.colorcodequiz:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.example.owner.colorcodequiz:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.techrelation.colorcodequiz:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.techrelation.colorcodequiz:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.techrelation.colorcodequiz:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.techrelation.colorcodequiz:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.techrelation.colorcodequiz:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.techrelation.colorcodequiz:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.techrelation.colorcodequiz:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.techrelation.colorcodequiz:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.techrelation.colorcodequiz:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.techrelation.colorcodequiz:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.techrelation.colorcodequiz:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.techrelation.colorcodequiz:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.techrelation.colorcodequiz:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.techrelation.colorcodequiz:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.techrelation.colorcodequiz:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.techrelation.colorcodequiz:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.techrelation.colorcodequiz:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.techrelation.colorcodequiz:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.techrelation.colorcodequiz:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.techrelation.colorcodequiz:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.techrelation.colorcodequiz:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.techrelation.colorcodequiz:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.techrelation.colorcodequiz:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.techrelation.colorcodequiz:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.techrelation.colorcodequiz:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.techrelation.colorcodequiz:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.techrelation.colorcodequiz:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3321,17 +3320,17 @@ containing a value of this type.
             0x7f010021, 0x7f010022, 0x7f0100ae
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#background}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:background
+          @attr name com.techrelation.colorcodequiz:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3339,11 +3338,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:backgroundSplit
+          @attr name com.techrelation.colorcodequiz:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3351,11 +3350,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:backgroundStacked
+          @attr name com.techrelation.colorcodequiz:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3367,11 +3366,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetEnd
+          @attr name com.techrelation.colorcodequiz:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3383,11 +3382,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetLeft
+          @attr name com.techrelation.colorcodequiz:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3399,11 +3398,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetRight
+          @attr name com.techrelation.colorcodequiz:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3415,21 +3414,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetStart
+          @attr name com.techrelation.colorcodequiz:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:customNavigationLayout
+          @attr name com.techrelation.colorcodequiz:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3447,21 +3446,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:displayOptions
+          @attr name com.techrelation.colorcodequiz:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:divider
+          @attr name com.techrelation.colorcodequiz:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3473,11 +3472,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:elevation
+          @attr name com.techrelation.colorcodequiz:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#height}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3489,11 +3488,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:height
+          @attr name com.techrelation.colorcodequiz:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3503,51 +3502,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:hideOnContentScroll
+          @attr name com.techrelation.colorcodequiz:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:homeAsUpIndicator
+          @attr name com.techrelation.colorcodequiz:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:homeLayout
+          @attr name com.techrelation.colorcodequiz:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:icon
+          @attr name com.techrelation.colorcodequiz:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:indeterminateProgressStyle
+          @attr name com.techrelation.colorcodequiz:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3559,21 +3558,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:itemPadding
+          @attr name com.techrelation.colorcodequiz:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:logo
+          @attr name com.techrelation.colorcodequiz:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3587,21 +3586,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:navigationMode
+          @attr name com.techrelation.colorcodequiz:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:popupTheme
+          @attr name com.techrelation.colorcodequiz:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3613,21 +3612,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:progressBarPadding
+          @attr name com.techrelation.colorcodequiz:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:progressBarStyle
+          @attr name com.techrelation.colorcodequiz:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3637,21 +3636,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:subtitle
+          @attr name com.techrelation.colorcodequiz:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:subtitleTextStyle
+          @attr name com.techrelation.colorcodequiz:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#title}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3661,17 +3660,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:title
+          @attr name com.techrelation.colorcodequiz:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:titleTextStyle
+          @attr name com.techrelation.colorcodequiz:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3723,12 +3722,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.example.owner.colorcodequiz:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.example.owner.colorcodequiz:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.example.owner.colorcodequiz:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.example.owner.colorcodequiz:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.owner.colorcodequiz:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.example.owner.colorcodequiz:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.techrelation.colorcodequiz:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.techrelation.colorcodequiz:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.techrelation.colorcodequiz:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.techrelation.colorcodequiz:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.techrelation.colorcodequiz:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.techrelation.colorcodequiz:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3742,17 +3741,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010015, 0x7f010023
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#background}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:background
+          @attr name com.techrelation.colorcodequiz:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3760,21 +3759,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:backgroundSplit
+          @attr name com.techrelation.colorcodequiz:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:closeItemLayout
+          @attr name com.techrelation.colorcodequiz:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#height}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3786,27 +3785,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:height
+          @attr name com.techrelation.colorcodequiz:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:subtitleTextStyle
+          @attr name com.techrelation.colorcodequiz:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:titleTextStyle
+          @attr name com.techrelation.colorcodequiz:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3815,8 +3814,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.owner.colorcodequiz:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.owner.colorcodequiz:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.techrelation.colorcodequiz:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.techrelation.colorcodequiz:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3825,17 +3824,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:expandActivityOverflowButtonDrawable
+          @attr name com.techrelation.colorcodequiz:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3845,7 +3844,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:initialActivityCount
+          @attr name com.techrelation.colorcodequiz:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AdsAttrs.
@@ -3854,9 +3853,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.example.owner.colorcodequiz:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.example.owner.colorcodequiz:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.example.owner.colorcodequiz:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize com.techrelation.colorcodequiz:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.techrelation.colorcodequiz:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.techrelation.colorcodequiz:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -3866,7 +3865,7 @@ containing a value of this type.
             0x7f010026, 0x7f010027, 0x7f010028
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#adSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3876,11 +3875,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:adSize
+          @attr name com.techrelation.colorcodequiz:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3890,11 +3889,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:adSizes
+          @attr name com.techrelation.colorcodequiz:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -3904,7 +3903,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:adUnitId
+          @attr name com.techrelation.colorcodequiz:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a AlertDialog.
@@ -3914,11 +3913,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.owner.colorcodequiz:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.example.owner.colorcodequiz:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.example.owner.colorcodequiz:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.owner.colorcodequiz:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.owner.colorcodequiz:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.techrelation.colorcodequiz:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.techrelation.colorcodequiz:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.techrelation.colorcodequiz:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.techrelation.colorcodequiz:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.techrelation.colorcodequiz:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -3938,53 +3937,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonPanelSideLayout
+          @attr name com.techrelation.colorcodequiz:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:listItemLayout
+          @attr name com.techrelation.colorcodequiz:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:listLayout
+          @attr name com.techrelation.colorcodequiz:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:multiChoiceItemLayout
+          @attr name com.techrelation.colorcodequiz:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:singleChoiceItemLayout
+          @attr name com.techrelation.colorcodequiz:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppCompatTextView.
@@ -3994,7 +3993,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.owner.colorcodequiz:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.techrelation.colorcodequiz:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4009,14 +4008,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.example.owner.colorcodequiz:textAllCaps
+          @attr name com.techrelation.colorcodequiz:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a BootstrapButton.
@@ -4030,13 +4029,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #BootstrapButton_android_layout_width android:layout_width}</code></td><td></td></tr>
            <tr><td><code>{@link #BootstrapButton_android_text android:text}</code></td><td></td></tr>
            <tr><td><code>{@link #BootstrapButton_android_textSize android:textSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_icon_left com.example.owner.colorcodequiz:bb_icon_left}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_icon_right com.example.owner.colorcodequiz:bb_icon_right}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_roundedCorners com.example.owner.colorcodequiz:bb_roundedCorners}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_size com.example.owner.colorcodequiz:bb_size}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_text_alignment com.example.owner.colorcodequiz:bb_text_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_text_gravity com.example.owner.colorcodequiz:bb_text_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapButton_bb_type com.example.owner.colorcodequiz:bb_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_icon_left com.techrelation.colorcodequiz:bb_icon_left}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_icon_right com.techrelation.colorcodequiz:bb_icon_right}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_roundedCorners com.techrelation.colorcodequiz:bb_roundedCorners}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_size com.techrelation.colorcodequiz:bb_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_text_alignment com.techrelation.colorcodequiz:bb_text_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_text_gravity com.techrelation.colorcodequiz:bb_text_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapButton_bb_type com.techrelation.colorcodequiz:bb_type}</code></td><td></td></tr>
            </table>
            @see #BootstrapButton_android_enabled
            @see #BootstrapButton_android_layout_weight
@@ -4087,7 +4086,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int BootstrapButton_android_textSize = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_icon_left}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_icon_left}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4097,11 +4096,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_icon_left
+          @attr name com.techrelation.colorcodequiz:bb_icon_left
         */
         public static final int BootstrapButton_bb_icon_left = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_icon_right}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_icon_right}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4111,11 +4110,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_icon_right
+          @attr name com.techrelation.colorcodequiz:bb_icon_right
         */
         public static final int BootstrapButton_bb_icon_right = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_roundedCorners}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_roundedCorners}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4125,11 +4124,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_roundedCorners
+          @attr name com.techrelation.colorcodequiz:bb_roundedCorners
         */
         public static final int BootstrapButton_bb_roundedCorners = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_size}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_size}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4139,11 +4138,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_size
+          @attr name com.techrelation.colorcodequiz:bb_size
         */
         public static final int BootstrapButton_bb_size = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_text_alignment}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_text_alignment}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4153,11 +4152,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_text_alignment
+          @attr name com.techrelation.colorcodequiz:bb_text_alignment
         */
         public static final int BootstrapButton_bb_text_alignment = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_text_gravity}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_text_gravity}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4167,11 +4166,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_text_gravity
+          @attr name com.techrelation.colorcodequiz:bb_text_gravity
         */
         public static final int BootstrapButton_bb_text_gravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bb_type}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bb_type}
           attribute's value can be found in the {@link #BootstrapButton} array.
 
 
@@ -4181,7 +4180,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bb_type
+          @attr name com.techrelation.colorcodequiz:bb_type
         */
         public static final int BootstrapButton_bb_type = 5;
         /** Attributes that can be used with a BootstrapCircleThumbnail.
@@ -4191,9 +4190,9 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #BootstrapCircleThumbnail_android_text android:text}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_image com.example.owner.colorcodequiz:bct_image}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_minimal com.example.owner.colorcodequiz:bct_minimal}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_size com.example.owner.colorcodequiz:bct_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_image com.techrelation.colorcodequiz:bct_image}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_minimal com.techrelation.colorcodequiz:bct_minimal}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapCircleThumbnail_bct_size com.techrelation.colorcodequiz:bct_size}</code></td><td></td></tr>
            </table>
            @see #BootstrapCircleThumbnail_android_text
            @see #BootstrapCircleThumbnail_bct_image
@@ -4210,7 +4209,7 @@ containing a value of this type.
         */
         public static final int BootstrapCircleThumbnail_android_text = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bct_image}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bct_image}
           attribute's value can be found in the {@link #BootstrapCircleThumbnail} array.
 
 
@@ -4220,11 +4219,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bct_image
+          @attr name com.techrelation.colorcodequiz:bct_image
         */
         public static final int BootstrapCircleThumbnail_bct_image = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bct_minimal}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bct_minimal}
           attribute's value can be found in the {@link #BootstrapCircleThumbnail} array.
 
 
@@ -4234,11 +4233,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bct_minimal
+          @attr name com.techrelation.colorcodequiz:bct_minimal
         */
         public static final int BootstrapCircleThumbnail_bct_minimal = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bct_size}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bct_size}
           attribute's value can be found in the {@link #BootstrapCircleThumbnail} array.
 
 
@@ -4248,7 +4247,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bct_size
+          @attr name com.techrelation.colorcodequiz:bct_size
         */
         public static final int BootstrapCircleThumbnail_bct_size = 2;
         /** Attributes that can be used with a BootstrapEditText.
@@ -4262,8 +4261,8 @@ containing a value of this type.
            <tr><td><code>{@link #BootstrapEditText_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #BootstrapEditText_android_text android:text}</code></td><td></td></tr>
            <tr><td><code>{@link #BootstrapEditText_android_textSize android:textSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapEditText_be_roundedCorners com.example.owner.colorcodequiz:be_roundedCorners}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapEditText_be_state com.example.owner.colorcodequiz:be_state}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapEditText_be_roundedCorners com.techrelation.colorcodequiz:be_roundedCorners}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapEditText_be_state com.techrelation.colorcodequiz:be_state}</code></td><td></td></tr>
            </table>
            @see #BootstrapEditText_android_enabled
            @see #BootstrapEditText_android_gravity
@@ -4308,7 +4307,7 @@ containing a value of this type.
         */
         public static final int BootstrapEditText_android_textSize = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#be_roundedCorners}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#be_roundedCorners}
           attribute's value can be found in the {@link #BootstrapEditText} array.
 
 
@@ -4318,11 +4317,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:be_roundedCorners
+          @attr name com.techrelation.colorcodequiz:be_roundedCorners
         */
         public static final int BootstrapEditText_be_roundedCorners = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#be_state}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#be_state}
           attribute's value can be found in the {@link #BootstrapEditText} array.
 
 
@@ -4332,7 +4331,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:be_state
+          @attr name com.techrelation.colorcodequiz:be_state
         */
         public static final int BootstrapEditText_be_state = 6;
         /** Attributes that can be used with a BootstrapThumbnail.
@@ -4342,11 +4341,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #BootstrapThumbnail_android_text android:text}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapThumbnail_bt_height com.example.owner.colorcodequiz:bt_height}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapThumbnail_bt_image com.example.owner.colorcodequiz:bt_image}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapThumbnail_bt_inside_padding com.example.owner.colorcodequiz:bt_inside_padding}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapThumbnail_bt_roundedCorners com.example.owner.colorcodequiz:bt_roundedCorners}</code></td><td></td></tr>
-           <tr><td><code>{@link #BootstrapThumbnail_bt_width com.example.owner.colorcodequiz:bt_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapThumbnail_bt_height com.techrelation.colorcodequiz:bt_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapThumbnail_bt_image com.techrelation.colorcodequiz:bt_image}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapThumbnail_bt_inside_padding com.techrelation.colorcodequiz:bt_inside_padding}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapThumbnail_bt_roundedCorners com.techrelation.colorcodequiz:bt_roundedCorners}</code></td><td></td></tr>
+           <tr><td><code>{@link #BootstrapThumbnail_bt_width com.techrelation.colorcodequiz:bt_width}</code></td><td></td></tr>
            </table>
            @see #BootstrapThumbnail_android_text
            @see #BootstrapThumbnail_bt_height
@@ -4366,7 +4365,7 @@ containing a value of this type.
         */
         public static final int BootstrapThumbnail_android_text = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bt_height}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bt_height}
           attribute's value can be found in the {@link #BootstrapThumbnail} array.
 
 
@@ -4378,11 +4377,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bt_height
+          @attr name com.techrelation.colorcodequiz:bt_height
         */
         public static final int BootstrapThumbnail_bt_height = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bt_image}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bt_image}
           attribute's value can be found in the {@link #BootstrapThumbnail} array.
 
 
@@ -4392,11 +4391,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bt_image
+          @attr name com.techrelation.colorcodequiz:bt_image
         */
         public static final int BootstrapThumbnail_bt_image = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bt_inside_padding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bt_inside_padding}
           attribute's value can be found in the {@link #BootstrapThumbnail} array.
 
 
@@ -4408,11 +4407,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bt_inside_padding
+          @attr name com.techrelation.colorcodequiz:bt_inside_padding
         */
         public static final int BootstrapThumbnail_bt_inside_padding = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bt_roundedCorners}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bt_roundedCorners}
           attribute's value can be found in the {@link #BootstrapThumbnail} array.
 
 
@@ -4422,11 +4421,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bt_roundedCorners
+          @attr name com.techrelation.colorcodequiz:bt_roundedCorners
         */
         public static final int BootstrapThumbnail_bt_roundedCorners = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#bt_width}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#bt_width}
           attribute's value can be found in the {@link #BootstrapThumbnail} array.
 
 
@@ -4438,7 +4437,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:bt_width
+          @attr name com.techrelation.colorcodequiz:bt_width
         */
         public static final int BootstrapThumbnail_bt_width = 3;
         /** Attributes that can be used with a CustomWalletTheme.
@@ -4447,7 +4446,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle com.example.owner.colorcodequiz:windowTransitionStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle com.techrelation.colorcodequiz:windowTransitionStyle}</code></td><td></td></tr>
            </table>
            @see #CustomWalletTheme_windowTransitionStyle
          */
@@ -4455,7 +4454,7 @@ containing a value of this type.
             0x7f010040
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowTransitionStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowTransitionStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -4468,7 +4467,7 @@ containing a value of this type.
 <tr><td><code>slide</code></td><td>1</td><td></td></tr>
 <tr><td><code>none</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:windowTransitionStyle
+          @attr name com.techrelation.colorcodequiz:windowTransitionStyle
         */
         public static final int CustomWalletTheme_windowTransitionStyle = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -4477,14 +4476,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize com.example.owner.colorcodequiz:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.example.owner.colorcodequiz:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.owner.colorcodequiz:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.owner.colorcodequiz:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.example.owner.colorcodequiz:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.owner.colorcodequiz:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.owner.colorcodequiz:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.example.owner.colorcodequiz:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize com.techrelation.colorcodequiz:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.techrelation.colorcodequiz:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.techrelation.colorcodequiz:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.techrelation.colorcodequiz:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.techrelation.colorcodequiz:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.techrelation.colorcodequiz:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.techrelation.colorcodequiz:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.techrelation.colorcodequiz:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -4500,7 +4499,7 @@ containing a value of this type.
             0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#barSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4512,11 +4511,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:barSize
+          @attr name com.techrelation.colorcodequiz:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#color}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4527,11 +4526,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:color
+          @attr name com.techrelation.colorcodequiz:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4543,11 +4542,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:drawableSize
+          @attr name com.techrelation.colorcodequiz:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4559,11 +4558,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:gapBetweenBars
+          @attr name com.techrelation.colorcodequiz:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4575,11 +4574,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:middleBarArrowSize
+          @attr name com.techrelation.colorcodequiz:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4589,11 +4588,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:spinBars
+          @attr name com.techrelation.colorcodequiz:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4605,11 +4604,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:thickness
+          @attr name com.techrelation.colorcodequiz:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4621,7 +4620,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:topBottomBarArrowSize
+          @attr name com.techrelation.colorcodequiz:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a FontAwesomeText.
@@ -4630,7 +4629,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontAwesomeText_fa_icon com.example.owner.colorcodequiz:fa_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontAwesomeText_fa_icon com.techrelation.colorcodequiz:fa_icon}</code></td><td></td></tr>
            </table>
            @see #FontAwesomeText_fa_icon
          */
@@ -4638,7 +4637,7 @@ containing a value of this type.
             0x7f010049
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#fa_icon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#fa_icon}
           attribute's value can be found in the {@link #FontAwesomeText} array.
 
 
@@ -4648,7 +4647,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:fa_icon
+          @attr name com.techrelation.colorcodequiz:fa_icon
         */
         public static final int FontAwesomeText_fa_icon = 0;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -4662,10 +4661,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.example.owner.colorcodequiz:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.owner.colorcodequiz:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.owner.colorcodequiz:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.owner.colorcodequiz:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.techrelation.colorcodequiz:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.techrelation.colorcodequiz:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.techrelation.colorcodequiz:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.techrelation.colorcodequiz:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -4713,17 +4712,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:divider
+          @attr name com.techrelation.colorcodequiz:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4735,11 +4734,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:dividerPadding
+          @attr name com.techrelation.colorcodequiz:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4749,11 +4748,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:measureWithLargestChild
+          @attr name com.techrelation.colorcodequiz:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4768,7 +4767,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:showDividers
+          @attr name com.techrelation.colorcodequiz:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -4847,9 +4846,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop com.example.owner.colorcodequiz:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.owner.colorcodequiz:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.owner.colorcodequiz:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.techrelation.colorcodequiz:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.techrelation.colorcodequiz:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.techrelation.colorcodequiz:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -4859,7 +4858,7 @@ containing a value of this type.
             0x7f01004d, 0x7f01004e, 0x7f01004f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -4869,11 +4868,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:circleCrop
+          @attr name com.techrelation.colorcodequiz:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -4883,11 +4882,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:imageAspectRatio
+          @attr name com.techrelation.colorcodequiz:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -4901,7 +4900,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:imageAspectRatioAdjust
+          @attr name com.techrelation.colorcodequiz:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -4910,22 +4909,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.example.owner.colorcodequiz:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.owner.colorcodequiz:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.owner.colorcodequiz:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.example.owner.colorcodequiz:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.example.owner.colorcodequiz:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode com.example.owner.colorcodequiz:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.example.owner.colorcodequiz:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.example.owner.colorcodequiz:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.example.owner.colorcodequiz:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.owner.colorcodequiz:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.owner.colorcodequiz:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.owner.colorcodequiz:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.owner.colorcodequiz:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.owner.colorcodequiz:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.owner.colorcodequiz:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.owner.colorcodequiz:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.techrelation.colorcodequiz:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.techrelation.colorcodequiz:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.techrelation.colorcodequiz:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.techrelation.colorcodequiz:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.techrelation.colorcodequiz:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.techrelation.colorcodequiz:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.techrelation.colorcodequiz:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.techrelation.colorcodequiz:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.techrelation.colorcodequiz:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.techrelation.colorcodequiz:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.techrelation.colorcodequiz:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.techrelation.colorcodequiz:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.techrelation.colorcodequiz:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.techrelation.colorcodequiz:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.techrelation.colorcodequiz:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.techrelation.colorcodequiz:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
@@ -4951,7 +4950,7 @@ containing a value of this type.
             0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -4961,11 +4960,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:cameraBearing
+          @attr name com.techrelation.colorcodequiz:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -4975,11 +4974,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:cameraTargetLat
+          @attr name com.techrelation.colorcodequiz:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -4989,11 +4988,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:cameraTargetLng
+          @attr name com.techrelation.colorcodequiz:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5003,11 +5002,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:cameraTilt
+          @attr name com.techrelation.colorcodequiz:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5017,11 +5016,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:cameraZoom
+          @attr name com.techrelation.colorcodequiz:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5031,11 +5030,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:liteMode
+          @attr name com.techrelation.colorcodequiz:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5051,11 +5050,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:mapType
+          @attr name com.techrelation.colorcodequiz:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5065,11 +5064,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiCompass
+          @attr name com.techrelation.colorcodequiz:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5079,11 +5078,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiMapToolbar
+          @attr name com.techrelation.colorcodequiz:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5093,11 +5092,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiRotateGestures
+          @attr name com.techrelation.colorcodequiz:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5107,11 +5106,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiScrollGestures
+          @attr name com.techrelation.colorcodequiz:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5121,11 +5120,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiTiltGestures
+          @attr name com.techrelation.colorcodequiz:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5135,11 +5134,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiZoomControls
+          @attr name com.techrelation.colorcodequiz:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5149,11 +5148,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:uiZoomGestures
+          @attr name com.techrelation.colorcodequiz:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5163,11 +5162,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:useViewLifecycle
+          @attr name com.techrelation.colorcodequiz:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -5177,7 +5176,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:zOrderOnTop
+          @attr name com.techrelation.colorcodequiz:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a MediaRouteButton.
@@ -5188,7 +5187,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.example.owner.colorcodequiz:externalRouteEnabledDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.techrelation.colorcodequiz:externalRouteEnabledDrawable}</code></td><td></td></tr>
            </table>
            @see #MediaRouteButton_android_minHeight
            @see #MediaRouteButton_android_minWidth
@@ -5210,13 +5209,13 @@ containing a value of this type.
         */
         public static final int MediaRouteButton_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#externalRouteEnabledDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#externalRouteEnabledDrawable}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:externalRouteEnabledDrawable
+          @attr name com.techrelation.colorcodequiz:externalRouteEnabledDrawable
         */
         public static final int MediaRouteButton_externalRouteEnabledDrawable = 2;
         /** Attributes that can be used with a MenuGroup.
@@ -5285,9 +5284,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.example.owner.colorcodequiz:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.example.owner.colorcodequiz:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.example.owner.colorcodequiz:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.techrelation.colorcodequiz:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.techrelation.colorcodequiz:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.techrelation.colorcodequiz:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -5301,7 +5300,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.example.owner.colorcodequiz:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.techrelation.colorcodequiz:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -5329,17 +5328,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010064
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionLayout
+          @attr name com.techrelation.colorcodequiz:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5349,11 +5348,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:actionProviderClass
+          @attr name com.techrelation.colorcodequiz:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5363,7 +5362,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:actionViewClass
+          @attr name com.techrelation.colorcodequiz:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -5445,7 +5444,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5461,7 +5460,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:showAsAction
+          @attr name com.techrelation.colorcodequiz:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -5477,7 +5476,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.owner.colorcodequiz:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.techrelation.colorcodequiz:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -5535,7 +5534,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -5545,7 +5544,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:preserveIconSpacing
+          @attr name com.techrelation.colorcodequiz:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -5555,7 +5554,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.owner.colorcodequiz:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.techrelation.colorcodequiz:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -5570,7 +5569,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -5580,7 +5579,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:overlapAnchor
+          @attr name com.techrelation.colorcodequiz:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -5589,7 +5588,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.owner.colorcodequiz:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.techrelation.colorcodequiz:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -5597,7 +5596,7 @@ containing a value of this type.
             0x7f010067
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -5607,7 +5606,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:state_above_anchor
+          @attr name com.techrelation.colorcodequiz:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -5620,19 +5619,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.example.owner.colorcodequiz:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.example.owner.colorcodequiz:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.example.owner.colorcodequiz:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.example.owner.colorcodequiz:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.owner.colorcodequiz:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.example.owner.colorcodequiz:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.example.owner.colorcodequiz:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.example.owner.colorcodequiz:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.example.owner.colorcodequiz:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.example.owner.colorcodequiz:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.example.owner.colorcodequiz:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.owner.colorcodequiz:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.example.owner.colorcodequiz:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.techrelation.colorcodequiz:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.techrelation.colorcodequiz:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.techrelation.colorcodequiz:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.techrelation.colorcodequiz:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.techrelation.colorcodequiz:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.techrelation.colorcodequiz:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.techrelation.colorcodequiz:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.techrelation.colorcodequiz:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.techrelation.colorcodequiz:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.techrelation.colorcodequiz:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.techrelation.colorcodequiz:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.techrelation.colorcodequiz:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.techrelation.colorcodequiz:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -5684,27 +5683,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:closeIcon
+          @attr name com.techrelation.colorcodequiz:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:commitIcon
+          @attr name com.techrelation.colorcodequiz:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5714,21 +5713,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:defaultQueryHint
+          @attr name com.techrelation.colorcodequiz:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:goIcon
+          @attr name com.techrelation.colorcodequiz:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5738,31 +5737,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:iconifiedByDefault
+          @attr name com.techrelation.colorcodequiz:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:layout
+          @attr name com.techrelation.colorcodequiz:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:queryBackground
+          @attr name com.techrelation.colorcodequiz:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5772,57 +5771,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:queryHint
+          @attr name com.techrelation.colorcodequiz:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:searchHintIcon
+          @attr name com.techrelation.colorcodequiz:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:searchIcon
+          @attr name com.techrelation.colorcodequiz:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:submitBackground
+          @attr name com.techrelation.colorcodequiz:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:suggestionRowLayout
+          @attr name com.techrelation.colorcodequiz:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:voiceIcon
+          @attr name com.techrelation.colorcodequiz:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a Spinner.
@@ -5838,10 +5837,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.example.owner.colorcodequiz:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView com.example.owner.colorcodequiz:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt com.example.owner.colorcodequiz:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode com.example.owner.colorcodequiz:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.techrelation.colorcodequiz:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView com.techrelation.colorcodequiz:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.techrelation.colorcodequiz:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.techrelation.colorcodequiz:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -5903,7 +5902,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -5913,31 +5912,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:disableChildrenWhenDisabled
+          @attr name com.techrelation.colorcodequiz:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:popupPromptView
+          @attr name com.techrelation.colorcodequiz:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#prompt}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:prompt
+          @attr name com.techrelation.colorcodequiz:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -5950,7 +5949,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:spinnerMode
+          @attr name com.techrelation.colorcodequiz:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -5962,13 +5961,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.example.owner.colorcodequiz:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.example.owner.colorcodequiz:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.owner.colorcodequiz:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.example.owner.colorcodequiz:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.owner.colorcodequiz:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.owner.colorcodequiz:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.example.owner.colorcodequiz:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.techrelation.colorcodequiz:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.techrelation.colorcodequiz:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.techrelation.colorcodequiz:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.techrelation.colorcodequiz:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.techrelation.colorcodequiz:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.techrelation.colorcodequiz:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.techrelation.colorcodequiz:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -6005,7 +6004,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6015,11 +6014,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:showText
+          @attr name com.techrelation.colorcodequiz:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6029,11 +6028,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:splitTrack
+          @attr name com.techrelation.colorcodequiz:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6045,11 +6044,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:switchMinWidth
+          @attr name com.techrelation.colorcodequiz:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6061,21 +6060,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:switchPadding
+          @attr name com.techrelation.colorcodequiz:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:switchTextAppearance
+          @attr name com.techrelation.colorcodequiz:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6087,17 +6086,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:thumbTextPadding
+          @attr name com.techrelation.colorcodequiz:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#track}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:track
+          @attr name com.techrelation.colorcodequiz:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TextAppearance.
@@ -6110,7 +6109,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.example.owner.colorcodequiz:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.techrelation.colorcodequiz:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_textColor
            @see #TextAppearance_android_textSize
@@ -6147,14 +6146,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.example.owner.colorcodequiz:textAllCaps
+          @attr name com.techrelation.colorcodequiz:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 4;
         /** Attributes that can be used with a Theme.
@@ -6163,113 +6162,113 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.example.owner.colorcodequiz:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.example.owner.colorcodequiz:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.example.owner.colorcodequiz:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.example.owner.colorcodequiz:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.example.owner.colorcodequiz:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.example.owner.colorcodequiz:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.example.owner.colorcodequiz:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.example.owner.colorcodequiz:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.example.owner.colorcodequiz:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.example.owner.colorcodequiz:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.example.owner.colorcodequiz:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.example.owner.colorcodequiz:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.example.owner.colorcodequiz:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.example.owner.colorcodequiz:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.example.owner.colorcodequiz:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.example.owner.colorcodequiz:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.example.owner.colorcodequiz:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.example.owner.colorcodequiz:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.example.owner.colorcodequiz:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.example.owner.colorcodequiz:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.example.owner.colorcodequiz:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.example.owner.colorcodequiz:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.example.owner.colorcodequiz:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.example.owner.colorcodequiz:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.example.owner.colorcodequiz:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.example.owner.colorcodequiz:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.example.owner.colorcodequiz:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.example.owner.colorcodequiz:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.example.owner.colorcodequiz:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.example.owner.colorcodequiz:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.example.owner.colorcodequiz:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.example.owner.colorcodequiz:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.example.owner.colorcodequiz:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle com.example.owner.colorcodequiz:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme com.example.owner.colorcodequiz:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.techrelation.colorcodequiz:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.techrelation.colorcodequiz:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.techrelation.colorcodequiz:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.techrelation.colorcodequiz:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.techrelation.colorcodequiz:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.techrelation.colorcodequiz:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.techrelation.colorcodequiz:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.techrelation.colorcodequiz:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.techrelation.colorcodequiz:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.techrelation.colorcodequiz:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.techrelation.colorcodequiz:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.techrelation.colorcodequiz:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.techrelation.colorcodequiz:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.techrelation.colorcodequiz:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.techrelation.colorcodequiz:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.techrelation.colorcodequiz:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.techrelation.colorcodequiz:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.techrelation.colorcodequiz:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.techrelation.colorcodequiz:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.techrelation.colorcodequiz:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.techrelation.colorcodequiz:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.techrelation.colorcodequiz:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.techrelation.colorcodequiz:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.techrelation.colorcodequiz:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.techrelation.colorcodequiz:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.techrelation.colorcodequiz:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.techrelation.colorcodequiz:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.techrelation.colorcodequiz:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.techrelation.colorcodequiz:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.techrelation.colorcodequiz:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.techrelation.colorcodequiz:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.techrelation.colorcodequiz:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.techrelation.colorcodequiz:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.techrelation.colorcodequiz:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.techrelation.colorcodequiz:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.example.owner.colorcodequiz:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle com.example.owner.colorcodequiz:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.example.owner.colorcodequiz:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.example.owner.colorcodequiz:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.example.owner.colorcodequiz:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.example.owner.colorcodequiz:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.example.owner.colorcodequiz:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle com.example.owner.colorcodequiz:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall com.example.owner.colorcodequiz:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle com.example.owner.colorcodequiz:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle com.example.owner.colorcodequiz:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.example.owner.colorcodequiz:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.example.owner.colorcodequiz:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.example.owner.colorcodequiz:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.example.owner.colorcodequiz:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.example.owner.colorcodequiz:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.example.owner.colorcodequiz:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.example.owner.colorcodequiz:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.example.owner.colorcodequiz:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding com.example.owner.colorcodequiz:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme com.example.owner.colorcodequiz:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.example.owner.colorcodequiz:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.example.owner.colorcodequiz:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.example.owner.colorcodequiz:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.example.owner.colorcodequiz:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.example.owner.colorcodequiz:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.example.owner.colorcodequiz:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle com.example.owner.colorcodequiz:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.example.owner.colorcodequiz:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.example.owner.colorcodequiz:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog com.example.owner.colorcodequiz:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.example.owner.colorcodequiz:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.example.owner.colorcodequiz:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.example.owner.colorcodequiz:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.example.owner.colorcodequiz:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.example.owner.colorcodequiz:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.example.owner.colorcodequiz:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.example.owner.colorcodequiz:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.example.owner.colorcodequiz:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.example.owner.colorcodequiz:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.example.owner.colorcodequiz:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.example.owner.colorcodequiz:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle com.example.owner.colorcodequiz:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle com.example.owner.colorcodequiz:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.example.owner.colorcodequiz:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.example.owner.colorcodequiz:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.example.owner.colorcodequiz:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.example.owner.colorcodequiz:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.example.owner.colorcodequiz:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.example.owner.colorcodequiz:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.example.owner.colorcodequiz:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.example.owner.colorcodequiz:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.example.owner.colorcodequiz:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.example.owner.colorcodequiz:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.example.owner.colorcodequiz:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.example.owner.colorcodequiz:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.example.owner.colorcodequiz:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.example.owner.colorcodequiz:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.example.owner.colorcodequiz:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.example.owner.colorcodequiz:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.example.owner.colorcodequiz:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.example.owner.colorcodequiz:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.example.owner.colorcodequiz:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.example.owner.colorcodequiz:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.example.owner.colorcodequiz:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.example.owner.colorcodequiz:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.example.owner.colorcodequiz:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor com.example.owner.colorcodequiz:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor com.example.owner.colorcodequiz:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle com.example.owner.colorcodequiz:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.techrelation.colorcodequiz:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle com.techrelation.colorcodequiz:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.techrelation.colorcodequiz:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.techrelation.colorcodequiz:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.techrelation.colorcodequiz:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.techrelation.colorcodequiz:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.techrelation.colorcodequiz:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.techrelation.colorcodequiz:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.techrelation.colorcodequiz:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.techrelation.colorcodequiz:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.techrelation.colorcodequiz:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.techrelation.colorcodequiz:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.techrelation.colorcodequiz:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.techrelation.colorcodequiz:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.techrelation.colorcodequiz:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.techrelation.colorcodequiz:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.techrelation.colorcodequiz:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.techrelation.colorcodequiz:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.techrelation.colorcodequiz:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.techrelation.colorcodequiz:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.techrelation.colorcodequiz:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.techrelation.colorcodequiz:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.techrelation.colorcodequiz:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.techrelation.colorcodequiz:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.techrelation.colorcodequiz:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.techrelation.colorcodequiz:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.techrelation.colorcodequiz:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.techrelation.colorcodequiz:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.techrelation.colorcodequiz:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.techrelation.colorcodequiz:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.techrelation.colorcodequiz:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.techrelation.colorcodequiz:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.techrelation.colorcodequiz:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.techrelation.colorcodequiz:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.techrelation.colorcodequiz:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.techrelation.colorcodequiz:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.techrelation.colorcodequiz:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.techrelation.colorcodequiz:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.techrelation.colorcodequiz:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.techrelation.colorcodequiz:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.techrelation.colorcodequiz:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.techrelation.colorcodequiz:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.techrelation.colorcodequiz:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.techrelation.colorcodequiz:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.techrelation.colorcodequiz:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.techrelation.colorcodequiz:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.techrelation.colorcodequiz:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.techrelation.colorcodequiz:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.techrelation.colorcodequiz:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.techrelation.colorcodequiz:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.techrelation.colorcodequiz:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.techrelation.colorcodequiz:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.techrelation.colorcodequiz:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.techrelation.colorcodequiz:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.techrelation.colorcodequiz:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.techrelation.colorcodequiz:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.techrelation.colorcodequiz:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.techrelation.colorcodequiz:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.techrelation.colorcodequiz:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.techrelation.colorcodequiz:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.techrelation.colorcodequiz:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.techrelation.colorcodequiz:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.techrelation.colorcodequiz:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.techrelation.colorcodequiz:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.techrelation.colorcodequiz:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.techrelation.colorcodequiz:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.techrelation.colorcodequiz:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.techrelation.colorcodequiz:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.techrelation.colorcodequiz:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.techrelation.colorcodequiz:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -6409,37 +6408,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100e6, 0x7f0100e7, 0x7f0100e8
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarDivider
+          @attr name com.techrelation.colorcodequiz:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarItemBackground
+          @attr name com.techrelation.colorcodequiz:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarPopupTheme
+          @attr name com.techrelation.colorcodequiz:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6459,111 +6458,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:actionBarSize
+          @attr name com.techrelation.colorcodequiz:actionBarSize
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarSplitStyle
+          @attr name com.techrelation.colorcodequiz:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarStyle
+          @attr name com.techrelation.colorcodequiz:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarTabBarStyle
+          @attr name com.techrelation.colorcodequiz:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarTabStyle
+          @attr name com.techrelation.colorcodequiz:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarTabTextStyle
+          @attr name com.techrelation.colorcodequiz:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarTheme
+          @attr name com.techrelation.colorcodequiz:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionBarWidgetTheme
+          @attr name com.techrelation.colorcodequiz:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionButtonStyle
+          @attr name com.techrelation.colorcodequiz:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionDropDownStyle
+          @attr name com.techrelation.colorcodequiz:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionMenuTextAppearance
+          @attr name com.techrelation.colorcodequiz:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6571,181 +6570,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionMenuTextColor
+          @attr name com.techrelation.colorcodequiz:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeBackground
+          @attr name com.techrelation.colorcodequiz:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeCloseButtonStyle
+          @attr name com.techrelation.colorcodequiz:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeCloseDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeCopyDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeCutDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeFindDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModePasteDrawable
+          @attr name com.techrelation.colorcodequiz:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModePopupWindowStyle
+          @attr name com.techrelation.colorcodequiz:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeSelectAllDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeShareDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeSplitBackground
+          @attr name com.techrelation.colorcodequiz:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeStyle
+          @attr name com.techrelation.colorcodequiz:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionModeWebSearchDrawable
+          @attr name com.techrelation.colorcodequiz:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionOverflowButtonStyle
+          @attr name com.techrelation.colorcodequiz:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:actionOverflowMenuStyle
+          @attr name com.techrelation.colorcodequiz:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:activityChooserViewStyle
+          @attr name com.techrelation.colorcodequiz:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:alertDialogButtonGroupStyle
+          @attr name com.techrelation.colorcodequiz:alertDialogButtonGroupStyle
         */
         public static final int Theme_alertDialogButtonGroupStyle = 90;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6755,27 +6754,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:alertDialogCenterButtons
+          @attr name com.techrelation.colorcodequiz:alertDialogCenterButtons
         */
         public static final int Theme_alertDialogCenterButtons = 91;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:alertDialogStyle
+          @attr name com.techrelation.colorcodequiz:alertDialogStyle
         */
         public static final int Theme_alertDialogStyle = 89;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:alertDialogTheme
+          @attr name com.techrelation.colorcodequiz:alertDialogTheme
         */
         public static final int Theme_alertDialogTheme = 92;
         /**
@@ -6791,117 +6790,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:autoCompleteTextViewStyle
+          @attr name com.techrelation.colorcodequiz:autoCompleteTextViewStyle
         */
         public static final int Theme_autoCompleteTextViewStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:borderlessButtonStyle
+          @attr name com.techrelation.colorcodequiz:borderlessButtonStyle
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonBarButtonStyle
+          @attr name com.techrelation.colorcodequiz:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonBarNegativeButtonStyle
+          @attr name com.techrelation.colorcodequiz:buttonBarNegativeButtonStyle
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonBarNeutralButtonStyle
+          @attr name com.techrelation.colorcodequiz:buttonBarNeutralButtonStyle
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonBarPositiveButtonStyle
+          @attr name com.techrelation.colorcodequiz:buttonBarPositiveButtonStyle
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonBarStyle
+          @attr name com.techrelation.colorcodequiz:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonStyle
+          @attr name com.techrelation.colorcodequiz:buttonStyle
         */
         public static final int Theme_buttonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:buttonStyleSmall
+          @attr name com.techrelation.colorcodequiz:buttonStyleSmall
         */
         public static final int Theme_buttonStyleSmall = 99;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:checkboxStyle
+          @attr name com.techrelation.colorcodequiz:checkboxStyle
         */
         public static final int Theme_checkboxStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:checkedTextViewStyle
+          @attr name com.techrelation.colorcodequiz:checkedTextViewStyle
         */
         public static final int Theme_checkedTextViewStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6912,11 +6911,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorAccent
+          @attr name com.techrelation.colorcodequiz:colorAccent
         */
         public static final int Theme_colorAccent = 83;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6927,11 +6926,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorButtonNormal
+          @attr name com.techrelation.colorcodequiz:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6942,11 +6941,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorControlActivated
+          @attr name com.techrelation.colorcodequiz:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 85;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6957,11 +6956,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorControlHighlight
+          @attr name com.techrelation.colorcodequiz:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 86;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6972,11 +6971,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorControlNormal
+          @attr name com.techrelation.colorcodequiz:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 84;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6987,11 +6986,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorPrimary
+          @attr name com.techrelation.colorcodequiz:colorPrimary
         */
         public static final int Theme_colorPrimary = 81;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7002,11 +7001,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorPrimaryDark
+          @attr name com.techrelation.colorcodequiz:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 82;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7017,11 +7016,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:colorSwitchThumbNormal
+          @attr name com.techrelation.colorcodequiz:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7033,51 +7032,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:dialogPreferredPadding
+          @attr name com.techrelation.colorcodequiz:dialogPreferredPadding
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:dialogTheme
+          @attr name com.techrelation.colorcodequiz:dialogTheme
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:dividerHorizontal
+          @attr name com.techrelation.colorcodequiz:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:dividerVertical
+          @attr name com.techrelation.colorcodequiz:dividerVertical
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:dropDownListViewStyle
+          @attr name com.techrelation.colorcodequiz:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 73;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7089,21 +7088,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:dropdownListPreferredItemHeight
+          @attr name com.techrelation.colorcodequiz:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:editTextBackground
+          @attr name com.techrelation.colorcodequiz:editTextBackground
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7111,61 +7110,61 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:editTextColor
+          @attr name com.techrelation.colorcodequiz:editTextColor
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:editTextStyle
+          @attr name com.techrelation.colorcodequiz:editTextStyle
         */
         public static final int Theme_editTextStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:homeAsUpIndicator
+          @attr name com.techrelation.colorcodequiz:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:listChoiceBackgroundIndicator
+          @attr name com.techrelation.colorcodequiz:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 80;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:listDividerAlertDialog
+          @attr name com.techrelation.colorcodequiz:listDividerAlertDialog
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:listPopupWindowStyle
+          @attr name com.techrelation.colorcodequiz:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7177,11 +7176,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:listPreferredItemHeight
+          @attr name com.techrelation.colorcodequiz:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 68;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7193,11 +7192,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:listPreferredItemHeightLarge
+          @attr name com.techrelation.colorcodequiz:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 70;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7209,11 +7208,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:listPreferredItemHeightSmall
+          @attr name com.techrelation.colorcodequiz:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 69;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7225,11 +7224,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:listPreferredItemPaddingLeft
+          @attr name com.techrelation.colorcodequiz:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 71;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7241,31 +7240,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:listPreferredItemPaddingRight
+          @attr name com.techrelation.colorcodequiz:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 72;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:panelBackground
+          @attr name com.techrelation.colorcodequiz:panelBackground
         */
         public static final int Theme_panelBackground = 77;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:panelMenuListTheme
+          @attr name com.techrelation.colorcodequiz:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 79;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7277,171 +7276,171 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:panelMenuListWidth
+          @attr name com.techrelation.colorcodequiz:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 78;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:popupMenuStyle
+          @attr name com.techrelation.colorcodequiz:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:popupWindowStyle
+          @attr name com.techrelation.colorcodequiz:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:radioButtonStyle
+          @attr name com.techrelation.colorcodequiz:radioButtonStyle
         */
         public static final int Theme_radioButtonStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:ratingBarStyle
+          @attr name com.techrelation.colorcodequiz:ratingBarStyle
         */
         public static final int Theme_ratingBarStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:searchViewStyle
+          @attr name com.techrelation.colorcodequiz:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:selectableItemBackground
+          @attr name com.techrelation.colorcodequiz:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:selectableItemBackgroundBorderless
+          @attr name com.techrelation.colorcodequiz:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:spinnerDropDownItemStyle
+          @attr name com.techrelation.colorcodequiz:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:spinnerStyle
+          @attr name com.techrelation.colorcodequiz:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:switchStyle
+          @attr name com.techrelation.colorcodequiz:switchStyle
         */
         public static final int Theme_switchStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceLargePopupMenu
+          @attr name com.techrelation.colorcodequiz:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceListItem
+          @attr name com.techrelation.colorcodequiz:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 75;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceListItemSmall
+          @attr name com.techrelation.colorcodequiz:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 76;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceSearchResultSubtitle
+          @attr name com.techrelation.colorcodequiz:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceSearchResultTitle
+          @attr name com.techrelation.colorcodequiz:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:textAppearanceSmallPopupMenu
+          @attr name com.techrelation.colorcodequiz:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7449,11 +7448,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:textColorAlertDialogListItem
+          @attr name com.techrelation.colorcodequiz:textColorAlertDialogListItem
         */
         public static final int Theme_textColorAlertDialogListItem = 93;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7461,31 +7460,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:textColorSearchUrl
+          @attr name com.techrelation.colorcodequiz:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 66;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:toolbarNavigationButtonStyle
+          @attr name com.techrelation.colorcodequiz:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:toolbarStyle
+          @attr name com.techrelation.colorcodequiz:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7495,11 +7494,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowActionBar
+          @attr name com.techrelation.colorcodequiz:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7509,11 +7508,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowActionBarOverlay
+          @attr name com.techrelation.colorcodequiz:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7523,11 +7522,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowActionModeOverlay
+          @attr name com.techrelation.colorcodequiz:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7542,11 +7541,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowFixedHeightMajor
+          @attr name com.techrelation.colorcodequiz:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7561,11 +7560,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowFixedHeightMinor
+          @attr name com.techrelation.colorcodequiz:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7580,11 +7579,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowFixedWidthMajor
+          @attr name com.techrelation.colorcodequiz:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7599,11 +7598,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowFixedWidthMinor
+          @attr name com.techrelation.colorcodequiz:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7618,11 +7617,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowMinWidthMajor
+          @attr name com.techrelation.colorcodequiz:windowMinWidthMajor
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7637,11 +7636,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowMinWidthMinor
+          @attr name com.techrelation.colorcodequiz:windowMinWidthMinor
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7651,7 +7650,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:windowNoTitle
+          @attr name com.techrelation.colorcodequiz:windowNoTitle
         */
         public static final int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a Toolbar.
@@ -7662,25 +7661,25 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.owner.colorcodequiz:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.example.owner.colorcodequiz:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.owner.colorcodequiz:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.owner.colorcodequiz:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.example.owner.colorcodequiz:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.example.owner.colorcodequiz:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.owner.colorcodequiz:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.owner.colorcodequiz:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.example.owner.colorcodequiz:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.example.owner.colorcodequiz:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.example.owner.colorcodequiz:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.owner.colorcodequiz:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.example.owner.colorcodequiz:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.owner.colorcodequiz:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.owner.colorcodequiz:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.example.owner.colorcodequiz:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.example.owner.colorcodequiz:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.example.owner.colorcodequiz:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.owner.colorcodequiz:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.techrelation.colorcodequiz:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.techrelation.colorcodequiz:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.techrelation.colorcodequiz:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.techrelation.colorcodequiz:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.techrelation.colorcodequiz:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.techrelation.colorcodequiz:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.techrelation.colorcodequiz:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.techrelation.colorcodequiz:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.techrelation.colorcodequiz:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.techrelation.colorcodequiz:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.techrelation.colorcodequiz:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.techrelation.colorcodequiz:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.techrelation.colorcodequiz:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.techrelation.colorcodequiz:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.techrelation.colorcodequiz:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.techrelation.colorcodequiz:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.techrelation.colorcodequiz:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.techrelation.colorcodequiz:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.techrelation.colorcodequiz:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -7725,7 +7724,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7735,21 +7734,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:collapseContentDescription
+          @attr name com.techrelation.colorcodequiz:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:collapseIcon
+          @attr name com.techrelation.colorcodequiz:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7761,11 +7760,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetEnd
+          @attr name com.techrelation.colorcodequiz:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7777,11 +7776,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetLeft
+          @attr name com.techrelation.colorcodequiz:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7793,11 +7792,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetRight
+          @attr name com.techrelation.colorcodequiz:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7809,11 +7808,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:contentInsetStart
+          @attr name com.techrelation.colorcodequiz:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7825,11 +7824,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:maxButtonHeight
+          @attr name com.techrelation.colorcodequiz:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7839,31 +7838,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:navigationContentDescription
+          @attr name com.techrelation.colorcodequiz:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:navigationIcon
+          @attr name com.techrelation.colorcodequiz:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:popupTheme
+          @attr name com.techrelation.colorcodequiz:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7873,21 +7872,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:subtitle
+          @attr name com.techrelation.colorcodequiz:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:subtitleTextAppearance
+          @attr name com.techrelation.colorcodequiz:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#title}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7897,11 +7896,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:title
+          @attr name com.techrelation.colorcodequiz:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7913,11 +7912,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:titleMarginBottom
+          @attr name com.techrelation.colorcodequiz:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7929,11 +7928,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:titleMarginEnd
+          @attr name com.techrelation.colorcodequiz:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7945,11 +7944,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:titleMarginStart
+          @attr name com.techrelation.colorcodequiz:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7961,11 +7960,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:titleMarginTop
+          @attr name com.techrelation.colorcodequiz:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7977,17 +7976,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:titleMargins
+          @attr name com.techrelation.colorcodequiz:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:titleTextAppearance
+          @attr name com.techrelation.colorcodequiz:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -7998,11 +7997,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_backgroundTint com.example.owner.colorcodequiz:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_backgroundTintMode com.example.owner.colorcodequiz:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.example.owner.colorcodequiz:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.example.owner.colorcodequiz:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.example.owner.colorcodequiz:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_backgroundTint com.techrelation.colorcodequiz:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_backgroundTintMode com.techrelation.colorcodequiz:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.techrelation.colorcodequiz:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.techrelation.colorcodequiz:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.techrelation.colorcodequiz:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -8029,7 +8028,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#backgroundTint}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8040,11 +8039,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:backgroundTint
+          @attr name com.techrelation.colorcodequiz:backgroundTint
         */
         public static final int View_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8060,11 +8059,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:backgroundTintMode
+          @attr name com.techrelation.colorcodequiz:backgroundTintMode
         */
         public static final int View_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8076,11 +8075,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:paddingEnd
+          @attr name com.techrelation.colorcodequiz:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8092,17 +8091,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:paddingStart
+          @attr name com.techrelation.colorcodequiz:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:theme
+          @attr name com.techrelation.colorcodequiz:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewStubCompat.
@@ -8146,10 +8145,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme com.example.owner.colorcodequiz:appTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment com.example.owner.colorcodequiz:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.example.owner.colorcodequiz:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.example.owner.colorcodequiz:fragmentStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme com.techrelation.colorcodequiz:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment com.techrelation.colorcodequiz:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.techrelation.colorcodequiz:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.techrelation.colorcodequiz:fragmentStyle}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -8160,7 +8159,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100fa, 0x7f0100fb, 0x7f0100fc, 0x7f0100fd
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#appTheme}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#appTheme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -8173,11 +8172,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:appTheme
+          @attr name com.techrelation.colorcodequiz:appTheme
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#environment}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -8192,11 +8191,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:environment
+          @attr name com.techrelation.colorcodequiz:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -8209,17 +8208,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:fragmentMode
+          @attr name com.techrelation.colorcodequiz:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:fragmentStyle
+          @attr name com.techrelation.colorcodequiz:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /** Attributes that can be used with a WalletFragmentStyle.
@@ -8228,17 +8227,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.example.owner.colorcodequiz:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.example.owner.colorcodequiz:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.example.owner.colorcodequiz:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.example.owner.colorcodequiz:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.example.owner.colorcodequiz:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.example.owner.colorcodequiz:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.example.owner.colorcodequiz:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.example.owner.colorcodequiz:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.example.owner.colorcodequiz:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.example.owner.colorcodequiz:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.example.owner.colorcodequiz:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.techrelation.colorcodequiz:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.techrelation.colorcodequiz:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.techrelation.colorcodequiz:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.techrelation.colorcodequiz:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.techrelation.colorcodequiz:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.techrelation.colorcodequiz:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.techrelation.colorcodequiz:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.techrelation.colorcodequiz:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.techrelation.colorcodequiz:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.techrelation.colorcodequiz:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.techrelation.colorcodequiz:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -8258,7 +8257,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010106, 0x7f010107, 0x7f010108
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8275,11 +8274,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:buyButtonAppearance
+          @attr name com.techrelation.colorcodequiz:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8300,11 +8299,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:buyButtonHeight
+          @attr name com.techrelation.colorcodequiz:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8322,11 +8321,11 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:buyButtonText
+          @attr name com.techrelation.colorcodequiz:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8347,11 +8346,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:buyButtonWidth
+          @attr name com.techrelation.colorcodequiz:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8359,11 +8358,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsBackground
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8371,31 +8370,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsButtonBackground
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsButtonTextAppearance
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsHeaderTextAppearance
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8410,11 +8409,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsLogoImageType
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -8425,17 +8424,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsLogoTextColor
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.owner.colorcodequiz:maskedWalletDetailsTextAppearance
+          @attr name com.techrelation.colorcodequiz:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
         /** Attributes that can be used with a com_facebook_like_view.
@@ -8444,12 +8443,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.example.owner.colorcodequiz:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.example.owner.colorcodequiz:com_facebook_foreground_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.example.owner.colorcodequiz:com_facebook_horizontal_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.example.owner.colorcodequiz:com_facebook_object_id}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.example.owner.colorcodequiz:com_facebook_object_type}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.example.owner.colorcodequiz:com_facebook_style}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.techrelation.colorcodequiz:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.techrelation.colorcodequiz:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.techrelation.colorcodequiz:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.techrelation.colorcodequiz:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.techrelation.colorcodequiz:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.techrelation.colorcodequiz:com_facebook_style}</code></td><td></td></tr>
            </table>
            @see #com_facebook_like_view_com_facebook_auxiliary_view_position
            @see #com_facebook_like_view_com_facebook_foreground_color
@@ -8463,7 +8462,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01010d, 0x7f01010e
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_auxiliary_view_position}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8477,11 +8476,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_auxiliary_view_position
+          @attr name com.techrelation.colorcodequiz:com_facebook_auxiliary_view_position
         */
         public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_foreground_color}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8492,11 +8491,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_foreground_color
+          @attr name com.techrelation.colorcodequiz:com_facebook_foreground_color
         */
         public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_horizontal_alignment}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8510,11 +8509,11 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_horizontal_alignment
+          @attr name com.techrelation.colorcodequiz:com_facebook_horizontal_alignment
         */
         public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_object_id}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8524,11 +8523,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_object_id
+          @attr name com.techrelation.colorcodequiz:com_facebook_object_id
         */
         public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_object_type}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8542,11 +8541,11 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_object_type
+          @attr name com.techrelation.colorcodequiz:com_facebook_object_type
         */
         public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_style}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -8560,7 +8559,7 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_style
+          @attr name com.techrelation.colorcodequiz:com_facebook_style
         */
         public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -8569,10 +8568,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.example.owner.colorcodequiz:com_facebook_confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.example.owner.colorcodequiz:com_facebook_login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.example.owner.colorcodequiz:com_facebook_logout_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.example.owner.colorcodequiz:com_facebook_tooltip_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.techrelation.colorcodequiz:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.techrelation.colorcodequiz:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.techrelation.colorcodequiz:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.techrelation.colorcodequiz:com_facebook_tooltip_mode}</code></td><td></td></tr>
            </table>
            @see #com_facebook_login_view_com_facebook_confirm_logout
            @see #com_facebook_login_view_com_facebook_login_text
@@ -8583,7 +8582,7 @@ containing a value of this type.
             0x7f01010f, 0x7f010110, 0x7f010111, 0x7f010112
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_confirm_logout}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -8593,11 +8592,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_confirm_logout
+          @attr name com.techrelation.colorcodequiz:com_facebook_confirm_logout
         */
         public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_login_text}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -8607,11 +8606,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_login_text
+          @attr name com.techrelation.colorcodequiz:com_facebook_login_text
         */
         public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_logout_text}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -8621,11 +8620,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_logout_text
+          @attr name com.techrelation.colorcodequiz:com_facebook_logout_text
         */
         public static final int com_facebook_login_view_com_facebook_logout_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_tooltip_mode}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_tooltip_mode}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -8639,7 +8638,7 @@ containing a value of this type.
 <tr><td><code>display_always</code></td><td>1</td><td></td></tr>
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_tooltip_mode
+          @attr name com.techrelation.colorcodequiz:com_facebook_tooltip_mode
         */
         public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -8648,8 +8647,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.example.owner.colorcodequiz:com_facebook_is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.example.owner.colorcodequiz:com_facebook_preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.techrelation.colorcodequiz:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.techrelation.colorcodequiz:com_facebook_preset_size}</code></td><td></td></tr>
            </table>
            @see #com_facebook_profile_picture_view_com_facebook_is_cropped
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
@@ -8658,7 +8657,7 @@ containing a value of this type.
             0x7f010113, 0x7f010114
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_is_cropped}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -8668,11 +8667,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.owner.colorcodequiz:com_facebook_is_cropped
+          @attr name com.techrelation.colorcodequiz:com_facebook_is_cropped
         */
         public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.owner.colorcodequiz.R.attr#com_facebook_preset_size}
+          <p>This symbol is the offset where the {@link com.techrelation.colorcodequiz.R.attr#com_facebook_preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -8686,7 +8685,7 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name com.example.owner.colorcodequiz:com_facebook_preset_size
+          @attr name com.techrelation.colorcodequiz:com_facebook_preset_size
         */
         public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };

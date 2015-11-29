@@ -51,9 +51,12 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        //showAd
+        //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
+                .build();
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
@@ -124,11 +127,11 @@ public class MenuActivity extends AppCompatActivity {
         //-----------------↓TestData↓-----------------//
         /*SharedPreferences.Editor editor = getData.edit();
         editor.clear().commit();*/
-        RGB_ull_CodetoColor = 5;
+        /*RGB_ull_CodetoColor = 5;
         RGB_ull_ColortoCode = 4;
         HSB_ull_CodetoColor = 7;
         HSB_ull_ColortoCode = 8;
-        //------------------↑TestData↑--------------ー //
+        //------------------↑TestData↑--------------ー */
 
         changeIcon();
 
@@ -345,6 +348,7 @@ public class MenuActivity extends AppCompatActivity {
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
                 .build();
 
         mInterstitialAd.loadAd(adRequest);

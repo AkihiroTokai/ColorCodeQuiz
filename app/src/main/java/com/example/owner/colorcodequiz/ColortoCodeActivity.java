@@ -94,7 +94,10 @@ public class ColortoCodeActivity extends AppCompatActivity {
 
         //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
+                .build();
         mAdView.loadAd(adRequest);
 
         gameCount = 1;

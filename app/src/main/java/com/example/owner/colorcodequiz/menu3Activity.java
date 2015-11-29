@@ -64,9 +64,12 @@ public class menu3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu3);
 
-        //showAd
+        //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
+                .build();
         mAdView.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
@@ -130,7 +133,7 @@ public class menu3Activity extends AppCompatActivity {
             nowPointview.setText(label_HSB);
         }
 
-        //-----------------↓TestData↓-----------------
+        /*-----------------↓TestData↓-----------------
         if (colormode == 1) {
             this_ull_ColortoCode = 5;
             this_ull_CodetoColor = 4;
@@ -138,7 +141,7 @@ public class menu3Activity extends AppCompatActivity {
             this_ull_ColortoCode = 7;
             this_ull_CodetoColor = 8;
         }
-        //------------------↑TestData↑--------------ー
+        //------------------↑TestData↑--------------ー */
 
         //IconChange
         if (this_ull_CodetoColor >= 6) {
@@ -481,6 +484,7 @@ public class menu3Activity extends AppCompatActivity {
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
                 .build();
 
         mInterstitialAd.loadAd(adRequest);

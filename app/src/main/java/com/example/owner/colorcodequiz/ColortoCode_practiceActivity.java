@@ -88,9 +88,12 @@ public class ColortoCode_practiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colorto_code_practice);
 
-        //ShowAd
+        ///ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
+                .build();
         mAdView.loadAd(adRequest);
 
         check_answer = 1;

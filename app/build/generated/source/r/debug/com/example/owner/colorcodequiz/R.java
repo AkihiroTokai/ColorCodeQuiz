@@ -2608,7 +2608,7 @@ containing a value of this type.
         public static final int question=0x7f0d0080;
         public static final int radio=0x7f0d0068;
         public static final int radiogroup=0x7f0d00a1;
-        public static final int red=0x7f0d009b;
+        public static final int red=0x7f0d009c;
         public static final int rgb=0x7f0d00a2;
         public static final int right=0x7f0d004b;
         public static final int route_name=0x7f0d00dd;
@@ -2647,7 +2647,7 @@ containing a value of this type.
         public static final int submit_area=0x7f0d0079;
         public static final int subtitle=0x7f0d00e4;
         public static final int tabMode=0x7f0d000c;
-        public static final int tag=0x7f0d009c;
+        public static final int tag=0x7f0d009b;
         public static final int terrain=0x7f0d001c;
         public static final int test=0x7f0d002f;
         public static final int text=0x7f0d00f4;

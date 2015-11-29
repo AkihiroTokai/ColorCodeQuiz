@@ -87,10 +87,11 @@ public class CodetoColorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_codeto_color);
 
-        //showAd
+        //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
                 .build();
         mAdView.loadAd(adRequest);
 
@@ -225,7 +226,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_nocomp_ColortoCode9 = getData.getInt("HSB_nocomp_ColortoCode9", 0);
             this_nocomp_ColortoCode10 = getData.getInt("HSB_nocomp_ColortoCode10", 0);
         }
-        //-----------------↓TestData↓-----------------
+        /*-----------------↓TestData↓-----------------
         if (colormode == 1) {
             this_ull_ColortoCode = 5;
             this_nocomp_ColortoCode5 = 6;
@@ -237,7 +238,7 @@ public class CodetoColorActivity extends AppCompatActivity {
             this_ull_ColortoCode = 7;
             this_ull_CodetoColor = 8;
         }
-        //------------------↑TestData↑--------------ー
+        //------------------↑TestData↑--------------ー*/
         setQuestion();
     }
 

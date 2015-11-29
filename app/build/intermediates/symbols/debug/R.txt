@@ -913,7 +913,7 @@ int id progress_horizontal 0x7f0d0007
 int id question 0x7f0d0080
 int id radio 0x7f0d0068
 int id radiogroup 0x7f0d00a1
-int id red 0x7f0d009b
+int id red 0x7f0d009c
 int id rgb 0x7f0d00a2
 int id right 0x7f0d004b
 int id route_name 0x7f0d00dd
@@ -952,7 +952,7 @@ int id strict_sandbox 0x7f0d002e
 int id submit_area 0x7f0d0079
 int id subtitle 0x7f0d00e4
 int id tabMode 0x7f0d000c
-int id tag 0x7f0d009c
+int id tag 0x7f0d009b
 int id terrain 0x7f0d001c
 int id test 0x7f0d002f
 int id text 0x7f0d00f4

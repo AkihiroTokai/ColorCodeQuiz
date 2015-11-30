@@ -239,6 +239,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select1.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 String st_progress = getString(R.string.progress, gameCount, noq);
                 progress.setText(st_progress);
@@ -264,6 +265,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select2.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 String st_progress = getString(R.string.progress, gameCount, noq);
                 progress.setText(st_progress);
@@ -288,6 +290,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select3.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 String st_progress = getString(R.string.progress, gameCount, noq);
                 progress.setText(st_progress);
@@ -313,6 +316,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 check_select4.setImageResource(R.drawable.batu);
             }
             if (gameCount <= noq) {
+                showRightanswer();
                 gameCount = gameCount + 1;
                 String st_progress = getString(R.string.progress, gameCount, noq);
                 progress.setText(st_progress);

@@ -3,6 +3,7 @@ package com.example.owner.colorcodequiz;
 import android.app.Application;
 
 import com.facebook.FacebookSdk;
+import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 import com.parse.Parse;
 import com.parse.ParseObject;
@@ -19,9 +20,9 @@ public class ColorCodeQuizApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        //GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+        GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
 
-        //tracker = analytics.newTracker(R.xml.app_tracker);
+        tracker = analytics.newTracker(R.xml.app_tracker);
 
         Parse.enableLocalDatastore(this);
         ParseObject.registerSubclass(getData.class);

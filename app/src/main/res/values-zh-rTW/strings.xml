@@ -88,8 +88,8 @@
     <string name="cannot_gameclear">未通過。</string>
     <string name="gameclear">先後通過。</string>
     <string name="get_point">你贏了%1$d點。</string>
-    <string name="game_result">因為%1$d問內答對了%2$d%3$d</string>
-    <string name="status_ulm_old">你有一個主%1$d%2$s的%3$！</string>
+    <string name="game_result">因為%1$d問內答對了%2$d%3$s</string>
+    <string name="status_ulm_old">你有一個主%1$s%2$s的%3$d！</string>
     <string name="status_ulm_twitter"> %1$d级别%2$d 已被释放。恭喜。</string>
     <string name="agree_button">是啊</string>
     <string name="oppose_button">没有</string>

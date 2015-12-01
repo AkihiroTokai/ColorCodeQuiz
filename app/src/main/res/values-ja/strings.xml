@@ -86,7 +86,7 @@
     <string name="cannot_gameclear">クリアできませんでした。</string>
     <string name="gameclear">クリアしました。</string>
     <string name="get_point">%1$dPoint獲得しました。</string>
-    <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
+    <string name="game_result">%1$d問中 %2$d問正解したので、%3$s</string>
     <string name="status_ulm_old">%1$d%2$dLevel%3$d をMasterしました！</string>
     <string name="status_ulm_twitter"> %1$dLevel%2$d がunlockされました。おめでとうございます。Twetterに投稿しませんか？</string>
     <string name="agree_button">Yes</string>

@@ -81,7 +81,7 @@
     <string name="gameclear">You could be cleared.</string>
     <string name="get_point">You got%1$d Point.</string>
     <string name="game_result">Because %1$d  of %2$d questions answered it correctly,%3$s</string>
-    <string name="status_ulm_old">The Level %3$d of %1$d%2$d it was Master!</string>
+    <string name="status_ulm_old">The Level %3$d of %1$s%2$s it was Master!</string>
     <string name="status_ulm_twitter"> %1$dLevel%2$d is unlocked.Congratulations. Would you like to　post to Twitter?</string>
     <string name="agree_button">Yes</string>
     <string name="oppose_button">No</string>

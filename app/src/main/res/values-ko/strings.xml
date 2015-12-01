@@ -85,8 +85,8 @@
     <string name="cannot_gameclear">클리어 할 수 없었습니다.</string>
     <string name="gameclear">클리어했습니다.</string>
     <string name="get_point">%1$d　포인트를 획득했습니다.</string>
-    <string name="game_result">%1$d 문항 중 %2$d 문항 정답 했으므로,%3$d</string>
-    <string name="status_ulm_old">%1$d%2$dLevel%3$d 을 Master했습니다!</string>
+    <string name="game_result">%1$d 문항 중 %2$d 문항 정답 했으므로,%3$s</string>
+    <string name="status_ulm_old">%1$s%2$sLevel%3$d 을 Master했습니다!</string>
     <string name="status_ulm_twitter"> %1$dLevel%2$d 가 unlock 되었습니다.축하합니다.Twitter에 투고하지 않겠습니까?</string>
     <string name="agree_button">네</string>
     <string name="oppose_button">아니</string>

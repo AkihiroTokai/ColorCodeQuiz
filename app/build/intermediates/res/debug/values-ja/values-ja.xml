@@ -88,7 +88,7 @@
     <string name="compm_title">%1$sの%2$dをMasterしました！</string>
     <string name="compm_twitter">おめでとうございます。Twitterに投稿しませんか？</string>
     <string name="facebook_app_id">1643052322619255</string>
-    <string name="game_result">%1$d問中 %2$d問正解したので、%3$d</string>
+    <string name="game_result">%1$d問中 %2$d問正解したので、%3$s</string>
     <string name="gameclear">クリアしました。</string>
     <string name="get_point">%1$dPoint獲得しました。</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

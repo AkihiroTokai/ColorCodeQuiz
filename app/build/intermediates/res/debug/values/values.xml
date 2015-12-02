@@ -522,7 +522,7 @@
     <eat-comment/>
     <string name="status_message_locked">It is necessary for you to clear level %1$d more than %2$d  times and please acquire it more than %3$dPoint.%4$s</string>
     <string name="status_message_unlocked"> You will have need to solve %1$d questions. %2$d times has cleared.</string>
-    <string name="status_ulm_old">The Level %3$d of %1$d%2$d it was Master!</string>
+    <string name="status_ulm_old">The Level %3$d of %1$s%2$s it was Master!</string>
     <string name="status_ulm_twitter"> %1$dLevel%2$d is unlocked.Congratulations. Would you like to　post to Twitter?</string>
     <!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
     <eat-comment/>

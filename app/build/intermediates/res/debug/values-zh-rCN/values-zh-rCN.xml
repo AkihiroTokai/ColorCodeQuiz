@@ -88,7 +88,7 @@
     <string name="compm_title">你有一个主%1$s的%2$！</string>
     <string name="compm_twitter">恭喜。</string>
     <string name="facebook_app_id">1643052322619255</string>
-    <string name="game_result">因为%1$d问内答对了%2$d%3$d</string>
+    <string name="game_result">因为%1$d问内答对了%2$d%3$s</string>
     <string name="gameclear">先后通过。</string>
     <string name="get_point">你赢了%1$d点。</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -131,7 +131,7 @@
     <string name="start_message_ColortoCode_practice">你开始ColortoCode_practice？</string>
     <string name="status_message_locked">我们通过超过%2$d次的级别%1$d，请得分超过%3$d个点。%4$s</string>
     <string name="status_message_unlocked">问题是 %1$d 个问题。%2$d次我已经通过了。</string>
-    <string name="status_ulm_old">你有一个主%1$d%2$s的%3$！</string>
+    <string name="status_ulm_old">你有一个主%1$s%2$s的%3$d！</string>
     <string name="status_ulm_twitter"> %1$d级别%2$d 已被释放。恭喜。</string>
     <string name="title_activity_codeto_color">CodetoColorActivity</string>
     <string name="title_activity_codetocolor">CodetCcolorActivity</string>

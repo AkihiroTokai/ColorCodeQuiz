@@ -2447,7 +2447,7 @@ containing a value of this type.
         public static final int ColortoCode7=0x7f0d00c2;
         public static final int ColortoCode8=0x7f0d00c5;
         public static final int ColortoCode9=0x7f0d00c8;
-        public static final int ColortoCode_practice=0x7f0d0097;
+        public static final int Twitter_login =0x7f0d0097;
         public static final int ComingSoon=0x7f0d00a9;
         public static final int Level1=0x7f0d00ac;
         public static final int Level10=0x7f0d00c9;

@@ -63,7 +63,7 @@ public class loginActivity extends AppCompatActivity {
         });
     }
 
-    public void Anonymouslogin(View v) {
+    public void Anonymous_login(View v) {
         ParseAnonymousUtils.logIn(new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {

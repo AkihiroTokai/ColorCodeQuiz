@@ -49,11 +49,12 @@
 
     </LinearLayout>
 
-    <!-- <LinearLayout
+     <LinearLayout
          android:orientation="horizontal"
          android:layout_width="match_parent"
          android:layout_height="80dp"
-         android:gravity="center">
+         android:gravity="center"
+         android:id="@+id/">
 
          <com.beardedhen.androidbootstrap.BootstrapButton
              android:layout_width="match_parent"
@@ -63,11 +64,12 @@
              bootstrap:bb_type="primary"
              bootstrap:bb_roundedCorners="true"
              bootstrap:bb_icon_left="fa-facebook-official"
-             android:onClick="Facebooklogin"
+             android:onClick="Facebook＿login"
              android:layout_above="@+id/textView"
              android:layout_alignEnd="@+id/textView"
              android:layout_marginLeft="10dp" />
-    </LinearLayout>  -->
+    </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -79,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView4"
+            android:id="@+id/guidemessage"
             android:phoneNumber="false"
             android:text="アカウントをお持ちでない場合は、GuestModeをご利用ください。"
             android:singleLine="false"

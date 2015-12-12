@@ -54,7 +54,7 @@
          android:layout_width="match_parent"
          android:layout_height="80dp"
          android:gravity="center"
-         android:id="@+id/">
+         android:id="@+id/facebooklogin">
 
          <com.beardedhen.androidbootstrap.BootstrapButton
              android:layout_width="match_parent"

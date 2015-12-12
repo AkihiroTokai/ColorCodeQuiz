@@ -46,6 +46,7 @@ public class loginActivity extends AppCompatActivity {
 
     }
 
+
     public void Twitterlogin(View v) {
         ParseTwitterUtils.logIn(this, new LogInCallback() {
             @Override

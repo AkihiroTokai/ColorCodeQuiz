@@ -66,9 +66,10 @@ public class menu3Activity extends AppCompatActivity {
 
         //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
+        String testdeviceid = getString(R.string.interstitial_ad_menu3_unit_id);
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("112DAF664CFB0B28BE8C954BCC2DD985")
+                .addTestDevice(testdeviceid)
                 .build();
         mAdView.loadAd(adRequest);
 

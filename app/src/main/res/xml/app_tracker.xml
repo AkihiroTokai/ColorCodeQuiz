@@ -7,7 +7,7 @@
 
     <!-- screenName設定 -->
     <screenName name="com.google.android.gms.ads.AdActivity">InterstitialAd</screenName>
-    <screenName name="com.example.owner.colorcodequiz.MainActivity">CodetoColor_practice</screenName>
+    <screenName name="com.example.owner.colorcodequiz.CodetoColor_practiceActivity">CodetoColor_practice</screenName>
     <screenName name="com.example.owner.colorcodequiz.ColortoCode_practiceActivity">CodetoColor_practice</screenName>
 
     <!-- トラッキングID -->

@@ -800,6 +800,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                                 }
                             }
                         }
+
                     }
                 }
             }

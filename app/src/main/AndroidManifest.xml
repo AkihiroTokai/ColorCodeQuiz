@@ -26,7 +26,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".CodetoColor_practiceActivity"
             android:label="@string/app_name" >
         </activity>
         <activity

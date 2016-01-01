@@ -22,7 +22,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 
-public class MainActivity extends AppCompatActivity {
+public class CodetoColor_practiceActivity extends AppCompatActivity {
 
     private TextView progress;
     private TextView red;
@@ -506,14 +506,14 @@ public class MainActivity extends AppCompatActivity {
         String get_point = getString(R.string.get_point, getPoint);
         String game_result = getString(R.string.game_result, noq, noca, gameResult);
         String positive_button = getString(R.string.positive_button);
-        new AlertDialog.Builder(MainActivity.this)
+        new AlertDialog.Builder(CodetoColor_practiceActivity.this)
                 .setTitle(get_point)
                 .setMessage(game_result)
                 .setPositiveButton(positive_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                        Intent intent = new Intent(CodetoColor_practiceActivity.this, MenuActivity.class);
                         intent.putExtra("nowPoint", 0);
                         intent.putExtra("getPoint", getPoint);
                         intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);
@@ -527,7 +527,7 @@ public class MainActivity extends AppCompatActivity {
         String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_CodetoColor);
         String agree_button = getString(R.string.agree_button);
         String oppose_button = getString(R.string.oppose_button);
-        new AlertDialog.Builder(MainActivity.this)
+        new AlertDialog.Builder(CodetoColor_practiceActivity.this)
                 .setTitle(status_ulm_old)
                 .setMessage(status_ulm_CodetoColor)
                 .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
@@ -546,7 +546,7 @@ public class MainActivity extends AppCompatActivity {
         String status_ulm_CodetoColor = getString(R.string.status_ulm_twitter, unlockmode, this_ull_ColortoCode);
         String agree_button = getString(R.string.agree_button);
         String oppose_button = getString(R.string.oppose_button);
-        new AlertDialog.Builder(MainActivity.this)
+        new AlertDialog.Builder(CodetoColor_practiceActivity.this)
                 .setTitle(status_ulm_old)
                 .setMessage(status_ulm_CodetoColor)
                 .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {
@@ -565,7 +565,7 @@ public class MainActivity extends AppCompatActivity {
         String compm_twitter = getString(R.string.compm_twitter);
         String agree_button = getString(R.string.agree_button);
         String oppose_button = getString(R.string.oppose_button);
-        new AlertDialog.Builder(MainActivity.this)
+        new AlertDialog.Builder(CodetoColor_practiceActivity.this)
                 .setTitle(compm_title)
                 .setMessage(compm_twitter)
                 .setPositiveButton(agree_button, new DialogInterface.OnClickListener() {

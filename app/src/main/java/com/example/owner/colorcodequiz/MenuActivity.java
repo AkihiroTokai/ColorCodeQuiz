@@ -289,7 +289,7 @@ public class MenuActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                        Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                        Intent intent = new Intent(MenuActivity.this, CodetoColor_practiceActivity.class);
                         intent.putExtra("getcolormode", colormode);
                         startActivity(intent);
                     }

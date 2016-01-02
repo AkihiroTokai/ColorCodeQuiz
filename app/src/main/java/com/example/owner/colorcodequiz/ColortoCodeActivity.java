@@ -121,7 +121,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
         noq = intent.getIntExtra("getnumber", 10);
         maxlimit = intent.getIntExtra("getmaxlimit", 255);
         minlimit = intent.getIntExtra("getminlimit", 0);
-        level = intent.getIntExtra("getlevel", level);
+        level = intent.getIntExtra("getlevel", 1);
         colormode = intent.getIntExtra("getcolormode", 1);
 
         //getData(Parse)

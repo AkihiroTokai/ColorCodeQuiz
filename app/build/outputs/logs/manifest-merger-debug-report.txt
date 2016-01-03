@@ -217,7 +217,7 @@ MERGED from com.google.android.gms:play-services-base:7.8.0:21:9
 		ADDED from AndroidManifest.xml:26:13
 	android:name
 		ADDED from AndroidManifest.xml:25:20
-activity#com.example.owner.colorcodequiz.MainActivity
+activity#com.example.owner.colorcodequiz.CodetoColor_practiceActivity
 ADDED from AndroidManifest.xml:28:9
 	android:label
 		ADDED from AndroidManifest.xml:30:13

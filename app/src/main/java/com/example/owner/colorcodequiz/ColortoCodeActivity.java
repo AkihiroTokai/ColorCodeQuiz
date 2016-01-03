@@ -650,7 +650,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                        Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
+                        Intent intent = new Intent(ColortoCodeActivity.this, menuActivity.class);
                         startActivity(intent);
                     }
                 }).show();

@@ -8,7 +8,7 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.owner.colorcodequiz.MenuActivity">
+    tools:context="com.example.owner.colorcodequiz.menuActivity">
 
     <LinearLayout
         android:orientation="horizontal"

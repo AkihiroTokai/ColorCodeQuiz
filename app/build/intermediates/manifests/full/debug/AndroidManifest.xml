@@ -62,7 +62,7 @@
             android:label="@string/title_activity_codeto_color" >
         </activity>
         <activity
-            android:name="com.example.owner.colorcodequiz.MenuActivity"
+            android:name="com.example.owner.colorcodequiz.menuActivity"
             android:label="@string/title_activity_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -103,6 +103,11 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="81cd5c88f31512b71ea8cdcfb5aa81a03c64afcd" />
+
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />

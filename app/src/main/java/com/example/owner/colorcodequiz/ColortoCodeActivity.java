@@ -650,7 +650,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                        Intent intent = new Intent(ColortoCodeActivity.this, menuActivity.class);
+                        Intent intent = new Intent(ColortoCodeActivity.this, MenuActivity.class);
                         startActivity(intent);
                     }
                 }).show();
@@ -805,7 +805,7 @@ public class ColortoCodeActivity extends AppCompatActivity {
                 }
             }
 
-            // 条件B:r,g,bのそれぞれの差を選択肢ごとに加えたものがそのレベルの範囲内になっている。
+            // 条件B:r,g,bのそれぞれの差を選択肢ごとに加えたものが一定の範囲内になっている。
             if ((canBreak == true) && (abs_ca_1 >= minlimit) && (abs_ca_1 <= maxlimit)) {
                 if ((abs_ca_2 >= minlimit) && (abs_ca_2 <= maxlimit)) {
                     if ((abs_ca_3 >= minlimit) && (abs_ca_3 <= maxlimit)) {

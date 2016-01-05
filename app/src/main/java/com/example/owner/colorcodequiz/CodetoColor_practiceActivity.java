@@ -85,7 +85,7 @@ public class CodetoColor_practiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_codeto_color_practice);
 
         //ShowAd
         AdView mAdView = (AdView) findViewById(R.id.adView);
@@ -513,7 +513,7 @@ public class CodetoColor_practiceActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // OK button pressed
-                        Intent intent = new Intent(CodetoColor_practiceActivity.this, menuActivity.class);
+                        Intent intent = new Intent(CodetoColor_practiceActivity.this, MenuActivity.class);
                         intent.putExtra("nowPoint", 0);
                         intent.putExtra("getPoint", getPoint);
                         intent.putExtra("ull_ColortoCode ", this_ull_ColortoCode);

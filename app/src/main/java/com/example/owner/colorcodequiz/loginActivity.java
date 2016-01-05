@@ -96,7 +96,7 @@ public class loginActivity extends AppCompatActivity {
        });
    }   */
     private void MenuActivity() {
-        Intent intent = new Intent(this, menuActivity.class);
+        Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
         finish();
     }

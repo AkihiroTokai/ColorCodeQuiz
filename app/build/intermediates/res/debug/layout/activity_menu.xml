@@ -8,7 +8,7 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.owner.colorcodequiz.menuActivity">
+    tools:context="com.example.owner.colorcodequiz.MenuActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -213,7 +213,7 @@
     </LinearLayout>
 
         <com.google.android.gms.ads.AdView
-            android:id="@+iw"
+            android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ads:adSize="SMART_BANNER"

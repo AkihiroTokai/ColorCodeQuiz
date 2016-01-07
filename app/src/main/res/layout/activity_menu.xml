@@ -90,7 +90,7 @@
             android:id="@+id/mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/Twitter_login"
+            android:layout_above="@+id/Twitter"
             android:text="Practice"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -115,7 +115,7 @@
             bootstrap:bb_type="info" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/Twitter_login"
+            android:id="@+id/Twitter"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_above="@+id/Others"

@@ -29,7 +29,7 @@ public class ColorCodeQuizApplication extends Application {
         tracker = analytics.newTracker(R.xml.app_tracker);
 
         Parse.enableLocalDatastore(this);
-        ParseObject.registerSubclass(GetData.class);
+        ParseObject.registerSubclass(getData.class);
         FacebookSdk.sdkInitialize(getApplicationContext());
 
         Parse.initialize(this, "key", "key");

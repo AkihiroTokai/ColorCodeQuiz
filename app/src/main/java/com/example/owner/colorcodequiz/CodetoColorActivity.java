@@ -491,61 +491,61 @@ public class CodetoColorActivity extends AppCompatActivity {
             //Count:nocomp
             switch (level) {
                 case 1:
-                    GetData checkData1 = new GetData();
+                    getData checkData1 = new getData();
                     this_nocomp_CodetoColor1++;
                     checkData1.setnocomp_CodetoColor1(this_nocomp_CodetoColor1);
                     break;
 
                 case 2:
-                    GetData checkData2 = new GetData();
+                    getData checkData2 = new getData();
                     this_nocomp_CodetoColor2++;
-                    checkData2.setnocomp_CodetoColor1(this_nocomp_CodetoColor2);
+                    checkData2.setnocomp_CodetoColor2(this_nocomp_CodetoColor2);
                     break;
 
                 case 3:
-                    GetData checkData3 = new GetData();
+                    getData checkData3 = new getData();
                     this_nocomp_CodetoColor3++;
                     checkData3.setnocomp_CodetoColor1(this_nocomp_CodetoColor3);
                     break;
 
                 case 4:
-                    GetData checkData4 = new GetData();
+                    getData checkData4 = new getData();
                     this_nocomp_CodetoColor4++;
                     checkData4.setnocomp_CodetoColor1(this_nocomp_CodetoColor4);
                     break;
 
                 case 5:
-                    GetData checkData5 = new GetData();
+                    getData checkData5 = new getData();
                     this_nocomp_CodetoColor5++;
                     checkData5.setnocomp_CodetoColor1(this_nocomp_CodetoColor5);
                     break;
 
                 case 6:
-                    GetData checkData6 = new GetData();
+                    getData checkData6 = new getData();
                     this_nocomp_CodetoColor6++;
                     checkData6.setnocomp_CodetoColor1(this_nocomp_CodetoColor6);
                     break;
 
                 case 7:
-                    GetData checkData7 = new GetData();
+                    getData checkData7 = new getData();
                     this_nocomp_CodetoColor7++;
-                    checkData7.setnocomp_CodetoColor1(this_nocomp_CodetoColor7);
+                    checkData7.setnocomp_CodetoColor7(this_nocomp_CodetoColor7);
                     break;
 
                 case 8:
-                    GetData checkData8 = new GetData();
+                    getData checkData8 = new getData();
                     this_nocomp_CodetoColor8++;
                     checkData8.setnocomp_CodetoColor8(this_nocomp_CodetoColor8);
                     break;
 
                 case 9:
-                    GetData checkData9 = new GetData();
+                    getData checkData9 = new getData();
                     this_nocomp_CodetoColor9++;
                     checkData9.setnocomp_CodetoColor9(this_nocomp_CodetoColor9);
                     break;
 
                 case 10:
-                    GetData checkData10 = new GetData();
+                    getData checkData10 = new getData();
                     this_nocomp_CodetoColor10++;
                     checkData10.setnocomp_CodetoColor10(this_nocomp_CodetoColor10);
                     break;

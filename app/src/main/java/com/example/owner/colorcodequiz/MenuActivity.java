@@ -142,7 +142,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
     public void gotologin(View v) {
-        Intent intent = new Intent(MenuActivity.this, loginActivity.class);
+        Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
         startActivity(intent);
     }
 
@@ -186,7 +186,7 @@ public class MenuActivity extends AppCompatActivity {
     public void tomenu2(View v) {
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 1 || RGB_ull_CodetoColor >= 1) {
-                Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Menu2Activity.class);
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
@@ -201,7 +201,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         } else if (colormode == 2) {
             if (HSB_ull_CodetoColor >= 1 || HSB_ull_CodetoColor >= 1) {
-                Intent intent = new Intent(MenuActivity.this, menu2Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Menu2Activity.class);
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
@@ -220,7 +220,7 @@ public class MenuActivity extends AppCompatActivity {
     public void tomenu3(View v) {
         if (colormode == 1) {
             if (RGB_ull_CodetoColor >= 6 || RGB_ull_CodetoColor >= 6) {
-                Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Menu3Activity.class);
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {
@@ -235,7 +235,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         } else if (colormode == 2) {
             if (HSB_ull_CodetoColor >= 6 || HSB_ull_CodetoColor >= 6) {
-                Intent intent = new Intent(MenuActivity.this, menu3Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Menu3Activity.class);
                 intent.putExtra("getcolormode", colormode);
                 startActivity(intent);
             } else {

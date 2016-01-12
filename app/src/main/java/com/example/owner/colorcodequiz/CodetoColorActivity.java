@@ -344,7 +344,6 @@ public class CodetoColorActivity extends AppCompatActivity {
 
     }
 
-
     public void showRightAnswer() {
         answer1.setTextColor(Color.parseColor("#000000"));
         answer2.setTextColor(Color.parseColor("#000000"));
@@ -505,25 +504,25 @@ public class CodetoColorActivity extends AppCompatActivity {
                 case 3:
                     getData checkData3 = new getData();
                     this_nocomp_CodetoColor3++;
-                    checkData3.setnocomp_CodetoColor1(this_nocomp_CodetoColor3);
+                    checkData3.setnocomp_CodetoColor3(this_nocomp_CodetoColor3);
                     break;
 
                 case 4:
                     getData checkData4 = new getData();
                     this_nocomp_CodetoColor4++;
-                    checkData4.setnocomp_CodetoColor1(this_nocomp_CodetoColor4);
+                    checkData4.setnocomp_CodetoColor4(this_nocomp_CodetoColor4);
                     break;
 
                 case 5:
                     getData checkData5 = new getData();
                     this_nocomp_CodetoColor5++;
-                    checkData5.setnocomp_CodetoColor1(this_nocomp_CodetoColor5);
+                    checkData5.setnocomp_CodetoColor5(this_nocomp_CodetoColor5);
                     break;
 
                 case 6:
                     getData checkData6 = new getData();
                     this_nocomp_CodetoColor6++;
-                    checkData6.setnocomp_CodetoColor1(this_nocomp_CodetoColor6);
+                    checkData6.setnocomp_CodetoColor6(this_nocomp_CodetoColor6);
                     break;
 
                 case 7:

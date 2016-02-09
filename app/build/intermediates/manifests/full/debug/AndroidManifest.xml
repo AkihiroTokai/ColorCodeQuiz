@@ -71,11 +71,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.owner.colorcodequiz.menu2Activity"
+            android:name="com.example.owner.colorcodequiz.Menu2Activity"
             android:label="@string/title_activity_menu2" >
         </activity>
         <activity
-            android:name="com.example.owner.colorcodequiz.menu3Activity"
+            android:name="com.example.owner.colorcodequiz.Menu3Activity"
             android:label="@string/title_activity_menu3" >
         </activity>
 
@@ -84,7 +84,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.example.owner.colorcodequiz.loginActivity"
+            android:name="com.example.owner.colorcodequiz.LoginActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" >
         </activity>

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.owner.colorcodequiz.MenuActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Welcome to ColorCodeQuiz!"
+            android:id="@+id/textView3"
+            android:phoneNumber="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign in with Twitter"
+            android:id="@+id/Twitter"
+            bootstrap:bb_type="info"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_left="fa-twitter"
+            android:layout_above="@+id/Others"
+            android:layout_toStartOf="@+id/Others"
+            android:onClick="Twitter_login"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:gravity="center"
+         android:id="@+id/facebooklogin">
+
+         <com.beardedhen.androidbootstrap.BootstrapButton
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="Sign in with Facebook"
+             android:id="@+id/Facebook"
+             bootstrap:bb_type="primary"
+             bootstrap:bb_roundedCorners="true"
+             bootstrap:bb_icon_left="fa-facebook-official"
+             android:onClick="Facebook＿login"
+             android:layout_above="@+id/textView"
+             android:layout_alignEnd="@+id/textView"
+             android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/guidemessage"
+            android:phoneNumber="false"
+            android:text="アカウントをお持ちでない場合は、GuestModeをご利用ください。"
+            android:singleLine="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign in with GuestMode"
+            android:id="@+id/Anonymous"
+            bootstrap:bb_roundedCorners="true"
+            android:onClick="Anonymous_login"
+            android:layout_above="@+id/mode"
+            android:layout_alignEnd="@+id/mode"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/OWNER/AndroidStudioProjects/ColorCodeQuiz/app/src/main/res/layout/activity_login.xml -->
